@@ -1,0 +1,481 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Ejercicio 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Respuesta Transitoria
+\end_layout
+
+\begin_layout Standard
+Se observaron las respuestas transitorias del circuito al alimentarlo con
+ distintas frecuencias de una señal triangular.
+ Se decide analizar lo que ocurre con una frecuencia de 8 kHz ya que se
+ encuentra dentro de un rango de frecuencias que permite ver la tensión
+ sobre la resistencia de forma clara en el osciloscopio.
+\end_layout
+
+\begin_layout Standard
+(FOTO DEL OSCILOSCOPIO)
+\end_layout
+
+\begin_layout Subsubsection
+Análisis a partir de ecuaciones diferenciales correspondientes al circuito
+\end_layout
+
+\begin_layout Standard
+(FOTO DEL OSCILOSCOPIO MARCANDO INFO QUE NOS DA CON LA AMPLITUD, ETC.
+ El dibujito que hice en la hoja)
+\end_layout
+
+\begin_layout Standard
+A partir del osciloscopio, se obtiene que:
+\end_layout
+
+\begin_layout Standard
+|
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+| = 2,98V
+\end_layout
+
+\begin_layout Standard
+|
+\begin_inset Formula $V_{R}$
+\end_inset
+
+| = 65, 43 mV
+\end_layout
+
+\begin_layout Standard
+Se analiza lo que ocurre para medio período de la señal triangular de entrada;
+ es decir, la parte de la señal cuya pendiente es positiva.
+ En la parte restante de un período, lo que sucede es simétrico a lo que
+ se mostrará a continuación, ya que ocurre lo mismo pero respondiendo a
+ una alimentación con pendiente negativa.
+\end_layout
+
+\begin_layout Standard
+(VER aca si poner algo: y que es en un intervalo de tiempo de 6,25.10^-5s
+ el analisis)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{gen}(t)=mt+b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+siendo 
+\begin_inset Formula $b=0V$
+\end_inset
+
+ ya que 
+\begin_inset Formula $V_{gen}(0s)=0V=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y 
+\begin_inset Formula $m=\frac{2,98}{\frac{1}{16k}}\frac{V}{s}$
+\end_inset
+
+=47680
+\begin_inset Formula $\frac{V}{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{gen}(t)=47680\frac{V}{s}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por Kirchhoff,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{gen}(t)=Ri(t)+V_{c}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Derivando la expresión anterior,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dV_{gen}(t)=R\frac{di}{dt}+\frac{dV_{C}}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sabiendo que 
+\begin_inset Formula $i=c\frac{dV_{C}}{dt}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dV_{gen}(t)=R\frac{di}{dt}+\frac{i(t)}{c}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{m}{R}=di+\frac{i}{RC}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analizando la homogénea,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+0=di+\frac{i}{RC}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{0}^{t}-\frac{1}{RC}dt=\int_{i_{0}}^{i(t)}\frac{di}{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que la expresión de la homogénea para la corriente es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i_{H}(t)=i_{0}e^{-\frac{t}{RC}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y siendo 
+\begin_inset Formula $k$
+\end_inset
+
+ una constante correspondiente a la respuesta permanente del circuito,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i(t)=i_{0}e^{-\frac{t}{RC}}+k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}(t)=Ri_{0}e^{-\frac{t}{RC}}+kR
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Evaluando la ecuación 
+\begin_inset Formula $i(t)$
+\end_inset
+
+ para un 
+\begin_inset Formula $t>>0$
+\end_inset
+
+, es decir para un 
+\begin_inset Formula $t\rightarrow\infty$
+\end_inset
+
+(cuando se alcanza el permanente),
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i(t\rightarrow\infty)=\frac{V_{R}(t\rightarrow\infty)}{R}=\frac{1,52V}{4,7K\Omega}=3,23.10^{-4}A=k
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, a partir de la condición inicial 
+\begin_inset Formula $V_{R}(0s)=1,46V$
+\end_inset
+
+ y tomando 
+\begin_inset Formula $R=4,7K\Omega$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}(0s)=1,46V=R(i_{0}+k)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i_{0}=-1,24.10^{-5}A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalmente,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i(t)=(-1,24.10^{-5}e^{-\frac{t}{7,05.10^{-6}}}+3,23.10^{-4})A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}(t)=i(t).4,7k\Omega
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Análisis a partir de una función transferencia
+\end_layout
+
+\begin_layout Standard
+(VER FOTO DEL PIZARRON MARTES 14)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{V_{R}(s}{V_{gen}}=\frac{sCR}{sCR+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el caso en el que 
+\begin_inset Formula $|sCR|<<1,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}(s)=\frac{sCR}{sCR+1}=V_{gen}(s)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
