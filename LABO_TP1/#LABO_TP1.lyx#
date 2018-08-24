@@ -70,8 +70,228 @@
 
 \begin_body
 
+\begin_layout Title
+Introducción
+\end_layout
+
+\begin_layout Standard
+(COMPLETAR)
+\end_layout
+
+\begin_layout Section
+Ejercicio 1
+\end_layout
+
+\begin_layout Standard
+(COMPLETAR)
+\end_layout
+
 \begin_layout Section
 Ejercicio 2
+\end_layout
+
+\begin_layout Standard
+Se tiene el siguiente circuito CR, siendo R=4,7k
+\begin_inset Formula $\Omega$
+\end_inset
+
+ y C=1,5nF.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito CR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cálculo analítico de la función transferencia
+\end_layout
+
+\begin_layout Standard
+Se calcula analíticamente la función transferencia del circuito correspondiente
+ a la Figura 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tomando R=4,7k
+\begin_inset Formula $\Omega$
+\end_inset
+
+ y C=1,5nF,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{s7,05\mu}{s7,05\mu+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La frecuencia de corte es 22,6kHz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename laboTp1Ej2a.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Diagrama de Bode correspondiente a la función transferencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir del gráfico de la amplitud (en la Figura 2), se puede ver que el
+ circuito se comporta como un 
+\end_layout
+
+\begin_layout Subsection
+Función transferencia a partir de datos obtenidos
+\end_layout
+
+\begin_layout Subsection*
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Empleando un osciloscopio se toman datos de 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ y diferencia de fase entre dichas tensiones para varias frecuencias comprendida
+s entre 220Hz y 2MHz.
+ A partir de los valores obtenidos, se obtiene el siguiente diagrama de
+ Bode.
+\end_layout
+
+\begin_layout Subsection
+c
+\end_layout
+
+\begin_layout Subsection
+Respuesta Transitoria
+\end_layout
+
+\begin_layout Standard
+Se observaron las respuestas transitorias del circuito al alimentarlo con
+ distintas frecuencias de una señal triangular.
+ Se decide analizar lo que ocurre con una frecuencia de 8 kHz ya que se
+ encuentra dentro de un rango de frecuencias que permite ver la tensión
+ sobre la resistencia de forma clara en el osciloscopio.
+\end_layout
+
+\begin_layout Standard
+(FOTO DEL OSCILOSCOPIO)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Análisis a partir de ecuaciones diferenciales correspondientes al circuito
+\end_layout
+
+\begin_layout Standard
+(FOTO DEL OSCILOSCOPIO MARCANDO INFO QUE NOS DA CON LA AMPLITUD, ETC.
+ El dibujito que hice en la hoja)
 \end_layout
 
 \begin_layout Standard
@@ -99,31 +319,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Respuesta Transitoria
-\end_layout
-
-\begin_layout Standard
-Se observaron las respuestas transitorias del circuito al alimentarlo con
- distintas frecuencias de una señal triangular.
- Se decide analizar lo que ocurre con una frecuencia de 8 kHz ya que se
- encuentra dentro de un rango de frecuencias que permite ver la tensión
- sobre la resistencia de forma clara en el osciloscopio.
-\end_layout
-
-\begin_layout Standard
-(FOTO DEL OSCILOSCOPIO)
-\end_layout
-
-\begin_layout Subsubsection
-Análisis a partir de ecuaciones diferenciales correspondientes al circuito
-\end_layout
-
-\begin_layout Standard
-(FOTO DEL OSCILOSCOPIO MARCANDO INFO QUE NOS DA CON LA AMPLITUD, ETC.
- El dibujito que hice en la hoja)
 \end_layout
 
 \begin_layout Standard
@@ -444,13 +639,14 @@ Análisis a partir de una función transferencia
 \end_layout
 
 \begin_layout Standard
-(VER FOTO DEL PIZARRON MARTES 14)
+Planteando la función transferencia del circuito a partir del cociente entre
+ la tensión sobre la resistencia y la tensión de entrada del generador,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{V_{R}(s}{V_{gen}}=\frac{sCR}{sCR+1}
+H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}
 \]
 
 \end_inset
@@ -469,12 +665,50 @@ En el caso en el que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{R}(s)=\frac{sCR}{sCR+1}=V_{gen}(s)
+V_{R}\simeq sCRV_{gen}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}\simeq\frac{d}{dt}(CRV_{gen}(t))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}=CR\frac{dV_{gen}(t)}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejercicio 3
+\end_layout
+
+\begin_layout Standard
+(COMPLETAR)
+\end_layout
+
+\begin_layout Section
+Ejercicio 4
+\end_layout
+
+\begin_layout Standard
+(COMPLETAR)
 \end_layout
 
 \end_body
