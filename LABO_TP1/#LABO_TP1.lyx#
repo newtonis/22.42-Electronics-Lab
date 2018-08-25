@@ -238,6 +238,25 @@ s entre 220Hz y 2MHz.
  Bode.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Figura 3 se puede observar 
+\end_layout
+
 \begin_layout Subsection
 c
 \end_layout
@@ -265,6 +284,12 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename tp1ej2bb.png
+	scale 50
+
+\end_inset
+
 
 \end_layout
 
@@ -272,7 +297,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Comparación entre función transferencia calculada analíticamente y obtenida
+ a través de mediciones con el osciloscpio.
 \end_layout
 
 \end_inset

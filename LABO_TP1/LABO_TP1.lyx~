@@ -224,8 +224,51 @@ Función transferencia a partir de datos obtenidos
 \uwave off
 \noun off
 \color none
-Empleando un osciloscopio se mide la H(s) anterior para varias frecuencias
- comprendidas entre 220Hz y 2MHz.
+Empleando un osciloscopio se toman datos de 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+, 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ y diferencia de fase entre dichas tensiones para varias frecuencias comprendida
+s entre 220Hz y 2MHz.
+ A partir de los valores obtenidos, se obtiene el siguiente diagrama de
+ Bode.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename tp1ej2bb.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
