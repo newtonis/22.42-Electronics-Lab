@@ -166,16 +166,10 @@ H(s)=\frac{s7,05\mu}{s7,05\mu+1}
 
 \begin_layout Standard
 La frecuencia de corte es 22,6kHz.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -188,13 +182,21 @@ status open
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Bode correspondiente a la función transferencia calculada analíticam
+ente.
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-Diagrama de Bode correspondiente a la función transferencia
+
 \end_layout
 
 \end_inset
@@ -232,8 +234,8 @@ Empleando un osciloscopio se toman datos de
 \begin_inset Formula $V_{gen}$
 \end_inset
 
- y diferencia de fase entre dichas tensiones para varias frecuencias comprendida
-s entre 220Hz y 2MHz.
+ y la diferencia de fase entre dichas tensiones para varias frecuencias
+ comprendidas entre 220Hz y 2MHz.
  A partir de los valores obtenidos, se obtiene el siguiente diagrama de
  Bode.
 \end_layout
@@ -245,6 +247,31 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename tp1ej2bb.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Función transferencia calculada analíticamente y aquella obtenida a través
+ de mediciones.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -254,7 +281,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-En la Figura 3 se puede observar 
+En la Figura 3 se puede observar que con los datos medidos con el osciloscopio
 \end_layout
 
 \begin_layout Subsection
@@ -277,42 +304,6 @@ Se observaron las respuestas transitorias del circuito al alimentarlo con
 (FOTO DEL OSCILOSCOPIO)
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename tp1ej2bb.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Comparación entre función transferencia calculada analíticamente y obtenida
- a través de mediciones con el osciloscpio.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
 Análisis a partir de ecuaciones diferenciales correspondientes al circuito
 \end_layout
@@ -320,33 +311,6 @@ Análisis a partir de ecuaciones diferenciales correspondientes al circuito
 \begin_layout Standard
 (FOTO DEL OSCILOSCOPIO MARCANDO INFO QUE NOS DA CON LA AMPLITUD, ETC.
  El dibujito que hice en la hoja)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
