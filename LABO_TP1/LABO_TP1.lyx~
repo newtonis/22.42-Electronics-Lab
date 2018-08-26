@@ -260,15 +260,18 @@ reference "fig:Diagrama-de-Bode"
 \end_layout
 
 \begin_layout Standard
-Por otro lado, se puede ver lo mismo al analizar la impedancia equivalente
- (fasorial) del circuito en función de la frecuencia.
- La misma es
+Por otro lado, se puede ver lo mismo al analizar las impedancias (fasoriales)
+ del circuito en función de la frecuencia.
+\end_layout
+
+\begin_layout Standard
+Para bajas frecuencias se tiene que:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Z_{eq}(s)=\frac{1}{sC}+R=(\frac{1}{s1,5n}+4,7K)\varOmega
+\lim_{f\rightarrow0}X_{c}(f)=\text{\infty}
 \]
 
 \end_inset
@@ -277,21 +280,28 @@ Z_{eq}(s)=\frac{1}{sC}+R=(\frac{1}{s1,5n}+4,7K)\varOmega
 \end_layout
 
 \begin_layout Standard
-Siendo 
-\begin_inset Formula $s=jw=j2\pi f$
+Notar que como R se mantiene fijo y X
+\begin_inset Formula $_{c}(f)$
 \end_inset
 
-.
+
+\begin_inset Formula $\rightarrow\infty$
+\end_inset
+
+ para las frecuencias bajas el comportamiento del CR serie tiende al de
+ un circuito abierto ya que no circula corriente prácticamente (debido a
+ la alta reactancia capacitiva) y por ende como la caída de tensión sobre
+ R tiende a  0V, la tensión a la salida se ve atenuada.
 \end_layout
 
 \begin_layout Standard
-Por lo tanto, para bajas frecuencias
+Mientras que para altas frecuencias:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\lim_{s\rightarrow0}Z_{eq}(s)=\text{∞}
+\lim_{f\rightarrow\text{∞}}X_{c}(f)=\text{\ensuremath{0}}
 \]
 
 \end_inset
@@ -300,36 +310,11 @@ Por lo tanto, para bajas frecuencias
 \end_layout
 
 \begin_layout Standard
-Que la impedancia tienda a infinito, significa que para frecuencias bajas
- el comportamiento del CR serie tiende al de un circuito abierto.
-\end_layout
-
-\begin_layout Standard
-Mientras que para altas frecuencias
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\lim_{s\rightarrow\text{∞}}Z_{eq}(s)=\text{\ensuremath{R=4,7K\Omega}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-No se aprecia la presencia del capacitor, resultando en el comportamiento
- de un circuito resistivo (con Z tomando el valor de la resistencia del
- circuito).
- Este no es el caso de un circuito abierto como lo es para las frecuencias
- bajas.
- Por lo tanto, no circula o circula muy poca corriente si se trabaja con
- bajas frecuencias, comportándose el circuito como un circuito abierto.
- Es decir, se vé atenuada la salida cuando se alimenta al circuito con una
- señal de una frecuencia baja.
- (VER COMO EXPLICAR ESTO MEJOR).
+En este caso no se aprecia la presencia del capacitor, ya que el mismo se
+ comporta como un cable ideal, dando lugar a un comportamiento resistivo
+ del circuito que tiene como característica que la caída de tensión sobre
+ R equivale a la de tensión de la fuente.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -362,8 +347,7 @@ Empleando un osciloscopio se tomaron 44 datos de
  valores comprendidos entre una década antes de la frecuencia de corte y
  una después, que es donde se logra apreciar más los cambios en el diagrama
  de bode.
- A partir de los valores obtenidos, se obtiene el siguiente diagrama de
- Bode.
+ A partir de los valores medidos, se obtiene el siguiente diagrama de Bode.
 \end_layout
 
 \begin_layout Standard
