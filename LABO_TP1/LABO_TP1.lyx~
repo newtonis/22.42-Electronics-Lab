@@ -162,12 +162,36 @@ reference "fig:Circuito-CR-serie."
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}
+H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}=\frac{\frac{s}{\frac{1}{CR}}}{\frac{s}{\frac{1}{CR}}+1}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+De esta forma queda en evidencia que se trata de un filtro pasa altos dado
+ que se corresponde con el formato
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=\frac{\frac{s}{\omega_{0}}}{\frac{s}{\omega_{0}}+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ corresponde a la frecuencia de corte del filtro en rad/s.
 \end_layout
 
 \begin_layout Standard
@@ -175,22 +199,11 @@ Tomando R=4,7K
 \begin_inset Formula $\Omega$
 \end_inset
 
- y C=1,5nF,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-H(s)=\frac{s7,05\mu}{s7,05\mu+1}
-\]
-
+ y C=1,5nF, la frecuencia de corte en Hz es f
+\begin_inset Formula $_{0}=$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-y la frecuencia de corte es 22,6KHz.
+ 22,575KHz.
 \begin_inset Float figure
 placement H
 wide false
@@ -241,8 +254,8 @@ reference "fig:Diagrama-de-Bode"
 
 \end_inset
 
-, se puede ver que el circuito CR serie se comporta como un filtro pasa
- altos.
+, se puede ver que el circuito CR serie se comporta, como habíamos planteado,
+ como un filtro pasa altos.
  ya que se ven atenuadas las frecuencias bajas.
 \end_layout
 
@@ -265,7 +278,7 @@ Z_{eq}(s)=\frac{1}{sC}+R=(\frac{1}{s1,5n}+4,7K)\varOmega
 
 \begin_layout Standard
 Siendo 
-\begin_inset Formula $s=jw=j2\Pi f$
+\begin_inset Formula $s=jw=j2\pi f$
 \end_inset
 
 .
@@ -345,7 +358,10 @@ Empleando un osciloscopio se tomaron 44 datos de
 \end_inset
 
  y la diferencia de fase entre dichas tensiones para varias frecuencias
- comprendidas entre 220Hz y 2MHz.
+ comprendidas entre 220Hz y 2MHz, ya que esas frecuencias corresponden a
+ valores comprendidos entre una década antes de la frecuencia de corte y
+ una después, que es donde se logra apreciar más los cambios en el diagrama
+ de bode.
  A partir de los valores obtenidos, se obtiene el siguiente diagrama de
  Bode.
 \end_layout
@@ -862,7 +878,7 @@ name "fig:Respuesta-transitoria-sobre"
 \end_inset
 
 Respuesta transitoria sobre 
-\begin_inset Formula $V_{R}$
+\begin_inset Formula $V_{R}.$
 \end_inset
 
  
