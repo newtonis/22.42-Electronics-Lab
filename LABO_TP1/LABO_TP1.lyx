@@ -96,7 +96,7 @@ Ejercicio 2
 \end_layout
 
 \begin_layout Standard
-Se tiene el siguiente circuito CR, siendo R=4,7k
+Se tiene el siguiente circuito CR serie, siendo R=4,7k
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -105,6 +105,7 @@ Se tiene el siguiente circuito CR, siendo R=4,7k
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -123,15 +124,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Circuito CR
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-CR-serie."
+
+\end_inset
+
+Circuito CR serie.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -146,7 +149,14 @@ Cálculo analítico de la función transferencia
 
 \begin_layout Standard
 Se calcula analíticamente la función transferencia del circuito correspondiente
- a la Figura 1.
+ a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-CR-serie."
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -161,7 +171,7 @@ H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}
 \end_layout
 
 \begin_layout Standard
-Tomando R=4,7k
+Tomando R=4,7K
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -180,8 +190,9 @@ H(s)=\frac{s7,05\mu}{s7,05\mu+1}
 \end_layout
 
 \begin_layout Standard
-La frecuencia de corte es 22,6kHz.
+y la frecuencia de corte es 22,6KHz.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -202,6 +213,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Bode"
+
+\end_inset
+
 Diagrama de Bode correspondiente a la función transferencia calculada analíticam
 ente.
 \end_layout
@@ -211,9 +228,35 @@ ente.
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+A partir del gráfico de la amplitud de H(s) presente en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Bode"
+
+\end_inset
+
+, se puede ver que el circuito CR serie se comporta como un filtro pasa
+ altos.
+ ya que se ven atenuadas las frecuencias bajas.
+\end_layout
+
+\begin_layout Standard
+Por otro lado, se puede ver lo mismo al analizar la impedancia equivalente
+ (fasorial) del circuito en función de la frecuencia.
+ La misma es
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{eq}(s)=\frac{1}{sC}+R=(\frac{1}{s1,5n}+4,7K)\varOmega
+\]
 
 \end_inset
 
@@ -221,8 +264,59 @@ ente.
 \end_layout
 
 \begin_layout Standard
-A partir del gráfico de la amplitud (en la Figura 2), se puede ver que el
- circuito se comporta como un 
+Siendo 
+\begin_inset Formula $s=jw=j2\Pi f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, para bajas frecuencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{s\rightarrow0}Z_{eq}(s)=\text{∞}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que la impedancia tienda a infinito, significa que para frecuencias bajas
+ el comportamiento del CR serie tiende al de un circuito abierto.
+\end_layout
+
+\begin_layout Standard
+Mientras que para altas frecuencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{s\rightarrow\text{∞}}Z_{eq}(s)=\text{\ensuremath{R=4,7K\Omega}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No se aprecia la presencia del capacitor, resultando en el comportamiento
+ de un circuito resistivo (con Z tomando el valor de la resistencia del
+ circuito).
+ Este no es el caso de un circuito abierto como lo es para las frecuencias
+ bajas.
+ Por lo tanto, no circula o circula muy poca corriente si se trabaja con
+ bajas frecuencias, comportándose el circuito como un circuito abierto.
+ Es decir, se vé atenuada la salida cuando se alimenta al circuito con una
+ señal de una frecuencia baja.
+ (VER COMO EXPLICAR ESTO MEJOR).
 \end_layout
 
 \begin_layout Subsection
@@ -258,6 +352,7 @@ Empleando un osciloscopio se tomaron 44 datos de
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -278,6 +373,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Función-transferencia-calculada"
+
+\end_inset
+
 Función transferencia calculada analíticamente y aquella obtenida a través
  de mediciones.
  
@@ -298,8 +399,15 @@ Función transferencia calculada analíticamente y aquella obtenida a través
 \end_layout
 
 \begin_layout Standard
-En la Figura 3 se puede observar que la función transferencia obtenida a
- partir del cociente entre 
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Función-transferencia-calculada"
+
+\end_inset
+
+ se puede observar que la función transferencia obtenida a partir del cociente
+ entre 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -314,6 +422,11 @@ En la Figura 3 se puede observar que la función transferencia obtenida a
  error en la medición.
 \end_layout
 
+\begin_layout Standard
+(AGREGAR LO DEL MODO XY Y DECIR POR QUE UNO DE LOS DOS MODOS EN CONVENIENTE
+ RESPECTO DEL OTRO)
+\end_layout
+
 \begin_layout Subsection
 c
 \end_layout
@@ -323,8 +436,14 @@ Respuesta Transitoria
 \end_layout
 
 \begin_layout Standard
-Se observaron las respuestas transitorias del circuito al alimentarlo con
- distintas frecuencias de una señal triangular.
+Se observaron las respuestas transitorias del circuito de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-CR-serie."
+
+\end_inset
+
+ al alimentarlo con distintas frecuencias de una señal triangular.
  Se decide analizar lo que ocurre con una frecuencia de 8 kHz ya que se
  encuentra dentro de un rango de frecuencias que permite ver la tensión
  sobre la resistencia de forma clara en el osciloscopio.

@@ -27,9 +27,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -91,7 +96,7 @@ Ejercicio 2
 \end_layout
 
 \begin_layout Standard
-Se tiene el siguiente circuito CR, siendo R=4,7k
+Se tiene el siguiente circuito CR serie, siendo R=4,7k
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -100,6 +105,7 @@ Se tiene el siguiente circuito CR, siendo R=4,7k
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -118,15 +124,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Circuito CR
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-CR-serie."
+
+\end_inset
+
+Circuito CR serie.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -141,7 +149,14 @@ Cálculo analítico de la función transferencia
 
 \begin_layout Standard
 Se calcula analíticamente la función transferencia del circuito correspondiente
- a la Figura 1.
+ a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-CR-serie."
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -156,7 +171,7 @@ H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}
 \end_layout
 
 \begin_layout Standard
-Tomando R=4,7k
+Tomando R=4,7K
 \begin_inset Formula $\Omega$
 \end_inset
 
@@ -175,13 +190,15 @@ H(s)=\frac{s7,05\mu}{s7,05\mu+1}
 \end_layout
 
 \begin_layout Standard
-La frecuencia de corte es 22,6kHz.
+y la frecuencia de corte es 22,6KHz.
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename laboTp1Ej2a.png
 	scale 50
@@ -196,6 +213,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Bode"
+
+\end_inset
+
 Diagrama de Bode correspondiente a la función transferencia calculada analíticam
 ente.
 \end_layout
@@ -205,9 +228,32 @@ ente.
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+A partir del gráfico de la amplitud de H(s) presente en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Bode"
+
+\end_inset
+
+, se puede ver que el circuito CR serie se comporta como un filtro pasa
+ altos.
+\end_layout
+
+\begin_layout Standard
+Por otro lado, la impedancia equivalente (fasorial) del circuito es 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{eq}(s)=\frac{1}{sC}+R=(\frac{1}{s1,5n}+4,7K)\varOmega
+\]
 
 \end_inset
 
@@ -215,8 +261,30 @@ ente.
 \end_layout
 
 \begin_layout Standard
-A partir del gráfico de la amplitud (en la Figura 2), se puede ver que el
- circuito se comporta como un 
+Siendo 
+\begin_inset Formula $s=jw=j2\Pi f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, para bajas frecuencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{s\rightarrow0}Z_{eq}(s)=\text{∞}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lo que implica
 \end_layout
 
 \begin_layout Subsection
@@ -236,7 +304,7 @@ Función transferencia a partir de datos obtenidos
 \uwave off
 \noun off
 \color none
-Empleando un osciloscopio se toman datos de 
+Empleando un osciloscopio se tomaron 44 datos de 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -252,11 +320,13 @@ Empleando un osciloscopio se toman datos de
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename tp1ej2B.png
 	scale 50
@@ -271,6 +341,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Función-transferencia-calculada"
+
+\end_inset
+
 Función transferencia calculada analíticamente y aquella obtenida a través
  de mediciones.
  
@@ -291,7 +367,32 @@ Función transferencia calculada analíticamente y aquella obtenida a través
 \end_layout
 
 \begin_layout Standard
-En la Figura 3 se puede observar que con los datos medidos con el osciloscopio
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Función-transferencia-calculada"
+
+\end_inset
+
+ se puede observar que la función transferencia obtenida a partir del cociente
+ entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ medidos con el osciloscopio para 44 frecuencias distintas, se aproxima
+ bien a la curva de la función transferencia calculada analíticamente.
+ Se considera que el valor obtenido para la frecuencia cercana a 1KHz, el
+ más alejado a la curva de H(s) calculada analíticamente, se debe a algún
+ error en la medición.
+\end_layout
+
+\begin_layout Standard
+(AGREGAR LO DEL MODO XY Y DECIR POR QUE UNO DE LOS DOS MODOS EN CONVENIENTE
+ RESPECTO DEL OTRO)
 \end_layout
 
 \begin_layout Subsection
@@ -303,8 +404,14 @@ Respuesta Transitoria
 \end_layout
 
 \begin_layout Standard
-Se observaron las respuestas transitorias del circuito al alimentarlo con
- distintas frecuencias de una señal triangular.
+Se observaron las respuestas transitorias del circuito de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-CR-serie."
+
+\end_inset
+
+ al alimentarlo con distintas frecuencias de una señal triangular.
  Se decide analizar lo que ocurre con una frecuencia de 8 kHz ya que se
  encuentra dentro de un rango de frecuencias que permite ver la tensión
  sobre la resistencia de forma clara en el osciloscopio.
