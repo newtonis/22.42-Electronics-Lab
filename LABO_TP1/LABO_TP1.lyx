@@ -317,7 +317,7 @@ Mientras que para altas frecuencias:
 En este caso no se aprecia la presencia del capacitor, ya que el mismo se
  comporta como un cable ideal, dando lugar a un comportamiento resistivo
  del circuito que tiene como característica que la caída de tensión sobre
- R equivale a la de tensión de la fuente.
+ R equivale a la de la tensión de la fuente.
  
 \end_layout
 
@@ -892,7 +892,8 @@ Análisis a partir de una función transferencia
 
 \begin_layout Standard
 Planteando la función transferencia del circuito a partir del cociente entre
- la tensión sobre la resistencia y la tensión de entrada del generador,
+ la tensión sobre la resistencia y la tensión de entrada proveniente del
+ generador,
 \end_layout
 
 \begin_layout Standard
