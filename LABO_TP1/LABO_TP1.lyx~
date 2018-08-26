@@ -291,7 +291,7 @@ Notar que como R se mantiene fijo y X
  para las frecuencias bajas el comportamiento del CR serie tiende al de
  un circuito abierto ya que no circula corriente prácticamente (debido a
  la alta reactancia capacitiva) y por ende como la caída de tensión sobre
- R tiende a  0V, la tensión a la salida se ve atenuada.
+ R tiende a 0V, la tensión a la salida se ve atenuada.
 \end_layout
 
 \begin_layout Standard

@@ -609,7 +609,7 @@ Derivando la expresión anterior,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-dV_{gen}(t)=R\frac{di}{dt}+\frac{dV_{C}}{dt}
+\frac{dV_{gen}(t)}{dt}=R\frac{di}{dt}+\frac{dV_{C}}{dt}
 \]
 
 \end_inset
@@ -628,7 +628,7 @@ Sabiendo que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-dV_{gen}(t)=R\frac{di}{dt}+\frac{i(t)}{c}
+\frac{dV_{gen}(t)}{dt}=R\frac{di}{dt}+\frac{i(t)}{c}
 \]
 
 \end_inset
