@@ -243,10 +243,13 @@ reference "fig:Diagrama-de-Bode"
 
 , se puede ver que el circuito CR serie se comporta como un filtro pasa
  altos.
+ ya que se ven atenuadas las frecuencias bajas.
 \end_layout
 
 \begin_layout Standard
-Por otro lado, la impedancia equivalente (fasorial) del circuito es 
+Por otro lado, se puede ver lo mismo al analizar la impedancia equivalente
+ (fasorial) del circuito en función de la frecuencia.
+ La misma es
 \end_layout
 
 \begin_layout Standard
@@ -284,7 +287,36 @@ Por lo tanto, para bajas frecuencias
 \end_layout
 
 \begin_layout Standard
-lo que implica
+Que la impedancia tienda a infinito, significa que para frecuencias bajas
+ el comportamiento del CR serie tiende al de un circuito abierto.
+\end_layout
+
+\begin_layout Standard
+Mientras que para altas frecuencias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{s\rightarrow\text{∞}}Z_{eq}(s)=\text{\ensuremath{R=4,7K\Omega}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No se aprecia la presencia del capacitor, resultando en el comportamiento
+ de un circuito resistivo (con Z tomando el valor de la resistencia del
+ circuito).
+ Este no es el caso de un circuito abierto como lo es para las frecuencias
+ bajas.
+ Por lo tanto, no circula o circula muy poca corriente si se trabaja con
+ bajas frecuencias, comportándose el circuito como un circuito abierto.
+ Es decir, se vé atenuada la salida cuando se alimenta al circuito con una
+ señal de una frecuencia baja.
+ (VER COMO EXPLICAR ESTO MEJOR).
 \end_layout
 
 \begin_layout Subsection
@@ -329,7 +361,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename tp1ej2B.png
-	scale 50
+	scale 70
 	rotateOrigin center
 
 \end_inset
@@ -412,13 +444,55 @@ reference "fig:Circuito-CR-serie."
 \end_inset
 
  al alimentarlo con distintas frecuencias de una señal triangular.
- Se decide analizar lo que ocurre con una frecuencia de 8 kHz ya que se
- encuentra dentro de un rango de frecuencias que permite ver la tensión
+ Se decide analizar lo que ocurre con una frecuencia de 8 KHz ya que, como
+ se vé en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito"
+
+\end_inset
+
+, se encuentra dentro de un rango de frecuencias que permite ver la tensión
  sobre la resistencia de forma clara en el osciloscopio.
 \end_layout
 
 \begin_layout Standard
-(FOTO DEL OSCILOSCOPIO)
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2d.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito"
+
+\end_inset
+
+Respuesta del circuito CR serie a una señal triangular de 8KHz.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -737,6 +811,71 @@ y
 \[
 V_{R}(t)=i(t).4,7k\Omega
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con el resultado anterior, se obtiene el gráfico de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-transitoria-sobre"
+
+\end_inset
+
+, en el cual se puede ver que la respuesta transitoria de la tensión sobre
+ la resistencia calculada analíticamente se aproxima correctamente a la
+ medida con un osciloscopio.
+ (VER DE CORREGIR EL GRAFICO QUE ARRANQUEN LAS DOS CURVAS EN CERO Y QUE
+ LAS DOS SE EXTIENDAN HASTA EL MISMO VALOR DE t).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2Dprovisorio.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-transitoria-sobre"
+
+\end_inset
+
+Respuesta transitoria sobre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

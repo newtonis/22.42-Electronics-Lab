@@ -817,6 +817,71 @@ V_{R}(t)=i(t).4,7k\Omega
 
 \end_layout
 
+\begin_layout Standard
+Con el resultado anterior, se obtiene el gráfico de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-transitoria-sobre"
+
+\end_inset
+
+, en el cual se puede ver que la respuesta transitoria de la tensión sobre
+ la resistencia calculada analíticamente se aproxima correctamente a la
+ medida con un osciloscopio.
+ (VER DE CORREGIR EL GRAFICO QUE ARRANQUEN LAS DOS CURVAS EN CERO Y QUE
+ LAS DOS SE EXTIENDAN HASTA EL MISMO VALOR DE t).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2Dprovisorio.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-transitoria-sobre"
+
+\end_inset
+
+Respuesta transitoria sobre 
+\begin_inset Formula $V_{R}.$
+\end_inset
+
+  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Análisis a partir de una función transferencia
 \end_layout
