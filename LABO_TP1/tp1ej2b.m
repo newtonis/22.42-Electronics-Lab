@@ -15,10 +15,11 @@ mag = squeeze(mag);
  j=Vr./V1
  hold off
  %plot(frec,j) 
- hold on
+ %hold on
  xlabel('frec (Hz)');
 ylabel('|H(s)| (db)');
 
 semilogx(w./(2*pi) , 20 * log10(mag) );
 hold on
 semilogx(frec,20*log10(j));
+grid on

@@ -105,6 +105,16 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circEj2.png
+	scale 50
+	clip
+	rotateOrigin center
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -248,7 +258,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename tp1ej2bb.png
+	filename tp1ej2B.png
 	scale 50
 	rotateOrigin center
 
@@ -261,8 +271,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Función transferencia calculada analíticamente (rojo) y aquella obtenida
- a través de mediciones (azul).
+Función transferencia calculada analíticamente y aquella obtenida a través
+ de mediciones.
  
 \end_layout
 

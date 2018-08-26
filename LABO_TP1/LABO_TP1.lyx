@@ -27,9 +27,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,6 +54,10 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -105,6 +110,16 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename circEj2.png
+	scale 50
+	clip
+	rotateOrigin center
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -172,6 +187,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename laboTp1Ej2a.png
 	scale 50
@@ -226,7 +242,7 @@ Función transferencia a partir de datos obtenidos
 \uwave off
 \noun off
 \color none
-Empleando un osciloscopio se toman datos de 
+Empleando un osciloscopio se tomaron 44 datos de 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -247,8 +263,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename tp1ej2bb.png
+	filename tp1ej2B.png
 	scale 50
 	rotateOrigin center
 
@@ -281,7 +298,20 @@ Función transferencia calculada analíticamente y aquella obtenida a través
 \end_layout
 
 \begin_layout Standard
-En la Figura 3 se puede observar que con los datos medidos con el osciloscopio
+En la Figura 3 se puede observar que la función transferencia obtenida a
+ partir del cociente entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ medidos con el osciloscopio para 44 frecuencias distintas, se aproxima
+ bien a la curva de la función transferencia calculada analíticamente.
+ Se considera que el valor obtenido para la frecuencia cercana a 1KHz, el
+ más alejado a la curva de H(s) calculada analíticamente, se debe a algún
+ error en la medición.
 \end_layout
 
 \begin_layout Subsection
