@@ -265,7 +265,11 @@ Por otro lado, se puede ver lo mismo al analizar las impedancias (fasoriales)
 \end_layout
 
 \begin_layout Standard
-Para bajas frecuencias se tiene que:
+Sabiendo que X
+\begin_inset Formula $_{C}=\frac{1}{2\pi fC}$
+\end_inset
+
+ es la reactancia capacitiva para bajas frecuencias se tiene que:
 \end_layout
 
 \begin_layout Standard

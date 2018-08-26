@@ -265,6 +265,14 @@ Por otro lado, se puede ver lo mismo al analizar las impedancias (fasoriales)
 \end_layout
 
 \begin_layout Standard
+Sabiendo que X
+\begin_inset Formula $_{C}=\frac{1}{2\pi fC}$
+\end_inset
+
+ es la reactancia capacitiva.
+\end_layout
+
+\begin_layout Standard
 Para bajas frecuencias se tiene que:
 \end_layout
 
@@ -609,7 +617,7 @@ Derivando la expresión anterior,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-dV_{gen}(t)=R\frac{di}{dt}+\frac{dV_{C}}{dt}
+\frac{dV_{gen}(t)}{dt}=R\frac{di}{dt}+\frac{dV_{C}}{dt}
 \]
 
 \end_inset
@@ -628,7 +636,7 @@ Sabiendo que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-dV_{gen}(t)=R\frac{di}{dt}+\frac{i(t)}{c}
+\frac{dV_{gen}(t)}{dt}=R\frac{di}{dt}+\frac{i(t)}{c}
 \]
 
 \end_inset
