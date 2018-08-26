@@ -113,14 +113,17 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename circEj2.png
-	scale 50
-	clip
-	rotateOrigin center
+	filename graficos/circuitoEj2.png
+	display false
+	scale 60
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
