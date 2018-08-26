@@ -431,7 +431,6 @@ reference "fig:Función-transferencia-calculada"
 
 \begin_layout Standard
 Otra forma de analizar esto es mediante el modo XY del osciloscopio.
- (VER ESTO SI ES REALMENTE OTRA FORMA DE EXPLICAR LO ANTERIOR)
 \end_layout
 
 \begin_layout Standard
@@ -539,26 +538,10 @@ reference "fig:Visualización-de-"
 \end_inset
 
 ; es decir, 
-\begin_inset Formula $\varphi=0\textdegree.$
-\end_inset
-
- Al aumentar la frecuencia, se puede ver cómo va aumentando la fase debido
- a las figuras helípticas alargadas que se obtienen.
- Para las frecuencias mostradas, 
-\begin_inset Formula $0\textdegree<\varphi<90\textdegree$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-(VER CON ESTO COMO JUSTIFICAR QUE ES PASA ALTOS.
- SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE??????????)
 \end_layout
 
 \begin_layout Subsection
-c HACEEEEEEEEEEEEER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+c
 \end_layout
 
 \begin_layout Subsection
