@@ -631,7 +631,25 @@ Ruido observado para bajas frecuencias, en este caso 300Hz.
 \end_layout
 
 \begin_layout Subsection
-c
+Comparación entre un circuito RC serie y un circuito CR serie
+\end_layout
+
+\begin_layout Standard
+Por lo analizado previamente, se pudo ver que el circuito RC serie se comporta
+ como un filtro pasa bajos, mientras que el circuito CR serie se comporta
+ como un filtro pasa altos.
+ A continuación se puede observar este comportamiento en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
+.
+ Mirando el módulo de la función transferencia (la magnitud en dB), para
+ el circuito RC serie se ven atenuadas las bajas frecuencias mientras que
+ para el circuito CR se atenúan las frecuencias altas.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -658,6 +676,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
 Diagrama de Bode para un circuito RC serie y para un circuito CR serie.
 \end_layout
 

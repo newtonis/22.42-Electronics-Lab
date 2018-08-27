@@ -386,8 +386,8 @@ name "fig:Función-transferencia-calculada"
 
 \end_inset
 
-Función transferencia calculada analíticamente y aquella obtenida a través
- de mediciones.
+Módulo de la función transferencia calculada analíticamente y de aquella
+ obtenida a través de mediciones.
  
 \end_layout
 
@@ -406,10 +406,61 @@ Función transferencia calculada analíticamente y aquella obtenida a través
 \end_layout
 
 \begin_layout Standard
-En la Figura 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2 fases.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fase-de-la"
+
+\end_inset
+
+Fase de la función transferencia calculada analíticamente y de aquella obtenida
+ a través de mediciones.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En las Figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Función-transferencia-calculada"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fase-de-la"
 
 \end_inset
 
@@ -422,16 +473,57 @@ reference "fig:Función-transferencia-calculada"
 \begin_inset Formula $V_{gen}$
 \end_inset
 
- medidos con el osciloscopio para 44 frecuencias distintas, se aproxima
- bien a la curva de la función transferencia calculada analíticamente.
- Se considera que el valor obtenido para la frecuencia cercana a 1KHz, el
- más alejado a la curva de H(s) calculada analíticamente, se debe a algún
+ medidos con el osciloscopio para 44 frecuencias distintas se aproxima bien
+ a la función transferencia calculada analíticamente.
+ Respecto al módulo de H(s) de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Función-transferencia-calculada"
+
+\end_inset
+
+, se considera que el valor obtenido para la frecuencia cercana a 1KHz,
+ el más alejado a la curva de H(s) calculada analíticamente, se debe a algún
  error en la medición.
+ Sin embargo, para dicho gráfico es importante remarcar que para valores
+ cercanos a la frecuencia de corte el comportamiento del circuito se ve
+ bien aproximado al calculado.
+ En ambos gráficos se puede ver que para bajas frecuencias hay mayor diferencia
+ entre las dos curvas, mientras que no ocurre lo mismo con las altas frecuencias.
+ Esto puede deberse a que se observó que para bajas frecuencias se nota
+ la presencia de ruido.
+ Cuanto menor es la frecuencia, aumenta la presencia de ruido.
+ Un ejemplo del ruido observado para frecuencias bajas se puede ver para
+ una frecuencia de 300Hz en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ruido-observado-para"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Otra forma de analizar esto es mediante el modo XY del osciloscopio.
- (VER ESTO SI ES REALMENTE OTRA FORMA DE EXPLICAR LO ANTERIOR)
+Por otro lado, lo que ocurre con las fases también se puede observar mediante
+ el modo XY del osciloscopio.
+ Si bien al comparar lo observado utilizando el modo XY con las figuras
+ de Lissajous corroboran el comportamiento del desfasaje entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ visto en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fase-de-la"
+
+\end_inset
+
+, el empleo de este modo no brinda información sobre la fase.
 \end_layout
 
 \begin_layout Standard
@@ -440,10 +532,6 @@ placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -530,8 +618,7 @@ reference "fig:Visualización-de-"
 \end_inset
 
  entre ambas señales, dependiendo de la frecuencia con la que se trabaja.
- Para el caso de 1KHz se puede decir que prácticamente no hay desfasaje
- entre 
+ Para el caso de 1KHz se ve claramente que hay desfasaje entre 
 \begin_inset Formula $V_{gen}$
 \end_inset
 
@@ -539,7 +626,7 @@ reference "fig:Visualización-de-"
 \begin_inset Formula $V_{R}$
 \end_inset
 
-; es decir, 
+; ya que al verse casi una sircunferencia, 
 \begin_inset Formula $\varphi\rightarrow90\textdegree.$
 \end_inset
 
@@ -557,15 +644,8 @@ reference "fig:Visualización-de-"
 \begin_inset Formula $\varphi\rightarrow0\textdegree$
 \end_inset
 
-.
+ debido que se observa una recta casi perfecta.
  
-\end_layout
-
-\begin_layout Standard
-(VER CON ESTO COMO JUSTIFICAR QUE ES PASA ALTOS.
- SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE ????????????????????????????????????
-????????????????????????????????????????????????????????????????????????????????
-?????????????????????????????????????????)
 \end_layout
 
 \begin_layout Standard
@@ -581,7 +661,7 @@ reference "fig:Ruido-observado-para"
 \end_inset
 
  para el caso de 300Hz, hay demasiado ruido y es preferible no tenerlo para
- las imagenes consideradas.
+ las imagenes a evaluar.
 \end_layout
 
 \begin_layout Standard
@@ -613,7 +693,7 @@ name "fig:Ruido-observado-para"
 
 \end_inset
 
-Ruido observado para bajas frecuencias, en este caso 300Hz.
+Ruido observado para una frecuencia de 300Hz.
 \end_layout
 
 \end_inset
@@ -631,14 +711,33 @@ Ruido observado para bajas frecuencias, en este caso 300Hz.
 \end_layout
 
 \begin_layout Subsection
+Comparación entre un circuito RC serie y un circuito CR serie
+\end_layout
+
+\begin_layout Standard
+Por lo analizado previamente, se puede ver que el circuito RC serie se comporta
+ como un filtro pasa bajos, mientras que el circuito CR serie se comporta
+ como un filtro pasa altos.
+ A continuación se puede observar este comportamiento en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
+.
+ Mirando el módulo de la función transferencia (la magnitud en dB), para
+ el circuito RC serie se ven atenuadas las altas frecuencias mientras que
+ para el circuito CR se atenúan las frecuencias bajas.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -653,6 +752,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
 Diagrama de Bode para un circuito RC serie y para un circuito CR serie.
 \end_layout
 
@@ -675,7 +780,7 @@ Respuesta Transitoria
 \end_layout
 
 \begin_layout Standard
-Se observaron las respuestas transitorias del circuito de la Figura 
+Se observan las respuestas transitorias del circuito de la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Circuito-CR-serie."
@@ -735,12 +840,8 @@ Respuesta del circuito CR serie a una señal triangular de 8KHz.
 \end_layout
 
 \begin_layout Subsubsection
-Análisis a partir de ecuaciones diferenciales correspondientes al circuito
-\end_layout
-
-\begin_layout Standard
-(FOTO DEL OSCILOSCOPIO MARCANDO INFO QUE NOS DA CON LA AMPLITUD, ETC.
- El dibujito que hice en la hoja)
+Análisis de la respuesta transitoria a partir de ecuaciones diferenciales
+ correspondientes al circuito
 \end_layout
 
 \begin_layout Standard
@@ -767,8 +868,9 @@ A partir del osciloscopio, se obtiene que:
 Se analiza lo que ocurre para medio período de la señal triangular de entrada;
  es decir, la parte de la señal cuya pendiente es positiva.
  En la parte restante de un período, lo que sucede es simétrico a lo que
- se mostrará a continuación, ya que ocurre lo mismo pero respondiendo a
- una alimentación con pendiente negativa.
+ se muestra a continuación, ya que ocurre lo mismo pero respondiendo a una
+ alimentación con pendiente negativa.
+ El 
 \end_layout
 
 \begin_layout Standard
