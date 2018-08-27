@@ -448,7 +448,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ej2ModoXY (1).png
+	filename ej2ModoXY NUEVO.png
 	scale 50
 	rotateOrigin center
 
@@ -530,7 +530,8 @@ reference "fig:Visualización-de-"
 \end_inset
 
  entre ambas señales, dependiendo de la frecuencia con la que se trabaja.
- Para el caso de 1KHz se puede decir que no hay desfasaje entre 
+ Para el caso de 1KHz se puede decir que prácticamente no hay desfasaje
+ entre 
 \begin_inset Formula $V_{gen}$
 \end_inset
 
@@ -539,13 +540,21 @@ reference "fig:Visualización-de-"
 \end_inset
 
 ; es decir, 
-\begin_inset Formula $\varphi=0\textdegree.$
+\begin_inset Formula $\varphi\rightarrow90\textdegree.$
 \end_inset
 
- Al aumentar la frecuencia, se puede ver cómo va aumentando la fase debido
- a las figuras helípticas alargadas que se obtienen.
- Para las frecuencias mostradas, 
-\begin_inset Formula $0\textdegree<\varphi<90\textdegree$
+ Al aumentar la frecuencia, se puede ver cómo va disminuyendo la fase debido
+ a las figuras helípticas alargadas, pareciendose cada vez más a una recta.
+ Entre 1KHz y 20MHz, la fase va disminuyendo de 90
+\begin_inset Formula $\textdegree$
+\end_inset
+
+ a 0
+\begin_inset Formula $\textdegree.$
+\end_inset
+
+ Para 20MHz se puede ver que 
+\begin_inset Formula $\varphi\rightarrow0\textdegree$
 \end_inset
 
 .
@@ -554,51 +563,111 @@ reference "fig:Visualización-de-"
 
 \begin_layout Standard
 (VER CON ESTO COMO JUSTIFICAR QUE ES PASA ALTOS.
- SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE??????????)
+ SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE ????????????????????????????????????
+????????????????????????????????????????????????????????????????????????????????
+?????????????????????????????????????????)
 \end_layout
 
 \begin_layout Standard
-22,6KHz
+Para realizar lo anterior, se toma un rango ente 1kHz y 20MHz ya que se
+ considera que entre dichas frecuencias se puede apreciar bien lo que ocurre
+ con la fase.
+ No se consideran mediciones para frecuencias menores a 1kHz ya que, como
+ se vé en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ruido-observado-para"
+
+\end_inset
+
+ para el caso de 300Hz, hay demasiado ruido y es preferible no tenerlo para
+ las imagenes consideradas.
 \end_layout
 
 \begin_layout Standard
-20MHz
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2 ruido 300Hz.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-1KHz
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ruido-observado-para"
+
+\end_inset
+
+Ruido observado para bajas frecuencias, en este caso 300Hz.
 \end_layout
 
-\begin_layout Standard
-10KHz
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-100KHz
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Standard
-ruido 300Hz
-\end_layout
+\end_inset
 
-\begin_layout Standard
-modoXY 300Hz
-\end_layout
 
-\begin_layout Standard
-3KHz
-\end_layout
-
-\begin_layout Standard
-50KHz 22 grados
-\end_layout
-
-\begin_layout Standard
-500KHz
 \end_layout
 
 \begin_layout Subsection
-c HACEEEEEEEEEEEEER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2c.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Bode para un circuito RC serie y para un circuito CR serie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
