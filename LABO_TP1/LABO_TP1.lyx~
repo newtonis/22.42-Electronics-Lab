@@ -1109,16 +1109,9 @@ Ejercicio 3
 \end_layout
 
 \begin_layout Standard
-Para poder ver la respuesta en frecuencia del circuito CR serie de la Figura
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Circuito-CR-serie."
-
-\end_inset
-
-, se emplea el barrido automático del generador y del osciloscopio de la
- siguiente manera.
+Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
+ (FALTA LA FIGURA), se emplea el barrido automático del generador y del
+ osciloscopio de la siguiente manera.
  Para poder simular la rampa con la que funciona el trigger del osciloscopio,
  se utilizan dos generadores de señales.
  En uno se genera una rampa con frecuencia baja para poder apreciar en el
@@ -1178,18 +1171,15 @@ Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-(VER COMO RELACIONAR ESTAS IMAGENES CON LAS FIGURAS DE LISSAJOUS!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
+Se puede ver que a altas frecuencias la salida se ve atenuada.
+ Esto corresponde con la teoría ya que se trata del circuito de la Figura
+ (AGREGARLA) que es un pasabajos, como se mostró previamente.
 \end_layout
 
 \begin_layout Section
