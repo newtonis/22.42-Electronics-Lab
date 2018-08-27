@@ -1008,6 +1008,11 @@ Respuesta transitoria sobre
 \end_layout
 
 \begin_layout Standard
+(ESTA BIEN QUE LA TENSION ARRANQUE EN UN VALOR NEGATIVO??????????????? PORQUE
+ EL CAPACITOR ARRANCA CON POLARIDAD OPUESTA, YA CARGADO, PARA DONDE SE ANALIZA)
+\end_layout
+
+\begin_layout Standard
 Se ve que en ambos casos la tensión sobre la resistencia crece rápidamente
  al principio y luego tiende a mantenerse en un valor determinado.
  Esto se puede observar analizando lo que ocurre con la corriente mediante
@@ -1180,6 +1185,11 @@ Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+(VER COMO RELACIONAR ESTAS IMAGENES CON LAS FIGURAS DE LISSAJOUS!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)
 \end_layout
 
 \begin_layout Section
