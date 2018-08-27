@@ -431,6 +431,7 @@ reference "fig:Función-transferencia-calculada"
 
 \begin_layout Standard
 Otra forma de analizar esto es mediante el modo XY del osciloscopio.
+ (VER ESTO SI ES REALMENTE OTRA FORMA DE EXPLICAR LO ANTERIOR)
 \end_layout
 
 \begin_layout Standard
@@ -548,6 +549,12 @@ reference "fig:Visualización-de-"
 \end_inset
 
 .
+ 
+\end_layout
+
+\begin_layout Standard
+(VER CON ESTO COMO JUSTIFICAR QUE ES PASA ALTOS.
+ SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE??????????)
 \end_layout
 
 \begin_layout Subsection
@@ -949,10 +956,9 @@ reference "fig:Respuesta-transitoria-sobre"
 \end_inset
 
 , en el cual se puede ver que la respuesta transitoria de la tensión sobre
- la resistencia calculada analíticamente se aproxima correctamente a la
+ la resistencia calculada analíticamente se aproxima correctamente a aquella
  medida con un osciloscopio.
- (VER DE CORREGIR EL GRAFICO QUE ARRANQUEN LAS DOS CURVAS EN CERO Y QUE
- LAS DOS SE EXTIENDAN HASTA EL MISMO VALOR DE t).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -996,13 +1002,33 @@ Respuesta transitoria sobre
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+Se ve que en ambos casos la tensión sobre la resistencia crece rápidamente
+ al principio y luego tiende a mantenerse en un valor determinado.
+ Esto se puede observar analizando lo que ocurre con la corriente mediante
+ su expresión obtenida previamente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i(t\rightarrow\infty)=3,23.10^{-4}A
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Dado que para un t que tiende al estacionario la corriente tiende a un valor
+ constante, ocurre lo mismo con la tesnión sobre la resistencia.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1067,12 +1093,93 @@ V_{R}=CR\frac{dV_{gen}(t)}{dt}
 
 \end_layout
 
+\begin_layout Standard
+(ACA PONER ALGUNA CONCLUSION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!)
+\end_layout
+
 \begin_layout Section
 Ejercicio 3
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+Para poder ver la respuesta en frecuencia del circuito CR serie de la Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-CR-serie."
+
+\end_inset
+
+, se emplea el barrido automático del generador y del osciloscopio de la
+ siguiente manera.
+ Para poder simular la rampa con la que funciona el trigger del osciloscopio,
+ se utilizan dos generadores de señales.
+ En uno se genera una rampa con frecuencia baja para poder apreciar en el
+ osciloscopio la respuesta del circuito.
+ El período empleado para la rampa es de 10,7017ms.
+ Se coloca el otro generador en modo sweep con un tiempo de sweep de 10ms
+ y se genera una señal senoidal, con una variación de frecuencias entre
+ 220Hz y 220KHz.
+ Se sincronizan ambos generadores utilizando como referencia el trigger
+ proveniente del generador de la rampa.
+ Es importante remarcar que el tiempo del sweep del generador de la señal
+ senoidal teóricamente debería ser igual al período de la rampa pero la
+ diferencia entre dichos intervalos de tiempo se debe a que fue necesario
+ modificar uno para poder apreciar en el osciloscopio lo se ve a continuación
+ en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-en-frecuencia"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej3ModoXY.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-en-frecuencia"
+
+\end_inset
+
+Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
