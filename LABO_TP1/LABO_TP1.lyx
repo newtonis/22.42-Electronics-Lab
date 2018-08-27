@@ -320,7 +320,7 @@ Mientras que para altas frecuencias:
 En este caso no se aprecia la presencia del capacitor, ya que el mismo se
  comporta como un cable ideal, dando lugar a un comportamiento resistivo
  del circuito que tiene como característica que la caída de tensión sobre
- R equivale a la de tensión de la fuente.
+ R equivale a la de la tensión de la fuente.
  
 \end_layout
 
@@ -430,12 +430,273 @@ reference "fig:Función-transferencia-calculada"
 \end_layout
 
 \begin_layout Standard
-(AGREGAR LO DEL MODO XY Y DECIR POR QUE UNO DE LOS DOS MODOS EN CONVENIENTE
- RESPECTO DEL OTRO)
+Otra forma de analizar esto es mediante el modo XY del osciloscopio.
+ (VER ESTO SI ES REALMENTE OTRA FORMA DE EXPLICAR LO ANTERIOR)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2ModoXY NUEVO.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Visualización-de-"
+
+\end_inset
+
+Visualización de 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ en función de 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ en el osciloscopio mediante el modo XY.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Visualización-de-"
+
+\end_inset
+
+ se puede ver el resultado de conectar en un canal del osciloscopio la señal
+ de entrada del circuito 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ y en otro la tensión medida sobre la resistencia, 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+, empleando el modo XY de dicho instrumento.
+ Las frecuencias indicadas en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Visualización-de-"
+
+\end_inset
+
+ corresponden tanto a 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ como a 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ ya que debido a las figuras obtenidas la relación de frecuencias entre
+ ambas señales es de 1:1.
+ Al comparar las imagenes observadas con las figuras de Lissajous, se puede
+ ver que existe un desfasaje 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ entre ambas señales, dependiendo de la frecuencia con la que se trabaja.
+ Para el caso de 1KHz se puede decir que prácticamente no hay desfasaje
+ entre 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+; es decir, 
+\begin_inset Formula $\varphi\rightarrow90\textdegree.$
+\end_inset
+
+ Al aumentar la frecuencia, se puede ver cómo va disminuyendo la fase debido
+ a las figuras helípticas alargadas, pareciendose cada vez más a una recta.
+ Entre 1KHz y 20MHz, la fase va disminuyendo de 90
+\begin_inset Formula $\textdegree$
+\end_inset
+
+ a 0
+\begin_inset Formula $\textdegree.$
+\end_inset
+
+ Para 20MHz se puede ver que 
+\begin_inset Formula $\varphi\rightarrow0\textdegree$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(VER CON ESTO COMO JUSTIFICAR QUE ES PASA ALTOS.
+ SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE ????????????????????????????????????
+????????????????????????????????????????????????????????????????????????????????
+?????????????????????????????????????????)
+\end_layout
+
+\begin_layout Standard
+Para realizar lo anterior, se toma un rango ente 1kHz y 20MHz ya que se
+ considera que entre dichas frecuencias se puede apreciar bien lo que ocurre
+ con la fase.
+ No se consideran mediciones para frecuencias menores a 1kHz ya que, como
+ se vé en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ruido-observado-para"
+
+\end_inset
+
+ para el caso de 300Hz, hay demasiado ruido y es preferible no tenerlo para
+ las imagenes consideradas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2 ruido 300Hz.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ruido-observado-para"
+
+\end_inset
+
+Ruido observado para bajas frecuencias, en este caso 300Hz.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-c
+Comparación entre un circuito RC serie y un circuito CR serie
+\end_layout
+
+\begin_layout Standard
+Por lo analizado previamente, se pudo ver que el circuito RC serie se comporta
+ como un filtro pasa bajos, mientras que el circuito CR serie se comporta
+ como un filtro pasa altos.
+ A continuación se puede observar este comportamiento en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
+.
+ Mirando el módulo de la función transferencia (la magnitud en dB), para
+ el circuito RC serie se ven atenuadas las bajas frecuencias mientras que
+ para el circuito CR se atenúan las frecuencias altas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2c.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
+Diagrama de Bode para un circuito RC serie y para un circuito CR serie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -833,10 +1094,9 @@ reference "fig:Respuesta-transitoria-sobre"
 \end_inset
 
 , en el cual se puede ver que la respuesta transitoria de la tensión sobre
- la resistencia calculada analíticamente se aproxima correctamente a la
+ la resistencia calculada analíticamente se aproxima correctamente a aquella
  medida con un osciloscopio.
- (VER DE CORREGIR EL GRAFICO QUE ARRANQUEN LAS DOS CURVAS EN CERO Y QUE
- LAS DOS SE EXTIENDAN HASTA EL MISMO VALOR DE t).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -880,13 +1140,38 @@ Respuesta transitoria sobre
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+(ESTA BIEN QUE LA TENSION ARRANQUE EN UN VALOR NEGATIVO??????????????? PORQUE
+ EL CAPACITOR ARRANCA CON POLARIDAD OPUESTA, YA CARGADO, PARA DONDE SE ANALIZA)
+\end_layout
+
+\begin_layout Standard
+Se ve que en ambos casos la tensión sobre la resistencia crece rápidamente
+ al principio y luego tiende a mantenerse en un valor determinado.
+ Esto se puede observar analizando lo que ocurre con la corriente mediante
+ su expresión obtenida previamente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i(t\rightarrow\infty)=3,23.10^{-4}A
+\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Dado que para un t que tiende al estacionario la corriente tiende a un valor
+ constante, ocurre lo mismo con la tesnión sobre la resistencia.
 \end_layout
 
 \begin_layout Subsubsection
@@ -895,7 +1180,8 @@ Análisis a partir de una función transferencia
 
 \begin_layout Standard
 Planteando la función transferencia del circuito a partir del cociente entre
- la tensión sobre la resistencia y la tensión de entrada del generador,
+ la tensión sobre la resistencia y la tensión de entrada proveniente del
+ generador,
 \end_layout
 
 \begin_layout Standard
@@ -950,12 +1236,88 @@ V_{R}=CR\frac{dV_{gen}(t)}{dt}
 
 \end_layout
 
+\begin_layout Standard
+(ACA PONER ALGUNA CONCLUSION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!)
+\end_layout
+
 \begin_layout Section
 Ejercicio 3
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
+ (FALTA LA FIGURA), se emplea el barrido automático del generador y del
+ osciloscopio de la siguiente manera.
+ Para poder simular la rampa con la que funciona el trigger del osciloscopio,
+ se utilizan dos generadores de señales.
+ En uno se genera una rampa con frecuencia baja para poder apreciar en el
+ osciloscopio la respuesta del circuito.
+ El período empleado para la rampa es de 10,7017ms.
+ Se coloca el otro generador en modo sweep con un tiempo de sweep de 10ms
+ y se genera una señal senoidal, con una variación de frecuencias entre
+ 220Hz y 220KHz.
+ Se sincronizan ambos generadores utilizando como referencia el trigger
+ proveniente del generador de la rampa.
+ Es importante remarcar que el tiempo del sweep del generador de la señal
+ senoidal teóricamente debería ser igual al período de la rampa pero la
+ diferencia entre dichos intervalos de tiempo se debe a que fue necesario
+ modificar uno para poder apreciar en el osciloscopio lo se ve a continuación
+ en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-en-frecuencia"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej3ModoXY.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-en-frecuencia"
+
+\end_inset
+
+Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede ver que a altas frecuencias la salida se ve atenuada.
+ Esto corresponde con la teoría ya que se trata del circuito de la Figura
+ (AGREGARLA) que es un pasabajos, como se mostró previamente.
 \end_layout
 
 \begin_layout Section
