@@ -1543,7 +1543,18 @@ $10V_{pp}$
 
 \end_inset
 
-.
+, de forma tal de no llegar al nivel de ruido (aproximadamente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10mV_{pp}$
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \end_body

@@ -1530,7 +1530,7 @@ $x10$
 
 , lo cual atenúa la señal de entrada 10 veces y puede introducir error en
  la medición, lo cual lleva a que la frecuencia de corte teórica puesta
- por el límite se vea desplazada en la práctica.
+ por el límite se vea desplazada en la medición práctica.
  Se trató de compensar esto utilizando una señal de entrada de amplitud
  elevada, en 
 \begin_inset ERT
