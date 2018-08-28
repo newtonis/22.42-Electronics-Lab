@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,6 +26,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -62,7 +63,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -80,7 +81,23 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+En este trabajo práctico se tratará por un lado, un circuito RC en configuración
+ de pasa bajos y pasa altos, analizando sus respectivas respuestas en frecuencia.
+ En el caso del pasa bajos se realizó también reemplazando al capacitor
+ por la punta del osciloscopio, tanto en x1 como en x10.
+\end_layout
+
+\begin_layout Standard
+Luego, mediante un barrido en frecuencia utilizando un generador auxiliar,
+ se analizó la señal de salida del circuito pasabajos en función del tiempo,
+ al variar la frecuencia al mismo tiempo con el generador mencionado en
+ un rango en torno a la frecuencia de corte, para observar los efectos producido
+s con mayor claridad.
+\end_layout
+
+\begin_layout Standard
+Finalmente, se setea uno de los canales del osciloscopio con el límite de
+ 20MHz y se analiza la respuesta en frecuencia obtenida.
 \end_layout
 
 \begin_layout Section
@@ -96,7 +113,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/RC.png
+	filename DATOS LABO TP1/RC.png
+	display false
 
 \end_inset
 
@@ -133,7 +151,11 @@ Realizando un divisor de tensión se obtiene:
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $V_{C}=\frac{V_{1\frac{1}{sC}}}{R+\frac{1}{sC}}$
+\begin_inset Formula 
+\[
+V_{C}=\frac{V_{1\frac{1}{SC}}}{R+\frac{1}{SC}}
+\]
+
 \end_inset
 
 
@@ -145,19 +167,23 @@ Por lo tanto la función transferencia será
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $H(s)=\frac{V_{c}}{V_{1}}=\frac{1}{sCR+1}$
+\begin_inset Formula 
+\[
+H(s)=\frac{V_{c}}{V_{1}}=\frac{1}{SCR+1}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-La misma correponde a un filtro pasa bajos de primer orden, tiene un polo
- en 
+La misma correponde a un filtro pasa bajos de primer orden.
+ Tiene un polo simple en 
 \begin_inset Formula $\omega_{0}=\frac{1}{RC}$
 \end_inset
 
- por lo tanto la frecuencia de corte será 
+, por lo tanto la frecuencia de corte será 
 \begin_inset Formula $f_{c}=\frac{1}{2\pi RC}$
 \end_inset
 
@@ -346,12 +372,12 @@ Usando los valores medidos, el valor aproximado de la frecuencia de corte
 \end_layout
 
 \begin_layout Subsection
-Cálculo de C
+Cálculo del capacitor
 \end_layout
 
 \begin_layout Standard
 Tomando módulo a la función transferencia y despejando para C, donde 
-\begin_inset Formula $s=j2\pi f$
+\begin_inset Formula $S=j2\pi f$
 \end_inset
 
 , se obtiene:
@@ -359,7 +385,11 @@ Tomando módulo a la función transferencia y despejando para C, donde
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $C_{calculado}=\frac{1}{2\pi fR}\sqrt{\left(\frac{V_{1}}{V_{C}}\right)^{2}-1}$
+\begin_inset Formula 
+\[
+C_{calculado}=\frac{1}{2\pi fR}\sqrt{\left(\frac{V_{1}}{V_{C}}\right)^{2}-1}
+\]
+
 \end_inset
 
 
@@ -378,20 +408,21 @@ Para obtener el valor de
 \begin_inset Formula $V_{C}$
 \end_inset
 
- a la frecuencia de corte práctica, la misma se encontró buscando los 45°
- de desfasaje entre la señal de salida y la de entrada.
+ a la frecuencia de corte práctica, la misma se encontró buscando un desfasaje
+ de 45° entre la señal de salida y la de entrada (que es el correspondiente
+ a dicha frecuencia).
  La señal de entrada se eligió senoidal cuya amplitud no afecta los resultados,
  ya que lo que se necesita medir es relativo, pero si hay que tener en cuenta
  que ésta no sea muy pequeña para que las mediciones no se vean muy afectadas
  por el ruido.
- A continuación se presenta una tabla con los resultados obtenidos:
+ A continuación, se presenta una tabla con los resultados obtenidos:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2468,8 +2499,10 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/BODE MAG 3.png
+	filename DATOS LABO TP1/BODE MAG 3.png
+	display false
 	scale 25
 
 \end_inset
@@ -2503,7 +2536,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/BODE PHASE 2.jpg
+	filename DATOS LABO TP1/BODE PHASE 2.jpg
+	display false
 	scale 20
 
 \end_inset
@@ -2527,7 +2561,7 @@ Respuesta en frecuencia en fase: teórico y práctico
 
 \begin_layout Standard
 Como se puede observar en ambas figuras, los trazos son casi idénticos,
- de no ser po rerrores de medición derivados del ruido, de los errores del
+ de no ser por errores de medición derivados del ruido, de los errores del
  instrumental empleado y del efecto del error humano en la medición.
 \end_layout
 
@@ -2557,7 +2591,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/trans.png
+	filename DATOS LABO TP1/trans.png
+	display false
 	scale 50
 
 \end_inset
@@ -2593,7 +2628,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/esc2.png
+	filename DATOS LABO TP1/esc2.png
+	display false
 	scale 50
 
 \end_inset
@@ -2624,7 +2660,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/esc3.png
+	filename DATOS LABO TP1/esc3.png
+	display false
 	scale 50
 
 \end_inset
@@ -2655,7 +2692,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/esc5.png
+	filename DATOS LABO TP1/esc5.png
+	display false
 	scale 50
 
 \end_inset
@@ -2702,7 +2740,7 @@ En la Figura 6, donde la frecuencia de entrada es igual a la frecuencia
 \end_layout
 
 \begin_layout Standard
-En la figura 7, la frecuencia es mayor a la frecuencia de corte, se puede
+En la Figura 7, la frecuencia es mayor a la frecuencia de corte, se puede
  ver como el circuito RC como un integrador, ya que la salida representa
  la salida representa la integración de la señal de entrada.
  A medida que se aumenta aún mas la frecuencia la señal de salida comienza
@@ -2719,19 +2757,23 @@ Cálculo de
 \end_layout
 
 \begin_layout Standard
-Recorriendo la malla del circucito se obtiene:
+Recorriendo la malla del circuito se obtiene:
 \end_layout
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $V_{R}=V_{1}-V_{C}$
+\begin_inset Formula 
+\[
+V_{R}=V_{1}-V_{C}
+\]
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Por lo tanto, con los datos oobtenidos anteriormente, se graficó 
+Por lo tanto, con los datos obtenidos anteriormente, se graficó 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -2745,8 +2787,10 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/VR vs F.png
+	filename DATOS LABO TP1/VR vs F.png
+	display false
 	scale 25
 
 \end_inset
@@ -2774,8 +2818,8 @@ Variación de la tensión pico a pico en R en función de la frecuencia
 \begin_layout Standard
 Se puede observar como a medida que aumenta la frecuencia, aumenta la caída
  de tensión en R.
- Est se debe al capacitor que a bajas frecuencias se comporta como un circuito
- abierto no permitiendo la circulación de corriente.
+ Esto se debe al que el capacitor, a bajas frecuencias, se comporta como
+ un circuito abierto no permitiendo la circulación de corriente.
  A medida que se crece en frecuencia, la corriente que circula por la malla
  también lo hace y por ende lo hace 
 \begin_inset Formula $V_{R}$
@@ -2802,7 +2846,8 @@ Luego se procedió a medir el desfasaje entre
 \begin_inset Formula $I$
 \end_inset
 
- será el mismo y como se puede observar en la Figura 9 éste es de 94°.
+ será el mismo y como se puede observar en la Figura 9 éste, medido, es
+ de 94°.
 \end_layout
 
 \begin_layout Standard
@@ -2814,7 +2859,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/vr1.png
+	filename DATOS LABO TP1/vr1.png
+	display false
 	scale 50
 
 \end_inset
@@ -2858,7 +2904,11 @@ Con el valor medido de la resistencia y el de
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $I=\frac{V_{R}}{R}=\frac{47.4mV}{2x4748\Omega}\eqsim5\mu A$
+\begin_inset Formula 
+\[
+I=\frac{V_{R}}{R}=\frac{47.4mV}{2\cdot4748\Omega}\eqsim5\mu A
+\]
+
 \end_inset
 
 
@@ -2884,8 +2934,10 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/Vc vs I PHASOR.png
+	filename DATOS LABO TP1/Vc vs I PHASOR.png
+	display false
 	scale 25
 
 \end_inset
@@ -2919,19 +2971,11 @@ Diagrama fasorial de
 \end_layout
 
 \begin_layout Standard
-Además se puede comprobar que aproximadamente:
-\end_layout
-
-\begin_layout Standard
-\align center
+Además se puede comprobar que, aproximadamente,
 \begin_inset Formula $\overline{V_{R}}+\overline{V_{C}}=\overline{V_{1}}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-ya que se puede considerar 
+, dado que se puede considerar 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -2940,10 +2984,11 @@ ya que se puede considerar
 \end_inset
 
 .
- Esto se debe a que la frecuencia es baja (1KHz), por lo que el capacitor
- se comporta casi como un circuito abierto, por ende la corriente que circula
- por el circuito es muy pequeña, al igual que la caída de tensión en la
- resistencia.
+ Esto se debe a que la frecuencia es baja (1KHz) relativa a la frecuencia
+ de cortec del circuito, por lo que el capacitor se comporta casi como un
+ circuito abierto.
+ Por ende, la corriente que circula por el circuito es muy pequeña, al igual
+ que la caída de tensión en la resistencia.
  
 \end_layout
 
@@ -2956,11 +3001,16 @@ Puntas x1:
 \end_layout
 
 \begin_layout Standard
-En la figura 11, donde 
+En la Figura 11, la tensión de entrada 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ corresponde al canal 2, y la de salida 
 \begin_inset Formula $V_{C}$
 \end_inset
 
- es la curva amarilla 
+ al canal 1.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2971,12 +3021,9 @@ status open
 
 \begin_layout Plain Layout
 \align center
-\begin_inset Formula $V_{R}$
-\end_inset
-
-
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/ej1hx1.png
+	filename DATOS LABO TP1/ej1hx1.png
+	display false
 	scale 50
 
 \end_inset
@@ -2985,7 +3032,304 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Relación entrada - salida a la frecuencia de corte
+\end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De las mediciones realizadas, al obtener un desfasaje de 45° entre ambas
+ señales, corresponde a la frecuencia de corte del circuito, que en este
+ caso resultó de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_c=280KHz$
+\end_layout
+
+\end_inset
+
+.
+ Despejando de la ecuación de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+omega_0=
+\backslash
+frac{1}{RC}$
+\end_layout
+
+\end_inset
+
+, se obtiene el valor del capacitor para los casos de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_{teorica}$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_{medida}$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$C_{calculado}=
+\backslash
+frac{1}{2 
+\backslash
+pi f R}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{C}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{calculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280kHz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.7k\Omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $120.93pF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280kHZ$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.75k\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $119.66pF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valor de C
 \end_layout
 
 \end_inset
@@ -3003,6 +3347,19 @@ Puntas x10:
 \end_layout
 
 \begin_layout Standard
+En la Figura 12, la tensión de entrada 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ corresponde al canal 2, y la de salida 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ al canal 1.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -3011,7 +3368,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/ej1hx11.png
+	filename DATOS LABO TP1/ej1hx11.png
+	display false
 	scale 50
 
 \end_inset
@@ -3020,6 +3378,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Relación entrada - salida a la frecuencia de corte
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -3027,6 +3390,205 @@ status open
 
 
 \end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{C}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{calculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280kHz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.7k\Omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280kHZ$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.748k\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
 
 \end_inset
 
@@ -3042,11 +3604,31 @@ Ejercicio 2
 \end_layout
 
 \begin_layout Standard
-Se tiene el siguiente circuito CR serie, siendo R=4,7k
-\begin_inset Formula $\Omega$
+Se tiene el siguiente circuito CR serie, siendo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R=4.7k
+\backslash
+Omega$
+\end_layout
+
 \end_inset
 
- y C=1,5nF.
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C=1.5nF$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3111,7 +3693,7 @@ reference "fig:Circuito-CR-serie."
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}=\frac{\frac{s}{\frac{1}{CR}}}{\frac{s}{\frac{1}{CR}}+1}
+H(s)=\frac{V_{R}(S)}{V_{gen}(S)}=\frac{SCR}{SCR+1}=\frac{\frac{S}{\frac{1}{CR}}}{\frac{S}{\frac{1}{CR}}+1}
 \]
 
 \end_inset
@@ -3127,7 +3709,7 @@ De esta forma queda en evidencia que se trata de un filtro pasa altos dado
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{\frac{s}{\omega_{0}}}{\frac{s}{\omega_{0}}+1}
+H(s)=\frac{\frac{S}{\omega_{0}}}{\frac{S}{\omega_{0}}+1}
 \]
 
 \end_inset
@@ -3140,19 +3722,59 @@ Donde
 \begin_inset Formula $\omega_{0}$
 \end_inset
 
- corresponde a la frecuencia de corte del filtro en rad/s.
+ corresponde a la frecuencia de corte del filtro en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+freq{rad}{seg}$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Tomando R=4,7K
-\begin_inset Formula $\Omega$
+Tomando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R=4.7K
+\backslash
+Omega$
+\end_layout
+
 \end_inset
 
- y C=1,5nF, la frecuencia de corte en Hz es f
-\begin_inset Formula $_{0}=$
+y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C=1.5nF$
+\end_layout
+
 \end_inset
 
- 22,575KHz.
+, la frecuencia de corte en Hz es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_0=22,575KHz$
+\end_layout
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement H
 wide false
@@ -3163,6 +3785,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename laboTp1Ej2a.png
+	display false
 	scale 50
 	rotateOrigin center
 
@@ -3196,14 +3819,25 @@ ente.
 \end_layout
 
 \begin_layout Standard
-A partir del gráfico de la amplitud de H(s) presente en la Figura 
+A partir del gráfico de la amplitud de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$H(s)$
+\end_layout
+
+\end_inset
+
+ presente en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-de-Bode"
 
 \end_inset
 
-, se puede ver que el circuito CR serie se comporta, como habíamos planteado,
+, se puede ver que el circuito CR serie se comporta, como se había planteado,
  como un filtro pasa altos.
  ya que se ven atenuadas las frecuencias bajas.
 \end_layout
@@ -3214,11 +3848,22 @@ Por otro lado, se puede ver lo mismo al analizar las impedancias (fasoriales)
 \end_layout
 
 \begin_layout Standard
-Sabiendo que X
-\begin_inset Formula $_{C}=\frac{1}{2\pi fC}$
+Sabiendo que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X_c=
+\backslash
+frac{1}{2 
+\backslash
+pi f C}$
+\end_layout
+
 \end_inset
 
- es la reactancia capacitiva para bajas frecuencias se tiene que:
+es la reactancia capacitiva para bajas frecuencias se tiene que:
 \end_layout
 
 \begin_layout Standard
