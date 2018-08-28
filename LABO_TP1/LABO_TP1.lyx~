@@ -75,7 +75,7 @@
 
 \begin_body
 
-\begin_layout Title
+\begin_layout Section*
 Introducción
 \end_layout
 
@@ -1321,9 +1321,9 @@ Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
  proveniente del generador de la rampa.
  Es importante remarcar que el tiempo del sweep del generador de la señal
  senoidal teóricamente debería ser igual al período de la rampa pero la
- diferencia entre dichos intervalos de tiempo se debe a que fue necesario
- modificar uno para poder apreciar en el osciloscopio lo se ve a continuación
- en la Figura 
+ diferencia que se ve en este caso entre dichos intervalos de tiempo se
+ debe a la necesidad de modificar uno para poder apreciar en el osciloscopio
+ de la mejor manera posible, lo que se ve a continuación en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-en-frecuencia"
@@ -1344,7 +1344,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ej3ModoXY.png
+	filename ej3XYyNORMAL.png
 	scale 60
 	rotateOrigin center
 
@@ -1360,7 +1360,8 @@ name "fig:Respuesta-en-frecuencia"
 
 \end_inset
 
-Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
+Respuesta en frecuencia del circuito CR serie en distintos modos del osciloscopi
+o.
 \end_layout
 
 \end_inset
@@ -1376,7 +1377,9 @@ Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
 \begin_layout Standard
 Se puede ver que a altas frecuencias la salida se ve atenuada.
  Esto corresponde con la teoría ya que se trata del circuito de la Figura
- (AGREGARLA) que es un pasabajos, como se mostró previamente.
+ (AGREGARLA) que es un filtro pasa bajos, como se mostró previamente.
+ La imagen del modo normal permite ver como responde la señal senoidal mencionad
+a, al triggerear de forma sincronizada con la rampa.
 \end_layout
 
 \begin_layout Section
@@ -1384,7 +1387,163 @@ Ejercicio 4
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+Para la medición de la respuesta en frecuencia del osciloscopio, se lo configuró
+ en modo AC, activando el límite de ancho de banda a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
+\end_inset
+
+.
+ Para obtener una correcta respuesta en frecuencia, se debió utilizar un
+ generador de señales de mayor ancho de banda para asegurar que la atenuación
+ que se observe en la señal medida sea debido al límite de ancho de banda
+ seleccionado en el osciloscopio y no por el propio generador.
+ Por esto, se utilizó un generador de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50MHz$
+\end_layout
+
+\end_inset
+
+ de ancho de banda, que es el mayor disponible en el laboratorio luego de
+ los de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$15MHz$
+\end_layout
+
+\end_inset
+
+.
+ La respuesta en frecuencia obtenida se muestra en el siguiente gráfico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graficos/ej4Modulo.pdf
+	scale 40
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia del osciloscopio con BW Limit y filtro AC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede observarse que la frecuencia de corte para cuando la ganancia unitaria
+ cae 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-3dB$
+\end_layout
+
+\end_inset
+
+ no resulta exactamente en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
+\end_inset
+
+ sino un poco después, en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$28MHz$
+\end_layout
+
+\end_inset
+
+.
+ Esto se debe a que, para realizar las mediciones a partir de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1MHz$
+\end_layout
+
+\end_inset
+
+, se utilizó la punta en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x10$
+\end_layout
+
+\end_inset
+
+, lo cual atenúa la señal de entrada 10 veces y puede introducir error en
+ la medición, lo cual lleva a que la frecuencia de corte teórica puesta
+ por el límite se vea desplazada en la práctica.
+ Se trató de compensar esto utilizando una señal de entrada de amplitud
+ elevada, en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10V_{pp}$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
