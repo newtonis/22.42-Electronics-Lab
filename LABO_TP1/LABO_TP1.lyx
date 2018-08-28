@@ -1321,9 +1321,9 @@ Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
  proveniente del generador de la rampa.
  Es importante remarcar que el tiempo del sweep del generador de la señal
  senoidal teóricamente debería ser igual al período de la rampa pero la
- diferencia entre dichos intervalos de tiempo se debe a que fue necesario
- modificar uno para poder apreciar en el osciloscopio lo se ve a continuación
- en la Figura 
+ diferencia que se ve en este caso entre dichos intervalos de tiempo se
+ debe a la necesidad de modificar uno para poder apreciar en el osciloscopio
+ de la mejor manera posible, lo que se ve a continuación en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-en-frecuencia"
@@ -1344,7 +1344,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ej3ModoXY.png
+	filename ej3XYyNORMAL.png
 	scale 60
 	rotateOrigin center
 
@@ -1360,7 +1360,8 @@ name "fig:Respuesta-en-frecuencia"
 
 \end_inset
 
-Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
+Respuesta en frecuencia del circuito CR serie en distintos modos del osciloscopi
+o.
 \end_layout
 
 \end_inset
@@ -1376,7 +1377,9 @@ Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
 \begin_layout Standard
 Se puede ver que a altas frecuencias la salida se ve atenuada.
  Esto corresponde con la teoría ya que se trata del circuito de la Figura
- (AGREGARLA) que es un pasabajos, como se mostró previamente.
+ (AGREGARLA) que es un filtro pasa bajos, como se mostró previamente.
+ La imagen del modo normal permite ver como responde la señal senoidal mencionad
+a, al triggerear de forma sincronizada con la rampa.
 \end_layout
 
 \begin_layout Section

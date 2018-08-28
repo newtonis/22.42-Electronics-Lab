@@ -870,12 +870,7 @@ Se analiza lo que ocurre para medio período de la señal triangular de entrada;
  En la parte restante de un período, lo que sucede es simétrico a lo que
  se muestra a continuación, ya que ocurre lo mismo pero respondiendo a una
  alimentación con pendiente negativa.
- El 
-\end_layout
-
-\begin_layout Standard
-(VER aca si poner algo: y que es en un intervalo de tiempo de 6,25.10^-5s
- el analisis)
+ El siguiente análisis se lleva a cambo para un intervalo de tiempo de 625ms.
 \end_layout
 
 \begin_layout Standard
@@ -898,11 +893,7 @@ siendo
 \begin_inset Formula $V_{gen}(0s)=0V=b$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-y 
+; y 
 \begin_inset Formula $m=\frac{2,98}{\frac{1}{16k}}\frac{V}{s}$
 \end_inset
 
@@ -910,7 +901,7 @@ y
 \begin_inset Formula $\frac{V}{s}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -1219,11 +1210,6 @@ Respuesta transitoria sobre
 \end_layout
 
 \begin_layout Standard
-(ESTA BIEN QUE LA TENSION ARRANQUE EN UN VALOR NEGATIVO??????????????? PORQUE
- EL CAPACITOR ARRANCA CON POLARIDAD OPUESTA, YA CARGADO, PARA DONDE SE ANALIZA)
-\end_layout
-
-\begin_layout Standard
 Se ve que en ambos casos la tensión sobre la resistencia crece rápidamente
  al principio y luego tiende a mantenerse en un valor determinado.
  Esto se puede observar analizando lo que ocurre con la corriente mediante
@@ -1310,9 +1296,9 @@ V_{R}=CR\frac{dV_{gen}(t)}{dt}
 \end_layout
 
 \begin_layout Standard
-(ACA PONER ALGUNA CONCLUSION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+(ACA PONER ALGUNA CONCLUSION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!)
+!!!!!!!!!!!!!!!!!!!!!!!)
 \end_layout
 
 \begin_layout Section
@@ -1335,9 +1321,9 @@ Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
  proveniente del generador de la rampa.
  Es importante remarcar que el tiempo del sweep del generador de la señal
  senoidal teóricamente debería ser igual al período de la rampa pero la
- diferencia entre dichos intervalos de tiempo se debe a que fue necesario
- modificar uno para poder apreciar en el osciloscopio lo se ve a continuación
- en la Figura 
+ diferencia que se ve en este caso entre dichos intervalos de tiempo se
+ debe a que f modificar uno para poder apreciar en el osciloscopio lo se
+ ve a continuación en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-en-frecuencia"
@@ -1358,7 +1344,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ej3ModoXY.png
+	filename ej3XYyNORMAL.png
 	scale 60
 	rotateOrigin center
 
@@ -1374,7 +1360,8 @@ name "fig:Respuesta-en-frecuencia"
 
 \end_inset
 
-Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
+Respuesta en frecuencia del circuito CR serie en distintos modos del osciloscopi
+o.
 \end_layout
 
 \end_inset
@@ -1390,7 +1377,9 @@ Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
 \begin_layout Standard
 Se puede ver que a altas frecuencias la salida se ve atenuada.
  Esto corresponde con la teoría ya que se trata del circuito de la Figura
- (AGREGARLA) que es un pasabajos, como se mostró previamente.
+ (AGREGARLA) que es un filtro pasa bajos, como se mostró previamente.
+ La imagen del modo normal permite ver como responde la señal senoidal mencionad
+a, al triggerear de forma sincronizada con la rampa.
 \end_layout
 
 \begin_layout Section
