@@ -153,7 +153,7 @@ Realizando un divisor de tensión se obtiene:
 \align center
 \begin_inset Formula 
 \[
-V_{C}=\frac{V_{1\frac{1}{SC}}}{R+\frac{1}{SC}}
+V_{C}=\frac{V_{1\frac{1}{sC}}}{R+\frac{1}{sC}}
 \]
 
 \end_inset
@@ -169,7 +169,7 @@ Por lo tanto la función transferencia será
 \align center
 \begin_inset Formula 
 \[
-H(s)=\frac{V_{c}}{V_{1}}=\frac{1}{SCR+1}
+H(s)=\frac{V_{c}}{V_{1}}=\frac{1}{sCR+1}
 \]
 
 \end_inset
@@ -198,7 +198,7 @@ Los valores de los componentes utilizados para realizar las mediciones fueron:
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2570,8 +2570,27 @@ Respuesta al escalón
 \end_layout
 
 \begin_layout Standard
-Se excitó al circuito con una señal cuadrada de baja frecuencia para obtener
- así la respuesta transitoria del mismo.
+Para el cálculo analítico de la respuesta al escalón, considerando que se
+ está analizando un sistema lineal y de tiempo invariante, se multiplicó
+ la función transferencia del sistema por 
+\begin_inset Formula $\frac{1}{s}$
+\end_inset
+
+ que corresponde a la transformada de Laplace del escalón, para finalmente
+ aplicar la transfromada inversa y obtener la respuesta buscada:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $y(t)=1-e^{-\frac{t}{RC}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la parte práctica, se excitó al circuito con una señal cuadrada de baja
+ frecuencia para obtener así la respuesta transitoria del mismo.
  La señal cuadrada está formada por componentes de alta frecuencia en los
  flancos y de baja frecuencia en la zona horizontal.
  En este caso, como estamos estudiando un circuito pasa bajos, se atenúan
@@ -2586,14 +2605,14 @@ También se puede interpretar en el tiempo como la carga del capacitor.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename DATOS LABO TP1/trans.png
+	filename DATOS LABO TP1/trans teo vs medido.png
 	display false
-	scale 50
+	scale 25
 
 \end_inset
 
@@ -2993,7 +3012,7 @@ Además se puede comprobar que, aproximadamente,
 \end_layout
 
 \begin_layout Subsection
-Medición del capacitor de las puntas del osciloscopio
+Medición del C del conjunto puntas y osciloscopio
 \end_layout
 
 \begin_layout Subsubsection
@@ -3275,8 +3294,7 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.7
-\begin_inset Formula $V$
+\begin_inset Formula $1V$
 \end_inset
 
 
@@ -3329,7 +3347,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Valor de C
+Valor de C- Puntas x1
 \end_layout
 
 \end_inset
@@ -3363,7 +3381,7 @@ En la Figura 12, la tensión de entrada
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3392,6 +3410,50 @@ Relación entrada - salida a la frecuencia de corte
 \end_layout
 
 \begin_layout Standard
+Como se puede observar en la figura 12, el 
+\begin_inset Formula $\Delta x_{total}$
+\end_inset
+
+que representa el periodo de ambas señales es de 
+\begin_inset Formula $335ns$
+\end_inset
+
+, y el 
+\begin_inset Formula $\varDelta x_{0}$
+\end_inset
+
+que representa el tiempo de desfasaje que hay entre ellas es de 
+\begin_inset Formula $23ns$
+\end_inset
+
+.
+ Aplicando la fórmula:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\varphi(grados)=\frac{180}{\pi}\arcsin(\frac{\varDelta x_{0}}{\Delta x_{total}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se obtiene 
+\begin_inset Formula $\varphi=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="5">
@@ -3468,7 +3530,7 @@ Relación entrada - salida a la frecuencia de corte
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $280kHz$
+\begin_inset Formula $3MHz$
 \end_inset
 
 
@@ -3480,7 +3542,7 @@ Relación entrada - salida a la frecuencia de corte
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $1V$
+\begin_inset Formula $0.8V$
 \end_inset
 
 
@@ -3492,7 +3554,7 @@ Relación entrada - salida a la frecuencia de corte
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.7V$
+\begin_inset Formula $0.44V$
 \end_inset
 
 
@@ -3530,7 +3592,7 @@ Relación entrada - salida a la frecuencia de corte
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $280kHZ$
+\begin_inset Formula $3MHz$
 \end_inset
 
 
@@ -3542,8 +3604,7 @@ Relación entrada - salida a la frecuencia de corte
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.7
-\begin_inset Formula $V$
+\begin_inset Formula $0.8V$
 \end_inset
 
 
@@ -3555,7 +3616,7 @@ Relación entrada - salida a la frecuencia de corte
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $0.7V$
+\begin_inset Formula $0.44V$
 \end_inset
 
 
@@ -3589,6 +3650,27 @@ Relación entrada - salida a la frecuencia de corte
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valor de C - Puntas x10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -3863,7 +3945,7 @@ pi f C}$
 
 \end_inset
 
-es la reactancia capacitiva para bajas frecuencias se tiene que:
+ es la reactancia capacitiva para bajas frecuencias se tiene que:
 \end_layout
 
 \begin_layout Standard
