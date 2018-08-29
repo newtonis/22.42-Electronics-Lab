@@ -5,6 +5,17 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\usepackage{amssymb}
+\pagestyle{fancy}
+\lhead{Laboratorio de Electronica - 22.42}
+\chead{TPL1}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language spanish
@@ -108,13 +119,12 @@ Ejercicio 1
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename DATOS LABO TP1/RC.png
-	display false
 
 \end_inset
 
@@ -122,6 +132,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-RC"
+
+\end_inset
+
 Circuito RC
 \end_layout
 
@@ -717,7 +733,20 @@ Valor de C
 
 \begin_layout Standard
 Como se puede ver en la Tabla 2, la frecuencia de corte dió en un valor
- de 22kHz, que corresponde a un 8.3% de error.
+ de 22kHz, que corresponde a un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8.3
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+ de error.
  
 \end_layout
 
@@ -2847,7 +2876,11 @@ Luego se procedió a medir el desfasaje entre
 \end_inset
 
  será el mismo y como se puede observar en la Figura 9 éste, medido, es
- de 94°.
+ de 
+\begin_inset Formula $94°$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2985,7 +3018,7 @@ Además se puede comprobar que, aproximadamente,
 
 .
  Esto se debe a que la frecuencia es baja (1KHz) relativa a la frecuencia
- de cortec del circuito, por lo que el capacitor se comporta casi como un
+ de corte del circuito, por lo que el capacitor se comporta casi como un
  circuito abierto.
  Por ende, la corriente que circula por el circuito es muy pequeña, al igual
  que la caída de tensión en la resistencia.
@@ -3046,9 +3079,12 @@ Relación entrada - salida a la frecuencia de corte
 \end_layout
 
 \begin_layout Standard
-De las mediciones realizadas, al obtener un desfasaje de 45° entre ambas
- señales, corresponde a la frecuencia de corte del circuito, que en este
- caso resultó de 
+De las mediciones realizadas, al obtener un desfasaje de 
+\begin_inset Formula $45°$
+\end_inset
+
+ entre ambas señales, corresponde a la frecuencia de corte del circuito,
+ que en este caso resultó de 
 \begin_inset ERT
 status open
 
@@ -3703,7 +3739,7 @@ H(s)=\frac{V_{R}(S)}{V_{gen}(S)}=\frac{SCR}{SCR+1}=\frac{\frac{S}{\frac{1}{CR}}}
 
 \begin_layout Standard
 De esta forma queda en evidencia que se trata de un filtro pasa altos dado
- que se corresponde con el formato
+ que se corresponde con el formato:
 \end_layout
 
 \begin_layout Standard
@@ -3730,7 +3766,7 @@ status open
 
 $
 \backslash
-freq{rad}{seg}$
+frac{rad}{seg}$
 \end_layout
 
 \end_inset
@@ -3769,7 +3805,7 @@ status open
 
 \begin_layout Plain Layout
 
-$f_0=22,575KHz$
+$f_0=22.575KHz$
 \end_layout
 
 \end_inset
@@ -3779,7 +3815,7 @@ $f_0=22,575KHz$
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3838,13 +3874,13 @@ reference "fig:Diagrama-de-Bode"
 \end_inset
 
 , se puede ver que el circuito CR serie se comporta, como se había planteado,
- como un filtro pasa altos.
- ya que se ven atenuadas las frecuencias bajas.
+ como un filtro pasa altos, debido a que se ven atenuadas las frecuencias
+ bajas.
 \end_layout
 
 \begin_layout Standard
-Por otro lado, se puede ver lo mismo al analizar las impedancias (fasoriales)
- del circuito en función de la frecuencia.
+Por otro lado, se puede ver lo mismo al analizar las impedancias del circuito
+ en función de la frecuencia.
 \end_layout
 
 \begin_layout Standard
@@ -3863,7 +3899,7 @@ pi f C}$
 
 \end_inset
 
- es la reactancia capacitiva para bajas frecuencias se tiene que:
+ es la reactancia capacitiva para bajas frecuencias, se tiene que:
 \end_layout
 
 \begin_layout Standard
@@ -3878,18 +3914,47 @@ pi f C}$
 \end_layout
 
 \begin_layout Standard
-Notar que como R se mantiene fijo y X
-\begin_inset Formula $_{c}(f)$
+Notar que como 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
 \end_inset
 
+ se mantiene fijo y 
+\begin_inset ERT
+status open
 
-\begin_inset Formula $\rightarrow\infty$
+\begin_layout Plain Layout
+
+$X_c(f) 
+\backslash
+to 
+\backslash
+infty$
+\end_layout
+
 \end_inset
 
- para las frecuencias bajas el comportamiento del CR serie tiende al de
+ para las frecuencias bajas, el comportamiento del CR serie tiende al de
  un circuito abierto ya que no circula corriente prácticamente (debido a
- la alta reactancia capacitiva) y por ende como la caída de tensión sobre
- R tiende a 0V, la tensión a la salida se ve atenuada.
+ la alta reactancia capacitiva) y por ende, como la caída de tensión sobre
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ tiende a 0V, la tensión a la salida se ve atenuada.
 \end_layout
 
 \begin_layout Standard
@@ -3911,7 +3976,18 @@ Mientras que para altas frecuencias:
 En este caso no se aprecia la presencia del capacitor, ya que el mismo se
  comporta como un cable ideal, dando lugar a un comportamiento resistivo
  del circuito que tiene como característica que la caída de tensión sobre
- R equivale a la de la tensión de la fuente.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ equivale a la de la tensión de la fuente.
  
 \end_layout
 
@@ -3932,7 +4008,7 @@ Función transferencia a partir de datos obtenidos
 \uwave off
 \noun off
 \color none
-Empleando un osciloscopio se tomaron 44 datos de 
+Empleando un osciloscopio se tomaron datos de 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -3945,7 +4021,7 @@ Empleando un osciloscopio se tomaron 44 datos de
  valores comprendidos entre una década antes de la frecuencia de corte y
  una después, que es donde se logra apreciar más los cambios en el diagrama
  de bode.
- A partir de los valores medidos, se obtiene el siguiente diagrama de Bode.
+ A partir de los valores medidos, el diagrama obtenido es el siguiente:
 \end_layout
 
 \begin_layout Standard
@@ -3977,8 +4053,7 @@ name "fig:Función-transferencia-calculada"
 
 \end_inset
 
-Módulo de la función transferencia calculada analíticamente y de aquella
- obtenida a través de mediciones.
+Módulo de la función transferencia.
  
 \end_layout
 
@@ -4026,8 +4101,7 @@ name "fig:Fase-de-la"
 
 \end_inset
 
-Fase de la función transferencia calculada analíticamente y de aquella obtenida
- a través de mediciones.
+Fase de la función transferencia.
 \end_layout
 
 \end_inset
@@ -4064,26 +4138,56 @@ reference "fig:Fase-de-la"
 \begin_inset Formula $V_{gen}$
 \end_inset
 
- medidos con el osciloscopio para 44 frecuencias distintas se aproxima bien
- a la función transferencia calculada analíticamente.
- Respecto al módulo de H(s) de la Figura 
+ medidos con el osciloscopio para el intervalo de frecuencias distintas
+ se aproxima bien a la función transferencia calculada analíticamente.
+ Respecto al módulo de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$H(s)$
+\end_layout
+
+\end_inset
+
+ de la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Función-transferencia-calculada"
 
 \end_inset
 
-, se considera que el valor obtenido para la frecuencia cercana a 1KHz,
- el más alejado a la curva de H(s) calculada analíticamente, se debe a algún
- error en la medición.
+, se considera que el valor obtenido para la frecuencia cercana a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
+\end_inset
+
+, el más alejado a la curva de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$H(s)$
+\end_layout
+
+\end_inset
+
+ calculada analíticamente, se debe a algún error en la medición.
  Sin embargo, para dicho gráfico es importante remarcar que para valores
  cercanos a la frecuencia de corte el comportamiento del circuito se ve
  bien aproximado al calculado.
  En ambos gráficos se puede ver que para bajas frecuencias hay mayor diferencia
  entre las dos curvas, mientras que no ocurre lo mismo con las altas frecuencias.
  Esto puede deberse a que se observó que para bajas frecuencias se nota
- la presencia de ruido.
- Cuanto menor es la frecuencia, aumenta la presencia de ruido.
+ la presencia de ruido, por estar atenuada.
  Un ejemplo del ruido observado para frecuencias bajas se puede ver para
  una frecuencia de 300Hz en la Figura 
 \begin_inset CommandInset ref
@@ -4099,7 +4203,7 @@ reference "fig:Ruido-observado-para"
 Por otro lado, lo que ocurre con las fases también se puede observar mediante
  el modo XY del osciloscopio.
  Si bien al comparar lo observado utilizando el modo XY con las figuras
- de Lissajous corroboran el comportamiento del desfasaje entre 
+ de Lissajous, corroboran el comportamiento del desfasaje entre 
 \begin_inset Formula $V_{R}$
 \end_inset
 
@@ -4209,7 +4313,18 @@ reference "fig:Visualización-de-"
 \end_inset
 
  entre ambas señales, dependiendo de la frecuencia con la que se trabaja.
- Para el caso de 1KHz se ve claramente que hay desfasaje entre 
+ Para el caso de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
+\end_inset
+
+ se ve claramente que hay desfasaje entre 
 \begin_inset Formula $V_{gen}$
 \end_inset
 
@@ -4217,21 +4332,55 @@ reference "fig:Visualización-de-"
 \begin_inset Formula $V_{R}$
 \end_inset
 
-; ya que al verse casi una sircunferencia, 
+; ya que al verse casi una circunferencia, 
 \begin_inset Formula $\varphi\rightarrow90\textdegree.$
 \end_inset
 
  Al aumentar la frecuencia, se puede ver cómo va disminuyendo la fase debido
  a las figuras helípticas alargadas, pareciendose cada vez más a una recta.
- Entre 1KHz y 20MHz, la fase va disminuyendo de 90
-\begin_inset Formula $\textdegree$
+ Entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
 \end_inset
 
- a 0
-\begin_inset Formula $\textdegree.$
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
 \end_inset
 
- Para 20MHz se puede ver que 
+, la fase va disminuyendo de 
+\begin_inset Formula $90\textdegree$
+\end_inset
+
+a 
+\begin_inset Formula $0\textdegree$
+\end_inset
+
+.
+ Para 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
+\end_inset
+
+ se puede ver que 
 \begin_inset Formula $\varphi\rightarrow0\textdegree$
 \end_inset
 
@@ -4240,19 +4389,60 @@ reference "fig:Visualización-de-"
 \end_layout
 
 \begin_layout Standard
-Para realizar lo anterior, se toma un rango ente 1kHz y 20MHz ya que se
- considera que entre dichas frecuencias se puede apreciar bien lo que ocurre
- con la fase.
- No se consideran mediciones para frecuencias menores a 1kHz ya que, como
- se vé en la Figura 
+Para realizar lo anterior, se toma un rango ente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
+\end_inset
+
+, ya que se considera que entre dichas frecuencias se puede apreciar bien
+ lo que ocurre con la fase.
+ No se consideran mediciones para frecuencias menores a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
+\end_inset
+
+ dado que, como se vé en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Ruido-observado-para"
 
 \end_inset
 
- para el caso de 300Hz, hay demasiado ruido y es preferible no tenerlo para
- las imagenes a evaluar.
+ para el caso de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$300Hz$
+\end_layout
+
+\end_inset
+
+, hay demasiado ruido y es preferible no tenerlo para las imagenes a evaluar.
 \end_layout
 
 \begin_layout Standard
@@ -4379,8 +4569,18 @@ reference "fig:Circuito-CR-serie."
 \end_inset
 
  al alimentarlo con distintas frecuencias de una señal triangular.
- Se decide analizar lo que ocurre con una frecuencia de 8 KHz ya que, como
- se vé en la Figura 
+ Se decide analizar lo que ocurre con una frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8KHz$
+\end_layout
+
+\end_inset
+
+ debido a que, como se ve en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-del-circuito"
@@ -4444,7 +4644,18 @@ A partir del osciloscopio, se obtiene que:
 \begin_inset Formula $V_{gen}$
 \end_inset
 
-| = 2,98V
+| = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$2.98V$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4452,7 +4663,18 @@ A partir del osciloscopio, se obtiene que:
 \begin_inset Formula $V_{R}$
 \end_inset
 
-| = 65, 43 mV
+| = 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$65.43mV$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4461,7 +4683,18 @@ Se analiza lo que ocurre para medio período de la señal triangular de entrada;
  En la parte restante de un período, lo que sucede es simétrico a lo que
  se muestra a continuación, ya que ocurre lo mismo pero respondiendo a una
  alimentación con pendiente negativa.
- El siguiente análisis se lleva a cambo para un intervalo de tiempo de 625ms.
+ El siguiente análisis se lleva a cambo para un intervalo de tiempo de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$625ms$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4485,18 +4718,14 @@ siendo
 \end_inset
 
 ; y 
-\begin_inset Formula $m=\frac{2,98}{\frac{1}{16k}}\frac{V}{s}$
-\end_inset
-
-=47680
-\begin_inset Formula $\frac{V}{s}$
+\begin_inset Formula $m=\frac{2,98}{\frac{1}{16k}}\frac{V}{s}=47680\frac{V}{s}$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-Entonces,
+Entonces:
 \end_layout
 
 \begin_layout Standard
@@ -4511,7 +4740,7 @@ V_{gen}(t)=47680\frac{V}{s}t
 \end_layout
 
 \begin_layout Standard
-Por Kirchhoff,
+Por Kirchhoff:
 \end_layout
 
 \begin_layout Standard
@@ -4542,16 +4771,16 @@ Derivando la expresión anterior,
 
 \begin_layout Standard
 Sabiendo que 
-\begin_inset Formula $i=c\frac{dV_{C}}{dt}$
+\begin_inset Formula $i=C\frac{dV_{C}}{dt}$
 \end_inset
 
-,
+:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{dV_{gen}(t)}{dt}=R\frac{di}{dt}+\frac{i(t)}{c}
+\frac{dV_{gen}(t)}{dt}=R\frac{di}{dt}+\frac{i(t)}{C}
 \]
 
 \end_inset
@@ -4571,7 +4800,7 @@ Sabiendo que
 \end_layout
 
 \begin_layout Standard
-Analizando la homogénea,
+Analizando la homogénea:
 \end_layout
 
 \begin_layout Standard
@@ -4616,7 +4845,7 @@ Y siendo
 \begin_inset Formula $k$
 \end_inset
 
- una constante correspondiente a la respuesta permanente del circuito,
+ una constante correspondiente a la respuesta permanente del circuito:
 \end_layout
 
 \begin_layout Standard
@@ -4631,7 +4860,7 @@ i(t)=i_{0}e^{-\frac{t}{RC}}+k
 \end_layout
 
 \begin_layout Standard
-Entonces,
+Entonces:
 \end_layout
 
 \begin_layout Standard
@@ -4651,14 +4880,14 @@ Evaluando la ecuación
 \end_inset
 
  para un 
-\begin_inset Formula $t>>0$
+\begin_inset Formula $t\gg0$
 \end_inset
 
 , es decir para un 
 \begin_inset Formula $t\rightarrow\infty$
 \end_inset
 
-(cuando se alcanza el permanente),
+(cuando se alcanza el permanente):
 \end_layout
 
 \begin_layout Standard
@@ -4674,20 +4903,20 @@ i(t\rightarrow\infty)=\frac{V_{R}(t\rightarrow\infty)}{R}=\frac{1,52V}{4,7K\Omeg
 
 \begin_layout Standard
 Además, a partir de la condición inicial 
-\begin_inset Formula $V_{R}(0s)=1,46V$
+\begin_inset Formula $V_{R}(0)=1.46V$
 \end_inset
 
  y tomando 
-\begin_inset Formula $R=4,7K\Omega$
+\begin_inset Formula $R=4.7K\Omega$
 \end_inset
 
-,
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{R}(0s)=1,46V=R(i_{0}+k)
+V_{R}(0)=1,46V=R(i_{0}+k)
 \]
 
 \end_inset
@@ -4696,7 +4925,7 @@ V_{R}(0s)=1,46V=R(i_{0}+k)
 \end_layout
 
 \begin_layout Standard
-Por lo que
+Por lo que:
 \end_layout
 
 \begin_layout Standard
@@ -4711,7 +4940,7 @@ i_{0}=-1,24.10^{-5}A
 \end_layout
 
 \begin_layout Standard
-Finalmente,
+Finalmente:
 \end_layout
 
 \begin_layout Standard
@@ -4726,13 +4955,13 @@ i(t)=(-1,24.10^{-5}e^{-\frac{t}{7,05.10^{-6}}}+3,23.10^{-4})A
 \end_layout
 
 \begin_layout Standard
-y
+Y
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{R}(t)=i(t).4,7k\Omega
+V_{R}(t)=i(t)\cdot4,7k\Omega
 \]
 
 \end_inset
@@ -4820,8 +5049,19 @@ i(t\rightarrow\infty)=3,23.10^{-4}A
 \end_layout
 
 \begin_layout Standard
-Dado que para un t que tiende al estacionario la corriente tiende a un valor
- constante, ocurre lo mismo con la tesnión sobre la resistencia.
+Dado que para un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$t$
+\end_layout
+
+\end_inset
+
+ que tiende al estacionario la corriente tiende a un valor constante, ocurre
+ lo mismo con la tensión sobre la resistencia.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4831,32 +5071,66 @@ Análisis a partir de una función transferencia
 \begin_layout Standard
 Planteando la función transferencia del circuito a partir del cociente entre
  la tensión sobre la resistencia y la tensión de entrada proveniente del
- generador,
+ generador:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}
+H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{SCR}{SCR+1}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Analizando la misma sin antitransformar, se observa que posee un solo polo
+ simple, con parte real negativa, lo cual indica que la respuesta transitoria
+ tendrá el formato de una exponencial decreciente.
+ Si se hace 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S 
+\backslash
+to 
+\backslash
+infty$
+\end_layout
+
+\end_inset
+
+, la transferencia tiende a 1, y para bajas frecuencias, al tener a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S$
+\end_layout
+
+\end_inset
+
+ multimplicando tiende a anularse, por lo que se verifica el comportamiento
+ como pasa altos.
 \end_layout
 
 \begin_layout Standard
 En el caso en el que 
-\begin_inset Formula $|sCR|<<1,$
+\begin_inset Formula $|SCR|\ll1$
 \end_inset
 
-
+,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{R}\simeq sCRV_{gen}
+V_{R}\simeq SCRV_{gen}(S)
 \]
 
 \end_inset
@@ -4865,6 +5139,7 @@ V_{R}\simeq sCRV_{gen}
 \end_layout
 
 \begin_layout Standard
+En el tiempo se corresponde a:
 \begin_inset Formula 
 \[
 V_{R}\simeq\frac{d}{dt}(CRV_{gen}(t))
@@ -4878,7 +5153,7 @@ V_{R}\simeq\frac{d}{dt}(CRV_{gen}(t))
 \begin_layout Standard
 \begin_inset Formula 
 \[
-V_{R}=CR\frac{dV_{gen}(t)}{dt}
+V_{R}\simeq CR\frac{dV_{gen}(t)}{dt}
 \]
 
 \end_inset
@@ -4887,9 +5162,50 @@ V_{R}=CR\frac{dV_{gen}(t)}{dt}
 \end_layout
 
 \begin_layout Standard
-(ACA PONER ALGUNA CONCLUSION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!)
+De la expresión aproximada anterior surge que, si la señal de excitación
+ es de forma senoidal, para bajas frecuencias la salida sobre la resistencia
+ estará desfasada 
+\begin_inset Formula $90\text{°}$
+\end_inset
+
+ respecto de ésta, dado que al derivar el seno se tiene el coseno.
+ Si se mira el otro extremo, con 
+\begin_inset Formula $|SCR|\gg1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}\simeq V_{gen}(S)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que en el tiempo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{R}\simeq V_{gen}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir, la salida sobre la resistencia estará en fase con la señal de
+ entrada, lo que se correspone con el comportamiento de fase para un pasa
+ altos.
 \end_layout
 
 \begin_layout Section
@@ -4898,16 +5214,25 @@ Ejercicio 3
 
 \begin_layout Standard
 Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
- (FALTA LA FIGURA), se emplea el barrido automático del generador y del
- osciloscopio de la siguiente manera.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-RC"
+
+\end_inset
+
+, se emplea el barrido automático del generador y del osciloscopio de la
+ siguiente manera.
  Para poder simular la rampa con la que funciona el trigger del osciloscopio,
  se utilizan dos generadores de señales.
  En uno se genera una rampa con frecuencia baja para poder apreciar en el
  osciloscopio la respuesta del circuito.
  El período empleado para la rampa es de 10,7017ms.
  Se coloca el otro generador en modo sweep con un tiempo de sweep de 10ms
- y se genera una señal senoidal, con una variación de frecuencias entre
- 220Hz y 220KHz.
+ (es decir, un poco menor al de la rampa) y se genera una señal senoidal,
+ con una variación de frecuencias entre 220Hz y 220KHz, para una correcta
+ apreciación de la respuesta en frecuencia teniendo en cuenta de que dentro
+ del rango se encuentra la frecuencia de corte.
  Se sincronizan ambos generadores utilizando como referencia el trigger
  proveniente del generador de la rampa.
  Es importante remarcar que el tiempo del sweep del generador de la señal
@@ -4968,9 +5293,17 @@ o.
 \begin_layout Standard
 Se puede ver que a altas frecuencias la salida se ve atenuada.
  Esto corresponde con la teoría ya que se trata del circuito de la Figura
- (AGREGARLA) que es un filtro pasa bajos, como se mostró previamente.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-RC"
+
+\end_inset
+
+ que es un filtro pasa bajos, como se mostró previamente.
  La imagen del modo normal permite ver como responde la señal senoidal mencionad
-a, al triggerear de forma sincronizada con la rampa.
+a, al triggerear de forma sincronizada con la rampa y barrer las frecuencias
+ indicadas.
 \end_layout
 
 \begin_layout Section
