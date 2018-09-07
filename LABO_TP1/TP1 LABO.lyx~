@@ -80,11 +80,7 @@
 \begin_body
 
 \begin_layout Section
-Ejercicio 1
-\end_layout
-
-\begin_layout Subsection
-Circuito RC - Filtro pasa bajos 
+Ejercicio 1 -Circuito RC
 \end_layout
 
 \begin_layout Standard
@@ -94,13 +90,9 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/RC.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/RC.png
 
 \end_inset
 
@@ -132,7 +124,7 @@ Se comenzó el ejercicio realizando una interpretación teórica del circuito
  Se comenzó por obtener la función transferencia:
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Cálculo de la finción transferencia 
 \end_layout
 
@@ -181,11 +173,10 @@ Los componentes utilizados para realizar las mediciones fueron:
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
-4
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
 <features tabularvalignment="middle">
@@ -355,7 +346,7 @@ Considerando los valores medidos, el valor aproximado de la frecuencia de
 .
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Cálculo de C
 \end_layout
 
@@ -694,12 +685,12 @@ Valor de C
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Respuesta en frecuencia - Mediciones
 \end_layout
 
 \begin_layout Standard
-Excitando el circuito con una sñal senoidal y variando la frecuencia de
+Excitando el circuito con una señal senoidal y variando la frecuencia de
  la misma se completó la siguiente tabla:
 \end_layout
 
@@ -707,7 +698,7 @@ Excitando el circuito con una sñal senoidal y variando la frecuencia de
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2459,7 +2450,7 @@ Mediciones obtenidas
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Diagramas de Bode
 \end_layout
 
@@ -2476,7 +2467,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/BODE MAG 3.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/BODE MAG 3.png
 	scale 25
 
 \end_inset
@@ -2508,13 +2499,9 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/BODE PHASE 2.jpg
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/BODE PHASE 2.jpg
 	scale 20
 
 \end_inset
@@ -2540,7 +2527,11 @@ Respuesta en frecuencia en fase: teórico y práctico
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Standard
+*analisis*
+\end_layout
+
+\begin_layout Subsection
 Respuesta al escalón
 \end_layout
 
@@ -2567,7 +2558,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/trans.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/trans.png
 	scale 50
 
 \end_inset
@@ -2607,7 +2598,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/esc2.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/esc2.png
 	scale 50
 
 \end_inset
@@ -2638,7 +2629,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/esc3.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/esc3.png
 	scale 50
 
 \end_inset
@@ -2669,7 +2660,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/esc5.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/esc5.png
 	scale 50
 
 \end_inset
@@ -2692,12 +2683,29 @@ Señal cuadrada de 220kHz
 \end_layout
 
 \begin_layout Standard
+En la primera imagen, como la frecuencia es tan baja, el periodo de carga
+ del capacitor es depreciable frente al periodo de la cuadrada, es por esta
+ razón que la respuesta se asemeja mucho a la misma señal de entrada.
+ 
+\end_layout
+
+\begin_layout Standard
+En la segundo el capacitor no llega a cargarse por completo antes de empezar
+ a descargarse, se puede notar en la Figura 6 como la tensión en el capacitor
+ no alcanza el máximo de la señal de la entrada.
+\end_layout
+
+\begin_layout Standard
+En la figura 7, se puede considerar al circuito RC como un integrador.
+\end_layout
+
+\begin_layout Standard
 
 \color red
 *análsis*
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Cálculo de 
 \begin_inset Formula $V_{R}$
 \end_inset
@@ -2730,7 +2738,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/VR vs F.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/VR vs F.png
 	scale 25
 
 \end_inset
@@ -2777,19 +2785,19 @@ Luego se procedió a medir el desfasaje entre
 \begin_inset Formula $I$
 \end_inset
 
- será el mismo.
+ será el mismo y como se puede observar en la Figura 9 éste es de 94°.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename InformesLabo/DATOS LABO TP1/vr1.png
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/vr1.png
 	scale 50
 
 \end_inset
@@ -2828,30 +2836,195 @@ Con el valor medido de la resistencia y el de
 \begin_inset Formula $V_{R}$
 \end_inset
 
-, se calculó el valor de la corriente:
+, se calculó el valor de la corriente para 
+\begin_inset Formula $f=1KHz$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
 \align center
-\begin_inset Formula $I=\frac{V_{R}}{R}=\frac{47.42mV}{2x4748\Omega}\eqsim5\mu A$
+\begin_inset Formula $I=\frac{V_{R}}{R}=\frac{47.4mV}{2x4748\Omega}\eqsim5\mu A$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-A partir del gráfico de la Figura 9, se realizó el diagrama de fasores:
+A partir del gráfico de la Figura 9, se realizó el diagrama de fasores para
+ 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ e 
+\begin_inset Formula $I$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
-PONER DIAGRAMA DE FASORES
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/Vc vs I PHASOR.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama fasorial de 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ e 
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además se puede comprobar que aproximadamente:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\overline{V_{R}}+\overline{V_{C}}=\overline{V_{1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ya que se puede considerar 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ (linea violeta) despreciable frente a las otras dos, por lo tanto 
+\begin_inset Formula $V_{1}\eqsim V_{C}$
+\end_inset
+
+.
+ Esto se debe a que la frecuencia es baja (1KHz), por lo que el capacitor
+ se comporta casi como un circuito abierto, por ende la corriente que circula
+ por el circuito es muy pequeña, al igual que la caída de tensión en la
+ resistencia.
+ 
+\end_layout
+
+\begin_layout Subsection
+Medición del capacitor de las puntas del osciloscopio
 \end_layout
 
 \begin_layout Subsubsection
-Análisis del circuito resistivo puro 
+Puntas x1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/ej1hx1.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
+Puntas x10:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Martina/Desktop/InformesLabo/DATOS LABO TP1/ej1hx11.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Conclusiones 
 \end_layout
 
