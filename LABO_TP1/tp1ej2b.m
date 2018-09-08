@@ -16,7 +16,7 @@ mag = squeeze(mag);
  hold off
  %plot(frec,j) 
  %hold on
- xlabel('frec (Hz)');
+xlabel('frec (Hz)');
 ylabel('|H(s)| (db)');
 
 semilogx(w./(2*pi) , 20 * log10(mag) );

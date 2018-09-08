@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,6 +26,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -62,7 +63,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -75,12 +76,28 @@
 
 \begin_body
 
-\begin_layout Title
+\begin_layout Section*
 Introducción
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+En este trabajo práctico se tratará por un lado, un circuito RC en configuración
+ de pasa bajos y pasa altos, analizando sus respectivas respuestas en frecuencia.
+ En el caso del pasa bajos se realizó también reemplazando al capacitor
+ por la punta del osciloscopio, tanto en x1 como en x10.
+\end_layout
+
+\begin_layout Standard
+Luego, mediante un barrido en frecuencia utilizando un generador auxiliar,
+ se analizó la señal de salida del circuito pasabajos en función del tiempo,
+ al variar la frecuencia al mismo tiempo con el generador mencionado en
+ un rango en torno a la frecuencia de corte, para observar los efectos producido
+s con mayor claridad.
+\end_layout
+
+\begin_layout Standard
+Finalmente, se setea uno de los canales del osciloscopio con el límite de
+ 20MHz y se analiza la respuesta en frecuencia obtenida.
 \end_layout
 
 \begin_layout Section
@@ -88,7 +105,3576 @@ Ejercicio 1
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/RC.png
+	display false
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito RC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se comenzó el ejercicio realizando una interpretación teórica del circuito
+ RC dado (Figura 1) para notar si los resultados obtenidos en las mediciones
+ son coherentes y se corresponden con dicho análisis.
+\end_layout
+
+\begin_layout Subsection
+Cálculo de la función transferencia 
+\end_layout
+
+\begin_layout Standard
+Realizando un divisor de tensión se obtiene:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+V_{C}=\frac{V_{1\frac{1}{sC}}}{R+\frac{1}{sC}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto la función transferencia será
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+H(s)=\frac{V_{c}}{V_{1}}=\frac{1}{sCR+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La misma correponde a un filtro pasa bajos de primer orden.
+ Tiene un polo simple en 
+\begin_inset Formula $\omega_{0}=\frac{1}{RC}$
+\end_inset
+
+, por lo tanto la frecuencia de corte será 
+\begin_inset Formula $f_{c}=\frac{1}{2\pi RC}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Los valores de los componentes utilizados para realizar las mediciones fueron:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nominal 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medido*
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Capacitor
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.5nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.399nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resistencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.7k\Omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.748k\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+*Los valores medidos fueron medidos con el analizador de impedancias.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valores de los componentes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usando los valores medidos, el valor aproximado de la frecuencia de corte
+ teórica es 
+\begin_inset Formula $f_{c}=24kHz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Cálculo del capacitor
+\end_layout
+
+\begin_layout Standard
+Tomando módulo a la función transferencia y despejando para C, donde 
+\begin_inset Formula $S=j2\pi f$
+\end_inset
+
+, se obtiene:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+C_{calculado}=\frac{1}{2\pi fR}\sqrt{\left(\frac{V_{1}}{V_{C}}\right)^{2}-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para obtener el valor de 
+\begin_inset Formula $C_{calculado}$
+\end_inset
+
+ se procedió a medir con el osciloscopio 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ y
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ a la frecuencia de corte práctica, la misma se encontró buscando un desfasaje
+ de 45° entre la señal de salida y la de entrada (que es el correspondiente
+ a dicha frecuencia).
+ La señal de entrada se eligió senoidal cuya amplitud no afecta los resultados,
+ ya que lo que se necesita medir es relativo, pero si hay que tener en cuenta
+ que ésta no sea muy pequeña para que las mediciones no se vean muy afectadas
+ por el ruido.
+ A continuación, se presenta una tabla con los resultados obtenidos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{C}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{calculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{medido}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Error\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $22kHz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.9V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.45V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.7k\Omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.552nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.399nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $10.9\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $22kHZ$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.9V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.45V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.748k\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.537nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.399nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9.9\%$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valor de C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede ver en la Tabla 2, la frecuencia de corte dió en un valor
+ de 22kHz, que corresponde a un 8.3% de error.
+ 
+\end_layout
+
+\begin_layout Subsection
+Respuesta en frecuencia - Mediciones
+\end_layout
+
+\begin_layout Standard
+Excitando el circuito con una señal senoidal (la misma que se utilizó para
+ el cálculo de C) y variando la frecuencia de la misma se completó la siguiente
+ tabla:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="30" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula $\left[Hz\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{1}\left[V\right]\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{C}\right|\left[V\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\left|V_{C}\right|}{\left|V_{1}\right|}$
+\end_inset
+
+
+\begin_inset Formula $\left[dB\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi\left[grados\right]$
+\end_inset
+
+
+\begin_inset Formula $(\Delta t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varphi\left[grados\right]$
+\end_inset
+
+
+\begin_inset Formula $(X/Y)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.09
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.2K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.97
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3.46
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4.08
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.5K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.07
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-5.56
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.93
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.09
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-6.92
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10.36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-11.63
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.41
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-14.77
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.97
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.69
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-17.01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.97
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-19.51
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.58
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-21.81
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.83
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-23.16
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.38
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-25.14
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-28.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-29.74
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.08
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-32.79
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.77
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2.35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-37.50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2.72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-39.96
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-42.22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-43.45
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3.17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-46
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-44.55
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3.36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-45.84
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-49
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-48.50
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-4.50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-53
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-50.96
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-12.74
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-77
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-71.55
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+200K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-18.84
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-77.01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+400K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-24.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-84.64
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-32.22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-85.13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mediciones obtenidas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diagramas de Bode
+\end_layout
+
+\begin_layout Standard
+A partir del análisis teórico y de las mediciones obtenidas se realizaron
+ los siguientes diagramas de bode para el circuito:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/BODE MAG 3.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia en magnitud: teórico y práctico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/BODE PHASE 2.jpg
+	display false
+	scale 20
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia en fase: teórico y práctico 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar en ambas figuras, los trazos son casi idénticos,
+ de no ser por errores de medición derivados del ruido, de los errores del
+ instrumental empleado y del efecto del error humano en la medición.
+\end_layout
+
+\begin_layout Subsection
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+Para el cálculo analítico de la respuesta al escalón, considerando que se
+ está analizando un sistema lineal y de tiempo invariante, se multiplicó
+ la función transferencia del sistema por 
+\begin_inset Formula $\frac{1}{s}$
+\end_inset
+
+ que corresponde a la transformada de Laplace del escalón, para finalmente
+ aplicar la transfromada inversa y obtener la respuesta buscada:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $y(t)=1-e^{-\frac{t}{RC}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la parte práctica, se excitó al circuito con una señal cuadrada de baja
+ frecuencia para obtener así la respuesta transitoria del mismo.
+ La señal cuadrada está formada por componentes de alta frecuencia en los
+ flancos y de baja frecuencia en la zona horizontal.
+ En este caso, como estamos estudiando un circuito pasa bajos, se atenúan
+ unicamente las altas frecuencias, es decir, la parte del salto.
+\end_layout
+
+\begin_layout Standard
+También se puede interpretar en el tiempo como la carga del capacitor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/trans teo vs medido.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta transitoria: entrada (verde) y salida (amarillo)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Al variar la frecuencia de la señal, se puede ver como la respuesta varía.
+ A continuación se muestran tres gráficos representativos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/esc2.png
+	display false
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal cuadrada de 2.2kHz 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/esc3.png
+	display false
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal cuadrada de 22kHz 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/esc5.png
+	display false
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal cuadrada de 220kHz 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En todas las figuras la señal de entrada es la curva verde y la de salida
+ la amarilla.
+\end_layout
+
+\begin_layout Standard
+En la Figura 5, como la frecuencia es muy baja respecto a la freciencia
+ de corte del filtro, el efecto del mismo sobre la señal es pequeño, por
+ lo tanto la señal no se ve muy atenuada.
+ Analizandolo en el tiempo, el periodo de carga del capacitor es depreciable
+ frente al periodo de la cuadrada, es por esta razón que la respuesta se
+ asemeja mucho a la misma señal de entrada.
+ 
+\end_layout
+
+\begin_layout Standard
+En la Figura 6, donde la frecuencia de entrada es igual a la frecuencia
+ de corte, la atenuación es bastante notoria, la señal de salida ya pierde
+ su forma cuadrada.
+ En el tiempo, se puede ver que el capacitor no llega a cargarse por completo
+ antes de empezar a descargarse, la tensión en el capacitor no alcanza el
+ máximo de la señal de la entrada.
+\end_layout
+
+\begin_layout Standard
+En la Figura 7, la frecuencia es mayor a la frecuencia de corte, se puede
+ ver como el circuito RC como un integrador, ya que la salida representa
+ la salida representa la integración de la señal de entrada.
+ A medida que se aumenta aún mas la frecuencia la señal de salida comienza
+ a deformarse.
+ El efecto del filtro sobre la señal es muy grande.
+\end_layout
+
+\begin_layout Subsection
+Cálculo de 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recorriendo la malla del circuito se obtiene:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+V_{R}=V_{1}-V_{C}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto, con los datos obtenidos anteriormente, se graficó 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ en función de la frecuencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/VR vs F.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Variación de la tensión pico a pico en R en función de la frecuencia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede observar como a medida que aumenta la frecuencia, aumenta la caída
+ de tensión en R.
+ Esto se debe al que el capacitor, a bajas frecuencias, se comporta como
+ un circuito abierto no permitiendo la circulación de corriente.
+ A medida que se crece en frecuencia, la corriente que circula por la malla
+ también lo hace y por ende lo hace 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Luego se procedió a medir el desfasaje entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+, ya que como la resistencia no produce desfasaje entre la tensión y la
+ corriente, el desfasaje entre 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ e 
+\begin_inset Formula $I$
+\end_inset
+
+ será el mismo y como se puede observar en la Figura 9 éste, medido, es
+ de 94°.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/vr1.png
+	display false
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Desfasaje entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con el valor medido de la resistencia y el de 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+, se calculó el valor de la corriente para 
+\begin_inset Formula $f=1KHz$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\[
+I=\frac{V_{R}}{R}=\frac{47.4mV}{2\cdot4748\Omega}\eqsim5\mu A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir del gráfico de la Figura 9, se realizó el diagrama de fasores para
+ 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ e 
+\begin_inset Formula $I$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/Vc vs I PHASOR.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama fasorial de 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ e 
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además se puede comprobar que, aproximadamente,
+\begin_inset Formula $\overline{V_{R}}+\overline{V_{C}}=\overline{V_{1}}$
+\end_inset
+
+, dado que se puede considerar 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ (linea violeta) despreciable frente a las otras dos, por lo tanto 
+\begin_inset Formula $V_{1}\eqsim V_{C}$
+\end_inset
+
+.
+ Esto se debe a que la frecuencia es baja (1KHz) relativa a la frecuencia
+ de cortec del circuito, por lo que el capacitor se comporta casi como un
+ circuito abierto.
+ Por ende, la corriente que circula por el circuito es muy pequeña, al igual
+ que la caída de tensión en la resistencia.
+ 
+\end_layout
+
+\begin_layout Subsection
+Medición del C del conjunto puntas y osciloscopio
+\end_layout
+
+\begin_layout Subsubsection
+Puntas x1:
+\end_layout
+
+\begin_layout Standard
+En la Figura 11, la tensión de entrada 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ corresponde al canal 2, y la de salida 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ al canal 1.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/ej1hx1.png
+	display false
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relación entrada - salida a la frecuencia de corte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De las mediciones realizadas, al obtener un desfasaje de 45° entre ambas
+ señales, corresponde a la frecuencia de corte del circuito, que en este
+ caso resultó de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_c=280KHz$
+\end_layout
+
+\end_inset
+
+.
+ Despejando de la ecuación de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+omega_0=
+\backslash
+frac{1}{RC}$
+\end_layout
+
+\end_inset
+
+, se obtiene el valor del capacitor para los casos de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_{teorica}$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_{medida}$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$C_{calculado}=
+\backslash
+frac{1}{2 
+\backslash
+pi f R}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{C}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{calculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280kHz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.7k\Omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $120.93pF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $280kHZ$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.7V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.75k\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $119.66pF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valor de C- Puntas x1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Puntas x10:
+\end_layout
+
+\begin_layout Standard
+En la Figura 12, la tensión de entrada 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ corresponde al canal 2, y la de salida 
+\begin_inset Formula $V_{C}$
+\end_inset
+
+ al canal 1.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename DATOS LABO TP1/ej1hx11.png
+	display false
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relación entrada - salida a la frecuencia de corte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede observar en la figura 12, el 
+\begin_inset Formula $\Delta x_{total}$
+\end_inset
+
+que representa el periodo de ambas señales es de 
+\begin_inset Formula $335ns$
+\end_inset
+
+, y el 
+\begin_inset Formula $\varDelta x_{0}$
+\end_inset
+
+que representa el tiempo de desfasaje que hay entre ellas es de 
+\begin_inset Formula $23ns$
+\end_inset
+
+.
+ Aplicando la fórmula:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\varphi(grados)=\frac{180}{\pi}\arcsin(\frac{\varDelta x_{0}}{\Delta x_{total}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se obtiene 
+\begin_inset Formula $\varphi=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left|V_{C}\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C_{calculado}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3MHz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.8V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.5V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.7k\Omega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3MHz$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.8V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.5V$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.748k\varOmega$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valor de C - Puntas x10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -96,11 +3682,31 @@ Ejercicio 2
 \end_layout
 
 \begin_layout Standard
-Se tiene el siguiente circuito CR serie, siendo R=4,7k
-\begin_inset Formula $\Omega$
+Se tiene el siguiente circuito CR serie, siendo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R=4.7k
+\backslash
+Omega$
+\end_layout
+
 \end_inset
 
- y C=1,5nF.
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C=1.5nF$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -165,7 +3771,7 @@ reference "fig:Circuito-CR-serie."
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{V_{R}(s)}{V_{gen}(s)}=\frac{sCR}{sCR+1}=\frac{\frac{s}{\frac{1}{CR}}}{\frac{s}{\frac{1}{CR}}+1}
+H(s)=\frac{V_{R}(S)}{V_{gen}(S)}=\frac{SCR}{SCR+1}=\frac{\frac{S}{\frac{1}{CR}}}{\frac{S}{\frac{1}{CR}}+1}
 \]
 
 \end_inset
@@ -181,7 +3787,7 @@ De esta forma queda en evidencia que se trata de un filtro pasa altos dado
 \begin_layout Standard
 \begin_inset Formula 
 \[
-H(s)=\frac{\frac{s}{\omega_{0}}}{\frac{s}{\omega_{0}}+1}
+H(s)=\frac{\frac{S}{\omega_{0}}}{\frac{S}{\omega_{0}}+1}
 \]
 
 \end_inset
@@ -194,19 +3800,59 @@ Donde
 \begin_inset Formula $\omega_{0}$
 \end_inset
 
- corresponde a la frecuencia de corte del filtro en rad/s.
+ corresponde a la frecuencia de corte del filtro en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+freq{rad}{seg}$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Tomando R=4,7K
-\begin_inset Formula $\Omega$
+Tomando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R=4.7K
+\backslash
+Omega$
+\end_layout
+
 \end_inset
 
- y C=1,5nF, la frecuencia de corte en Hz es f
-\begin_inset Formula $_{0}=$
+y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C=1.5nF$
+\end_layout
+
 \end_inset
 
- 22,575KHz.
+, la frecuencia de corte en Hz es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_0=22,575KHz$
+\end_layout
+
+\end_inset
+
+.
 \begin_inset Float figure
 placement H
 wide false
@@ -217,6 +3863,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename laboTp1Ej2a.png
+	display false
 	scale 50
 	rotateOrigin center
 
@@ -250,14 +3897,25 @@ ente.
 \end_layout
 
 \begin_layout Standard
-A partir del gráfico de la amplitud de H(s) presente en la Figura 
+A partir del gráfico de la amplitud de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$H(s)$
+\end_layout
+
+\end_inset
+
+ presente en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-de-Bode"
 
 \end_inset
 
-, se puede ver que el circuito CR serie se comporta, como habíamos planteado,
+, se puede ver que el circuito CR serie se comporta, como se había planteado,
  como un filtro pasa altos.
  ya que se ven atenuadas las frecuencias bajas.
 \end_layout
@@ -268,8 +3926,19 @@ Por otro lado, se puede ver lo mismo al analizar las impedancias (fasoriales)
 \end_layout
 
 \begin_layout Standard
-Sabiendo que X
-\begin_inset Formula $_{C}=\frac{1}{2\pi fC}$
+Sabiendo que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$X_c=
+\backslash
+frac{1}{2 
+\backslash
+pi f C}$
+\end_layout
+
 \end_inset
 
  es la reactancia capacitiva para bajas frecuencias se tiene que:
@@ -386,8 +4055,8 @@ name "fig:Función-transferencia-calculada"
 
 \end_inset
 
-Función transferencia calculada analíticamente y aquella obtenida a través
- de mediciones.
+Módulo de la función transferencia calculada analíticamente y de aquella
+ obtenida a través de mediciones.
  
 \end_layout
 
@@ -406,35 +4075,6 @@ Función transferencia calculada analíticamente y aquella obtenida a través
 \end_layout
 
 \begin_layout Standard
-En la Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Función-transferencia-calculada"
-
-\end_inset
-
- se puede observar que la función transferencia obtenida a partir del cociente
- entre 
-\begin_inset Formula $V_{R}$
-\end_inset
-
- y 
-\begin_inset Formula $V_{gen}$
-\end_inset
-
- medidos con el osciloscopio para 44 frecuencias distintas, se aproxima
- bien a la curva de la función transferencia calculada analíticamente.
- Se considera que el valor obtenido para la frecuencia cercana a 1KHz, el
- más alejado a la curva de H(s) calculada analíticamente, se debe a algún
- error en la medición.
-\end_layout
-
-\begin_layout Standard
-Otra forma de analizar esto es mediante el modo XY del osciloscopio.
- (VER ESTO SI ES REALMENTE OTRA FORMA DE EXPLICAR LO ANTERIOR)
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -448,7 +4088,124 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ej2ModoXY (1).png
+	filename ej2 fases.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fase-de-la"
+
+\end_inset
+
+Fase de la función transferencia calculada analíticamente y de aquella obtenida
+ a través de mediciones.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Función-transferencia-calculada"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fase-de-la"
+
+\end_inset
+
+ se puede observar que la función transferencia obtenida a partir del cociente
+ entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ medidos con el osciloscopio para 44 frecuencias distintas se aproxima bien
+ a la función transferencia calculada analíticamente.
+ Respecto al módulo de H(s) de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Función-transferencia-calculada"
+
+\end_inset
+
+, se considera que el valor obtenido para la frecuencia cercana a 1KHz,
+ el más alejado a la curva de H(s) calculada analíticamente, se debe a algún
+ error en la medición.
+ Sin embargo, para dicho gráfico es importante remarcar que para valores
+ cercanos a la frecuencia de corte el comportamiento del circuito se ve
+ bien aproximado al calculado.
+ En ambos gráficos se puede ver que para bajas frecuencias hay mayor diferencia
+ entre las dos curvas, mientras que no ocurre lo mismo con las altas frecuencias.
+ Esto puede deberse a que se observó que para bajas frecuencias se nota
+ la presencia de ruido.
+ Cuanto menor es la frecuencia, aumenta la presencia de ruido.
+ Un ejemplo del ruido observado para frecuencias bajas se puede ver para
+ una frecuencia de 300Hz en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ruido-observado-para"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Por otro lado, lo que ocurre con las fases también se puede observar mediante
+ el modo XY del osciloscopio.
+ Si bien al comparar lo observado utilizando el modo XY con las figuras
+ de Lissajous corroboran el comportamiento del desfasaje entre 
+\begin_inset Formula $V_{R}$
+\end_inset
+
+ y 
+\begin_inset Formula $V_{gen}$
+\end_inset
+
+ visto en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fase-de-la"
+
+\end_inset
+
+, el empleo de este modo no brinda información sobre la fase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2ModoXY NUEVO.png
 	scale 50
 	rotateOrigin center
 
@@ -530,7 +4287,7 @@ reference "fig:Visualización-de-"
 \end_inset
 
  entre ambas señales, dependiendo de la frecuencia con la que se trabaja.
- Para el caso de 1KHz se puede decir que no hay desfasaje entre 
+ Para el caso de 1KHz se ve claramente que hay desfasaje entre 
 \begin_inset Formula $V_{gen}$
 \end_inset
 
@@ -538,71 +4295,153 @@ reference "fig:Visualización-de-"
 \begin_inset Formula $V_{R}$
 \end_inset
 
-; es decir, 
-\begin_inset Formula $\varphi=0\textdegree.$
+; ya que al verse casi una sircunferencia, 
+\begin_inset Formula $\varphi\rightarrow90\textdegree.$
 \end_inset
 
- Al aumentar la frecuencia, se puede ver cómo va aumentando la fase debido
- a las figuras helípticas alargadas que se obtienen.
- Para las frecuencias mostradas, 
-\begin_inset Formula $0\textdegree<\varphi<90\textdegree$
+ Al aumentar la frecuencia, se puede ver cómo va disminuyendo la fase debido
+ a las figuras helípticas alargadas, pareciendose cada vez más a una recta.
+ Entre 1KHz y 20MHz, la fase va disminuyendo de 90
+\begin_inset Formula $\textdegree$
 \end_inset
 
-.
+ a 0
+\begin_inset Formula $\textdegree.$
+\end_inset
+
+ Para 20MHz se puede ver que 
+\begin_inset Formula $\varphi\rightarrow0\textdegree$
+\end_inset
+
+ debido que se observa una recta casi perfecta.
  
 \end_layout
 
 \begin_layout Standard
-(VER CON ESTO COMO JUSTIFICAR QUE ES PASA ALTOS.
- SE PUEDE JUSTIFICAR CON ESTO DEL DESFASAJE??????????)
+Para realizar lo anterior, se toma un rango ente 1kHz y 20MHz ya que se
+ considera que entre dichas frecuencias se puede apreciar bien lo que ocurre
+ con la fase.
+ No se consideran mediciones para frecuencias menores a 1kHz ya que, como
+ se vé en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ruido-observado-para"
+
+\end_inset
+
+ para el caso de 300Hz, hay demasiado ruido y es preferible no tenerlo para
+ las imagenes a evaluar.
 \end_layout
 
 \begin_layout Standard
-22,6KHz
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2 ruido 300Hz.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-20MHz
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ruido-observado-para"
+
+\end_inset
+
+Ruido observado para una frecuencia de 300Hz.
 \end_layout
 
-\begin_layout Standard
-1KHz
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-10KHz
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Standard
-100KHz
-\end_layout
+\end_inset
 
-\begin_layout Standard
-ruido 300Hz
-\end_layout
 
-\begin_layout Standard
-modoXY 300Hz
-\end_layout
-
-\begin_layout Standard
-3KHz
-\end_layout
-
-\begin_layout Standard
-50KHz 22 grados
-\end_layout
-
-\begin_layout Standard
-500KHz
-\end_layout
-
-\begin_layout Standard
-80 KHz 13 grados
 \end_layout
 
 \begin_layout Subsection
-c HACEEEEEEEEEEEEER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Comparación entre un circuito RC serie y un circuito CR serie
+\end_layout
+
+\begin_layout Standard
+Por lo analizado previamente, se puede ver que el circuito RC serie se comporta
+ como un filtro pasa bajos, mientras que el circuito CR serie se comporta
+ como un filtro pasa altos.
+ A continuación se puede observar este comportamiento en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
+.
+ Mirando el módulo de la función transferencia (la magnitud en dB), para
+ el circuito RC serie se ven atenuadas las altas frecuencias mientras que
+ para el circuito CR se atenúan las frecuencias bajas.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ej2c.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Bode-1"
+
+\end_inset
+
+Diagrama de Bode para un circuito RC serie y para un circuito CR serie.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -610,7 +4449,7 @@ Respuesta Transitoria
 \end_layout
 
 \begin_layout Standard
-Se observaron las respuestas transitorias del circuito de la Figura 
+Se observan las respuestas transitorias del circuito de la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Circuito-CR-serie."
@@ -670,12 +4509,8 @@ Respuesta del circuito CR serie a una señal triangular de 8KHz.
 \end_layout
 
 \begin_layout Subsubsection
-Análisis a partir de ecuaciones diferenciales correspondientes al circuito
-\end_layout
-
-\begin_layout Standard
-(FOTO DEL OSCILOSCOPIO MARCANDO INFO QUE NOS DA CON LA AMPLITUD, ETC.
- El dibujito que hice en la hoja)
+Análisis de la respuesta transitoria a partir de ecuaciones diferenciales
+ correspondientes al circuito
 \end_layout
 
 \begin_layout Standard
@@ -702,13 +4537,9 @@ A partir del osciloscopio, se obtiene que:
 Se analiza lo que ocurre para medio período de la señal triangular de entrada;
  es decir, la parte de la señal cuya pendiente es positiva.
  En la parte restante de un período, lo que sucede es simétrico a lo que
- se mostrará a continuación, ya que ocurre lo mismo pero respondiendo a
- una alimentación con pendiente negativa.
-\end_layout
-
-\begin_layout Standard
-(VER aca si poner algo: y que es en un intervalo de tiempo de 6,25.10^-5s
- el analisis)
+ se muestra a continuación, ya que ocurre lo mismo pero respondiendo a una
+ alimentación con pendiente negativa.
+ El siguiente análisis se lleva a cambo para un intervalo de tiempo de 625ms.
 \end_layout
 
 \begin_layout Standard
@@ -731,11 +4562,7 @@ siendo
 \begin_inset Formula $V_{gen}(0s)=0V=b$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-y 
+; y 
 \begin_inset Formula $m=\frac{2,98}{\frac{1}{16k}}\frac{V}{s}$
 \end_inset
 
@@ -743,7 +4570,7 @@ y
 \begin_inset Formula $\frac{V}{s}$
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -1052,11 +4879,6 @@ Respuesta transitoria sobre
 \end_layout
 
 \begin_layout Standard
-(ESTA BIEN QUE LA TENSION ARRANQUE EN UN VALOR NEGATIVO??????????????? PORQUE
- EL CAPACITOR ARRANCA CON POLARIDAD OPUESTA, YA CARGADO, PARA DONDE SE ANALIZA)
-\end_layout
-
-\begin_layout Standard
 Se ve que en ambos casos la tensión sobre la resistencia crece rápidamente
  al principio y luego tiende a mantenerse en un valor determinado.
  Esto se puede observar analizando lo que ocurre con la corriente mediante
@@ -1143,9 +4965,9 @@ V_{R}=CR\frac{dV_{gen}(t)}{dt}
 \end_layout
 
 \begin_layout Standard
-(ACA PONER ALGUNA CONCLUSION!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+(ACA PONER ALGUNA CONCLUSION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!)
+!!!!!!!!!!!!!!!!!!!!!!!)
 \end_layout
 
 \begin_layout Section
@@ -1168,9 +4990,9 @@ Para poder ver la respuesta en frecuencia del circuito RC serie de la Figura
  proveniente del generador de la rampa.
  Es importante remarcar que el tiempo del sweep del generador de la señal
  senoidal teóricamente debería ser igual al período de la rampa pero la
- diferencia entre dichos intervalos de tiempo se debe a que fue necesario
- modificar uno para poder apreciar en el osciloscopio lo se ve a continuación
- en la Figura 
+ diferencia que se ve en este caso entre dichos intervalos de tiempo se
+ debe a la necesidad de modificar uno para poder apreciar en el osciloscopio
+ de la mejor manera posible, lo que se ve a continuación en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-en-frecuencia"
@@ -1191,7 +5013,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ej3ModoXY.png
+	filename ej3XYyNORMAL.png
 	scale 60
 	rotateOrigin center
 
@@ -1207,7 +5029,8 @@ name "fig:Respuesta-en-frecuencia"
 
 \end_inset
 
-Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
+Respuesta en frecuencia del circuito CR serie en distintos modos del osciloscopi
+o.
 \end_layout
 
 \end_inset
@@ -1223,7 +5046,9 @@ Respuesta en frecuencia del circuito CR serie, en el modo XY de un osciloscopio.
 \begin_layout Standard
 Se puede ver que a altas frecuencias la salida se ve atenuada.
  Esto corresponde con la teoría ya que se trata del circuito de la Figura
- (AGREGARLA) que es un pasabajos, como se mostró previamente.
+ (AGREGARLA) que es un filtro pasa bajos, como se mostró previamente.
+ La imagen del modo normal permite ver como responde la señal senoidal mencionad
+a, al triggerear de forma sincronizada con la rampa.
 \end_layout
 
 \begin_layout Section
@@ -1231,7 +5056,174 @@ Ejercicio 4
 \end_layout
 
 \begin_layout Standard
-(COMPLETAR)
+Para la medición de la respuesta en frecuencia del osciloscopio, se lo configuró
+ en modo AC, activando el límite de ancho de banda a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
+\end_inset
+
+.
+ Para obtener una correcta respuesta en frecuencia, se debió utilizar un
+ generador de señales de mayor ancho de banda para asegurar que la atenuación
+ que se observe en la señal medida sea debido al límite de ancho de banda
+ seleccionado en el osciloscopio y no por el propio generador.
+ Por esto, se utilizó un generador de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50MHz$
+\end_layout
+
+\end_inset
+
+ de ancho de banda, que es el mayor disponible en el laboratorio luego de
+ los de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$15MHz$
+\end_layout
+
+\end_inset
+
+.
+ La respuesta en frecuencia obtenida se muestra en el siguiente gráfico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graficos/ej4Modulo.pdf
+	scale 40
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia del osciloscopio con BW Limit y filtro AC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puede observarse que la frecuencia de corte para cuando la ganancia unitaria
+ cae 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-3dB$
+\end_layout
+
+\end_inset
+
+ no resulta exactamente en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20MHz$
+\end_layout
+
+\end_inset
+
+ sino un poco después, en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$28MHz$
+\end_layout
+
+\end_inset
+
+.
+ Esto se debe a que, para realizar las mediciones a partir de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1MHz$
+\end_layout
+
+\end_inset
+
+, se utilizó la punta en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x10$
+\end_layout
+
+\end_inset
+
+, lo cual atenúa la señal de entrada 10 veces y puede introducir error en
+ la medición, lo cual lleva a que la frecuencia de corte teórica puesta
+ por el límite se vea desplazada en la medición práctica.
+ Se trató de compensar esto utilizando una señal de entrada de amplitud
+ elevada, en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10V_{pp}$
+\end_layout
+
+\end_inset
+
+, de forma tal de no llegar al nivel de ruido (aproximadamente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10mV_{pp}$
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \end_body
