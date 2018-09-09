@@ -1,0 +1,795 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Circuito RLC serie:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename rlc serie.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+RLC serie
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RLC-serie"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Subsection
+Cálculo de R:
+\end_layout
+
+\begin_layout Standard
+De la tabla provista en la consigna se obtienen los valores de el capacitor
+ y de la bobina:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Componente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Valor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\begin_inset Formula $nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\begin_inset Formula $\mu H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Valores de L y C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además del coeficiente de amortiguamiento:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula $\xi=0.19$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sabiendo que para un circuito RLC serie se cumple:
+\end_layout
+
+\begin_layout Standard
+Frecuencia de resonancia: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{0}=\frac{1}{\sqrt{LC}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Factor de Amortiguamiento:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha=\frac{R}{2L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coeficiente de Amortiguamiento:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\xi=\frac{\alpha}{\omega_{0}}=\frac{R}{2}\sqrt{\frac{C}{L}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despejando para R y reemplazando los valores conocidos, se llega a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R=2\xi\sqrt{\frac{L}{C}}\simeq120\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cálculo de la Función Transferencia
+\end_layout
+
+\begin_layout Standard
+De la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RLC-serie"
+
+\end_inset
+
+ se puede plantear:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{in}(s)=I\,(\,sL+R+\frac{1}{sC}\,)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{out}=I\,\frac{1}{sC}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Realizando el cociente entre ambas ecuaciones se llega a la función transferenci
+a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que los polos corresponden a:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p=-\alpha+j\,\omega_{d}=-60\,000+j\,310\,480
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p*=-\alpha-j\,\omega_{d}=-60\,000-j\,310\,480
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename PZMAP.png
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Polos del sistema 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde la frecuencia del transitorio es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{d}=\sqrt{\omega_{0}^{2}-\alpha^{2}}=310\,480\,\frac{rad}{s}\,\,\Rightarrow\,\,f_{d}=\frac{w_{d}}{2\pi}\simeq49\,400\,Hz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como los polos son complejos y conjugados, se puede decir que el sistema
+ es subamortiguado, lo cual tiene sentido ya que 
+\begin_inset Formula $\xi<1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cálculo de la Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+Sabiendo que se está analizando un sistema LTI, se puede obtener la respuesta
+ al escalón realizando la convolución entre la respuesta impulsiva y la
+ función escalón 
+\begin_inset Formula $u(t)$
+\end_inset
+
+, o lo que es equivalente, utilizando la transformda de Laplace:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{Y(s)}{X(s)}\Rightarrow Y(s)=H(s)\,X(s)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $X(s)$
+\end_inset
+
+ es la transformada de Laplace de la entrada al sistema, que en este caso
+ es la función escalón, y entonces 
+\begin_inset Formula $Y(s)$
+\end_inset
+
+ es la transformada de Laplace de la respuesta al escalón.
+ Por lo tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X(s)=\mathscr{L}\left\{ \,u(t)\,\right\} (s)=\frac{1}{s}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y(s)=\frac{1}{s}\,\frac{\omega_{0}^{2}}{s^{2}+2\alpha s+\omega_{0}^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Rightarrow y(t)=\mathscr{L}^{-1}\{Y(s)\}(t)=\left[1-e^{-\alpha t}\left(\frac{\alpha}{\omega_{d}}\sin\omega_{d}t+\cos\omega_{d}t\right)\right]u(t)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Características
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+Sobrepico: valor ponderado entre el valor del pico máximo y el valor de
+ la salida en régimen permanente (Aparece sobrepico porque 
+\begin_inset Formula $0<\xi<0.707$
+\end_inset
+
+).
+\begin_inset Formula 
+\begin{equation}
+M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e^{-\frac{\pi\alpha}{\omega_{d}}}=0.545
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Tiempo de establecimiento: valor de tiempo que el sistema necesita para
+ alcanzar un error del 5% del valor de la salida en régimen permanente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi^{2}}}\right)}{\alpha}\simeq50\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Subsection
+Caso 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cálculo de R
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{p}=e^{-\frac{\pi\xi}{\sqrt{1-\xi^{2}}}}=0.2\,\,\Longrightarrow\,\,\xi=0.456
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y como 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\xi=\frac{R}{2}\sqrt{\frac{C}{L}}\,\,\Longrightarrow\,\,R=288\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R=100\cdot288\Omega=28.8K\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para este valor de resistencia, los polos de la función transferencia son:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{1}=-28\,797\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-30\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso los polos son reales y distintos, por lo que el sistema es
+ sobreamortiguado.
+\end_layout
+
+\begin_layout Subsection
+Caso 
+\begin_inset Formula $d_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R=0\Omega\,\,\Rightarrow\,\,\alpha=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los polos serán:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{1}=j\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-j\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se corresponde a un circuito sin amortiguamiento.
+\end_layout
+
+\begin_layout Subsection
+Caso 
+\begin_inset Formula $d_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cálculo de R
+\end_layout
+
+\begin_layout Standard
+Para el caso criticamente amortiguado se debe cumplir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega_{0}=\alpha\,\,\Rightarrow\frac{1}{\sqrt{LC}}=\frac{R}{2L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despejando para R:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{C}=2\sqrt{\frac{L}{C}}=632.455532\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los polos serán iguales y reales:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{1}=-\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
