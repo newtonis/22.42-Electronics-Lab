@@ -1,14 +1,62 @@
-FloatLayout:
+#:import hex kivy.utils.get_color_from_hex
+[Title@Label]:
+    text: ctx.text if hasattr(ctx, 'text') else ''
+    font_size: 60
+    font_name:"BROADBAY.ttf"
+    markup: True
+[MyButton@Button]:
+    text: ctx.text if hasattr(ctx, 'text') else ''
+    font_size: 60
+    font_name:"BROADBAY.ttf"
+    markup: True
+
+<MyLabel@Label>
+    font_size: 40
+    markup: True
+
+
+
+<SelectionItemA>
+    title_text: Title
+
+    MyLabel:
+        text: root.label_text
+        id: Title
+    Slider:
+        id: Control
+        on_touch_move: root.touch_action()
+        on_value: root.value = self.value_normalized
+
+    MyLabel:
+        text: root.value_text
+        id: Value
+
+
+
+<ContainerBox@BoxLayout>:
     canvas.before:
         Color:
-            rgba: 0, 1, 0, 1
+            rgba: hex('#2c731b')
+
         Rectangle:
             # self here refers to the widget i.e FloatLayout
             pos: self.pos
             size: self.size
-    Button:
-        text: 'Hello World!!'
+    orientation: 'vertical'
+    Title:
+        text: "Bode"
+    WaitTimeMenu:
+        id: WaitTimeMenu
+    PointsMenu:
+        id: PointsMenu
+    StartFreqMenu:
+        id: StartFreqMenu
+    EndFreqMenu:
+        id: EndFreqMenu
+
+    MyButton:
+        text: 'Start'
         size_hint: .5, .5
         pos_hint: {'center_x':.5, 'center_y': .5}
 
-        
+
