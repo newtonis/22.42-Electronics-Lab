@@ -11,8 +11,12 @@ f=1:10:1e7;
 w=2*pi.*f;
 
 %Cuentas a manopla
-RE= (R./((C.*w).^2))./ (R^2 + (L.*w - 1./(C.*w)).^2);
-IMAG= ((-R^2./(C.*w)) -(L.*w - (1./(C.*w))*(L/C)))./ (R^2 + (L.*w - 1./(C.*w)).^2);
+Z1= 1./(1i.*w*C);
+Z2= R + 1i.*w*L;
+Z= (Z1.*Z2)./(Z1+Z2);
+RE= real(Z);
+%RE= (R./((C.*w).^2))./ (R^2 + (L.*w - 1./(C.*w)).^2);
+%IMAG= ((-R^2./(C.*w)) -(L.*w - (1./(C.*w))*(L/C)))./ (R^2 + (L.*w - 1./(C.*w)).^2);
 
 filename = 'Ejercicio1.xlsx';
 xlsread(filename);
