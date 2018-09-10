@@ -1,20 +1,24 @@
 #:import hex kivy.utils.get_color_from_hex
+#: import ListAdapter kivy.adapters.listadapter.ListAdapter
+#: import ListItemButton kivy.uix.listview.ListItemButton
+
 [Title@Label]:
     text: ctx.text if hasattr(ctx, 'text') else ''
     font_size: 60
     font_name:"BROADBAY.ttf"
     markup: True
-[MyButton@Button]:
-    text: ctx.text if hasattr(ctx, 'text') else ''
-    font_size: 60
-    font_name:"BROADBAY.ttf"
-    markup: True
+
 
 <MyLabel@Label>
     font_size: 40
     markup: True
 
-
+<StartButton>
+    text: "Start"
+    font_size: 60
+    font_name:"BROADBAY.ttf"
+    markup: True
+    on_release: root.release_action()
 
 <SelectionItemA>
     title_text: Title
@@ -26,7 +30,6 @@
         id: Control
         on_touch_move: root.touch_action()
         on_value: root.value = self.value_normalized
-
     MyLabel:
         text: root.value_text
         id: Value
@@ -53,10 +56,87 @@
         id: StartFreqMenu
     EndFreqMenu:
         id: EndFreqMenu
+    StartButton:
+        id: StartButton
 
-    MyButton:
-        text: 'Start'
-        size_hint: .5, .5
-        pos_hint: {'center_x':.5, 'center_y': .5}
+
+<selectProperty>
+    orientation:'vertical'
+
+    Label:
+        font_size: 60
+        font_name:"BROADBAY.ttf"
+        text: root.title_text
+
+    ListView:
+        id: Options
+        adapter:
+            ListAdapter(data=root.items,cls=ListItemButton)
+
+<ContinueMenu>
+    Button:
+        font_name:"BROADBAY.ttf"
+        text: "Return"
+        font_size: 60
+        on_release: root.back()
+    Button:
+        font_name:"BROADBAY.ttf"
+        text: "Start"
+        font_size: 60
+        on_release: root.start()
+
+
+<BodeMenu@BoxLayout>:
+    canvas:
+        Color:
+            rgba: hex('#2c731b')
+        Rectangle:
+            # self here refers to the widget i.e FloatLayout
+            pos: self.pos
+            size: self.size
+    orientation: 'vertical'
+    spacing: '30px'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: '30px'
+        SelectOsc:
+            id: SelectOsc
+        SelectGen:
+            id: SelectGen
+
+    ContinueMenu:
+        size_hint_y: 0.2
+        id: ContinueMenu
+
+
+<MeasMenu@FloatLayout>:
+    canvas:
+        Color:
+            rgba: hex('#2c731b')
+        Rectangle:
+            # self here refers to the widget i.e FloatLayout
+            pos: self.pos
+            size: self.size
+    orientation: 'vertical'
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'top'
+
+        Label:
+            text: "Sampling"
+            font_size: 60
+            font_name:"BROADBAY.ttf"
+            size_hint: None, None
+
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'top'
+
+        Label:
+            text: "Sampling"
+            font_size: 60
+            font_name:"BROADBAY.ttf"
+            size_hint: None, None
 
 
