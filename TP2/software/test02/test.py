@@ -1,3 +1,7 @@
+from kivy import Config
+
+Config.set('graphics', 'multisamples', '0')
+
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.boxlayout import *
