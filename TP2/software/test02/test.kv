@@ -10,6 +10,7 @@
 
 
 <MyLabel@Label>
+
     font_size: 40
     markup: True
 
@@ -77,12 +78,25 @@
     Button:
         font_name:"BROADBAY.ttf"
         text: "Return"
-        font_size: 60
+        font_size: 40
         on_release: root.back()
     Button:
         font_name:"BROADBAY.ttf"
         text: "Start"
-        font_size: 60
+        font_size: 40
+        on_release: root.start()
+
+
+<SampleMenu>
+    Button:
+        font_name:"BROADBAY.ttf"
+        text: "Back"
+        font_size: 40
+        on_release: root.back()
+    Button:
+        font_name:"BROADBAY.ttf"
+        text: "Finish"
+        font_size: 40
         on_release: root.start()
 
 
@@ -104,13 +118,44 @@
             id: SelectOsc
         SelectGen:
             id: SelectGen
+    AnchorLayout:
+        anchor_x: 'center'
+        anchor_y: 'bottom'
+        ContinueMenu:
+            size_hint_y: 0.2
+            id: ContinueMenu
 
-    ContinueMenu:
-        size_hint_y: 0.2
-        id: ContinueMenu
-
-
-<MeasMenu@FloatLayout>:
+<InfoMenu>:
+    orientation: 'vertical'
+    spacing: '20px'
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            font_size: 30
+            text: "Sample: 4/100"
+        Label:
+            font_size: 30
+            text: "Freq: 100 Hz"
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            font_size: 30
+            text: "Amp: "
+        Label:
+            font_size: 30
+            text: "Pha: "
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            font_size: 30
+            text: "X sca:"
+        Label:
+            font_size: 30
+            text: "Y sca:"
+    Label:
+        font_size: 30
+        text: "Current action: xx"
+<MeasMenu@BoxLayout>:
     canvas:
         Color:
             rgba: hex('#2c731b')
@@ -119,24 +164,26 @@
             pos: self.pos
             size: self.size
     orientation: 'vertical'
-    AnchorLayout:
-        anchor_x: 'center'
-        anchor_y: 'top'
+    BoxLayout:
 
+        size_hint_y: 0.8
+        orientation: 'vertical'
         Label:
+
+            size_hint_y: 0.2
             text: "Sampling"
             font_size: 60
             font_name:"BROADBAY.ttf"
-            size_hint: None, None
+        InfoMenu:
+            id: InfoMenu
+
 
     AnchorLayout:
         anchor_x: 'center'
-        anchor_y: 'top'
+        anchor_y: 'bottom'
+        size_hint_y: 0.2
+        SampleMenu:
+            id: SampleMenu
 
-        Label:
-            text: "Sampling"
-            font_size: 60
-            font_name:"BROADBAY.ttf"
-            size_hint: None, None
 
 

@@ -176,6 +176,19 @@ class ContinueMenu(BoxLayout):
             self.back_action()
 
 
+class SampleMenu(BoxLayout):
+    start_action = None
+    back_action = None
+
+    def start(self):
+        if self.start_action:
+            self.start_action()
+
+    def back(self):
+        if self.back_action:
+            self.back_action()
+            
+
 class ContainerBox(BoxLayout, Screen):
     def __init__(self, **kwargs):
         super(ContainerBox, self).__init__(**kwargs)
@@ -183,6 +196,10 @@ class ContainerBox(BoxLayout, Screen):
 
     def go_next_menu(self):
         self.manager.current = 'screen2'
+
+
+class InfoMenu(BoxLayout):
+    pass
 
 
 class BodeMenu(BoxLayout, Screen):
