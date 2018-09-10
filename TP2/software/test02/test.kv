@@ -72,7 +72,7 @@
     ListView:
         id: Options
         adapter:
-            ListAdapter(data=root.items,cls=ListItemButton)
+            ListAdapter(data=root.items,cls=ListItemButton,selection=root.selection)
 
 <ContinueMenu>
     Button:
@@ -131,30 +131,28 @@
     BoxLayout:
         orientation: 'horizontal'
         Label:
+            id: SampleText
             font_size: 30
             text: "Sample: 4/100"
         Label:
+            id: FreqText
             font_size: 30
             text: "Freq: 100 Hz"
     BoxLayout:
         orientation: 'horizontal'
         Label:
+            id: AmpText
             font_size: 30
             text: "Amp: "
         Label:
+            id: PhaText
             font_size: 30
             text: "Pha: "
-    BoxLayout:
-        orientation: 'horizontal'
-        Label:
-            font_size: 30
-            text: "X sca:"
-        Label:
-            font_size: 30
-            text: "Y sca:"
     Label:
+        id: ActionText
         font_size: 30
         text: "Current action: xx"
+
 <MeasMenu@BoxLayout>:
     canvas:
         Color:

@@ -2,6 +2,7 @@ from kivy import Config
 
 Config.set('graphics', 'multisamples', '0')
 
+import visa
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.boxlayout import *
@@ -12,18 +13,24 @@ from kivy.uix.listview import *
 from kivy.uix.anchorlayout import *
 from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.uix.listview import ListView
+from kivy.clock import Clock
+import bode
+
+import gen,osc
 
 
 from math import *
 
 import numpy as np
 
+rm = visa.ResourceManager()
+
 Builder.load_file("test.kv")
 
 wait_time_scale = np.linspace(0.001, 1, 10000)
 points_scale = np.linspace(10, 100, 100)
 freq_scale = np.logspace(0, 6.3, 1000)
-
+TIME_UPDATE = 0.1
 
 def get_rel_pos(rel, arr):
     if rel == 1:
@@ -143,24 +150,33 @@ class MyItemButton(ListItemButton):
 class SelectProperty(BoxLayout):
     title_text = StringProperty("Default value")
     items = ListProperty()
+    selection = ListProperty()
+
+    def __init__(self,**kwargs):
+        super(SelectProperty,self).__init__(**kwargs)
 
     def set_title(self, text):
         self.title_text = text
 
+    def get_selection(self):
+        return self.ids.Options.adapter.selection
+
 
 class SelectOsc(SelectProperty):
-
     def __init__(self, **kwargs):
         super(SelectOsc, self).__init__(**kwargs)
         self.set_title("Osc")
-        self.items = ["osc 1", "osc 2"]
+        self.items = rm.list_resources()
 
 
 class SelectGen(SelectProperty):
+    gen = None
+
     def __init__(self, **kwargs):
-        super(SelectGen,self).__init__(**kwargs)
+        super(SelectGen, self).__init__(**kwargs)
         self.set_title("Gen")
-        self.items = ["gen 1", "gen 2", "gen 3"]
+
+        self.items = rm.list_resources()
 
 
 class ContinueMenu(BoxLayout):
@@ -195,23 +211,47 @@ class ContainerBox(BoxLayout, Screen):
         self.ids.StartButton.set_press_action(self.go_next_menu)
 
     def go_next_menu(self):
+
         self.manager.current = 'screen2'
 
 
 class InfoMenu(BoxLayout):
-    pass
-
+    def __init__(self,**kwargs):
+        super(InfoMenu,self).__init__(**kwargs)
+        
+    def update_data(self, sample,total, freq, amp, pha , action):
+        freq = int(freq * 1000)/1000.0
+        self.ids.SampleText.text = "Sample: "+str(sample)+"/"+str(total)
+        self.ids.FreqText.text = "Freq: " + str(freq) + " Hz"
+        self.ids.AmpText.text = "Amp: " + str(amp) + " db"
+        self.ids.PhaText.text = "Pha: " + str(pha) + " deg"
+        self.ids.ActionText.text = action
 
 class BodeMenu(BoxLayout, Screen):
+    ref = None
+
     def __init__(self, **kwargs):
         super(BodeMenu, self).__init__(**kwargs)
         self.ids.ContinueMenu.start_action = self.start
         self.ids.ContinueMenu.back_action = self.back
 
+    def set_main_ref(self , ref):
+        self.ref = ref
+
     def on_enter(self, *args):
         pass
 
     def start(self):
+        if len(self.ids.SelectOsc.get_selection()) == 0:
+            print("No osc selected")
+            return 0
+        if len(self.ids.SelectGen.get_selection()) == 0:
+            print("No gen selected")
+            return 0
+
+        osc_file = self.ids.SelectOsc.get_selection()[0]
+        gen_file = self.ids.SelectGen.get_selection()[0]
+        self.ref.connect(osc= osc_file.text, gen= gen_file.text)
         self.manager.current = 'screen3'
 
     def back(self):
@@ -222,22 +262,58 @@ class MeasMenu(BoxLayout, Screen):
     def __init__(self, **kwargs):
         super(MeasMenu, self).__init__(**kwargs)
 
+    def update(self, data):
+        self.ids.InfoMenu.update_data(
+            sample=data["sample"],
+            total=data["total"],
+            freq=data["freq"],
+            amp=data["amp"],
+            pha=data["pha"],
+            action=data["action"]
+        )
 
 class MainApp(App):
+    my_osc = osc.Oscilloscope()
+    my_gen = gen.Gen()
+    bode = bode.Bode()
+
+    my_screenmanager = ScreenManager()
+    container_box = ContainerBox(name='screen1')
+    bode_menu = BodeMenu(name='screen2')
+    meas_menu = MeasMenu(name='screen3')
+
+    start_freq = None
+    end_freq = None
+    points = None
+    wait_time = None
 
     def build(self):
-        my_screenmanager = ScreenManager()
 
-        container_box = ContainerBox(name='screen1')
-        bode_menu = BodeMenu(name='screen2')
-        meas_menu = MeasMenu(name='screen3')
+        self.bode_menu.set_main_ref(self)
 
-        my_screenmanager.add_widget(container_box)
-        my_screenmanager.add_widget(bode_menu)
-        my_screenmanager.add_widget(meas_menu)
+        self.my_screenmanager.add_widget(self.container_box)
+        self.my_screenmanager.add_widget(self.bode_menu)
+        self.my_screenmanager.add_widget(self.meas_menu)
 
-        return my_screenmanager
+        return self.my_screenmanager
 
+    def connect(self, osc ,gen):
+        m = 10**6
+
+        self.my_osc.connect(osc)
+        self.my_gen.connect(gen)
+
+        self.bode.set(self.my_osc, self.my_gen)
+        self.bode.start(1000,1*m,100,2)
+
+    def update(self, dt):
+        self.bode.update()
+        self.meas_menu.update(self.bode.get_data())
+
+
+mainApp = MainApp()
+
+Clock.schedule_interval(mainApp.update,TIME_UPDATE)
 
 if __name__ == '__main__':
-    MainApp().run()
+    mainApp.run()
