@@ -1,4 +1,19 @@
 import numpy as np
+import csv
+from math import *
+
+
+def round_sig(x, sig=2):
+    return round(x, sig-int(floor(log10(abs(x))))-1)
+
+
+def convert_freq(value):
+    value = round_sig(value,2)
+    if value < 1000:
+        return "%3d Hz" % value
+    if value < 1000 * (10**3):
+        return "%.1f KHz" % (value/1000.0)
+    return "%.1f MHz" % (value/float(10**6))
 
 
 class Bode:
@@ -10,6 +25,7 @@ class Bode:
 
     last_read = dict()
     current_action = "Waiting to start"
+
 
     def __init__(self):
         self.last_read["amp"] = 0.1
@@ -26,13 +42,19 @@ class Bode:
         self.status = 1
         self.get_to_freq(self.points[self.current], self.amp)
 
+    def cancel(self):
+        self.data = dict()
+        current = 0
+        current_action = "Waiting to start"
+        self.status = 0
+
+
     def update(self):
         if self.status:
             if self.osc.update():
                 print("Taking point ", self.current)
                 self.current_action = "Saving data ..."
                 self.data[str(self.points[self.current])] = dict()
-
                 self.data[str(self.points[self.current])]["vin"] = self.amp
                 self.data[str(self.points[self.current])]["amp"] = self.osc.ratio2to1()
                 self.data[str(self.points[self.current])]["pha"] = self.osc.phase2to1()
@@ -77,9 +99,21 @@ class Bode:
         data["amp"] = self.last_read["amp"]
         data["pha"] = self.last_read["pha"]
         if self.current < len(self.points):
-            data["freq"] = self.points[self.current]
+            data["freq"] = convert_freq(self.points[self.current])
         else:
-            data["freq"] = 0.1
+            data["freq"] = convert_freq(0.1)
+
         data["action"] = self.current_action
 
         return data
+
+    def save_csv(self, filename):
+
+        with open(filename , 'w',newline='') as csvfile:
+            fieldnames = ["freq","vin", "amp", "pha"]
+
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+
+            for i in self.data:
+                writer.writerow({"freq":float(i), "vin": self.data[i]["vin"], "amp":self.data[i]["amp"], "pha":self.data[i]["pha"]})
