@@ -29,8 +29,21 @@ Builder.load_file("test.kv")
 
 wait_time_scale = np.linspace(0.001, 1, 10000)
 points_scale = np.linspace(10, 100, 100)
-freq_scale = np.logspace(0, 6.3, 1000)
-voltage_scale = np.linspace(0.1,20,200)
+freq_scale = np.logspace(2, 6.3, 1000)
+voltage_scale = np.linspace(0.1,20, 200)
+
+res_scale = []
+#res_scale = np.logspace(2,6,1000)
+
+com = [1,1.2,1.5,1.8,2.2,2.7,3.3,3.9,4.7,5.6,6.8,8.2]
+
+res_scale.append(-1)
+
+for i in range(1,7):
+    v = 10 ** (i)
+    for j in com:
+        res_scale.append(v * j)
+
 TIME_UPDATE = 0.1
 
 def get_rel_pos(rel, arr):
@@ -63,6 +76,18 @@ def convert_freq(value):
     if value < 1000 * (10**3):
         return "%.1f KHz" % (value/1000.0)
     return "%.1f MHz" % (value/float(10**6))
+
+
+def convert_res(value):
+    if value == -1:
+        return "No R"
+    value = round_sig(value,2)
+    if value < 10**3:
+        return str(value) + " ohm"
+    elif value < (10**6):
+        return str(value/(10**3)) + "K"
+    else:
+        return str(value/(10**6)) + "M"
 
 
 class SelectionItemA(BoxLayout):
@@ -164,6 +189,21 @@ class StartFreqMenu(SelectionItemA):
         return round_sig(get_rel_pos(self.get_value(), freq_scale),2)
 
 
+class ResistorMenu(SelectionItemA):
+    def __init__(self, **kwargs):
+        super(ResistorMenu,self).__init__(**kwargs)
+        self.set_text("R value")
+        self.update_action()
+        self.value = 0
+    def update_action(self):
+        value = get_rel_pos(self.get_value(), res_scale)
+        value = int(value)
+        self.set_value_text(convert_res(value))
+
+    def get_corrected_value(self):
+        return int( get_rel_pos(self.get_value(), res_scale))
+
+
 class StartButton(Button):
     screenmanager = ObjectProperty()
     press_action = None
@@ -254,6 +294,8 @@ class ContainerBox(BoxLayout, Screen):
         self.main_ref.set_data("points", self.ids.PointsMenu.get_corrected_value())
         self.main_ref.set_data("start_freq", self.ids.StartFreqMenu.get_corrected_value())
         self.main_ref.set_data("end_freq", self.ids.EndFreqMenu.get_corrected_value())
+        self.main_ref.set_data("res",self.ids.ResistorMenu.get_corrected_value())
+
         print(self.main_ref.data)
         self.manager.current = 'screen2'
 
@@ -300,12 +342,12 @@ class BodeMenu(BoxLayout, Screen):
         try:
             self.ref.connect(osc= osc_file.text, gen= gen_file.text, filename=self.ids.Filename.text)
             self.manager.current = 'screen3'
+
         except:
             print("Failure to connect")
 
     def back(self):
         self.manager.current = 'screen1'
-
 
 class MeasMenu(BoxLayout, Screen):
     def __init__(self, **kwargs):
@@ -378,7 +420,9 @@ class MainApp(App):
         self.bode.start(self.data["start_freq"],
                         self.data["end_freq"],
                         self.data["points"],
-                        self.data["v_input"])
+                        self.data["v_input"],
+                        self.data["time_delay"],
+                        self.data["res"])
 
     def set_data(self, key, content):
         self.data[key] = content

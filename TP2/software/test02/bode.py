@@ -1,6 +1,9 @@
 import numpy as np
 import csv
 from math import *
+import time
+
+from docutils.nodes import image
 
 
 def round_sig(x, sig=2):
@@ -25,7 +28,7 @@ class Bode:
 
     last_read = dict()
     current_action = "Waiting to start"
-
+    res = -1
 
     def __init__(self):
         self.last_read["amp"] = 0.1
@@ -35,12 +38,14 @@ class Bode:
         self.osc = osc
         self.gen = gen
 
-    def start(self, start_freq, end_freq, points , amp):
+    def start(self, start_freq, end_freq, points , amp , delay_time , resistor):
         self.points = np.logspace(np.log10(start_freq), np.log10(end_freq), points)
         self.current = 0
         self.amp = amp
         self.status = 1
         self.get_to_freq(self.points[self.current], self.amp)
+        self.delay_time = delay_time
+        self.res = resistor
 
     def cancel(self):
         self.data = dict()
@@ -54,10 +59,14 @@ class Bode:
             if self.osc.update():
                 print("Taking point ", self.current)
                 self.current_action = "Saving data ..."
+                time.sleep(self.delay_time)
                 self.data[str(self.points[self.current])] = dict()
                 self.data[str(self.points[self.current])]["vin"] = self.amp
                 self.data[str(self.points[self.current])]["amp"] = self.osc.ratio2to1()
                 self.data[str(self.points[self.current])]["pha"] = self.osc.phase2to1()
+                self.data[str(self.points[self.current])]["v1"] = self.osc.get_amplitude("1")
+                self.data[str(self.points[self.current])]["v2"] = self.osc.get_amplitude("2")
+
                 self.last_read["amp"] = self.data[str(self.points[self.current])]["amp"]
                 self.last_read["pha"] = self.data[str(self.points[self.current])]["pha"]
 
@@ -98,6 +107,7 @@ class Bode:
         data["total"] = len(self.points)
         data["amp"] = self.last_read["amp"]
         data["pha"] = self.last_read["pha"]
+
         if self.current < len(self.points):
             data["freq"] = convert_freq(self.points[self.current])
         else:
@@ -110,10 +120,41 @@ class Bode:
     def save_csv(self, filename):
 
         with open(filename , 'w',newline='') as csvfile:
-            fieldnames = ["freq","vin", "amp", "pha"]
+            if self.res == -1:
+                fieldnames = ["freq", "vin", "amp", "pha", "v1", "v2"]
+            else:
+                fieldnames = ["freq", "vin", "amp", "pha", "v1", "v2", "zin", "zin_db", "pha_zin"]
 
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
 
             for i in self.data:
-                writer.writerow({"freq":float(i), "vin": self.data[i]["vin"], "amp":self.data[i]["amp"], "pha":self.data[i]["pha"]})
+
+                if self.res == -1:
+                    writer.writerow(
+                        {"freq": float(i),
+                         "vin": self.data[i]["vin"],
+                         "amp": self.data[i]["amp"],
+                         "pha": self.data[i]["pha"],
+                         "v1": self.data[i]["v1"],
+                         "v2": self.data[i]["v2"]
+                         })
+                else:
+                    v1 = self.data[i]["v1"]
+                    v2 = self.data[i]["v2"] * (e ** ( 1j * self.data[i]["pha"]))
+                    zin = v2 / (v1 - v2) * self.res
+
+                    zin_abs = abs(zin)
+                    zin_pha = atan2(zin.imag,zin.real)
+
+                    writer.writerow(
+                        {"freq": float(i),
+                         "vin": self.data[i]["vin"],
+                         "amp": self.data[i]["amp"],
+                         "pha": self.data[i]["pha"],
+                         "v1": self.data[i]["v1"],
+                         "v2": self.data[i]["v2"],
+                         "zin": zin_abs,
+                         "zin_db": 20*log10(zin),
+                         "pha_zin": zin_pha
+                         })
