@@ -2,6 +2,7 @@ import numpy as np
 import csv
 from math import *
 import time
+import random
 
 from docutils.nodes import image
 
@@ -118,12 +119,22 @@ class Bode:
         return data
 
     def save_csv(self, filename):
+        try:
+            self.try_save_csv(filename)
+        except PermissionError:
+            newname = str(random.randrange(1000)) + filename
+            print("File already exist")
 
-        with open(filename , 'w',newline='') as csvfile:
+            print("Changing filename to ",newname)
+            self.try_save_csv(newname)
+
+    def try_save_csv(self, filename):
+
+        with open("output/"+filename, 'w', newline='') as csvfile:
             if self.res == -1:
                 fieldnames = ["freq", "vin", "amp", "pha", "v1", "v2"]
             else:
-                fieldnames = ["freq", "vin", "amp", "pha", "v1", "v2", "zin", "zin_db", "pha_zin"]
+                fieldnames = ["freq", "vin", "amp", "pha", "v1", "v2", "zin", "zin_db", "pha_zin","res"]
 
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
@@ -141,11 +152,11 @@ class Bode:
                          })
                 else:
                     v1 = self.data[i]["v1"]
-                    v2 = self.data[i]["v2"] * (e ** ( 1j * self.data[i]["pha"]))
+                    v2 = self.data[i]["v2"] * (e ** (1j * (self.data[i]["pha"] * pi / 180.0)))
                     zin = v2 / (v1 - v2) * self.res
 
                     zin_abs = abs(zin)
-                    zin_pha = atan2(zin.imag,zin.real)
+                    zin_pha = atan2(zin.imag, zin.real) / pi * 180.0
 
                     writer.writerow(
                         {"freq": float(i),
@@ -155,6 +166,7 @@ class Bode:
                          "v1": self.data[i]["v1"],
                          "v2": self.data[i]["v2"],
                          "zin": zin_abs,
-                         "zin_db": 20*log10(zin),
-                         "pha_zin": zin_pha
+                         "zin_db": 20*log10(zin_abs),
+                         "pha_zin": zin_pha,
+                         "res": self.res
                          })

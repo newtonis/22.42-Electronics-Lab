@@ -1,0 +1,4001 @@
+('C:\\Users\\ariel\\informesLabo\\TP2\\software\\test02\\build\\test\\PYZ-00.pyz',
+ [('multiprocessing.popen_fork',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\contextvars.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\numbers.py',
+   'PYMODULE'),
+  ('hmac', 'C:\\Program Files (x86)\\Python37-32\\lib\\hmac.py', 'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.semaphore_tracker',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\semaphore_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('queue', 'C:\\Program Files (x86)\\Python37-32\\lib\\queue.py', 'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('win32com',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\__init__.py',
+   'PYMODULE'),
+  ('win32com.server.util',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\server\\util.py',
+   'PYMODULE'),
+  ('win32com.server.dispatcher',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\server\\dispatcher.py',
+   'PYMODULE'),
+  ('win32traceutil',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32\\lib\\win32traceutil.py',
+   'PYMODULE'),
+  ('win32com.util',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\util.py',
+   'PYMODULE'),
+  ('win32con',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32\\lib\\win32con.py',
+   'PYMODULE'),
+  ('win32com.server.exception',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\server\\exception.py',
+   'PYMODULE'),
+  ('winerror',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32\\lib\\winerror.py',
+   'PYMODULE'),
+  ('win32com.server.policy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\server\\policy.py',
+   'PYMODULE'),
+  ('win32com.client',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\__init__.py',
+   'PYMODULE'),
+  ('win32com.client.makepy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\makepy.py',
+   'PYMODULE'),
+  ('pywin.dialogs.status',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\dialogs\\status.py',
+   'PYMODULE'),
+  ('pywin.mfc.thread',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\thread.py',
+   'PYMODULE'),
+  ('pywin.mfc.object',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\object.py',
+   'PYMODULE'),
+  ('pywin.mfc.dialog',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\dialog.py',
+   'PYMODULE'),
+  ('pywin.mfc.window',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\window.py',
+   'PYMODULE'),
+  ('pywin.mfc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\mfc\\__init__.py',
+   'PYMODULE'),
+  ('pywin.dialogs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\dialogs\\__init__.py',
+   'PYMODULE'),
+  ('pywin',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\__init__.py',
+   'PYMODULE'),
+  ('win32com.client.gencache',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\gencache.py',
+   'PYMODULE'),
+  ('win32com.client.selecttlb',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\selecttlb.py',
+   'PYMODULE'),
+  ('pywin.dialogs.list',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\Pythonwin\\pywin\\dialogs\\list.py',
+   'PYMODULE'),
+  ('commctrl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32\\lib\\commctrl.py',
+   'PYMODULE'),
+  ('win32com.client.genpy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\genpy.py',
+   'PYMODULE'),
+  ('win32com.client.CLSIDToClass',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\CLSIDToClass.py',
+   'PYMODULE'),
+  ('win32com.client.dynamic',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\dynamic.py',
+   'PYMODULE'),
+  ('win32com.client.build',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\build.py',
+   'PYMODULE'),
+  ('pywintypes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32\\lib\\pywintypes.py',
+   'PYMODULE'),
+  ('distutils.sysconfig',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\sysconfig.py',
+   'PYMODULE'),
+  ('distutils',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\__init__.py',
+   'PYMODULE'),
+  ('distutils.archive_util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\archive_util.py',
+   'PYMODULE'),
+  ('distutils.dir_util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\dir_util.py',
+   'PYMODULE'),
+  ('distutils.file_util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\file_util.py',
+   'PYMODULE'),
+  ('distutils.dep_util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\dep_util.py',
+   'PYMODULE'),
+  ('distutils.spawn',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\spawn.py',
+   'PYMODULE'),
+  ('distutils.debug',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\debug.py',
+   'PYMODULE'),
+  ('distutils.ccompiler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\ccompiler.py',
+   'PYMODULE'),
+  ('distutils.fancy_getopt',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\fancy_getopt.py',
+   'PYMODULE'),
+  ('distutils.util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\util.py',
+   'PYMODULE'),
+  ('distutils.filelist',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\filelist.py',
+   'PYMODULE'),
+  ('lib2to3.refactor',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\refactor.py',
+   'PYMODULE'),
+  ('lib2to3.btm_matcher',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\btm_matcher.py',
+   'PYMODULE'),
+  ('lib2to3.btm_utils',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\btm_utils.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.grammar',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\grammar.py',
+   'PYMODULE'),
+  ('lib2to3.pygram',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pygram.py',
+   'PYMODULE'),
+  ('lib2to3.pytree',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pytree.py',
+   'PYMODULE'),
+  ('lib2to3',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\__init__.py',
+   'PYMODULE'),
+  ('lib2to3.patcomp',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\patcomp.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.parse',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\parse.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.literals',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\literals.py',
+   'PYMODULE'),
+  ('lib2to3.fixer_util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\fixer_util.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.token',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\token.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.tokenize',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\tokenize.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.driver',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\driver.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2.pgen',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\pgen.py',
+   'PYMODULE'),
+  ('lib2to3.pgen2',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\lib2to3\\pgen2\\__init__.py',
+   'PYMODULE'),
+  ('distutils.log',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\log.py',
+   'PYMODULE'),
+  ('distutils.text_file',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\text_file.py',
+   'PYMODULE'),
+  ('_osx_support',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_osx_support.py',
+   'PYMODULE'),
+  ('distutils.errors',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\errors.py',
+   'PYMODULE'),
+  ('win32com.server',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\server\\__init__.py',
+   'PYMODULE'),
+  ('win32com.universal',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\universal.py',
+   'PYMODULE'),
+  ('win32com.client.util',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32com\\client\\util.py',
+   'PYMODULE'),
+  ('imp', 'C:\\Program Files (x86)\\Python37-32\\lib\\imp.py', 'PYMODULE'),
+  ('pythoncom',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\pythoncom.py',
+   'PYMODULE'),
+  ('pkg_resources',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.__about__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.version',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.appdirs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
+   'PYMODULE'),
+  ('win32com.shell.shellcon',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32comext\\shell\\shellcon.py',
+   'PYMODULE'),
+  ('win32com.shell',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32comext\\shell\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.six',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.specifiers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('uuid', 'C:\\Program Files (x86)\\Python37-32\\lib\\uuid.py', 'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\_aix.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('netbios',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\win32\\lib\\netbios.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('pkg_resources.py31compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\py31compat.py',
+   'PYMODULE'),
+  ('pkg_resources.extern',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pkg_resources\\extern\\__init__.py',
+   'PYMODULE'),
+  ('ntpath',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ntpath.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\datetime.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\typing.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\__future__.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\difflib.py',
+   'PYMODULE'),
+  ('ast', 'C:\\Program Files (x86)\\Python37-32\\lib\\ast.py', 'PYMODULE'),
+  ('inspect',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\inspect.py',
+   'PYMODULE'),
+  ('os', 'C:\\Program Files (x86)\\Python37-32\\lib\\os.py', 'PYMODULE'),
+  ('cmd', 'C:\\Program Files (x86)\\Python37-32\\lib\\cmd.py', 'PYMODULE'),
+  ('bdb', 'C:\\Program Files (x86)\\Python37-32\\lib\\bdb.py', 'PYMODULE'),
+  ('opcode',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\opcode.py',
+   'PYMODULE'),
+  ('dis', 'C:\\Program Files (x86)\\Python37-32\\lib\\dis.py', 'PYMODULE'),
+  ('codeop',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\codeop.py',
+   'PYMODULE'),
+  ('code', 'C:\\Program Files (x86)\\Python37-32\\lib\\code.py', 'PYMODULE'),
+  ('glob', 'C:\\Program Files (x86)\\Python37-32\\lib\\glob.py', 'PYMODULE'),
+  ('shlex', 'C:\\Program Files (x86)\\Python37-32\\lib\\shlex.py', 'PYMODULE'),
+  ('runpy', 'C:\\Program Files (x86)\\Python37-32\\lib\\runpy.py', 'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\pkgutil.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc', 'C:\\Program Files (x86)\\Python37-32\\lib\\netrc.py', 'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('plistlib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\plistlib.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\platform.py',
+   'PYMODULE'),
+  ('token', 'C:\\Program Files (x86)\\Python37-32\\lib\\token.py', 'PYMODULE'),
+  ('tokenize',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\tokenize.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('tty', 'C:\\Program Files (x86)\\Python37-32\\lib\\tty.py', 'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\html\\entities.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('ssl', 'C:\\Program Files (x86)\\Python37-32\\lib\\ssl.py', 'PYMODULE'),
+  ('http.client',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\optparse.py',
+   'PYMODULE'),
+  ('uu', 'C:\\Program Files (x86)\\Python37-32\\lib\\uu.py', 'PYMODULE'),
+  ('quopri',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\quopri.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\calendar.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\base64.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\bisect.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\random.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('bz2', 'C:\\Program Files (x86)\\Python37-32\\lib\\bz2.py', 'PYMODULE'),
+  ('lzma', 'C:\\Program Files (x86)\\Python37-32\\lib\\lzma.py', 'PYMODULE'),
+  ('_compression',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_compression.py',
+   'PYMODULE'),
+  ('gzip', 'C:\\Program Files (x86)\\Python37-32\\lib\\gzip.py', 'PYMODULE'),
+  ('tarfile',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\shutil.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\selectors.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\socket.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\webbrowser.py',
+   'PYMODULE'),
+  ('pydoc', 'C:\\Program Files (x86)\\Python37-32\\lib\\pydoc.py', 'PYMODULE'),
+  ('getopt',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\getopt.py',
+   'PYMODULE'),
+  ('pdb', 'C:\\Program Files (x86)\\Python37-32\\lib\\pdb.py', 'PYMODULE'),
+  ('unittest.util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\string.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\threading.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\pickle.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\pprint.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('stat', 'C:\\Program Files (x86)\\Python37-32\\lib\\stat.py', 'PYMODULE'),
+  ('genericpath',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\posixpath.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\signal.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\struct.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\gettext.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\argparse.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\doctest.py',
+   'PYMODULE'),
+  ('copy', 'C:\\Program Files (x86)\\Python37-32\\lib\\copy.py', 'PYMODULE'),
+  ('numpy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.pytesttester',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\pytesttester.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.decorators',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\decorators.py',
+   'PYMODULE'),
+  ('numpy.testing._private.parameterized',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\parameterized.py',
+   'PYMODULE'),
+  ('numpy.testing._private.noseclasses',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\noseclasses.py',
+   'PYMODULE'),
+  ('numpy.testing._private.nosetester',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\nosetester.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.core.numerictypes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy.core.fromnumeric',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy.core._methods',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\_methods.py',
+   'PYMODULE'),
+  ('numpy.core.numeric',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\numeric.py',
+   'PYMODULE'),
+  ('numpy.core.arrayprint',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\arrayprint.py',
+   'PYMODULE'),
+  ('_dummy_thread',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_dummy_thread.py',
+   'PYMODULE'),
+  ('numpy.core._internal',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\_internal.py',
+   'PYMODULE'),
+  ('numpy.lib.utils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\utils.py',
+   'PYMODULE'),
+  ('numpy.distutils.cpuinfo',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\cpuinfo.py',
+   'PYMODULE'),
+  ('numpy.distutils.compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\compat.py',
+   'PYMODULE'),
+  ('numpy.distutils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\__init__.py',
+   'PYMODULE'),
+  ('numpy.distutils.fcompiler',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\fcompiler\\__init__.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.config_compiler',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\config_compiler.py',
+   'PYMODULE'),
+  ('numpy.distutils.command',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\__init__.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.egg_info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\egg_info.py',
+   'PYMODULE'),
+  ('setuptools.command.egg_info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\egg_info.py',
+   'PYMODULE'),
+  ('setuptools.glob',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\glob.py',
+   'PYMODULE'),
+  ('setuptools.unicode_utils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\unicode_utils.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_egg',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\bdist_egg.py',
+   'PYMODULE'),
+  ('setuptools.extension',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\extension.py',
+   'PYMODULE'),
+  ('setuptools.monkey',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\monkey.py',
+   'PYMODULE'),
+  ('distutils.extension',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\extension.py',
+   'PYMODULE'),
+  ('setuptools.command',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.command.install_scripts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\install_scripts.py',
+   'PYMODULE'),
+  ('setuptools.command.easy_install',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\easy_install.py',
+   'PYMODULE'),
+  ('setuptools.dist',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\dist.py',
+   'PYMODULE'),
+  ('setuptools.py36compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\py36compat.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\configparser.py',
+   'PYMODULE'),
+  ('setuptools.config',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\config.py',
+   'PYMODULE'),
+  ('setuptools.windows_support',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\windows_support.py',
+   'PYMODULE'),
+  ('setuptools.depends',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\depends.py',
+   'PYMODULE'),
+  ('setuptools.py33compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\py33compat.py',
+   'PYMODULE'),
+  ('html.parser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\html\\parser.py',
+   'PYMODULE'),
+  ('_markupbase',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\_markupbase.py',
+   'PYMODULE'),
+  ('distutils.version',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\version.py',
+   'PYMODULE'),
+  ('distutils.cmd',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\cmd.py',
+   'PYMODULE'),
+  ('setuptools.wheel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\wheel.py',
+   'PYMODULE'),
+  ('setuptools.pep425tags',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\pep425tags.py',
+   'PYMODULE'),
+  ('setuptools.glibc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\glibc.py',
+   'PYMODULE'),
+  ('setuptools.package_index',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\package_index.py',
+   'PYMODULE'),
+  ('setuptools.ssl_support',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\ssl_support.py',
+   'PYMODULE'),
+  ('setuptools.archive_util',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools.py27compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\py27compat.py',
+   'PYMODULE'),
+  ('setuptools.sandbox',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\sandbox.py',
+   'PYMODULE'),
+  ('site',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\PyInstaller\\fake-modules\\site.py',
+   'PYMODULE'),
+  ('distutils.command.build_scripts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\build_scripts.py',
+   'PYMODULE'),
+  ('distutils.command',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\__init__.py',
+   'PYMODULE'),
+  ('distutils.command.install',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\install.py',
+   'PYMODULE'),
+  ('distutils.command.install_scripts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\install_scripts.py',
+   'PYMODULE'),
+  ('distutils.command.bdist',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\bdist.py',
+   'PYMODULE'),
+  ('setuptools.command.setopt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\setopt.py',
+   'PYMODULE'),
+  ('setuptools.command.sdist',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools.command.py36compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\py36compat.py',
+   'PYMODULE'),
+  ('distutils.command.sdist',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.pyparsing',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.requirements',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.__about__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.six',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\six.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.utils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools.msvc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\msvc.py',
+   'PYMODULE'),
+  ('distutils.msvc9compiler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\msvc9compiler.py',
+   'PYMODULE'),
+  ('distutils.command.build_ext',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\build_ext.py',
+   'PYMODULE'),
+  ('distutils._msvccompiler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\_msvccompiler.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.namespaces',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\namespaces.py',
+   'PYMODULE'),
+  ('setuptools.version',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\version.py',
+   'PYMODULE'),
+  ('setuptools.extern',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\extern\\__init__.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.develop',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\develop.py',
+   'PYMODULE'),
+  ('setuptools.command.develop',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\develop.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.install_clib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\install_clib.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.bdist_rpm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\bdist_rpm.py',
+   'PYMODULE'),
+  ('distutils.command.bdist_rpm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\bdist_rpm.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_rpm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\bdist_rpm.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.install',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\install.py',
+   'PYMODULE'),
+  ('setuptools.command.install',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\setuptools\\command\\install.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.install_headers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\install_headers.py',
+   'PYMODULE'),
+  ('distutils.command.install_headers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\install_headers.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.install_data',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\install_data.py',
+   'PYMODULE'),
+  ('distutils.command.install_data',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\install_data.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.sdist',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\sdist.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.build_scripts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\build_scripts.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.build_clib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\build_clib.py',
+   'PYMODULE'),
+  ('distutils.command.build_clib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\distutils\\command\\build_clib.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.build_ext',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\build_ext.py',
+   'PYMODULE'),
+  ('numpy.distutils.system_info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\system_info.py',
+   'PYMODULE'),
+  ('numpy.f2py',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py.diagnose',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\diagnose.py',
+   'PYMODULE'),
+  ('numpy.f2py.f2py_testing',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\f2py_testing.py',
+   'PYMODULE'),
+  ('numpy.f2py.f2py2e',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\f2py2e.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.build_src',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\build_src.py',
+   'PYMODULE'),
+  ('numpy.distutils.conv_template',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\conv_template.py',
+   'PYMODULE'),
+  ('numpy.distutils.from_template',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\from_template.py',
+   'PYMODULE'),
+  ('numpy.f2py.auxfuncs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\auxfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.f90mod_rules',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\f90mod_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.rules',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.use_rules',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\use_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.common_rules',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\common_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.func2subr',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\func2subr.py',
+   'PYMODULE'),
+  ('numpy.f2py.crackfortran',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\crackfortran.py',
+   'PYMODULE'),
+  ('fileinput',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\fileinput.py',
+   'PYMODULE'),
+  ('numpy.f2py.cb_rules',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\cb_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.capi_maps',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\capi_maps.py',
+   'PYMODULE'),
+  ('numpy.f2py.cfuncs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\cfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.__version__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\f2py\\__version__.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.build_py',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\build_py.py',
+   'PYMODULE'),
+  ('distutils.command.build_py',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\build_py.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.build',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\build.py',
+   'PYMODULE'),
+  ('distutils.command.build',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\build.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.config',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\config.py',
+   'PYMODULE'),
+  ('numpy.distutils.command.autodist',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\command\\autodist.py',
+   'PYMODULE'),
+  ('numpy.distutils.mingw32ccompiler',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\mingw32ccompiler.py',
+   'PYMODULE'),
+  ('distutils.msvccompiler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\msvccompiler.py',
+   'PYMODULE'),
+  ('distutils.unixccompiler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\unixccompiler.py',
+   'PYMODULE'),
+  ('distutils.cygwinccompiler',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\cygwinccompiler.py',
+   'PYMODULE'),
+  ('distutils.command.config',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\command\\config.py',
+   'PYMODULE'),
+  ('distutils.core',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\core.py',
+   'PYMODULE'),
+  ('distutils.config',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\config.py',
+   'PYMODULE'),
+  ('cgi', 'C:\\Program Files (x86)\\Python37-32\\lib\\cgi.py', 'PYMODULE'),
+  ('distutils.dist',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\dist.py',
+   'PYMODULE'),
+  ('distutils.versionpredicate',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\distutils\\versionpredicate.py',
+   'PYMODULE'),
+  ('numpy.distutils.core',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\core.py',
+   'PYMODULE'),
+  ('numpy.distutils.numpy_distribution',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\numpy_distribution.py',
+   'PYMODULE'),
+  ('numpy.distutils.extension',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\extension.py',
+   'PYMODULE'),
+  ('numpy.distutils.exec_command',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\exec_command.py',
+   'PYMODULE'),
+  ('numpy.distutils.environment',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\environment.py',
+   'PYMODULE'),
+  ('numpy.distutils.misc_util',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\misc_util.py',
+   'PYMODULE'),
+  ('curses',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\curses\\__init__.py',
+   'PYMODULE'),
+  ('curses.has_key',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\curses\\has_key.py',
+   'PYMODULE'),
+  ('dummy_threading',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\dummy_threading.py',
+   'PYMODULE'),
+  ('numpy.distutils.__config__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\__config__.py',
+   'PYMODULE'),
+  ('numpy.distutils.npy_pkg_config',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\npy_pkg_config.py',
+   'PYMODULE'),
+  ('numpy.distutils.info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\info.py',
+   'PYMODULE'),
+  ('numpy.distutils.unixccompiler',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\unixccompiler.py',
+   'PYMODULE'),
+  ('numpy.distutils.ccompiler',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\ccompiler.py',
+   'PYMODULE'),
+  ('numpy.distutils.lib2def',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\lib2def.py',
+   'PYMODULE'),
+  ('numpy.distutils.log',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\log.py',
+   'PYMODULE'),
+  ('numpy.distutils.__version__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\distutils\\__version__.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.dual',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\numpy\\dual.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.lib.index_tricks',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\index_tricks.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.lib.function_base',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\function_base.py',
+   'PYMODULE'),
+  ('numpy.lib.histograms',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\histograms.py',
+   'PYMODULE'),
+  ('numpy.compat.py3k',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\compat\\py3k.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\pathlib.py',
+   'PYMODULE'),
+  ('numpy.lib.twodim_base',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\twodim_base.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random.info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\random\\info.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.fft.fftpack',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\fft\\fftpack.py',
+   'PYMODULE'),
+  ('numpy.fft.info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\fft\\info.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.linalg.info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\linalg\\info.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.arraypad',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\arraypad.py',
+   'PYMODULE'),
+  ('numpy.lib.arrayterator',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\arrayterator.py',
+   'PYMODULE'),
+  ('numpy.lib.financial',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\financial.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.core.records',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\records.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.arraysetops',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\arraysetops.py',
+   'PYMODULE'),
+  ('numpy.lib.polynomial',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.ufunclike',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\ufunclike.py',
+   'PYMODULE'),
+  ('numpy.lib.shape_base',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\shape_base.py',
+   'PYMODULE'),
+  ('numpy.lib.nanfunctions',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\nanfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.type_check',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\type_check.py',
+   'PYMODULE'),
+  ('numpy.core.getlimits',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy.core.machar',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\machar.py',
+   'PYMODULE'),
+  ('numpy.lib.info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\lib\\info.py',
+   'PYMODULE'),
+  ('numpy.compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\compat\\__init__.py',
+   'PYMODULE'),
+  ('numpy.compat._inspect',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\compat\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core.einsumfunc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy.core.shape_base',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy.core.function_base',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\function_base.py',
+   'PYMODULE'),
+  ('numpy.core.memmap',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\memmap.py',
+   'PYMODULE'),
+  ('numpy.core.defchararray',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy.core.info',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\core\\info.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy.add_newdocs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\add_newdocs.py',
+   'PYMODULE'),
+  ('numpy._import_tools',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\_import_tools.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\version.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('osc',
+   'C:\\Users\\ariel\\informesLabo\\TP2\\software\\test02\\osc.py',
+   'PYMODULE'),
+  ('gen',
+   'C:\\Users\\ariel\\informesLabo\\TP2\\software\\test02\\gen.py',
+   'PYMODULE'),
+  ('bode',
+   'C:\\Users\\ariel\\informesLabo\\TP2\\software\\test02\\bode.py',
+   'PYMODULE'),
+  ('docutils.nodes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\nodes.py',
+   'PYMODULE'),
+  ('docutils.transforms',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\__init__.py',
+   'PYMODULE'),
+  ('docutils.transforms.components',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\components.py',
+   'PYMODULE'),
+  ('docutils.utils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\__init__.py',
+   'PYMODULE'),
+  ('docutils.utils.urischemes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\urischemes.py',
+   'PYMODULE'),
+  ('docutils.utils.punctuation_chars',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\punctuation_chars.py',
+   'PYMODULE'),
+  ('docutils.utils.smartquotes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\smartquotes.py',
+   'PYMODULE'),
+  ('docutils.frontend',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\frontend.py',
+   'PYMODULE'),
+  ('docutils.utils.error_reporting',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\error_reporting.py',
+   'PYMODULE'),
+  ('docutils.io',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\docutils\\io.py',
+   'PYMODULE'),
+  ('docutils._compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\_compat.py',
+   'PYMODULE'),
+  ('docutils.transforms.parts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\parts.py',
+   'PYMODULE'),
+  ('docutils.transforms.misc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\misc.py',
+   'PYMODULE'),
+  ('docutils.transforms.references',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\references.py',
+   'PYMODULE'),
+  ('docutils.transforms.frontmatter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\frontmatter.py',
+   'PYMODULE'),
+  ('docutils.transforms.writer_aux',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\writer_aux.py',
+   'PYMODULE'),
+  ('docutils.transforms.universal',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\transforms\\universal.py',
+   'PYMODULE'),
+  ('docutils.languages',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\__init__.py',
+   'PYMODULE'),
+  ('docutils',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\__init__.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.html',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\html.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.states',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\states.py',
+   'PYMODULE'),
+  ('docutils.utils.roman',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\roman.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.roles',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\roles.py',
+   'PYMODULE'),
+  ('docutils.utils.code_analyzer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\code_analyzer.py',
+   'PYMODULE'),
+  ('pygments.formatters.html',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\html.py',
+   'PYMODULE'),
+  ('pygments.formatters',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\__init__.py',
+   'PYMODULE'),
+  ('pygments.plugin',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\plugin.py',
+   'PYMODULE'),
+  ('pygments.formatters._mapping',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\_mapping.py',
+   'PYMODULE'),
+  ('pygments.util',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\util.py',
+   'PYMODULE'),
+  ('pygments.token',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\token.py',
+   'PYMODULE'),
+  ('pygments.formatter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatter.py',
+   'PYMODULE'),
+  ('pygments.styles',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\__init__.py',
+   'PYMODULE'),
+  ('pygments.lexers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\__init__.py',
+   'PYMODULE'),
+  ('pygments.lexers._stan_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_stan_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers._scilab_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_scilab_builtins.py',
+   'PYMODULE'),
+  ('pygments.modeline',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\modeline.py',
+   'PYMODULE'),
+  ('pygments.lexers._mapping',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_mapping.py',
+   'PYMODULE'),
+  ('pygments',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\__init__.py',
+   'PYMODULE'),
+  ('pygments.styles.pastie',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\pastie.py',
+   'PYMODULE'),
+  ('pygments.style',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\style.py',
+   'PYMODULE'),
+  ('pygments.styles.friendly',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\friendly.py',
+   'PYMODULE'),
+  ('pygments.styles.igor',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\igor.py',
+   'PYMODULE'),
+  ('pygments.styles.vs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\vs.py',
+   'PYMODULE'),
+  ('pygments.styles.algol',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\algol.py',
+   'PYMODULE'),
+  ('pygments.styles.fruity',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\fruity.py',
+   'PYMODULE'),
+  ('pygments.styles.murphy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\murphy.py',
+   'PYMODULE'),
+  ('pygments.styles.manni',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\manni.py',
+   'PYMODULE'),
+  ('pygments.styles.default',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\default.py',
+   'PYMODULE'),
+  ('pygments.styles.lovelace',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\lovelace.py',
+   'PYMODULE'),
+  ('pygments.styles.vim',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\vim.py',
+   'PYMODULE'),
+  ('pygments.styles.tango',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\tango.py',
+   'PYMODULE'),
+  ('pygments.styles.paraiso_dark',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\paraiso_dark.py',
+   'PYMODULE'),
+  ('pygments.styles.arduino',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\arduino.py',
+   'PYMODULE'),
+  ('pygments.styles.sas',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\sas.py',
+   'PYMODULE'),
+  ('pygments.styles.abap',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\abap.py',
+   'PYMODULE'),
+  ('pygments.styles.xcode',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\xcode.py',
+   'PYMODULE'),
+  ('pygments.styles.colorful',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\colorful.py',
+   'PYMODULE'),
+  ('pygments.styles.borland',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\borland.py',
+   'PYMODULE'),
+  ('pygments.styles.bw',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\bw.py',
+   'PYMODULE'),
+  ('pygments.styles.rainbow_dash',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\rainbow_dash.py',
+   'PYMODULE'),
+  ('pygments.styles.perldoc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\perldoc.py',
+   'PYMODULE'),
+  ('pygments.styles.monokai',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\monokai.py',
+   'PYMODULE'),
+  ('pygments.styles.rrt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\rrt.py',
+   'PYMODULE'),
+  ('pygments.styles.paraiso_light',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\paraiso_light.py',
+   'PYMODULE'),
+  ('pygments.styles.emacs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\emacs.py',
+   'PYMODULE'),
+  ('pygments.styles.autumn',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\autumn.py',
+   'PYMODULE'),
+  ('pygments.styles.stata',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\stata.py',
+   'PYMODULE'),
+  ('pygments.styles.trac',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\trac.py',
+   'PYMODULE'),
+  ('pygments.styles.algol_nu',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\algol_nu.py',
+   'PYMODULE'),
+  ('pygments.styles.native',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\styles\\native.py',
+   'PYMODULE'),
+  ('pygments.lexers.perl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\perl.py',
+   'PYMODULE'),
+  ('pygments.lexer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexer.py',
+   'PYMODULE'),
+  ('chardet',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\__init__.py',
+   'PYMODULE'),
+  ('chardet.version',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\version.py',
+   'PYMODULE'),
+  ('chardet.universaldetector',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\universaldetector.py',
+   'PYMODULE'),
+  ('chardet.sbcsgroupprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\sbcsgroupprober.py',
+   'PYMODULE'),
+  ('chardet.langturkishmodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\langturkishmodel.py',
+   'PYMODULE'),
+  ('chardet.hebrewprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\hebrewprober.py',
+   'PYMODULE'),
+  ('chardet.charsetprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\charsetprober.py',
+   'PYMODULE'),
+  ('chardet.langhebrewmodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\langhebrewmodel.py',
+   'PYMODULE'),
+  ('chardet.langthaimodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\langthaimodel.py',
+   'PYMODULE'),
+  ('chardet.langbulgarianmodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\langbulgarianmodel.py',
+   'PYMODULE'),
+  ('chardet.langgreekmodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\langgreekmodel.py',
+   'PYMODULE'),
+  ('chardet.langcyrillicmodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\langcyrillicmodel.py',
+   'PYMODULE'),
+  ('chardet.sbcharsetprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\sbcharsetprober.py',
+   'PYMODULE'),
+  ('chardet.mbcsgroupprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\mbcsgroupprober.py',
+   'PYMODULE'),
+  ('chardet.euctwprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\euctwprober.py',
+   'PYMODULE'),
+  ('chardet.mbcssm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\mbcssm.py',
+   'PYMODULE'),
+  ('chardet.chardistribution',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\chardistribution.py',
+   'PYMODULE'),
+  ('chardet.jisfreq',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\jisfreq.py',
+   'PYMODULE'),
+  ('chardet.big5freq',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\big5freq.py',
+   'PYMODULE'),
+  ('chardet.gb2312freq',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\gb2312freq.py',
+   'PYMODULE'),
+  ('chardet.euckrfreq',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\euckrfreq.py',
+   'PYMODULE'),
+  ('chardet.euctwfreq',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\euctwfreq.py',
+   'PYMODULE'),
+  ('chardet.codingstatemachine',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\codingstatemachine.py',
+   'PYMODULE'),
+  ('chardet.mbcharsetprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\mbcharsetprober.py',
+   'PYMODULE'),
+  ('chardet.big5prober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\big5prober.py',
+   'PYMODULE'),
+  ('chardet.cp949prober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\cp949prober.py',
+   'PYMODULE'),
+  ('chardet.euckrprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\euckrprober.py',
+   'PYMODULE'),
+  ('chardet.gb2312prober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\gb2312prober.py',
+   'PYMODULE'),
+  ('chardet.eucjpprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\eucjpprober.py',
+   'PYMODULE'),
+  ('chardet.jpcntx',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\jpcntx.py',
+   'PYMODULE'),
+  ('chardet.sjisprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\sjisprober.py',
+   'PYMODULE'),
+  ('chardet.utf8prober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\utf8prober.py',
+   'PYMODULE'),
+  ('chardet.latin1prober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\latin1prober.py',
+   'PYMODULE'),
+  ('chardet.escprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\escprober.py',
+   'PYMODULE'),
+  ('chardet.escsm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\escsm.py',
+   'PYMODULE'),
+  ('chardet.enums',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\enums.py',
+   'PYMODULE'),
+  ('chardet.charsetgroupprober',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\charsetgroupprober.py',
+   'PYMODULE'),
+  ('chardet.compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\chardet\\compat.py',
+   'PYMODULE'),
+  ('pygments.regexopt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\regexopt.py',
+   'PYMODULE'),
+  ('pygments.filters',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\filters\\__init__.py',
+   'PYMODULE'),
+  ('pygments.filter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\filter.py',
+   'PYMODULE'),
+  ('pygments.lexers.sql',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\sql.py',
+   'PYMODULE'),
+  ('pygments.lexers.text',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\text.py',
+   'PYMODULE'),
+  ('pygments.lexers._stata_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_stata_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.varnish',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\varnish.py',
+   'PYMODULE'),
+  ('pygments.lexers.snobol',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\snobol.py',
+   'PYMODULE'),
+  ('pygments.lexers.business',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\business.py',
+   'PYMODULE'),
+  ('pygments.lexers._lasso_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_lasso_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.ampl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ampl.py',
+   'PYMODULE'),
+  ('pygments.lexers.praat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\praat.py',
+   'PYMODULE'),
+  ('pygments.lexers.int_fiction',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\int_fiction.py',
+   'PYMODULE'),
+  ('pygments.lexers.archetype',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\archetype.py',
+   'PYMODULE'),
+  ('pygments.lexers.modeling',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\modeling.py',
+   'PYMODULE'),
+  ('pygments.lexers.console',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\console.py',
+   'PYMODULE'),
+  ('pygments.lexers._asy_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_asy_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.testing',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\testing.py',
+   'PYMODULE'),
+  ('pygments.lexers.supercollider',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\supercollider.py',
+   'PYMODULE'),
+  ('pygments.lexers.csound',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\csound.py',
+   'PYMODULE'),
+  ('pygments.lexers.clean',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\clean.py',
+   'PYMODULE'),
+  ('pygments.lexers._openedge_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_openedge_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.factor',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\factor.py',
+   'PYMODULE'),
+  ('pygments.lexers.eiffel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\eiffel.py',
+   'PYMODULE'),
+  ('pygments.lexers._cl_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_cl_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.smv',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\smv.py',
+   'PYMODULE'),
+  ('pygments.lexers.rebol',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\rebol.py',
+   'PYMODULE'),
+  ('pygments.lexers.erlang',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\erlang.py',
+   'PYMODULE'),
+  ('pygments.lexers._cocoa_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_cocoa_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.rdf',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\rdf.py',
+   'PYMODULE'),
+  ('pygments.lexers.inferno',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\inferno.py',
+   'PYMODULE'),
+  ('pygments.lexers.igor',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\igor.py',
+   'PYMODULE'),
+  ('pygments.lexers.textedit',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\textedit.py',
+   'PYMODULE'),
+  ('pygments.lexers.dsls',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\dsls.py',
+   'PYMODULE'),
+  ('pygments.lexers._sourcemod_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_sourcemod_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.bibtex',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\bibtex.py',
+   'PYMODULE'),
+  ('pygments.lexers.web',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\web.py',
+   'PYMODULE'),
+  ('pygments.lexers.typoscript',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\typoscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.other',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\other.py',
+   'PYMODULE'),
+  ('pygments.lexers.compiled',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\compiled.py',
+   'PYMODULE'),
+  ('pygments.lexers._vim_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_vim_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.make',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\make.py',
+   'PYMODULE'),
+  ('pygments.lexers.urbi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\urbi.py',
+   'PYMODULE'),
+  ('pygments.lexers._postgres_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_postgres_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.installers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\installers.py',
+   'PYMODULE'),
+  ('pygments.lexers.elm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\elm.py',
+   'PYMODULE'),
+  ('pygments.lexers._csound_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_csound_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.resource',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\resource.py',
+   'PYMODULE'),
+  ('pygments.lexers.hdl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\hdl.py',
+   'PYMODULE'),
+  ('pygments.lexers.fortran',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\fortran.py',
+   'PYMODULE'),
+  ('pygments.lexers.pascal',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\pascal.py',
+   'PYMODULE'),
+  ('pygments.scanner',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\scanner.py',
+   'PYMODULE'),
+  ('pygments.lexers.graphics',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\graphics.py',
+   'PYMODULE'),
+  ('pygments.lexers.functional',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\functional.py',
+   'PYMODULE'),
+  ('pygments.lexers.oberon',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\oberon.py',
+   'PYMODULE'),
+  ('pygments.lexers.ruby',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ruby.py',
+   'PYMODULE'),
+  ('pygments.lexers.dotnet',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\dotnet.py',
+   'PYMODULE'),
+  ('pygments.lexers.actionscript',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\actionscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.algebra',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\algebra.py',
+   'PYMODULE'),
+  ('pygments.lexers.parasail',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\parasail.py',
+   'PYMODULE'),
+  ('pygments.lexers.php',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\php.py',
+   'PYMODULE'),
+  ('pygments.lexers.iolang',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\iolang.py',
+   'PYMODULE'),
+  ('pygments.lexers.configs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\configs.py',
+   'PYMODULE'),
+  ('pygments.lexers.idl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\idl.py',
+   'PYMODULE'),
+  ('pygments.lexers.roboconf',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\roboconf.py',
+   'PYMODULE'),
+  ('pygments.lexers.ecl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ecl.py',
+   'PYMODULE'),
+  ('pygments.lexers.math',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\math.py',
+   'PYMODULE'),
+  ('pygments.lexers.chapel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\chapel.py',
+   'PYMODULE'),
+  ('pygments.lexers.basic',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\basic.py',
+   'PYMODULE'),
+  ('pygments.lexers.hexdump',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\hexdump.py',
+   'PYMODULE'),
+  ('pygments.lexers.scripting',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\scripting.py',
+   'PYMODULE'),
+  ('pygments.lexers.templates',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\templates.py',
+   'PYMODULE'),
+  ('pygments.lexers.ml',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ml.py',
+   'PYMODULE'),
+  ('pygments.lexers.modula2',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\modula2.py',
+   'PYMODULE'),
+  ('pygments.lexers.asm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\asm.py',
+   'PYMODULE'),
+  ('pygments.lexers.j',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\j.py',
+   'PYMODULE'),
+  ('pygments.lexers.x10',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\x10.py',
+   'PYMODULE'),
+  ('pygments.lexers.prolog',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\prolog.py',
+   'PYMODULE'),
+  ('pygments.lexers.graph',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\graph.py',
+   'PYMODULE'),
+  ('pygments.lexers.smalltalk',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\smalltalk.py',
+   'PYMODULE'),
+  ('pygments.lexers.objective',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\objective.py',
+   'PYMODULE'),
+  ('pygments.lexers.dylan',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\dylan.py',
+   'PYMODULE'),
+  ('pygments.lexers.textfmts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\textfmts.py',
+   'PYMODULE'),
+  ('pygments.lexers.rust',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\rust.py',
+   'PYMODULE'),
+  ('pygments.lexers.parsers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\parsers.py',
+   'PYMODULE'),
+  ('pygments.lexers.ncl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ncl.py',
+   'PYMODULE'),
+  ('pygments.lexers.d',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\d.py',
+   'PYMODULE'),
+  ('pygments.lexers._lua_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_lua_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.r',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\r.py',
+   'PYMODULE'),
+  ('pygments.lexers.haxe',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\haxe.py',
+   'PYMODULE'),
+  ('pygments.lexers.julia',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\julia.py',
+   'PYMODULE'),
+  ('pygments.lexers.css',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\css.py',
+   'PYMODULE'),
+  ('pygments.lexers.ooc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ooc.py',
+   'PYMODULE'),
+  ('pygments.lexers.sas',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\sas.py',
+   'PYMODULE'),
+  ('pygments.lexers.grammar_notation',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\grammar_notation.py',
+   'PYMODULE'),
+  ('pygments.lexers.python',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\python.py',
+   'PYMODULE'),
+  ('pygments.lexers.robotframework',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\robotframework.py',
+   'PYMODULE'),
+  ('pygments.lexers.foxpro',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\foxpro.py',
+   'PYMODULE'),
+  ('pygments.lexers.haskell',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\haskell.py',
+   'PYMODULE'),
+  ('pygments.lexers.fantom',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\fantom.py',
+   'PYMODULE'),
+  ('pygments.lexers.nimrod',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\nimrod.py',
+   'PYMODULE'),
+  ('pygments.lexers.pawn',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\pawn.py',
+   'PYMODULE'),
+  ('pygments.lexers.esoteric',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\esoteric.py',
+   'PYMODULE'),
+  ('pygments.lexers.nit',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\nit.py',
+   'PYMODULE'),
+  ('pygments.lexers.html',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\html.py',
+   'PYMODULE'),
+  ('pygments.lexers.qvt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\qvt.py',
+   'PYMODULE'),
+  ('pygments.lexers._php_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_php_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.agile',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\agile.py',
+   'PYMODULE'),
+  ('pygments.lexers.matlab',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\matlab.py',
+   'PYMODULE'),
+  ('pygments.lexers.ambient',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ambient.py',
+   'PYMODULE'),
+  ('pygments.lexers.dalvik',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\dalvik.py',
+   'PYMODULE'),
+  ('pygments.lexers.automation',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\automation.py',
+   'PYMODULE'),
+  ('pygments.lexers.monte',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\monte.py',
+   'PYMODULE'),
+  ('pygments.lexers.crystal',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\crystal.py',
+   'PYMODULE'),
+  ('pygments.lexers.trafficscript',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\trafficscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.forth',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\forth.py',
+   'PYMODULE'),
+  ('pygments.lexers.whiley',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\whiley.py',
+   'PYMODULE'),
+  ('pygments.lexers.go',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\go.py',
+   'PYMODULE'),
+  ('pygments.lexers.c_like',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\c_like.py',
+   'PYMODULE'),
+  ('pygments.lexers.data',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\data.py',
+   'PYMODULE'),
+  ('pygments.lexers.rnc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\rnc.py',
+   'PYMODULE'),
+  ('pygments.lexers.apl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\apl.py',
+   'PYMODULE'),
+  ('pygments.lexers.javascript',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\javascript.py',
+   'PYMODULE'),
+  ('pygments.lexers.c_cpp',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\c_cpp.py',
+   'PYMODULE'),
+  ('pygments.lexers.diff',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\diff.py',
+   'PYMODULE'),
+  ('pygments.lexers.webmisc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\webmisc.py',
+   'PYMODULE'),
+  ('pygments.lexers.nix',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\nix.py',
+   'PYMODULE'),
+  ('pygments.lexers.jvm',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\jvm.py',
+   'PYMODULE'),
+  ('pygments.lexers.capnproto',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\capnproto.py',
+   'PYMODULE'),
+  ('pygments.lexers.tcl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\tcl.py',
+   'PYMODULE'),
+  ('pygments.lexers.shell',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\shell.py',
+   'PYMODULE'),
+  ('pygments.lexers.special',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\special.py',
+   'PYMODULE'),
+  ('pygments.lexers.markup',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\markup.py',
+   'PYMODULE'),
+  ('pygments.lexers.lisp',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\lisp.py',
+   'PYMODULE'),
+  ('pygments.lexers.stata',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\stata.py',
+   'PYMODULE'),
+  ('pygments.lexers.felix',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\felix.py',
+   'PYMODULE'),
+  ('pygments.lexers.verification',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\verification.py',
+   'PYMODULE'),
+  ('pygments.lexers._mql_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_mql_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.theorem',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\theorem.py',
+   'PYMODULE'),
+  ('pygments.lexers.ezhil',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\ezhil.py',
+   'PYMODULE'),
+  ('pygments.lexers._tsql_builtins',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\lexers\\_tsql_builtins.py',
+   'PYMODULE'),
+  ('pygments.formatters.terminal',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\terminal.py',
+   'PYMODULE'),
+  ('pygments.console',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\console.py',
+   'PYMODULE'),
+  ('pygments.formatters.svg',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\svg.py',
+   'PYMODULE'),
+  ('pygments.formatters.latex',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\latex.py',
+   'PYMODULE'),
+  ('pygments.formatters.bbcode',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\bbcode.py',
+   'PYMODULE'),
+  ('pygments.formatters.terminal256',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\terminal256.py',
+   'PYMODULE'),
+  ('pygments.formatters.img',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\img.py',
+   'PYMODULE'),
+  ('pygments.formatters.other',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\other.py',
+   'PYMODULE'),
+  ('pygments.formatters.rtf',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\rtf.py',
+   'PYMODULE'),
+  ('pygments.formatters.irc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\formatters\\irc.py',
+   'PYMODULE'),
+  ('pygments.unistring',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\unistring.py',
+   'PYMODULE'),
+  ('pygments.cmdline',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pygments\\cmdline.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.tableparser',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\tableparser.py',
+   'PYMODULE'),
+  ('docutils.statemachine',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\statemachine.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\__init__.py',
+   'PYMODULE'),
+  ('docutils.parsers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.body',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\body.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\__init__.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.admonitions',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\admonitions.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.references',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\references.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.images',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\images.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.misc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\misc.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.tables',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\tables.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.directives.parts',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\directives\\parts.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.sv',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\sv.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.de',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\de.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.cs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\cs.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.pl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\pl.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.da',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\da.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.it',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\it.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.en',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\en.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.he',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\he.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.af',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\af.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.ja',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\ja.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.ca',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\ca.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.zh_cn',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\zh_cn.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.fa',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\fa.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.sk',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\sk.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.eo',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\eo.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.zh_tw',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\zh_tw.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.lt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\lt.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.lv',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\lv.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\__init__.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.gl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\gl.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.nl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\nl.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.fr',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\fr.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.pt_br',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\pt_br.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.ru',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\ru.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.fi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\fi.py',
+   'PYMODULE'),
+  ('docutils.parsers.rst.languages.es',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\parsers\\rst\\languages\\es.py',
+   'PYMODULE'),
+  ('docutils.writers.pseudoxml',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\pseudoxml.py',
+   'PYMODULE'),
+  ('docutils.writers.null',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\null.py',
+   'PYMODULE'),
+  ('docutils.writers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\__init__.py',
+   'PYMODULE'),
+  ('docutils.writers.pep_html',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\pep_html\\__init__.py',
+   'PYMODULE'),
+  ('docutils.writers.html5_polyglot',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\html5_polyglot\\__init__.py',
+   'PYMODULE'),
+  ('docutils.writers.odf_odt.pygmentsformatter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\odf_odt\\pygmentsformatter.py',
+   'PYMODULE'),
+  ('docutils.writers.xetex',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\xetex\\__init__.py',
+   'PYMODULE'),
+  ('docutils.writers.html4css1',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\html4css1\\__init__.py',
+   'PYMODULE'),
+  ('docutils.writers.odf_odt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\odf_odt\\__init__.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\etree\\__init__.py',
+   'PYMODULE'),
+  ('docutils.readers.standalone',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\readers\\standalone.py',
+   'PYMODULE'),
+  ('docutils.readers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\readers\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\__init__.py',
+   'PYMODULE'),
+  ('xml.dom.pulldom',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\pulldom.py',
+   'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.domreg',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\domreg.py',
+   'PYMODULE'),
+  ('docutils.writers.s5_html',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\s5_html\\__init__.py',
+   'PYMODULE'),
+  ('docutils.writers.latex2e',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\latex2e\\__init__.py',
+   'PYMODULE'),
+  ('docutils.utils.math.unichar2tex',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\math\\unichar2tex.py',
+   'PYMODULE'),
+  ('docutils.utils.math',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\math\\__init__.py',
+   'PYMODULE'),
+  ('docutils.utils.math.tex2mathml_extern',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\math\\tex2mathml_extern.py',
+   'PYMODULE'),
+  ('docutils.utils.math.latex2mathml',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\math\\latex2mathml.py',
+   'PYMODULE'),
+  ('docutils.utils.math.tex2unichar',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\math\\tex2unichar.py',
+   'PYMODULE'),
+  ('docutils.utils.math.math2html',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\utils\\math\\math2html.py',
+   'PYMODULE'),
+  ('docutils.writers.docutils_xml',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\docutils_xml.py',
+   'PYMODULE'),
+  ('docutils.writers.manpage',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\manpage.py',
+   'PYMODULE'),
+  ('docutils.writers._html_base',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\writers\\_html_base.py',
+   'PYMODULE'),
+  ('docutils.languages.ja',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\ja.py',
+   'PYMODULE'),
+  ('docutils.languages.ru',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\ru.py',
+   'PYMODULE'),
+  ('docutils.languages.lt',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\lt.py',
+   'PYMODULE'),
+  ('docutils.languages.es',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\es.py',
+   'PYMODULE'),
+  ('docutils.languages.nl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\nl.py',
+   'PYMODULE'),
+  ('docutils.languages.fr',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\fr.py',
+   'PYMODULE'),
+  ('docutils.languages.it',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\it.py',
+   'PYMODULE'),
+  ('docutils.languages.da',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\da.py',
+   'PYMODULE'),
+  ('docutils.languages.gl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\gl.py',
+   'PYMODULE'),
+  ('docutils.languages.af',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\af.py',
+   'PYMODULE'),
+  ('docutils.languages.pl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\pl.py',
+   'PYMODULE'),
+  ('docutils.languages.eo',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\eo.py',
+   'PYMODULE'),
+  ('docutils.languages.lv',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\lv.py',
+   'PYMODULE'),
+  ('docutils.languages.fi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\fi.py',
+   'PYMODULE'),
+  ('docutils.languages.de',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\de.py',
+   'PYMODULE'),
+  ('docutils.languages.ca',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\ca.py',
+   'PYMODULE'),
+  ('docutils.languages.sk',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\sk.py',
+   'PYMODULE'),
+  ('docutils.languages.en',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\en.py',
+   'PYMODULE'),
+  ('docutils.languages.zh_tw',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\zh_tw.py',
+   'PYMODULE'),
+  ('docutils.languages.sv',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\sv.py',
+   'PYMODULE'),
+  ('docutils.languages.fa',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\fa.py',
+   'PYMODULE'),
+  ('docutils.languages.cs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\cs.py',
+   'PYMODULE'),
+  ('docutils.languages.he',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\he.py',
+   'PYMODULE'),
+  ('docutils.languages.pt_br',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\pt_br.py',
+   'PYMODULE'),
+  ('docutils.languages.zh_cn',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\docutils\\languages\\zh_cn.py',
+   'PYMODULE'),
+  ('xml.dom.minidom',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\minidom.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('csv', 'C:\\Program Files (x86)\\Python37-32\\lib\\csv.py', 'PYMODULE'),
+  ('kivy.clock',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\clock.py',
+   'PYMODULE'),
+  ('kivy.compat',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\compat.py',
+   'PYMODULE'),
+  ('kivy.logger',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\logger.py',
+   'PYMODULE'),
+  ('kivy.config',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\config.py',
+   'PYMODULE'),
+  ('kivy.utils',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\utils.py',
+   'PYMODULE'),
+  ('kivy.context',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\context.py',
+   'PYMODULE'),
+  ('kivy.uix.screenmanager',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\screenmanager.py',
+   'PYMODULE'),
+  ('kivy.uix',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\__init__.py',
+   'PYMODULE'),
+  ('kivy.graphics',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\graphics\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.relativelayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\relativelayout.py',
+   'PYMODULE'),
+  ('kivy.animation',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\animation.py',
+   'PYMODULE'),
+  ('kivy.uix.floatlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\floatlayout.py',
+   'PYMODULE'),
+  ('kivy.uix.layout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\layout.py',
+   'PYMODULE'),
+  ('kivy.uix.widget',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\widget.py',
+   'PYMODULE'),
+  ('kivy.base',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\base.py',
+   'PYMODULE'),
+  ('kivy.input',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\__init__.py',
+   'PYMODULE'),
+  ('kivy.input.providers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\__init__.py',
+   'PYMODULE'),
+  ('kivy.input.providers.leapfinger',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\leapfinger.py',
+   'PYMODULE'),
+  ('kivy.input.providers.androidjoystick',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\androidjoystick.py',
+   'PYMODULE'),
+  ('kivy.input.shape',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\shape.py',
+   'PYMODULE'),
+  ('kivy.input.providers.linuxwacom',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\linuxwacom.py',
+   'PYMODULE'),
+  ('kivy.input.providers.hidinput',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\hidinput.py',
+   'PYMODULE'),
+  ('kivy.input.providers.mtdev',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\mtdev.py',
+   'PYMODULE'),
+  ('kivy.lib.mtdev',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lib\\mtdev.py',
+   'PYMODULE'),
+  ('kivy.lib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('kivy.input.providers.probesysfs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\probesysfs.py',
+   'PYMODULE'),
+  ('kivy.input.providers.mactouch',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\mactouch.py',
+   'PYMODULE'),
+  ('kivy.input.providers.wm_pen',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\wm_pen.py',
+   'PYMODULE'),
+  ('kivy.input.providers.wm_common',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\wm_common.py',
+   'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('kivy.input.providers.wm_touch',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\wm_touch.py',
+   'PYMODULE'),
+  ('kivy.input.providers.mouse',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\mouse.py',
+   'PYMODULE'),
+  ('kivy.input.providers.tuio',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\providers\\tuio.py',
+   'PYMODULE'),
+  ('kivy.setupconfig',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\setupconfig.py',
+   'PYMODULE'),
+  ('kivy.input.factory',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\factory.py',
+   'PYMODULE'),
+  ('kivy.input.provider',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\provider.py',
+   'PYMODULE'),
+  ('kivy.input.postproc',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\__init__.py',
+   'PYMODULE'),
+  ('kivy.input.postproc.calibration',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\calibration.py',
+   'PYMODULE'),
+  ('kivy.input.postproc.dejitter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\dejitter.py',
+   'PYMODULE'),
+  ('kivy.input.postproc.retaintouch',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\retaintouch.py',
+   'PYMODULE'),
+  ('kivy.vector',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\vector.py',
+   'PYMODULE'),
+  ('kivy.input.postproc.ignorelist',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\ignorelist.py',
+   'PYMODULE'),
+  ('kivy.input.postproc.tripletap',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\tripletap.py',
+   'PYMODULE'),
+  ('kivy.input.postproc.doubletap',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\postproc\\doubletap.py',
+   'PYMODULE'),
+  ('kivy.input.motionevent',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\input\\motionevent.py',
+   'PYMODULE'),
+  ('kivy.core.window',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\window\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.vkeyboard',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\vkeyboard.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('kivy.resources',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\resources.py',
+   'PYMODULE'),
+  ('kivy.core.image',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\__init__.py',
+   'PYMODULE'),
+  ('kivy.atlas',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\atlas.py',
+   'PYMODULE'),
+  ('kivy.cache',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\cache.py',
+   'PYMODULE'),
+  ('imghdr',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\imghdr.py',
+   'PYMODULE'),
+  ('kivy.uix.scatter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\scatter.py',
+   'PYMODULE'),
+  ('kivy.core.gl',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\gl\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.touchripple',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\touchripple.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.cover',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\cover.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.emacs',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\emacs.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.codenavigation',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\codenavigation.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.compoundselection',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\compoundselection.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.focus',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\focus.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.drag',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\drag.py',
+   'PYMODULE'),
+  ('kivy.metrics',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\metrics.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.togglebutton',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\togglebutton.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.button',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\button.py',
+   'PYMODULE'),
+  ('kivy.modules',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\modules\\__init__.py',
+   'PYMODULE'),
+  ('kivy.core',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\__init__.py',
+   'PYMODULE'),
+  ('kivy.factory',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\factory.py',
+   'PYMODULE'),
+  ('kivy.factory_registers',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\factory_registers.py',
+   'PYMODULE'),
+  ('kivy.event',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\event.py',
+   'PYMODULE'),
+  ('kivy.uix.anchorlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\anchorlayout.py',
+   'PYMODULE'),
+  ('kivy.uix.listview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\listview.py',
+   'PYMODULE'),
+  ('kivy.uix.selectableview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\selectableview.py',
+   'PYMODULE'),
+  ('kivy.uix.abstractview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\abstractview.py',
+   'PYMODULE'),
+  ('kivy.adapters.simplelistadapter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\simplelistadapter.py',
+   'PYMODULE'),
+  ('kivy.adapters',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\__init__.py',
+   'PYMODULE'),
+  ('kivy.adapters.adapter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\adapter.py',
+   'PYMODULE'),
+  ('kivy.adapters.args_converters',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\args_converters.py',
+   'PYMODULE'),
+  ('kivy.uix.button',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\button.py',
+   'PYMODULE'),
+  ('kivy.uix.label',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\label.py',
+   'PYMODULE'),
+  ('kivy.core.text.markup',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\text\\markup.py',
+   'PYMODULE'),
+  ('kivy.parser',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\parser.py',
+   'PYMODULE'),
+  ('kivy.core.text',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\text\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.boxlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\boxlayout.py',
+   'PYMODULE'),
+  ('kivy.lang',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lang\\__init__.py',
+   'PYMODULE'),
+  ('kivy.lang.parser',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lang\\parser.py',
+   'PYMODULE'),
+  ('kivy.lang.builder',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lang\\builder.py',
+   'PYMODULE'),
+  ('kivy.app',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\app.py',
+   'PYMODULE'),
+  ('kivy.uix.settings',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\settings.py',
+   'PYMODULE'),
+  ('kivy.uix.togglebutton',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\togglebutton.py',
+   'PYMODULE'),
+  ('kivy.uix.textinput',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\textinput.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.image',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\image.py',
+   'PYMODULE'),
+  ('kivy.loader',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\loader.py',
+   'PYMODULE'),
+  ('kivy.uix.bubble',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\bubble.py',
+   'PYMODULE'),
+  ('kivy.uix.popup',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\popup.py',
+   'PYMODULE'),
+  ('kivy.uix.modalview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\modalview.py',
+   'PYMODULE'),
+  ('kivy.uix.gridlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\gridlayout.py',
+   'PYMODULE'),
+  ('kivy.uix.scrollview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\scrollview.py',
+   'PYMODULE'),
+  ('kivy.effects.dampedscroll',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\effects\\dampedscroll.py',
+   'PYMODULE'),
+  ('kivy.effects',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\effects\\__init__.py',
+   'PYMODULE'),
+  ('kivy.effects.scroll',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\effects\\scroll.py',
+   'PYMODULE'),
+  ('kivy.effects.kinetic',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\effects\\kinetic.py',
+   'PYMODULE'),
+  ('kivy.uix.stencilview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\stencilview.py',
+   'PYMODULE'),
+  ('kivy.uix.filechooser',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\filechooser.py',
+   'PYMODULE'),
+  ('kivy.uix.tabbedpanel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\tabbedpanel.py',
+   'PYMODULE'),
+  ('visa',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\visa.py',
+   'PYMODULE'),
+  ('pyvisa.shell',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\pyvisa\\shell.py',
+   'PYMODULE'),
+  ('pyvisa.thirdparty.prettytable',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\thirdparty\\prettytable.py',
+   'PYMODULE'),
+  ('pyvisa.thirdparty',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\thirdparty\\__init__.py',
+   'PYMODULE'),
+  ('pyvisa.attributes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\attributes.py',
+   'PYMODULE'),
+  ('pyvisa.compat',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pyvisa.compat.struct',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\compat\\struct.py',
+   'PYMODULE'),
+  ('pyvisa.compat.nullhandler',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\compat\\nullhandler.py',
+   'PYMODULE'),
+  ('pyvisa.compat.ordereddict',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\compat\\ordereddict.py',
+   'PYMODULE'),
+  ('pyvisa.util',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\pyvisa\\util.py',
+   'PYMODULE'),
+  ('pip',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\pip\\__init__.py',
+   'PYMODULE'),
+  ('pyvisa.resources',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\__init__.py',
+   'PYMODULE'),
+  ('pyvisa.resources.pxi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\pxi.py',
+   'PYMODULE'),
+  ('pyvisa.resources.firewire',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\firewire.py',
+   'PYMODULE'),
+  ('pyvisa.resources.registerbased',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\registerbased.py',
+   'PYMODULE'),
+  ('pyvisa.resources.usb',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\usb.py',
+   'PYMODULE'),
+  ('pyvisa.resources.serial',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\serial.py',
+   'PYMODULE'),
+  ('pyvisa.resources.tcpip',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\tcpip.py',
+   'PYMODULE'),
+  ('pyvisa.resources.messagebased',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\messagebased.py',
+   'PYMODULE'),
+  ('pyvisa.resources.vxi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\vxi.py',
+   'PYMODULE'),
+  ('pyvisa.resources.gpib',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\gpib.py',
+   'PYMODULE'),
+  ('pyvisa.resources.resource',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\resources\\resource.py',
+   'PYMODULE'),
+  ('pyvisa.errors',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\errors.py',
+   'PYMODULE'),
+  ('pyvisa.highlevel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\highlevel.py',
+   'PYMODULE'),
+  ('pyvisa.ctwrapper',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\ctwrapper\\__init__.py',
+   'PYMODULE'),
+  ('pyvisa.ctwrapper.highlevel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\ctwrapper\\highlevel.py',
+   'PYMODULE'),
+  ('pyvisa.ctwrapper.cthelper',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\ctwrapper\\cthelper.py',
+   'PYMODULE'),
+  ('pyvisa.ctwrapper.functions',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\ctwrapper\\functions.py',
+   'PYMODULE'),
+  ('pyvisa.ctwrapper.types',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\ctwrapper\\types.py',
+   'PYMODULE'),
+  ('pyvisa.rname',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\pyvisa\\rname.py',
+   'PYMODULE'),
+  ('pyvisa.constants',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\constants.py',
+   'PYMODULE'),
+  ('pyvisa',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\pyvisa\\__init__.py',
+   'PYMODULE'),
+  ('kivy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\__init__.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_gtk3',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_gtk3.py',
+   'PYMODULE'),
+  ('kivy.support',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\support.py',
+   'PYMODULE'),
+  ('kivy.core.window.window_pygame',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\window\\window_pygame.py',
+   'PYMODULE'),
+  ('kivy.core.audio.audio_ffpyplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\audio\\audio_ffpyplayer.py',
+   'PYMODULE'),
+  ('kivy.weakmethod',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\weakmethod.py',
+   'PYMODULE'),
+  ('kivy.core.camera.camera_gi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\camera\\camera_gi.py',
+   'PYMODULE'),
+  ('kivy.core.spelling.spelling_osxappkit',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\spelling\\spelling_osxappkit.py',
+   'PYMODULE'),
+  ('kivy.graphics.cgl_backend',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\graphics\\cgl_backend\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.spinner',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\spinner.py',
+   'PYMODULE'),
+  ('kivy.core.video.video_null',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\video\\video_null.py',
+   'PYMODULE'),
+  ('kivy.core.audio',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\audio\\__init__.py',
+   'PYMODULE'),
+  ('kivy.lib.gstplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lib\\gstplayer\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.colorpicker',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\colorpicker.py',
+   'PYMODULE'),
+  ('colorsys',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\colorsys.py',
+   'PYMODULE'),
+  ('kivy.uix.recyclegridlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recyclegridlayout.py',
+   'PYMODULE'),
+  ('kivy.uix.slider',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\slider.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_pygame',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_pygame.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_winctypes',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_winctypes.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_xclip',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_xclip.py',
+   'PYMODULE'),
+  ('kivy.adapters.models',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\models.py',
+   'PYMODULE'),
+  ('kivy.uix.progressbar',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\progressbar.py',
+   'PYMODULE'),
+  ('kivy.core.spelling.spelling_enchant',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\spelling\\spelling_enchant.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_pil',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_pil.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_tex',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_tex.py',
+   'PYMODULE'),
+  ('kivy.uix.recycleview.datamodel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recycleview\\datamodel.py',
+   'PYMODULE'),
+  ('kivy.uix.recycleview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recycleview\\__init__.py',
+   'PYMODULE'),
+  ('kivy.core.window.window_egl_rpi',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\window\\window_egl_rpi.py',
+   'PYMODULE'),
+  ('kivy.lib.vidcore_lite',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lib\\vidcore_lite\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.switch',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\switch.py',
+   'PYMODULE'),
+  ('kivy.core.camera.camera_android',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\camera\\camera_android.py',
+   'PYMODULE'),
+  ('kivy.core.audio.audio_avplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\audio\\audio_avplayer.py',
+   'PYMODULE'),
+  ('kivy.uix.rst',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\rst.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_sdl2',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_sdl2.py',
+   'PYMODULE'),
+  ('kivy.adapters.listadapter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\listadapter.py',
+   'PYMODULE'),
+  ('kivy.uix.accordion',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\accordion.py',
+   'PYMODULE'),
+  ('kivy.uix.videoplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\videoplayer.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_gif',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_gif.py',
+   'PYMODULE'),
+  ('kivy.uix.behaviors.knspace',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\behaviors\\knspace.py',
+   'PYMODULE'),
+  ('kivy.multistroke',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\multistroke.py',
+   'PYMODULE'),
+  ('kivy.uix.sandbox',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\sandbox.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_ffpyplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_ffpyplayer.py',
+   'PYMODULE'),
+  ('kivy.uix.video',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\video.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_sdl2',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_sdl2.py',
+   'PYMODULE'),
+  ('kivy.core.text.text_pil',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\text\\text_pil.py',
+   'PYMODULE'),
+  ('kivy.uix.recycleboxlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recycleboxlayout.py',
+   'PYMODULE'),
+  ('kivy.core.spelling',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\spelling\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.pagelayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\pagelayout.py',
+   'PYMODULE'),
+  ('kivy.uix.stacklayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\stacklayout.py',
+   'PYMODULE'),
+  ('kivy.uix.checkbox',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\checkbox.py',
+   'PYMODULE'),
+  ('kivy.uix.scatterlayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\scatterlayout.py',
+   'PYMODULE'),
+  ('kivy.core.audio.audio_gstplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\audio\\audio_gstplayer.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_pygame',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_pygame.py',
+   'PYMODULE'),
+  ('kivy.uix.recyclelayout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recyclelayout.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_nspaste',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_nspaste.py',
+   'PYMODULE'),
+  ('kivy.uix.recycleview.layout',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recycleview\\layout.py',
+   'PYMODULE'),
+  ('kivy.core.video',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\video\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.carousel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\carousel.py',
+   'PYMODULE'),
+  ('kivy.core.video.video_ffpyplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\video\\video_ffpyplayer.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard._clipboard_ext',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\_clipboard_ext.py',
+   'PYMODULE'),
+  ('kivy.adapters.dictadapter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\adapters\\dictadapter.py',
+   'PYMODULE'),
+  ('kivy.uix.codeinput',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\codeinput.py',
+   'PYMODULE'),
+  ('kivy.extras.highlight',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\extras\\highlight.py',
+   'PYMODULE'),
+  ('kivy.extras',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\extras\\__init__.py',
+   'PYMODULE'),
+  ('kivy.uix.effectwidget',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\effectwidget.py',
+   'PYMODULE'),
+  ('kivy.uix.gesturesurface',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\gesturesurface.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_dbusklipper',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_dbusklipper.py',
+   'PYMODULE'),
+  ('kivy.uix.splitter',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\splitter.py',
+   'PYMODULE'),
+  ('kivy.core.text.text_pygame',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\text\\text_pygame.py',
+   'PYMODULE'),
+  ('kivy.core.video.video_ffmpeg',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\video\\video_ffmpeg.py',
+   'PYMODULE'),
+  ('kivy.uix.dropdown',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\dropdown.py',
+   'PYMODULE'),
+  ('kivy.uix.recycleview.views',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recycleview\\views.py',
+   'PYMODULE'),
+  ('kivy.core.video.video_gstplayer',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\video\\video_gstplayer.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_dummy',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_dummy.py',
+   'PYMODULE'),
+  ('kivy.core.window.window_sdl2',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\window\\window_sdl2.py',
+   'PYMODULE'),
+  ('kivy.uix.actionbar',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\actionbar.py',
+   'PYMODULE'),
+  ('kivy.core.text.text_sdl2',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\text\\text_sdl2.py',
+   'PYMODULE'),
+  ('kivy.core.camera.camera_opencv',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\camera\\camera_opencv.py',
+   'PYMODULE'),
+  ('kivy.gesture',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\gesture.py',
+   'PYMODULE'),
+  ('kivy.uix.treeview',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\treeview.py',
+   'PYMODULE'),
+  ('kivy.core.camera.camera_picamera',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\camera\\camera_picamera.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_xsel',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_xsel.py',
+   'PYMODULE'),
+  ('kivy.core.audio.audio_pygame',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\audio\\audio_pygame.py',
+   'PYMODULE'),
+  ('kivy.uix.camera',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\camera.py',
+   'PYMODULE'),
+  ('kivy.uix.recycleview.__init__',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\uix\\recycleview\\__init__.py',
+   'PYMODULE'),
+  ('kivy.core.image.img_dds',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\image\\img_dds.py',
+   'PYMODULE'),
+  ('kivy.lib.ddsfile',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\lib\\ddsfile.py',
+   'PYMODULE'),
+  ('kivy.core.clipboard.clipboard_android',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\clipboard\\clipboard_android.py',
+   'PYMODULE'),
+  ('kivy.effects.opacityscroll',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\effects\\opacityscroll.py',
+   'PYMODULE'),
+  ('kivy.core.camera',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\core\\camera\\__init__.py',
+   'PYMODULE'),
+  ('kivy.deps',
+   'C:\\Program Files '
+   '(x86)\\Python37-32\\lib\\site-packages\\kivy\\deps\\__init__.py',
+   'PYMODULE'),
+  ('kivy.version',
+   'C:\\Program Files (x86)\\Python37-32\\lib\\site-packages\\kivy\\version.py',
+   'PYMODULE')])
