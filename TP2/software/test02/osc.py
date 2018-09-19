@@ -1,4 +1,5 @@
 import visa
+import time
 
 rm = visa.ResourceManager()
 default_target = 'USB0::0x0957::0x1725::MY49110442::INSTR'
@@ -41,6 +42,7 @@ class Probe:
         return ans
 
     def adjust(self):
+
         current = self.get_amplitude()
         size = self.get_scale_y()
         #print(current, size)
