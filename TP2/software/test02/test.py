@@ -29,7 +29,7 @@ Builder.load_file("test.kv")
 
 wait_time_scale = np.linspace(0.001, 10, 10000)
 points_scale = np.linspace(10, 100, 100)
-freq_scale = np.logspace(2, 6.3, 1000)
+freq_scale = np.logspace(2, 7.3, 1000)
 voltage_scale = np.linspace(0.1,20, 200)
 
 res_scale = []
