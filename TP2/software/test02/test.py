@@ -2,7 +2,7 @@ from kivy import Config
 
 Config.set('graphics', 'multisamples', '0')
 
-import visa
+i mport visa
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.boxlayout import *
