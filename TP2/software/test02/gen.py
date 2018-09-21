@@ -19,7 +19,7 @@ class Gen:
         self.inst = rm.open_resource(target)
 
     def set_sine(self, freq, amp):
-        self.inst.write("APPL:SIN " + str(freq) + ", " + str(amp))
+        self.inst.write("APPL:SIN " + str(freq) + ", " + str(amp/2))
 
     def close(self):
         if self.inst:
