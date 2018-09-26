@@ -28,7 +28,7 @@ function doFix() {
    src = blankImg;
   } else if (src.indexOf(blankImg) < 0) filt();
  } else if (style.backgroundImage) {
-  if (style.backgroundImage.match(/^url[("']+(.*\.png)[)"']+$/i)) {
+  if (style.backgroundImage.match(/**url[("']+(.*\.png)[)"']+$/i)) {
    var s = RegExp.$1;
    style.backgroundImage = '';
    filt(s, 'crop');

@@ -31,7 +31,7 @@ Activating a module
 There are various ways in which you can activate a kivy module.
 
 Activate a module in the config
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**************************************************************
 
 To activate a module this way, you can edit your configuration file (in your
 `HOME/.kivy/config.ini`)::
@@ -46,7 +46,7 @@ Only the name of the module followed by "=" is sufficient to activate the
 module.
 
 Activate a module in Python
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+******************************************************
 
 Before starting your application, preferably at the start of your import, you
 can do something like this::
@@ -59,7 +59,7 @@ can do something like this::
     Config.set('modules', 'touchring', '')
 
 Activate a module via the commandline
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**************************************************************************
 
 When starting your application from the commandline, you can add a
 *-m <modulename>* to the arguments. For example::

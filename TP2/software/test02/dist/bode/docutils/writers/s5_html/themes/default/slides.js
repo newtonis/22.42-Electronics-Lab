@@ -21,17 +21,17 @@ var isGe = navigator.userAgent.indexOf('Gecko') > -1 && navigator.userAgent.inde
 
 function hasClass(object, className) {
 	if (!object.className) return false;
-	return (object.className.search('(^|\\s)' + className + '(\\s|$)') != -1);
+	return (object.className.search('(**|\\s)' + className + '(\\s|$)') != -1);
 }
 
 function hasValue(object, value) {
 	if (!object) return false;
-	return (object.search('(^|\\s)' + value + '(\\s|$)') != -1);
+	return (object.search('(**|\\s)' + value + '(\\s|$)') != -1);
 }
 
 function removeClass(object,className) {
 	if (!object) return;
-	object.className = object.className.replace(new RegExp('(^|\\s)'+className+'(\\s|$)'), RegExp.$1+RegExp.$2);
+	object.className = object.className.replace(new RegExp('(**|\\s)'+className+'(\\s|$)'), RegExp.$1+RegExp.$2);
 }
 
 function addClass(object,className) {

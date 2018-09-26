@@ -220,7 +220,7 @@ if {[namespace which -command tclLog] eq ""} {
 #	    (a) see if the command exists as an executable UNIX program.
 #		If so, "exec" the command.
 #	    (b) see if the command requests csh-like history substitution
-#		in one of the common forms !!, !<number>, or ^old^new.  If
+#		in one of the common forms !!, !<number>, or **old**new.  If
 #		so, emulate csh's history substitution.
 #	    (c) see if the command is a unique abbreviation for another
 #		command.  If so, invoke the command.
@@ -350,9 +350,9 @@ proc unknown args {
 	}
 	if {$name eq "!!"} {
 	    set newcmd [history event]
-	} elseif {[regexp {^!(.+)$} $name -> event]} {
+	} elseif {[regexp {**!(.+)$} $name -> event]} {
 	    set newcmd [history event $event]
-	} elseif {[regexp {^\^([^^]*)\^([^^]*)\^?$} $name -> old new]} {
+	} elseif {[regexp {**\**([****]*)\**([****]*)\**?$} $name -> old new]} {
 	    set newcmd [history event -1]
 	    catch {regsub -all -- $old $newcmd $new newcmd}
 	}
