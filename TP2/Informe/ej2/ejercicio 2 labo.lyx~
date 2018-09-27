@@ -367,7 +367,7 @@ a:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s**{2}LC+sRC+1}=\frac{1}{10**{-11}s**{2}+1.2\,10**{-6}+1}
+H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}+1}
 \end{equation}
 
 \end_inset
@@ -447,7 +447,7 @@ Donde la frecuencia del transitorio es:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\omega_{d}=\sqrt{\omega_{0}**{2}-\alpha**{2}}=310\,480\,\frac{rad}{s}\,\,\Rightarrow\,\,f_{d}=\frac{w_{d}}{2\pi}\simeq49\,400\,Hz
+\omega_{d}=\sqrt{\omega_{0}^{2}-\alpha^{2}}=310\,480\,\frac{rad}{s}\,\,\Rightarrow\,\,f_{d}=\frac{w_{d}}{2\pi}\simeq49\,400\,Hz
 \end{equation}
 
 \end_inset
@@ -517,7 +517,7 @@ X(s)=\mathscr{L}\left\{ \,u(t)\,\right\} (s)=\frac{1}{s}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y(s)=\frac{1}{s}\,\frac{\omega_{0}**{2}}{s**{2}+2\alpha s+\omega_{0}**{2}}
+Y(s)=\frac{1}{s}\,\frac{\omega_{0}^{2}}{s^{2}+2\alpha s+\omega_{0}^{2}}
 \end{equation}
 
 \end_inset
@@ -528,7 +528,7 @@ Y(s)=\frac{1}{s}\,\frac{\omega_{0}**{2}}{s**{2}+2\alpha s+\omega_{0}**{2}}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Rightarrow y(t)=\mathscr{L}**{-1}\{Y(s)\}(t)=\left[1-e**{-\alpha t}\left(\frac{\alpha}{\omega_{d}}\sin\omega_{d}t+\cos\omega_{d}t\right)\right]u(t)
+\Rightarrow y(t)=\mathscr{L}^{-1}\{Y(s)\}(t)=\left[1-e^{-\alpha t}\left(\frac{\alpha}{\omega_{d}}\sin\omega_{d}t+\cos\omega_{d}t\right)\right]u(t)
 \end{equation}
 
 \end_inset
@@ -553,7 +553,7 @@ Sobrepico: valor ponderado entre el valor del pico máximo y el valor de
 ).
 \begin_inset Formula 
 \begin{equation}
-M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e**{-\frac{\pi\alpha}{\omega_{d}}}=0.545
+M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e^{-\frac{\pi\alpha}{\omega_{d}}}=0.545
 \end{equation}
 
 \end_inset
@@ -570,7 +570,7 @@ Tiempo de establecimiento: valor de tiempo que el sistema necesita para
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi**{2}}}\right)}{\alpha}\simeq50\mu s
+t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi^{2}}}\right)}{\alpha}\simeq50\mu s
 \end{equation}
 
 \end_inset
@@ -580,6 +580,68 @@ t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi**{2}}}\right)}{\alpha}\simeq50\mu 
 
 \begin_layout Subsection
 Resultados obtenidos
+\end_layout
+
+\begin_layout Subsubsection
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename STE.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede ver en la imagen, ambas respuestas coinciden bastante bien.
+\end_layout
+
+\begin_layout Standard
+La frecuencia de oscilación del transitorio en este caso es de 
+\begin_inset Formula $50KHz$
+\end_inset
+
+ la cual se corresponde a aproximadamente el 
+\begin_inset Formula $1\%$
+\end_inset
+
+ de error con respecto al valor teórico.
+ Con respecto al valor del tiempo de establecimiento el medido fué de 
+\begin_inset Formula $50\mu s$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -597,7 +659,7 @@ Cálculo de R
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M_{p}=e**{-\frac{\pi\xi}{\sqrt{1-\xi**{2}}}}=0.2\,\,\Longrightarrow\,\,\xi=0.456
+M_{p}=e^{-\frac{\pi\xi}{\sqrt{1-\xi^{2}}}}=0.2\,\,\Longrightarrow\,\,\xi=0.456
 \end{equation}
 
 \end_inset
