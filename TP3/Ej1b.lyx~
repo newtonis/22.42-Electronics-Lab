@@ -441,9 +441,18 @@ status open
 
 \begin_layout Plain Layout
 
-$10V 
-\backslash
-rightarrow 10
+$1V$
+\end_layout
+
+\end_inset
+
+ por cada 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1
 \backslash
 %$
 \end_layout
