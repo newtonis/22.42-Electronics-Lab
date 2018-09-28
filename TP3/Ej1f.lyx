@@ -84,7 +84,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_ejf16cortada.png
+	filename fotos BIEN/tp3f_vc_vbe2.png
 	scale 45
 	rotateOrigin center
 
@@ -97,47 +97,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tensión en el colector del transistor.
-\end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Fotos/tp3_ejf18cortada.png
-	scale 45
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tensión en la base del transistor.
 \end_layout
 
 \end_inset
