@@ -171,7 +171,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -180,17 +191,6 @@ status open
 $20
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -236,7 +236,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -245,17 +256,6 @@ status open
 $30
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -298,7 +298,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -307,17 +318,6 @@ status open
 $40
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -360,7 +360,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -369,17 +380,6 @@ status open
 $50
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -422,7 +422,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -431,17 +442,6 @@ status open
 $60
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -484,7 +484,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -493,17 +504,6 @@ status open
 $70
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -545,7 +545,18 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
 \begin_inset ERT
 status open
 
@@ -554,17 +565,6 @@ status open
 $80
 \backslash
 %$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
 \end_layout
 
 \end_inset
@@ -587,9 +587,12 @@ $V_o$
 \end_layout
 
 \begin_layout Standard
-De las imágenes obtenidas se tiene que, para dicha frecuencia, tanto el
+De las mediciones obtenidas se tiene que, para dicha frecuencia, tanto el
  pico máximo de la tensión de salida como la tensión pico a pico aumenta
- a medida que se incrementa el porcentaje del Duty Cycle.
+ a medida que se incrementa el porcentaje del duty cycle.
+ A mayor duty, el transistor está más tiempo en modo saturación, por lo
+ que el capacitor está mayor tiempo descargándose, resultando mayores los
+ picos de carga cuando el transistor vuelve a estar en corte.
 \end_layout
 
 \end_body
