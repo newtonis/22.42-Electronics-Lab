@@ -12,21 +12,34 @@ h3= (s^2*L*C)/(s^2*L*C+s*R*C+1);
 % step2=h2/s;
 % step3=h3/s;
 
-plot (second1, Volt1)
+plot (freq, pha)
 hold on
-% opt = stepDataOptions('InputOffset',-0.25,'StepAmplitude', 0.5);
-% step(h1,opt,'r')
+% opt = stepDataOptions('InputOffset',0,'StepAmplitude', 0.5);
+% step(h3,opt,'r')
 
-%bode 
-[mag, pha, w] = bode(H);
-mag = squeeze (mag);
-pha = squeeze (pha);
+% %bode 
+% w=logspace(-1,6,5000);
+% [mag, phase] = bode(h3,w);
+% mag = squeeze (mag);
+% phase = squeeze (phase);
+% % for i=1:length(phase)
+% %     if phase(i)<0
+% %         phase(i)=phase(i)+180;
+% %     end
+% % end
+% %phase
+% semilogx ( w./(2*pi), phase);
+% 
+% %mag
+% %semilogx( w./(2*pi), 20*log10(mag));
+% 
+% 
+% grid on
+%  %title ('Bode diagram - Magnitude')
+% %itle ('Bode diagram - Phase')
+% xlabel ('Frequecy (Hz)')
+% %ylabel ('Magnitude (dB)')
+% ylabel ('Phase(degrees)')
 
-%phase
-semilogx ( w./(2*pi), pha);
-
-%mag
-semilogx( w./(2*pi), 20*log10(mag));
-
-
+legend ('práctico' , 'teórico')
 grid on
