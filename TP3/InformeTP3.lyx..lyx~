@@ -554,8 +554,8 @@ $0V$
 , el transistor entra en corte (es decir, no conduce), lo que produciría
  un cambio en la corriente del circuito.
  Dado que sobre la bobina la corriente no puede cambiar abruptamente, ésta
- genera la tensión necesaria para mantener la corriente constante, que (como
- se verá luego en secciones posteriores) es negativa.
+ genera la tensión necesaria que (como se verá luego en secciones posteriores)
+ es negativa, para mantener la corriente constante.
  Es por esto que se observa en las mediciones que cuando el transistor entra
  en corte, el capacitor continúa descargándose un cierto tiempo más hasta
  que la diferencia de tensión en polarización directa sobre el diodo sea
@@ -1086,8 +1086,8 @@ De las mediciones obtenidas se tiene que, para dicha frecuencia, tanto el
  A mayor duty, el transistor está más tiempo en modo saturación, por lo
  que el capacitor está mayor tiempo descargándose, resultando mayores los
  picos de carga cuando el transistor vuelve a estar en corte.
- Considerando que la energía en la bobina en todo el ciclo debe ser la misma,
- se toma primero con el transistor en saturación:
+ Considerando que la energía en la bobina en un semiciclo debe ser la misma
+ que en el otro, se toma primero con el transistor en saturación:
 \end_layout
 
 \begin_layout Standard
@@ -1162,7 +1162,40 @@ $T$
 
 \end_inset
 
- es el período de la cuadrada.
+ es el período de la cuadrada y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$D$
+\end_layout
+
+\end_inset
+
+ el ciclo de trabajo (duty, que varía entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+0
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+1
+\end_layout
+
+\end_inset
+
+).
  Cuando el transistor está en corte (sin considerar la caída en el diodo
  
 \begin_inset ERT
@@ -1870,7 +1903,7 @@ Encendido y apagado de la fuente
 \end_layout
 
 \begin_layout Standard
-Empleando una fuente, al excitar con 
+Empleando la fuente externa, al excitar con 
 \begin_inset ERT
 status open
 
@@ -1996,7 +2029,8 @@ reference "fig:Detalle-de-la"
  El aumento de la tensión está acompañado por la presencia de picos.
  Si bien se ve que aumenta la tensión promedio, se observa una oscilación
  debida a la señal cuadrada que hace que el transistor permita o no el paso
- de corriente, según si se encuentra en la parte alta o baja de dicha señal.
+ de corriente (es decir, conmute), según si se encuentra en la parte alta
+ o baja de dicha señal.
 \end_layout
 
 \begin_layout Standard
@@ -2359,6 +2393,20 @@ $168mV$
 \end_inset
 
  al agregar el capacitor en paralelo con la salida del circuito.
+ Esto es debido a que, al conectarlo en paralelo la capacidad aumenta, aumentand
+o a su vez el tiempo característico del circuito 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$RC$
+\end_layout
+
+\end_inset
+
+ que se forma durante los momentos en los que se descarga, por lo que en
+ esos momentos la tensión disminuye menos que sin el capacitor.
  Si bien esto indica que con el capacitor la salida tiende más a una señal
  continua, se puede decir que la diferencia que provoca la ausencia o presencia
  del capacitor es prácticamente despreciable.
@@ -2913,9 +2961,9 @@ $V_{CE}$
 
 \end_inset
 
-, es decir, entre colector y masa, primero de la forma común conectando
- la masa al punto físico de donde se conecta el cable de la fuente, y luego
- mediante el accesorio resorte para poder medir directamente sobre el transistor.
+, primero de la forma común conectando la masa al punto físico de donde
+ se conecta el cable de la fuente, y luego mediante el accesorio resorte
+ para poder medir directamente sobre el transistor.
  Los resultados obtenidos se muestran en los siguientes gráficos.
 \end_layout
 
@@ -2930,7 +2978,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_gCONRuido.jpg
 	display false
-	scale 5
+	scale 6
 
 \end_inset
 
@@ -2938,7 +2986,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_gSINRuido.jpg
 	display false
-	scale 5
+	scale 6
 
 \end_inset
 
