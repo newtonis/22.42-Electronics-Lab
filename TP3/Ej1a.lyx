@@ -492,6 +492,10 @@ $V_o$
 \end_layout
 
 \begin_layout Standard
+(CREO QUE ESTO QUE SIGUE SE BORRA)
+\end_layout
+
+\begin_layout Standard
 Se observa que a mayores frecuencias, los picos de tensión en la salida
  resultan menores, pero igualmente de valores elevados.
  En el caso de menor frecuencia los picos llegan a los 
@@ -639,6 +643,16 @@ $0V$
  período, luego del pico inicial de tensión, ésta comienza a disminuir al
  tender a estabilizarse, hasta que comienza un nuevo ciclo de la cuadrada
  y el proceso se repite.
+\end_layout
+
+\begin_layout Standard
+(Y A CAMBIO SE PONE LO SIGUIENTE)
+\end_layout
+
+\begin_layout Standard
+Se observa que a mayores frecuencias, las salidas van resultando de valores
+ más elevados de tensión.
+ 
 \end_layout
 
 \end_body

@@ -215,13 +215,16 @@ reference "fig:Respuesta-del-circuito-1"
 \end_inset
 
  se observa la respuesta del circuito al apagado de la fuente.
- Se empleó también el Single del osciloscopio, pero para este caso se seleccionó
- End of Packet para que se pudiera obtener la respuesta al flanco descendiente
- de la alimentación de la fuente.
- En este caso, si se observaba en detalle se podían observar los mismos
- picos explicados previamente, con la diferencia que la amplitud de estos
- decrece en lugar de aumentar.(EXPLICAR POR QUE DISMINUYE y DECIR QUE TAMBIEN
- SE VEIAN LOS PIQUITOS SI SE HACIA ZOOM)
+ En este caso, si se observa en detalle lo que ocurre en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Detalle-de-la-1"
+
+\end_inset
+
+los mismos picos explicados previamente, con la diferencia que la amplitud
+ de estos decrece en lugar de aumentar.(EXPLICAR POR QUE DISMINUYE y DECIR
+ QUE TAMBIEN SE VEIAN LOS PIQUITOS SI SE HACIA ZOOM)
 \end_layout
 
 \begin_layout Standard
@@ -285,6 +288,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Detalle-de-la-1"
+
+\end_inset
+
 Detalle de la respuesta del circuito al apagado de la fuente.
 \end_layout
 
