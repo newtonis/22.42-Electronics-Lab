@@ -55,8 +55,8 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
+\leftmargin 2.25cm
+\topmargin 2.25cm
 \rightmargin 2cm
 \bottommargin 2cm
 \headheight 2cm
@@ -125,7 +125,7 @@ name "fig:RLC-serie"
 \end_layout
 
 \begin_layout Standard
-Para realizar las emdiciones se conectó un buffer entre el circuito y el
+Para realizar las mediciones se conectó un buffer entre el circuito y el
  generador.
  Un buffer es un amplificador de ganancia unitaria que tiene una impedancia
  de entrada extremadamente alta y una impedancia de salida muy pequeña.
@@ -251,7 +251,7 @@ Valores de L y C
 \end_layout
 
 \begin_layout Standard
-Además del coeficiente de amortiguamiento:
+Además del coeficiente de amortiguamiento, que es dato:
 \end_layout
 
 \begin_layout Standard
@@ -371,7 +371,7 @@ a:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}+1}
+H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}s+1}
 \end{equation}
 
 \end_inset
@@ -567,8 +567,8 @@ M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e^{-\frac{\pi\alpha}{\omega_{d}}}=0.545
 
 \begin_layout Enumerate
 Tiempo de establecimiento: valor de tiempo que el sistema necesita para
- alcanzar un error del 5% del valor de la salida en régimen permanente.
- 
+ alcanzar una amplitud del 5% del valor del sobrepico inicial.
+ (VEEEEEEEEEEEEEEER!!!!!!!!!!!!)
 \end_layout
 
 \begin_layout Standard
@@ -780,6 +780,39 @@ Diagrama de bode: magnitud y fase
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Puede verse que el diagrama de bode medido coincide con el teórico.
+ Además, a partir de dicho diagrama se puede decir que el circuito es un
+ filtro pasa bajos.
+ Para altas frecuencias, la fase respecto de cada polo se aproxima a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$90^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+, por lo que en total la fase de los dos polos del sistema suma 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$180^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
