@@ -55,8 +55,8 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
+\leftmargin 2.25cm
+\topmargin 2.25cm
 \rightmargin 2cm
 \bottommargin 2cm
 \headheight 2cm
@@ -125,7 +125,7 @@ name "fig:RLC-serie"
 \end_layout
 
 \begin_layout Standard
-Para realizar las emdiciones se conectó un buffer entre el circuito y el
+Para realizar las mediciones se conectó un buffer entre el circuito y el
  generador.
  Un buffer es un amplificador de ganancia unitaria que tiene una impedancia
  de entrada extremadamente alta y una impedancia de salida muy pequeña.
@@ -251,7 +251,7 @@ Valores de L y C
 \end_layout
 
 \begin_layout Standard
-Además del coeficiente de amortiguamiento:
+Además del coeficiente de amortiguamiento, que es dato:
 \end_layout
 
 \begin_layout Standard
@@ -371,7 +371,7 @@ a:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}+1}
+H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}s+1}
 \end{equation}
 
 \end_inset
@@ -567,8 +567,8 @@ M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e^{-\frac{\pi\alpha}{\omega_{d}}}=0.545
 
 \begin_layout Enumerate
 Tiempo de establecimiento: valor de tiempo que el sistema necesita para
- alcanzar un error del 5% del valor de la salida en régimen permanente.
- 
+ alcanzar una amplitud del 5% del valor del sobrepico inicial.
+ (VEEEEEEEEEEEEEEER!!!!!!!!!!!!)
 \end_layout
 
 \begin_layout Standard
@@ -782,6 +782,39 @@ Diagrama de bode: magnitud y fase
 
 \end_layout
 
+\begin_layout Standard
+Puede verse que el diagrama de bode medido coincide con el teórico.
+ Además, a partir de dicho diagrama se puede decir que el circuito es un
+ filtro pasa bajos.
+ Para altas frecuencias, la fase que introduce cada polo se aproxima a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$90^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+, por lo que en total la fase de los dos polos del sistema suma 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$180^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Barrido
 \end_layout
@@ -977,12 +1010,9 @@ reference "fig:Medición-de-"
  A medida que aumenta la frecuencia, se va perdiendo la similitud con la
  señal cuadrada y la mayor diferencia se observa en la respuesta a los flancos
  de la misma.
- A altas frecuencias la respuesta se va pareciendo más a una senoidal.
- Este comportamiento del circuito se debe a que el mismo es un filtro pasa
- bajos.
- La respuesta del circuito a los flancos de la señal cuadrada es debida
- a las altas frecuencias.
- Al ser un pasa bajos, a altas frecuencias esas respuestas son atenuadas.
+ Este comportamiento se debe a que, al aumentar la frecuencia, se le da
+ menos tiempo al circuito para que se establezca luego del transitorio,
+ por lo que a mayor frecuencia cada vez se observa menos.
 \end_layout
 
 \begin_layout Subsection
@@ -1061,7 +1091,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1280,6 +1310,11 @@ Respuesta al escalón medida y teórica
 
 \end_layout
 
+\begin_layout Standard
+A partir de las curvas obtenidas, puede comprobarse que el circuito pasó
+ a trabajar en régimen sobreamortiguado, 
+\end_layout
+
 \begin_layout Subsection
 Caso 
 \begin_inset Formula $d_{3}$
@@ -1371,7 +1406,21 @@ Resultados obtenidos
 \end_layout
 
 \begin_layout Standard
-En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+En los gráficos 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+ se muestra la respuesta al escalón medida y la teórica:
 \end_layout
 
 \begin_layout Standard
@@ -1391,6 +1440,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
 Respuesta al escalón medida y teórica
 \end_layout
 
@@ -1437,10 +1492,6 @@ Resultados obtenidos sin buffer
 \end_layout
 
 \begin_layout Standard
-En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1477,21 +1528,6 @@ Respuesta al escalón medida y teórica
 \end_layout
 
 \begin_layout Standard
-En el gráfico de la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Respuesta-al-escalón"
-
-\end_inset
-
- se observa que la respuesta al escalón medida no se comporta como la teórica.
- Esto se debe a que en la teórica se considera que la resistencia es cero,
- mientras que en la medición la resistencia no es realmente cero debido
- a que tanto los cables como los componentes del circuito tienen resistencia.
- Ambas respuestas oscilan al tratarse de un circuito subamortiguado
-\end_layout
-
-\begin_layout Standard
 Los valores característicos medidos fueron:
 \end_layout
 
@@ -1517,6 +1553,31 @@ Sobrepico:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En los gráficos de las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+, se observa que la respuesta al escalón medida no se comporta como la teórica.
+ Esto se debe a que en la teórica se considera que la resistencia es cero,
+ mientras que en la medición la resistencia no es realmente cero debido
+ a que tanto los instrumentos utilizados para medir como los componentes
+ del circuito en sí tienen resistencias.
+ Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
+ el teórico muestra una oscilación perfecta mientras que la respuesta del
+ medido es amortiguada a medida que aumenta el tiempo.
 \end_layout
 
 \begin_layout Subsection

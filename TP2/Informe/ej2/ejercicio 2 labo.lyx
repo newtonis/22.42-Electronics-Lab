@@ -1010,12 +1010,9 @@ reference "fig:Medición-de-"
  A medida que aumenta la frecuencia, se va perdiendo la similitud con la
  señal cuadrada y la mayor diferencia se observa en la respuesta a los flancos
  de la misma.
- A altas frecuencias la respuesta se va pareciendo más a una senoidal.
- Este comportamiento del circuito se debe a que el mismo es un filtro pasa
- bajos.
- La respuesta del circuito a los flancos de la señal cuadrada es debida
- a las altas frecuencias.
- Al ser un pasa bajos, a altas frecuencias esas respuestas son atenuadas.
+ Este comportamiento se debe a que, al aumentar la frecuencia, se le da
+ menos tiempo al circuito para que se establezca luego del transitorio,
+ por lo que a mayor frecuencia cada vez se observa menos.
 \end_layout
 
 \begin_layout Subsection
@@ -1094,7 +1091,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1311,6 +1308,13 @@ Respuesta al escalón medida y teórica
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+A partir de las curvas obtenidas, puede comprobarse que el circuito pasó
+ a trabajar en régimen sobreamortiguado, dado que al cambiar el valor de
+ la resistencia, los polos fueron desplazados hacia el eje real, convirtiendolos
+ en reales y distintos (y negativos).
 \end_layout
 
 \begin_layout Subsection

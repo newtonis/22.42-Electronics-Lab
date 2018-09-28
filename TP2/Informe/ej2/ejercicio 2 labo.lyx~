@@ -786,7 +786,7 @@ Diagrama de bode: magnitud y fase
 Puede verse que el diagrama de bode medido coincide con el teórico.
  Además, a partir de dicho diagrama se puede decir que el circuito es un
  filtro pasa bajos.
- Para altas frecuencias, la fase respecto de cada polo se aproxima a 
+ Para altas frecuencias, la fase que introduce cada polo se aproxima a 
 \begin_inset ERT
 status open
 
@@ -1010,12 +1010,9 @@ reference "fig:Medición-de-"
  A medida que aumenta la frecuencia, se va perdiendo la similitud con la
  señal cuadrada y la mayor diferencia se observa en la respuesta a los flancos
  de la misma.
- A altas frecuencias la respuesta se va pareciendo más a una senoidal.
- Este comportamiento del circuito se debe a que el mismo es un filtro pasa
- bajos.
- La respuesta del circuito a los flancos de la señal cuadrada es debida
- a las altas frecuencias.
- Al ser un pasa bajos, a altas frecuencias esas respuestas son atenuadas.
+ Este comportamiento se debe a que, al aumentar la frecuencia, se le da
+ menos tiempo al circuito para que se establezca luego del transitorio,
+ por lo que a mayor frecuencia cada vez se observa menos.
 \end_layout
 
 \begin_layout Subsection
