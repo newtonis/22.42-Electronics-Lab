@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,10 +26,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,11 +55,15 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -75,7 +81,20 @@ Tensión y Corriente sobre la Bobina
 \end_layout
 
 \begin_layout Standard
-(HAY QUE HACER LAS CUENTAS CON LOS VALORES DEL CSV)
+Para la medición de la tensión en la bobina, se mide con cada canal entre
+ los terminales de la bobina, de manera tal de con la funcionalidad 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Math$
+\end_layout
+
+\end_inset
+
+ del osciloscopio hacer la resta, obteniendo la medición que se muestra
+ a continuación.
 \end_layout
 
 \begin_layout Standard
@@ -88,7 +107,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_eje13.png
+	filename fotos BIEN/tp3e_vb2.png
+	display false
 	scale 45
 	rotateOrigin center
 
@@ -101,7 +121,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Tensión sobre la bobina.
 \end_layout
 
 \end_inset
@@ -116,6 +136,184 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Durante el tiempo que la señal cuadrada vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, el transistor satura, de manera tal que los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+ de la fuente caen en la bobina.
+ Cuando el transistor está en corte, la tensión en la bobina es de aproximadamen
+te 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-6V$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se incluyó en serie una resistencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+, para poder medir la corriente.
+ Tomando un intervalo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta_t=2 
+\backslash
+mu s$
+\end_layout
+
+\end_inset
+
+, se midió la diferencia de tensión en la resistencia en cuestión, obteniendo
+ un valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta_{VR} = 130mV$
+\end_layout
+
+\end_inset
+
+, por lo que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta_{iR} = 
+\backslash
+Delta_{iL} = 
+\backslash
+frac{
+\backslash
+Delta_{VR}}{R} = 
+\backslash
+frac{130mV}{10} = 13mA$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sabiendo que la tensión en la bobina para un intervalo de tiempo pequeño
+ es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$|V_L|=|L
+\backslash
+frac{
+\backslash
+Delta_i}{
+\backslash
+Delta_t}|$
+\end_layout
+
+\end_inset
+
+, se despeja el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L = 
+\backslash
+frac{V_L 
+\backslash
+Delta_t}{
+\backslash
+Delta_i} = 0.923mH$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que resulta muy aproximado al valor nominal de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1mH$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

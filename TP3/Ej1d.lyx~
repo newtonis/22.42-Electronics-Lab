@@ -71,14 +71,23 @@
 \begin_body
 
 \begin_layout Section
-Ripple de la Fuente
+Ripple de la fuente
 \end_layout
 
 \begin_layout Standard
 Para poder observar el ripple de la fuente, se compara lo que ocurre con
  el circuito mismo y al agregar un capacitor en paralelo a la salida.
  En nuestro caso, dicho capacitor es de 
-\begin_inset Formula $0,1\mu F$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.1 
+\backslash
+mu F$
+\end_layout
+
 \end_inset
 
 .
@@ -113,6 +122,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3d6.png
+	scale 30
 	rotateOrigin center
 
 \end_inset
@@ -155,7 +165,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3d8.png
-	scale 45
+	scale 30
 	rotateOrigin center
 
 \end_inset

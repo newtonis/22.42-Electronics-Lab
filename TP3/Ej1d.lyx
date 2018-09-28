@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,10 +26,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,11 +55,15 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -71,14 +77,23 @@
 \begin_body
 
 \begin_layout Section
-Ripple de la Fuente
+Ripple de la fuente
 \end_layout
 
 \begin_layout Standard
 Para poder observar el ripple de la fuente, se compara lo que ocurre con
  el circuito mismo y al agregar un capacitor en paralelo a la salida.
  En nuestro caso, dicho capacitor es de 
-\begin_inset Formula $0,1\mu F$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.1 
+\backslash
+mu F$
+\end_layout
+
 \end_inset
 
 .
@@ -113,6 +128,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3d6.png
+	display false
 	scale 30
 	rotateOrigin center
 
@@ -156,6 +172,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3d8.png
+	display false
 	scale 30
 	rotateOrigin center
 
@@ -186,8 +203,6 @@ Ripple de la fuente al agregarle el capacitor.
 
 \begin_layout Standard
 El valor pico a pico disminuye de 
-\lang spanish
-
 \begin_inset ERT
 status open
 
@@ -211,10 +226,8 @@ $168mV$
 
  al agregar el capacitor en paralelo con la salida del circuito.
  Si bien esto indica que con el capacitor la salida tiende más a una señal
- contínua, 
-\lang english
-se puede decir que la diferencia que provoca la ausencia o presencia del
- capacitor es prácticamente despreciable.
+ continua, se puede decir que la diferencia que provoca la ausencia o presencia
+ del capacitor es prácticamente despreciable.
 \end_layout
 
 \end_body

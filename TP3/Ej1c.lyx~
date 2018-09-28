@@ -71,18 +71,39 @@
 \begin_body
 
 \begin_layout Section
-Encendido y Apagado de la fuente
+Encendido y apagado de la fuente
 \end_layout
 
 \begin_layout Standard
-Empleando una fuente, al exitar con 5V el circuito de la figura (PONER FIGURA
- DEL CIRCUITO AL PPIO DEL TP Y AGREGAR REFERENCIA), se observa la respuesta
- del mismo tanto en el encendido como en el apagado de la fuente.
- Para poder observar en el osciloscopio ambas respuestas, se empleó puso
- el instrumento en Roll, y una vez encendida o apagada la fuente, se detuvo
- para poder observar el comportamiento luego del cambio del estado de la
- fuente.
- Esto se hace con la señal cuadrada ya puesta.
+Empleando una fuente, al excitar con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+ el circuito de la figura (PONER FIGURA DEL CIRCUITO AL PPIO DEL TP Y AGREGAR
+ REFERENCIA), se observa la respuesta del mismo tanto en el encendido como
+ en el apagado de la fuente.
+ Para poder visualizar en el osciloscopio ambas respuestas, se empleó puso
+ el instrumento en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Roll$
+\end_layout
+
+\end_inset
+
+, y una vez encendida o apagada la fuente, se detuvo para poder observar
+ el comportamiento luego del cambio del estado de la fuente.
+ Esto se hace con la señal cuadrada ya conectada.
 \end_layout
 
 \begin_layout Standard

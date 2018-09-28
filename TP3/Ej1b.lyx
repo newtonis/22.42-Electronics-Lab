@@ -159,8 +159,16 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_b15.png
 	display false
-	scale 30
+	scale 25
 	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b17.png
+	display false
+	scale 25
 
 \end_inset
 
@@ -171,7 +179,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: salida 
+(Izquierda): CH1: 
 \begin_inset ERT
 status open
 
@@ -182,7 +190,7 @@ $V_o$
 
 \end_inset
 
- - CH2: señal de excitación cuadrada al 
+ - CH2: señal cuadrada al 
 \begin_inset ERT
 status open
 
@@ -195,48 +203,7 @@ $20
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fotos BIEN/tp3_b17.png
-	display false
-	scale 30
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: salida 
+ (Derecha): CH1: 
 \begin_inset ERT
 status open
 
@@ -247,7 +214,7 @@ $V_o$
 
 \end_inset
 
- - CH2: señal de excitación cuadrada al 
+ - CH2: señal cuadrada al 
 \begin_inset ERT
 status open
 
@@ -268,6 +235,10 @@ $30
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -285,8 +256,15 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_b19.png
 	display false
-	scale 30
-	rotateOrigin center
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b21.png
+	display false
+	scale 25
 
 \end_inset
 
@@ -294,11 +272,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: salida 
+(Izquierda): CH1: 
 \begin_inset ERT
 status open
 
@@ -309,7 +286,7 @@ $V_o$
 
 \end_inset
 
- - CH2: señal de excitación cuadrada al 
+ - CH2: señal cuadrada al 
 \begin_inset ERT
 status open
 
@@ -322,45 +299,7 @@ $40
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fotos BIEN/tp3_b21.png
-	display false
-	scale 30
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: salida 
+ (Derecha): CH1: 
 \begin_inset ERT
 status open
 
@@ -371,7 +310,7 @@ $V_o$
 
 \end_inset
 
- - CH2: señal de excitación cuadrada al 
+ - CH2: señal cuadrada al 
 \begin_inset ERT
 status open
 
@@ -409,8 +348,15 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_b23.png
 	display false
-	scale 30
-	rotateOrigin center
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b25.png
+	display false
+	scale 25
 
 \end_inset
 
@@ -422,7 +368,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: salida 
+(Izquierda): CH1: 
 \begin_inset ERT
 status open
 
@@ -433,7 +379,7 @@ $V_o$
 
 \end_inset
 
- - CH2: señal de excitación cuadrada al 
+ - CH2: señal cuadrada al 
 \begin_inset ERT
 status open
 
@@ -446,45 +392,7 @@ $60
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fotos BIEN/tp3_b25.png
-	display false
-	scale 30
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: salida 
+ (Derecha): CH1: 
 \begin_inset ERT
 status open
 
@@ -495,7 +403,7 @@ $V_o$
 
 \end_inset
 
- - CH2: señal de excitación cuadrada al 
+ - CH2: señal cuadrada al 
 \begin_inset ERT
 status open
 
@@ -533,8 +441,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_b27.png
 	display false
-	scale 30
-	rotateOrigin center
+	scale 25
 
 \end_inset
 
@@ -542,6 +449,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -577,10 +485,6 @@ $80
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -593,6 +497,767 @@ De las mediciones obtenidas se tiene que, para dicha frecuencia, tanto el
  A mayor duty, el transistor está más tiempo en modo saturación, por lo
  que el capacitor está mayor tiempo descargándose, resultando mayores los
  picos de carga cuando el transistor vuelve a estar en corte.
+ Considerando que la energía en la bobina en todo el ciclo debe ser la misma,
+ se toma primero con el transistor en saturación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_L = L
+\backslash
+frac{di}{dt}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_i = L
+\backslash
+frac{
+\backslash
+Delta_i}{
+\backslash
+Delta_t} = L
+\backslash
+frac{
+\backslash
+Delta_i}{D 
+\backslash
+cdot T}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta_i = 
+\backslash
+frac{V_i D T}{L}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T$
+\end_layout
+
+\end_inset
+
+ es el período de la cuadrada.
+ Cuando el transistor está en corte (sin considerar la caída en el diodo
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1N4148$
+\end_layout
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_i-V_o 
+\backslash
+approx -L
+\backslash
+frac{
+\backslash
+Delta_i}{(1-D)T}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta_i = -
+\backslash
+frac{(V_i-Vo)(1-D)T}{L}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$E_L = 
+\backslash
+frac{1}{2}L {
+\backslash
+Delta_i}^2$
+\end_layout
+
+\end_inset
+
+, siendo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+ constante, se igualan las 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta_i$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+frac{V_i D T}{L} = -
+\backslash
+frac{(V_i-Vo)(1-D)T}{L}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde despejando se obtiene que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+frac{V_o}{V_i} = 
+\backslash
+frac{1}{1-D}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se compara en la siguiente tabla los valores de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ obtenidos mediante la medición y con la aproximación resultante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Duty$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ Medido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ Aproximado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$6.68V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$6.25V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$30
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8.11V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$7.14V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$40
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$9.59V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8.33V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10.98V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$60
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$13.32V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$12.5V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$70
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$18.54V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$16.67V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$80
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$29.29V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$25V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparación de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ entre medido y aproximado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
