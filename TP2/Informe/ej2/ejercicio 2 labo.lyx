@@ -141,7 +141,7 @@ De la tabla provista en la consigna se obtienen los valores del capacitor
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -580,6 +580,68 @@ t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi^{2}}}\right)}{\alpha}\simeq50\mu s
 
 \begin_layout Subsection
 Resultados obtenidos
+\end_layout
+
+\begin_layout Subsubsection
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename STE.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se puede ver en la imagen, ambas respuestas coinciden bastante bien.
+\end_layout
+
+\begin_layout Standard
+La frecuencia de oscilación del transitorio en este caso es de 
+\begin_inset Formula $50KHz$
+\end_inset
+
+ la cual se corresponde a aproximadamente el 
+\begin_inset Formula $1\%$
+\end_inset
+
+ de error con respecto al valor teórico.
+ Con respecto al valor del tiempo de establecimiento el medido fué de 
+\begin_inset Formula $60\mu s$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

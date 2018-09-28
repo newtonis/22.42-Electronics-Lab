@@ -1,0 +1,6 @@
+Para la bobina: 
+Freq esta en KHz
+L en mHy
+Q es normal
+R en ohms
+phi en deg
