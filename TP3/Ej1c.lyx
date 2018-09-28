@@ -1,0 +1,304 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Encendido y Apagado de la fuente
+\end_layout
+
+\begin_layout Standard
+Empleando una fuente, al exitar con 5V el circuito de la figura (PONER FIGURA
+ DEL CIRCUITO AL PPIO DEL TP Y AGREGAR REFERENCIA), se observa la respuesta
+ del mismo tanto en el encendido como en el apagado de la fuente.
+ Para poder observar en el osciloscopio ambas respuestas, se empleó el Single
+ del Run Control del instrumento.
+ 
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito"
+
+\end_inset
+
+ se puede ver la respuesta del circuito al encenderse la fuente.
+ Esto se hace con la señal cuadrada ya puesta.
+ Para obtener esta imagen en el osciloscopio, se debió seleccionar Start
+ Of Packet y se especificó que se desearía obtener la respuesta a un flanco
+ ascendente.
+ De esta manera, no se vio nada en la pantalla del instrumento, hasta que
+ la fuente fue encendida.
+ Se ve unicamente el comportamiento del circuito apenas la fuente se encendió,
+ es decir, la primera parte del transitorio del circuito al ser alimentado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c30.png
+	scale 45
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito"
+
+\end_inset
+
+Respuesta del circuito al encendido de la fuente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Detalle-de-la"
+
+\end_inset
+
+ se puede ver con mayor precisión la respuesta del circuito al encenderse
+ la fuente.
+ (EXPLICAR)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c31.png
+	scale 45
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Detalle-de-la"
+
+\end_inset
+
+Detalle de la respuesta del circuito al encendido de la fuente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otra parte, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito-1"
+
+\end_inset
+
+ se observa la respuesta del circuito al apagado de la fuente.
+ Se empleó también el Single del osciloscopio, pero para este caso se seleccionó
+ End of Packet para que se pudiera obtener la respuesta al flanco descendiente
+ de la alimentación de la fuente.
+ En este caso, si se observaba en detalle se podían observar los mismos
+ picos explicados previamente, con la diferencia que la amplitud de estos
+ decrece en lugar de aumentar.(EXPLICAR POR QUE DISMINUYE y DECIR QUE TAMBIEN
+ SE VEIAN LOS PIQUITOS SI SE HACIA ZOOM)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c35.png
+	scale 45
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito-1"
+
+\end_inset
+
+Respuesta del circuito al apagado de la fuente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c37.png
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Detalle de la respuesta del circuito al apagado de la fuente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

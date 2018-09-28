@@ -87,7 +87,7 @@ Circuito RLC serie:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -141,7 +141,7 @@ De la tabla provista en la consigna se obtienen los valores de el capacitor
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -582,6 +582,95 @@ t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi^{2}}}\right)}{\alpha}\simeq50\mu s
 Resultados obtenidos
 \end_layout
 
+\begin_layout Subsubsection
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename STE.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y calculada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $50KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $61\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.53$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tanto las curvas como los valores medidos coinciden bastante con los teóricos.
+ El valor que más difiere es el del tiempo de establecimiento, que puede
+ ser debido a la falta de precisión para encontrar el valor del 
+\begin_inset Formula $5\%$
+\end_inset
+
+ y a partir de eso hallar dicho tiempo.
+ Para el caso de la frecuencia de oscilación y el sobrepico, los errores
+ relativos furon de tan solo el 
+\begin_inset Formula $1\%$
+\end_inset
+
+ y el 
+\begin_inset Formula $3\%$
+\end_inset
+
+ aproximadamente.
+\end_layout
+
 \begin_layout Subsection
 Caso 
 \begin_inset Formula $d_{1}$
@@ -754,6 +843,36 @@ Despejando para R:
 \begin_inset Formula 
 \begin{equation}
 R_{C}=2\sqrt{\frac{L}{C}}=632.455532\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los polos serán iguales y reales:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{1}=-\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-\,31\,623\,000
 \end{equation}
 
 \end_inset

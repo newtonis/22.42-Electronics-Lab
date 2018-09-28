@@ -1,0 +1,28 @@
+Anlg Ch State  Units/Div  Position  Coupling  BW Limit  Invert  Impedance 
+ Ch 1:   Off     2.00V/   2.00000V     DC        Off      Off     1M Ohm  
+ Ch 2:    On     5.00V/   15.3750V     DC        Off      Off     1M Ohm  
+
+Anlg Ch   Probe  
+ Ch 1:  1.00 : 1 
+ Ch 2:  10.0 : 1 
+
+Trigger  Mode   Coupling  Noise Rej  HF Reject  Holdoff 
+  USB   Normal     DC        Off        Off       60ns  
+
+Trigger D+ Source  D+ Lvl  D- Source  D- Lvl 
+  USB      Ch 1    +900mV     Ch 2    +2.75V 
+
+Trigger  Speed   Trigger on: 
+  USB   12 Mb/s      EOP     
+
+ Time  Time Ref  Main s/div   Delay  
+Normal  Center    5.000us/   3.165ms 
+
+Acquisition Realtime  Vectors  Inf Persist 
+   Normal      On        On        Off     
+
+   Measure    Current    Mean   Min   Max   Std Dev  Count 
+Amplitude(1) No signal                                 0   
+Amplitude(2)   26.6V    39.5V  5.2V  54.4V   19.5V     24  
+Frequency(1) No signal                                 0   
+
