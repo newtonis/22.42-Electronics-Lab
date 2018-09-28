@@ -124,7 +124,7 @@ $Single$
 \end_layout
 
 \begin_layout Standard
-Por un lado, se puso el instrumento en 
+Por un lado, se pone el instrumento en 
 \begin_inset ERT
 status open
 
@@ -135,13 +135,10 @@ $Roll$
 
 \end_inset
 
-, y una vez encendida o apagada la fuente, se detuvo para poder observar
+, y una vez encendida o apagada la fuente, se detiene para poder observar
  el comportamiento luego del cambio del estado de la misma.
  Esto se hace con la señal cuadrada ya conectada.
-\end_layout
-
-\begin_layout Standard
-En la figura 
+ En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-del-circuito"
@@ -183,10 +180,6 @@ Respuesta del circuito al encendido de la fuente, en modo Roll.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -257,6 +250,10 @@ Detalle de la respuesta del circuito al encendido de la fuente, en modo
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Por otro lado, 
 \end_layout
 
 \begin_layout Standard
