@@ -80,8 +80,8 @@ Ripple de la Fuente
 
 \begin_layout Standard
 Para poder observar el ripple de la fuente, es necesario agregar un capacitor
- en paralelo a la salida ........
- En nuestro caso, dicho capacitor es de 
+ en paralelo a la salida (EXPLICAR) En nuestro caso, dicho capacitor es
+ de 
 \begin_inset Formula $0,1\mu F$
 \end_inset
 
@@ -106,7 +106,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../InformesLabo/TP3/Fotos/tp3_ejd12cortada.png
+	filename Fotos/tp3_ejd12cortada.png
 	scale 45
 	rotateOrigin center
 
