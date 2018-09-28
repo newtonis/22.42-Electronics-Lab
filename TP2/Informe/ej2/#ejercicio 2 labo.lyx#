@@ -1488,9 +1488,7 @@ reference "fig:Respuesta-al-escalón"
  Esto se debe a que en la teórica se considera que la resistencia es cero,
  mientras que en la medición la resistencia no es realmente cero debido
  a que tanto los cables como los componentes del circuito tienen resistencia.
- Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
- el teórico muestra una oscilación perfecta mientras que la respuesta del
- medido es atenuada a medida que aumenta el tiempo.
+ Ambas respuestas oscilan al tratarse de un circuito subamortiguado
 \end_layout
 
 \begin_layout Standard

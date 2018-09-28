@@ -979,7 +979,10 @@ reference "fig:Medición-de-"
  de la misma.
  A altas frecuencias la respuesta se va pareciendo más a una senoidal.
  Este comportamiento del circuito se debe a que el mismo es un filtro pasa
- bajos y 
+ bajos.
+ La respuesta del circuito a los flancos de la señal cuadrada es debida
+ a las altas frecuencias.
+ Al ser un pasa bajos, a altas frecuencias esas respuestas son atenuadas.
 \end_layout
 
 \begin_layout Subsection
@@ -1375,7 +1378,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1454,6 +1457,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón"
+
+\end_inset
+
 Respuesta al escalón medida y teórica
 \end_layout
 
@@ -1465,6 +1474,22 @@ Respuesta al escalón medida y teórica
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En el gráfico de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+ se observa que la respuesta al escalón medida no se comporta como la teórica.
+ Esto se debe a que en la teórica se considera que la resistencia es cero,
+ mientras que en la medición la resistencia no es realmente cero debido
+ a que tanto los cables como los componentes del circuito tienen resistencia.
+ Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
+ el teórico muestra una oscilación perfecta mientras que
 \end_layout
 
 \begin_layout Standard
