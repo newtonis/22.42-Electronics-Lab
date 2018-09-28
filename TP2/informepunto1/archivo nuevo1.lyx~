@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -62,7 +62,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -75,7 +75,7 @@
 
 \begin_body
 
-\begin_layout Part*
+\begin_layout Section
 Medición de componentes pasivos con el Medidor vector de impedancias
 \end_layout
 
@@ -102,6 +102,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecL.png
+	lyxscale 30
 	scale 35
 
 \end_inset
@@ -113,7 +114,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Respuesta en frecuencia de L
 \end_layout
 
 \end_inset
@@ -136,6 +137,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecQ.png
+	lyxscale 30
 	scale 35
 
 \end_inset
@@ -147,7 +149,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Respuesta en frecuencia de Q
 \end_layout
 
 \end_inset
@@ -169,6 +171,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecR.png
+	lyxscale 50
 	scale 35
 
 \end_inset
@@ -210,6 +213,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecPhi.png
+	lyxscale 50
 	scale 35
 
 \end_inset
@@ -260,7 +264,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Modelo de alta frecuencia del inductor
 \end_layout
 
 \end_inset
@@ -332,8 +336,19 @@ Im(Zeq)=0\iff\omega=\sqrt{\frac{1}{LC}-\left(\frac{R}{L}\right)^{2}}
 \end_layout
 
 \begin_layout Standard
-En el laboratorio se informó que C estaba en el orden de los pf.
- Por lo cual si hacemos un cálculo cuantitativo de 
+En el laboratorio se informó que C estaba en el orden de los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pf$
+\end_layout
+
+\end_inset
+
+.
+ Por lo cual si se realiza un cálculo cuantitativo de 
 \begin_inset Formula $\frac{1}{LC}$
 \end_inset
 
@@ -401,7 +416,7 @@ En las mediciones la frecuencia de resonancia se daba a f
 \begin_inset Formula $_{0}$
 \end_inset
 
-, obtenemos un C =9.28pf.
+, obtenemos un C = 9.28pf.
 \end_layout
 
 \begin_layout Standard
@@ -411,19 +426,22 @@ Teniendo esto en consideración y que a bajas frecuencias el R que se midió
 \end_inset
 
  y por ende es el que debe ser introducido en el modelo (debido a que C
- no influye) se procede a contrastar las mediciones obtenidas con el modelo
+ no influye) se procedió a contrastar las mediciones obtenidas con el modelo
  propuesto.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename RespuestaenfrecuenciaZvsModelo.png
+	lyxscale 30
 	scale 25
 
 \end_inset
@@ -441,7 +459,49 @@ name "fig:ZvsZmodel"
 
 \end_inset
 
+ Magnitud de Z
+\end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename RespuestaenfrecPhivsModelo.png
+	lyxscale 30
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FaseZvs"
+
+\end_inset
+
+Fase de Z
 \end_layout
 
 \end_inset
@@ -462,47 +522,20 @@ reference "fig:ZvsZmodel"
 
 \end_inset
 
- se tuvo la precaución de no graficar más allá de 1MHz ya que a partir de
+ se tuvó la precaución de no graficar más allá de 1MHz ya que a partir de
  esa frecuencia los valores del modelo teórico y los de las mediciones se
  apartan demasiado como para obtener un gráfico representativo de lo que
  se está comparando, esto es debido a que en la frecuencia de resonancia
- el módulo de la impedancia empieza a incrementar de forma abrupta.
+ el módulo de la impedancia empieza a incrementar de forma abrupta según
+ nuestro modelo, lo cuál no coincide con la realidad; sería necesario un
+ modelo más completo que considere los conectores del analizador de impedancias
+ para poder medir en dicho rango de frecuencias
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename RespuestaenfrecPhivsModelo.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+Sin emargo, en general los resultados fueron dentro de lo esperado tanto
+ para la magnitud como la fase de la impededancia equivalente dentro de
+ los valores de frecuencia
 \end_layout
 
 \end_body

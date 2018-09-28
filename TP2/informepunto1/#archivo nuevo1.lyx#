@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -62,7 +62,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language french
+\quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -102,7 +102,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecL.png
-	lyxscale 30
 	scale 35
 
 \end_inset
@@ -114,7 +113,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Respuesta en frecuencia de L
+
 \end_layout
 
 \end_inset
@@ -137,7 +136,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecQ.png
-	lyxscale 30
 	scale 35
 
 \end_inset
@@ -149,7 +147,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Respuesta en frecuencia de Q
+
 \end_layout
 
 \end_inset
@@ -171,7 +169,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecR.png
-	lyxscale 50
 	scale 35
 
 \end_inset
@@ -183,7 +180,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resistencia equivalente
+Respuesta en frecuencia de R
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:R"
@@ -213,7 +210,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename RespuestaenfrecPhi.png
-	lyxscale 50
 	scale 35
 
 \end_inset
@@ -225,7 +221,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Fase de la impedancia equivalente
+
 \end_layout
 
 \end_inset
@@ -342,7 +338,7 @@ status open
 
 \begin_layout Plain Layout
 
-$pf$
+pf
 \end_layout
 
 \end_inset
@@ -416,7 +412,7 @@ En las mediciones la frecuencia de resonancia se daba a f
 \begin_inset Formula $_{0}$
 \end_inset
 
-, obtenemos un C = 9.28pf.
+, obtenemos un C =9.28pf.
 \end_layout
 
 \begin_layout Standard
@@ -426,13 +422,12 @@ Teniendo esto en consideración y que a bajas frecuencias el R que se midió
 \end_inset
 
  y por ende es el que debe ser introducido en el modelo (debido a que C
- no influye) se procedió a contrastar las mediciones obtenidas con el modelo
+ no influye) se procede a contrastar las mediciones obtenidas con el modelo
  propuesto.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status open
@@ -459,49 +454,7 @@ name "fig:ZvsZmodel"
 
 \end_inset
 
- Magnitud de Z
-\end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename RespuestaenfrecPhivsModelo.png
-	lyxscale 30
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:FaseZvs"
-
-\end_inset
-
-Fase de Z
 \end_layout
 
 \end_inset
@@ -526,16 +479,50 @@ reference "fig:ZvsZmodel"
  esa frecuencia los valores del modelo teórico y los de las mediciones se
  apartan demasiado como para obtener un gráfico representativo de lo que
  se está comparando, esto es debido a que en la frecuencia de resonancia
- el módulo de la impedancia empieza a incrementar de forma abrupta según
- nuestro modelo, lo cuál no coincide con la realidad; sería necesario un
- modelo más completo que considere los conectores del analizador de impedancias
- para poder medir en dicho rango de frecuencias
+ el módulo de la impedancia empieza a incrementar de forma abrupta.
 \end_layout
 
 \begin_layout Standard
-Sin emargo, en general los resultados fueron dentro de lo esperado tanto
- para la magnitud como la fase de la impededancia equivalente dentro de
- los valores de frecuencia
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename RespuestaenfrecPhivsModelo.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Debido a que no se considero el modelo de los conectores del analizador
+ de impedancias 
 \end_layout
 
 \end_body
