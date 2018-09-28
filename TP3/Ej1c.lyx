@@ -78,9 +78,11 @@ Encendido y Apagado de la fuente
 Empleando una fuente, al exitar con 5V el circuito de la figura (PONER FIGURA
  DEL CIRCUITO AL PPIO DEL TP Y AGREGAR REFERENCIA), se observa la respuesta
  del mismo tanto en el encendido como en el apagado de la fuente.
- Para poder observar en el osciloscopio ambas respuestas, se empleó el Single
- del Run Control del instrumento.
- 
+ Para poder observar en el osciloscopio ambas respuestas, se empleó puso
+ el instrumento en Roll, y una vez encendida o apagada la fuente, se detuvo
+ para poder observar el comportamiento luego del cambio del estado de la
+ fuente.
+ Esto se hace con la señal cuadrada ya conectada.
 \end_layout
 
 \begin_layout Standard
@@ -92,14 +94,11 @@ reference "fig:Respuesta-del-circuito"
 \end_inset
 
  se puede ver la respuesta del circuito al encenderse la fuente.
- Esto se hace con la señal cuadrada ya puesta.
- Para obtener esta imagen en el osciloscopio, se debió seleccionar Start
- Of Packet y se especificó que se desearía obtener la respuesta a un flanco
- ascendente.
- De esta manera, no se vio nada en la pantalla del instrumento, hasta que
- la fuente fue encendida.
  Se ve unicamente el comportamiento del circuito apenas la fuente se encendió,
  es decir, la primera parte del transitorio del circuito al ser alimentado.
+ No hay un cambio brusco de tensión en el circuito debido a (EXPLICAR!!!!!!!!!!!
+!!!!!!!!!!!!!!! no se si es por el capacitor o si hay algo mas que tenga
+ que ver).
 \end_layout
 
 \begin_layout Standard
@@ -112,7 +111,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_ejc8cortada.png
+	filename fotos BIEN/tp3_c30.png
 	scale 45
 	rotateOrigin center
 
@@ -155,10 +154,10 @@ reference "fig:Detalle-de-la"
 
  se puede ver con mayor precisión la respuesta del circuito al encenderse
  la fuente.
- En esta figura se ven unos picos que son producidos por la bobina presente
- en el circuito, para mantener la corriente cuando el transistor deja de
- conducir en los momentos en los que la cuadrada vale cero.
- (EXPLICAR)
+ El aumento de la tensión está acompañado por la presencia de picos.
+ Si bien se ve que aumenta la tensión promedio, se observa una oscilación
+ debido a la señal cuadrada que hace que el transistor permita o no el paso
+ de corriente, según si se encuentra en la parte alta o baja de dicha señal.
 \end_layout
 
 \begin_layout Standard
@@ -171,7 +170,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_ejc2cortada.png
+	filename fotos BIEN/tp3_c31.png
 	scale 45
 	rotateOrigin center
 
@@ -216,13 +215,16 @@ reference "fig:Respuesta-del-circuito-1"
 \end_inset
 
  se observa la respuesta del circuito al apagado de la fuente.
- Se empleó también el Single del osciloscopio, pero para este caso se seleccionó
- End of Packet para que se pudiera obtener la respuesta al flanco descendiente
- de la alimentación de la fuente.
- En este caso, si se observaba en detalle se podían observar los mismos
- picos explicados previamente, con la diferencia que la amplitud de estos
- decrece en lugar de aumentar.(EXPLICAR POR QUE DISMINUYE y DECIR QUE TAMBIEN
- SE VEIAN LOS PIQUITOS SI SE HACIA ZOOM)
+ En este caso, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Detalle-de-la-1"
+
+\end_inset
+
+ se puede observar la misma oscilación explicada previamente debido a la
+ presencia de la señal cuadrada, con la diferencia de que la tensión promedio
+ de estos decrece en lugar de aumentar.
 \end_layout
 
 \begin_layout Standard
@@ -235,7 +237,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_ejc9cortada.png
+	filename fotos BIEN/tp3_c35.png
 	scale 45
 	rotateOrigin center
 
@@ -259,6 +261,48 @@ Respuesta del circuito al apagado de la fuente.
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c37.png
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Detalle-de-la-1"
+
+\end_inset
+
+Detalle de la respuesta del circuito al apagado de la fuente.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

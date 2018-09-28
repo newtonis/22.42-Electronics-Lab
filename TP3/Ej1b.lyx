@@ -129,338 +129,470 @@ $80
 \end_inset
 
 .
- Como casos representativos, se tomaron 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$20
-\backslash
-%$
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$40
-\backslash
-%$
-\end_layout
-
-\end_inset
-
-, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$60
-\backslash
-%$
-\end_layout
-
-\end_inset
-
- y 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$80
-\backslash
-%$
-\end_layout
-
-\end_inset
-
-, que se muestran a continuación.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Fotos/tp3_ejb1.png
-	display false
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$20
-\backslash
-%$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Fotos/tp3_ejb3.png
-	display false
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$40
-\backslash
-%$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Fotos/tp3_ejb5.png
-	display false
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$60
-\backslash
-%$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Fotos/tp3_ejb7.png
-	display false
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-CH1: señal de excitación cuadrada al 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$80
-\backslash
-%$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$V_o$
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-De las imágenes obtenidas se tiene que, para dicha frecuencia, el pico máximo
- de la tensión de salida es proporcional al ciclo de trabajo, donde aproximadame
-nte se corresponde 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$1V$
-\end_layout
-
-\end_inset
-
- por cada 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$1
-\backslash
-%$
-\end_layout
-
-\end_inset
-
-.
+ Como casos representativos, se tomaron valores con intervalos de a cada
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+, entre los dos previamente mencionados.
+ Las respuestas del circuito se muestran a continuación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b15.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b17.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$30
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b19.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$40
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b21.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b23.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$60
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b25.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$70
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b27.png
+	display false
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$80
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De las mediciones obtenidas se tiene que, para dicha frecuencia, tanto el
+ pico máximo de la tensión de salida como la tensión pico a pico aumenta
+ a medida que se incrementa el porcentaje del duty cycle.
+ A mayor duty, el transistor está más tiempo en modo saturación, por lo
+ que el capacitor está mayor tiempo descargándose, resultando mayores los
+ picos de carga cuando el transistor vuelve a estar en corte.
 \end_layout
 
 \end_body

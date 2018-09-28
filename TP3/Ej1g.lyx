@@ -1,0 +1,300 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\pagestyle{fancy}
+\lhead{Laboratorio de Electrónica 22.42}
+\chead{TPL3}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Medición de tensión Colector-Emisor en transistor
+\end_layout
+
+\begin_layout Standard
+Para esta medición, se excitó al transistor con la señal cuadrada de entre
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, a la frecuencia sugerida del circuito 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(50KHz)$
+\end_layout
+
+\end_inset
+
+, con un duty del 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+.
+ Posteriormente se midió la tensión entre colector y emisor del transistor
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+, es decir, entre colector y masa, primero de la forma común conectando
+ la masa al punto físico de donde se conecta el cable de la fuente, y luego
+ mediante el accesorio resorte para poder medir directamente sobre el transistor.
+ Los resultados obtenidos se muestran en los siguientes gráficos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_gCONRuido.jpg
+	display false
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+ medida de forma común.
+ CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_gSINRuido.jpg
+	display false
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+ con el accesorio resorte.
+ CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En base a ambas mediciones, se observa una diferencia apreciable en cuanto
+ al ruido presente en ambos casos.
+ En la medición utilizando el accesorio de resorte, el colector se conecta
+ directamente a la punta del osciloscopio, sin un recorrido previo, al igual
+ que el emisor (masa) mediante el accesorio resorte al anillo de masa presente
+ en la punta, induciendo mucho menos ruido en la medición.
+ En cambio en el caso común donde la masa del osciloscopio se conecta al
+ punto físico de la fuente mediante un cable, el ruido inducido es notoriamente
+ mayor.
+\end_layout
+
+\begin_layout Standard
+Las imágenes fueron captadas con una cámara de celular, para poder apreciar
+ las diferencias de ruido.
+\end_layout
+
+\end_body
+\end_document

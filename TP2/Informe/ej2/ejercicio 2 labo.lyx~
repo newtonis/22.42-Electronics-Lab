@@ -87,7 +87,7 @@ Circuito RLC serie:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -141,7 +141,7 @@ De la tabla provista en la consigna se obtienen los valores de el capacitor
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -590,7 +590,7 @@ Respuesta al escalón
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -606,7 +606,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Respuesta al escalón medida y calculada
 \end_layout
 
 \end_inset
@@ -624,24 +624,51 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-Como se puede ver en la imagen, ambas respuestas coinciden bastante bien.
+Los valores característicos medidos fueron:
 \end_layout
 
-\begin_layout Standard
-La frecuencia de oscilación del transitorio en este caso es de 
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
 \begin_inset Formula $50KHz$
 \end_inset
 
- la cual se corresponde a aproximadamente el 
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $61\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.53$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tanto las curvas como los valores medidos coinciden bastante con los teóricos.
+ El valor que más difiere es el del tiempo de establecimiento, que puede
+ ser debido a la falta de precisión para encontrar el valor del 
+\begin_inset Formula $5\%$
+\end_inset
+
+ y a partir de eso hallar dicho tiempo.
+ Para el caso de la frecuencia de oscilación y el sobrepico, los errores
+ relativos furon de tan solo el 
 \begin_inset Formula $1\%$
 \end_inset
 
- de error con respecto al valor teórico.
- Con respecto al valor del tiempo de establecimiento el medido fué de 
-\begin_inset Formula $50\mu s$
+ y el 
+\begin_inset Formula $3\%$
 \end_inset
 
-
+ aproximadamente.
 \end_layout
 
 \begin_layout Subsection

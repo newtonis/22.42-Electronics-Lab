@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,10 +26,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,11 +55,15 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -75,6 +81,35 @@ Tensión en el Colector y en la Base del Transistor
 \end_layout
 
 \begin_layout Standard
+En estas sección, se procedió a medir la tensión en el colector del transistor
+ respecto de masa 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(V_{CE})$
+\end_layout
+
+\end_inset
+
+, y la tensión de base respecto de masa 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(V_{BE})$
+\end_layout
+
+\end_inset
+
+.
+ En la siguiente captura se muestran dichas mediciones tomadas al mismo
+ tiempo.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -84,8 +119,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_ejf16cortada.png
-	scale 45
+	filename fotos BIEN/tp3f_vc_vbe2.png
+	display false
+	scale 40
 	rotateOrigin center
 
 \end_inset
@@ -97,7 +133,29 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tensión en el colector del transistor.
+CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{BE}$
+\end_layout
+
+\end_inset
+
+ - CH2 (verde): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -115,43 +173,103 @@ Tensión en el colector del transistor.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
+Cuando el transistor está al corte (que corresponde a cuando la señal cuadrada
+ de excitación de base está en la sección del ciclo donde vale 
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Fotos/tp3_ejf18cortada.png
-	scale 45
-	rotateOrigin center
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Tensión en la base del transistor.
+$0V$
 \end_layout
 
 \end_inset
 
-
-\end_layout
+), la juntura base-emisor no se polariza, por lo que el transistor no conduce
+ y la tensión medida en el colector es prácticamente la tensión de salida,
+ más aproximadamente los 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+$0.7V$
 \end_layout
 
 \end_inset
 
+ que caen en el diodo 
+\begin_inset ERT
+status open
 
+\begin_layout Plain Layout
+
+$1N4148$
+\end_layout
+
+\end_inset
+
+, y naturalmente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{BE}=0V$
+\end_layout
+
+\end_inset
+
+.
+ Cuando en cambio la señal cuadrada de base está en la sección del ciclo
+ donde vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, la juntura se polariza y el transistor entra en saturación, llevando a
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+ cerca de los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+, mientras que en la base se mide 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{BE} 
+\backslash
+approx 0.7V$
+\end_layout
+
+\end_inset
+
+ al estar polarizada la juntura en directa.
 \end_layout
 
 \end_body

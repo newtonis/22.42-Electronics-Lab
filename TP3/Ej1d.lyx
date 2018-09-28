@@ -75,25 +75,31 @@ Ripple de la Fuente
 \end_layout
 
 \begin_layout Standard
-(AGREGAR LO QUE PASA SIN EL CAP)
-\end_layout
-
-\begin_layout Standard
-Para poder observar el ripple de la fuente, es necesario agregar un capacitor
- en paralelo a la salida (EXPLICAR) En nuestro caso, dicho capacitor es
- de 
+Para poder observar el ripple de la fuente, se compara lo que ocurre con
+ el circuito mismo y al agregar un capacitor en paralelo a la salida.
+ En nuestro caso, dicho capacitor es de 
 \begin_inset Formula $0,1\mu F$
 \end_inset
 
 .
- El resultado de agregar el capacitor se puede ver en la figura 
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ripple-de-la-1"
+
+\end_inset
+
+ se puede ver el ripple de la fuente sin haber agregado el capacitor, mientras
+ que en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Ripple-de-la"
 
 \end_inset
 
-.
+ se aprecia el efecto de agregar el capacitor previamente mencionado, en
+ paralelo a la salida.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -106,8 +112,51 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_ejd12cortada.png
-	scale 45
+	filename fotos BIEN/tp3d6.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ripple-de-la-1"
+
+\end_inset
+
+Ripple de la fuente sin agregar el capacitor.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3d8.png
+	scale 30
 	rotateOrigin center
 
 \end_inset
@@ -122,7 +171,7 @@ name "fig:Ripple-de-la"
 
 \end_inset
 
-Ripple de la fuente con el capacitor agregado.
+Ripple de la fuente al agregarle el capacitor.
 \end_layout
 
 \end_inset
@@ -136,7 +185,36 @@ Ripple de la fuente con el capacitor agregado.
 \end_layout
 
 \begin_layout Standard
-(EXPLICAR DIFERENCIAS ENTRE SIN Y CON EL CAP)
+El valor pico a pico disminuye de 
+\lang spanish
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$188mV$
+\end_layout
+
+\end_inset
+
+ a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$168mV$
+\end_layout
+
+\end_inset
+
+ al agregar el capacitor en paralelo con la salida del circuito.
+ Si bien esto indica que con el capacitor la salida tiende más a una señal
+ contínua, 
+\lang english
+se puede decir que la diferencia que provoca la ausencia o presencia del
+ capacitor es prácticamente despreciable.
 \end_layout
 
 \end_body
