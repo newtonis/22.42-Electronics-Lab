@@ -55,7 +55,7 @@ w= 2*pi*f
 
 
 
-Rz=1/(G[0])
+Rz=(500e3)
 Cz=10.4e-9
 
 Z1 = (1/(1j*w*Cz))
@@ -80,7 +80,7 @@ elif graficode == "Phi":
     phaseZ = []
     for i in range(len(Z)):
         phaseZ.append(np.rad2deg(cmath.phase(Z[i])))
-    plt.semilogx(f, phaseZ)
+    #plt.semilogx(f, phaseZ)
 elif graficode == "C":
     plt.title('Respuesta en frecuencia de '+graficode, fontsize = font_size)
     plt.ylabel('C' + '(f)', fontsize=font_size)
@@ -106,7 +106,7 @@ elif graficode == "Z":
 
 CSTR = []
 
-CSTR.append('Modelo')
+#CSTR.append('Modelo')
 
 plt.xlabel('Frecuencia(Hz)', fontsize = font_size)
 # plt.xlim(bottom, top)
@@ -116,8 +116,8 @@ if(graficode != "Z"):
     #plt.loglog(Freq, meas_data)
     plt.semilogx(Freq,meas_data)
 #
-CSTR.append('Práctica')
-plt.legend(CSTR)
+#CSTR.append('Práctica')
+#plt.legend(CSTR)
 
 plt.grid(True, which="both")
 plt.show()

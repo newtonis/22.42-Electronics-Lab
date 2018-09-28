@@ -75,8 +75,8 @@
 
 \begin_body
 
-\begin_layout Section
-Medición de componentes pasivos con el Medidor vector de impedancias
+\begin_layout Section*
+Medición de L y C con el Medidor vector de impedancias
 \end_layout
 
 \begin_layout Standard
@@ -88,8 +88,13 @@ En el presente trabajo se pidió medir de 10Hz a 10MHz dos componentes pasivos:
 Hy y un capacitor multicapa de valor nominal 10nf.
 \end_layout
 
+\begin_layout Subsection*
+Medición del inductor
+\end_layout
+
 \begin_layout Standard
-Para el inductor se obtuvieron los siguientes gráficos:
+Para el inductor se obtuvieron los siguientes gráficos según las correspondiente
+s mediciones:
 \end_layout
 
 \begin_layout Standard
@@ -172,7 +177,7 @@ status open
 \begin_inset Graphics
 	filename RespuestaenfrecR.png
 	lyxscale 50
-	scale 35
+	scale 62
 
 \end_inset
 
@@ -183,7 +188,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Resistencia equivalente
+Respuesta en frecuencia de R (parte real de la impedancia total)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:R"
@@ -225,7 +230,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Fase de la impedancia equivalente
+Respuesta en frecuencia de la fase del inductor
 \end_layout
 
 \end_inset
@@ -253,7 +258,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Modeloeq.png
-	scale 50
+	scale 30
 
 \end_inset
 
@@ -297,11 +302,19 @@ s a buscar en qué punto se produce la misma.
 \end_layout
 
 \begin_layout Standard
-Llamamos Z1 = R+j
+Llamamos Z
+\begin_inset Formula $_{1}$
+\end_inset
+
+ = R+j
 \begin_inset Formula $\omega$
 \end_inset
 
-L y Z2=
+L y Z
+\begin_inset Formula $_{2}$
+\end_inset
+
+=
 \begin_inset Formula $\frac{1}{j\omega C}$
 \end_inset
 
@@ -311,7 +324,7 @@ L y Z2=
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Zeq=\frac{Z1Z2}{Z1+Z2}
+Zeq=\frac{Z_{1}Z_{2}}{Z_{1}+Z_{2}}
 \]
 
 \end_inset
@@ -442,7 +455,7 @@ status open
 \begin_inset Graphics
 	filename RespuestaenfrecuenciaZvsModelo.png
 	lyxscale 30
-	scale 25
+	scale 33
 
 \end_inset
 
@@ -484,7 +497,7 @@ status open
 \begin_inset Graphics
 	filename RespuestaenfrecPhivsModelo.png
 	lyxscale 30
-	scale 25
+	scale 33
 
 \end_inset
 
@@ -536,6 +549,289 @@ reference "fig:ZvsZmodel"
 Sin emargo, en general los resultados fueron dentro de lo esperado tanto
  para la magnitud como la fase de la impededancia equivalente dentro de
  los valores de frecuencia
+\end_layout
+
+\begin_layout Subsection*
+Medición del Capacitor
+\end_layout
+
+\begin_layout Standard
+Para el capacitor se obtuvieron los siguientes gráficos según las correspondient
+es mediciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RespuestaenfrecC.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de C (medido)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RespuestaenfrecD.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de D del capacitor medido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RespuestaenfrecG.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de G del capacitor medido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RespuestaenfrecPhiCap.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de la fase del capacitor medido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El modelo con el cual contrastaremos las mediciones es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename modeloeqCap.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo de comparación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para poder obtener los correspondientes valores de C y de R, se tiene que
+ tener en cuenta que G en este caso esta dado por 1/R ya que R es la unica
+ impedancia real.
+ A medida que aumenta la frecuencia el capacitor reduce su reactancia capacitiva
+ así que el mejor valor de R lo tenemos a la menor frecuencia que medimos.
+ Dicho esto el valor más chico de G es 0.02
+\begin_inset Formula $\mu S$
+\end_inset
+
+, lo cual nos da un R=50M
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+ Para obtener C basta con ver en las mediciones el valor de C que se mantuvo
+ casi constante a lo largo de las mediciones y el mismo es C = 10.4nf.
+\end_layout
+
+\begin_layout Standard
+Se procede a contrastar el modelo teórico con las mediciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RespuestaenfrecZdeC.png
+	scale 61
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RespuestaenfrecPhideC.png
+	scale 62
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

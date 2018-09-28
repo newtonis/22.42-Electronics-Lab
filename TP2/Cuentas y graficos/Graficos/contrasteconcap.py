@@ -24,13 +24,13 @@ Q = df['Q'].values
 Phi = df['Phi'].values
 R = df['R'].values
 
-graficode="R"
+graficode="Z"
 
 bottom = 10
-top = 10*10**6
+top = 1*10**6
 #
-# bottomY = 0
-# topY = 10000
+bottomY = 1
+topY = 10000
 
 f=np.linspace(bottom, top, 3000)
 w= 2*pi*f
@@ -77,8 +77,8 @@ elif graficode == "Z":
     plt.ylabel('|Z|' + '(' + r'$\Omega$' + ')', fontsize=font_size)
     for i in range(len(Z)):
         absz.append((abs(Z[i])))
-    plt.semilogx(f, absz)
-    plt.semilogx(Freq, abs(Zmedida))
+    plt.loglog(f, absz)
+    plt.loglog(Freq, abs(Zmedida))
 
 
 CSTR = []
@@ -86,14 +86,14 @@ CSTR = []
 CSTR.append('Modelo')
 
 plt.xlabel('Frecuencia(Hz)', fontsize = font_size)
-# plt.xlim(bottom, top)
-# plt.ylim(bottomY, topY)
+plt.xlim(bottom, top)
+plt.ylim(bottomY, topY)
 
 if(graficode != "Z"):
     plt.loglog(Freq,meas_data)
 
-# CSTR.append('Práctica')
-# plt.legend(CSTR)
+CSTR.append('Práctica')
+plt.legend(CSTR)
 
 plt.grid(True, which="both")
 plt.show()
