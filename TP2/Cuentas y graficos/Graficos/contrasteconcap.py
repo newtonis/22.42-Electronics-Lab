@@ -24,7 +24,7 @@ Q = df['Q'].values
 Phi = df['Phi'].values
 R = df['R'].values
 
-graficode="L"
+graficode="R"
 
 bottom = 10
 top = 10*10**6
@@ -57,7 +57,7 @@ if graficode == "Q":
 elif graficode == "R":
     plt.ylabel('R' + '(' + r'$\Omega$' + ')', fontsize=font_size)
     plt.title('Respuesta en frecuencia de '+graficode, fontsize = font_size)
-    plt.semilogx(f, Z.real)
+#    plt.semilogx(f, Z.real)
 elif graficode == "Phi":
     plt.ylabel(r'$\Phi$' + '(deg)', fontsize=font_size)
     plt.title('Respuesta en frecuencia de '+r'$\Phi$', fontsize = font_size)
@@ -90,10 +90,10 @@ plt.xlabel('Frecuencia(Hz)', fontsize = font_size)
 # plt.ylim(bottomY, topY)
 
 if(graficode != "Z"):
-    plt.semilogx(Freq,meas_data)
+    plt.loglog(Freq,meas_data)
 
-CSTR.append('Práctica')
-plt.legend(CSTR)
+# CSTR.append('Práctica')
+# plt.legend(CSTR)
 
 plt.grid(True, which="both")
 plt.show()

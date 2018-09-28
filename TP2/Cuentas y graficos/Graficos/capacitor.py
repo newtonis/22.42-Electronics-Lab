@@ -52,13 +52,16 @@ top = 10*10**6
 f=np.linspace(bottom, top, 3000)
 w= 2*pi*f
 
-R=1/0.03
-C=10.4e-9
 
-Z1 = 1/(1j*w*C)
-Z2 = R
-Z = Z1+Z2
 
+
+Rz=1/(G[0])
+Cz=10.4e-9
+
+Z1 = (1/(1j*w*Cz))
+Z2 = Rz
+Z = (Z1*Z2)/(Z1+Z2)
+#Z=Z1+Z2
 #para poner latex => r'$\Omega$'
 
 
@@ -77,7 +80,7 @@ elif graficode == "Phi":
     phaseZ = []
     for i in range(len(Z)):
         phaseZ.append(np.rad2deg(cmath.phase(Z[i])))
-#    plt.semilogx(f, phaseZ)
+    plt.semilogx(f, phaseZ)
 elif graficode == "C":
     plt.title('Respuesta en frecuencia de '+graficode, fontsize = font_size)
     plt.ylabel('C' + '(f)', fontsize=font_size)
@@ -86,7 +89,10 @@ elif graficode == "C":
         Caux.append(C);
  #   plt.semilogx(f,Caux)
 elif graficode == "Z":
-    Zmedida=R+1j*Freq*2*pi*C
+    Rmedida = (1/G)
+    Xcmedido=1/(1j*Freq*2*pi*C)
+    Zmedida=(Rmedida*Xcmedido)/(Rmedida+Xcmedido)
+
     absz = []
     plt.title('Respuesta en frecuencia del modulo de ' + graficode, fontsize=font_size)
     plt.ylabel('|Z|' + '(' + r'$\Omega$' + ')', fontsize=font_size)
@@ -94,11 +100,13 @@ elif graficode == "Z":
         absz.append((abs(Z[i])))
     plt.semilogx(f, absz)
     plt.semilogx(Freq, abs(Zmedida))
+#    plt.loglog(f, absz)
+#    plt.loglog(Freq, abs(Zmedida))
 
 
 CSTR = []
 
-#CSTR.append('Modelo')
+CSTR.append('Modelo')
 
 plt.xlabel('Frecuencia(Hz)', fontsize = font_size)
 # plt.xlim(bottom, top)
@@ -108,8 +116,8 @@ if(graficode != "Z"):
     #plt.loglog(Freq, meas_data)
     plt.semilogx(Freq,meas_data)
 #
-# CSTR.append('Práctica')
-# plt.legend(CSTR)
+CSTR.append('Práctica')
+plt.legend(CSTR)
 
 plt.grid(True, which="both")
 plt.show()
