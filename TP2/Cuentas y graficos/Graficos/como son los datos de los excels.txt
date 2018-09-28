@@ -4,3 +4,10 @@ L en mHy
 Q es normal
 R en ohms
 phi en deg
+
+Para el cap:
+F en k
+C en nf
+D= 1/Q
+G en u
+phi en deg
