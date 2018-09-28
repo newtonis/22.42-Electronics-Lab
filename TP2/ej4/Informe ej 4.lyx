@@ -1,0 +1,360 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Circuitos de segundo orden 
+\end_layout
+
+\begin_layout Standard
+En este ejercicio se analizará el comportamiento de 3 circuitos de segundo
+ orden RLC diferentes, se estudiarán tanto su respuesta en frecuencia como
+ su respuesta al escalón, teorica y experimentalmente.
+\end_layout
+
+\begin_layout Subsection
+Función transferencia 
+\end_layout
+
+\begin_layout Subsubsection
+LCR
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito LCR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{sCR}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+RLC
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito RLC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{s^{2}CL+1}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+RCL
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito RCL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{s^{2}CL}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Respuesta al escalón
+\end_layout
+
+\begin_layout Subsubsection
+LCR
+\end_layout
+
+\begin_layout Standard
+Como se está analizando un sistema LTI, se puede obtener la respuesta al
+ escalón realizando la convolución entre la respuesta impulsiva y la función
+ escalón 
+\begin_inset Formula $u(t)$
+\end_inset
+
+, o lo que es equivalente, utilizando la transformda de Laplace:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{Y(s)}{X(s)}\Rightarrow Y(s)=H(s)\,X(s)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $X(s)$
+\end_inset
+
+ es la transformada de Laplace de la entrada al sistema, que en este caso
+ es la función escalón, y entonces 
+\begin_inset Formula $Y(s)$
+\end_inset
+
+ es la transformada de Laplace de la respuesta al escalón.
+ Por lo tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X(s)=\mathscr{L}\left\{ \,u(t)\,\right\} (s)=\frac{1}{s}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Rightarrow y(t)=\mathscr{L}^{-1}\{Y(s)\}(t)=\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt{C}\,L}\right)\,\mathrm{e}^{-\frac{R\,t}{2\,L}}}{\sqrt{4\,L-C\,R^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt{C}\,L}\right)\,\mathrm{e}^{-\frac{R\,t}{2\,L}}}{\sqrt{4\,L-C\,R^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+RLC
+\end_layout
+
+\begin_layout Standard
+Analogamente al caso anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y(t)=1-\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt{C}\,L}\right)\,\mathrm{e}^{-\frac{R\,t}{2\,L}}}{\sqrt{4\,L-C\,R^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+RCL
+\end_layout
+
+\begin_layout Standard
+Analogamente a los casos anteriores:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y(t)=\mathrm{e}^{-\frac{R\,t}{2\,L}}\,\left(\cosh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)-\frac{\sqrt{C}\,R\,\sinh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)}{2\,\sqrt{\frac{C\,R^{2}}{4}-L}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathrm{e}^{-\frac{R\,t}{2\,L}}\,\left(\cosh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)-\frac{\sqrt{C}\,R\,\sinh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)}{2\,\sqrt{\frac{C\,R^{2}}{4}-L}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Subsubsection
+LCR
+\end_layout
+
+\begin_layout Subsubsection
+RLC
+\end_layout
+
+\begin_layout Subsubsection
+RCL
+\end_layout
+
+\end_body
+\end_document
