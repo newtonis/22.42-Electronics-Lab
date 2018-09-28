@@ -95,8 +95,36 @@ $5V$
  el circuito de la figura (PONER FIGURA DEL CIRCUITO AL PPIO DEL TP Y AGREGAR
  REFERENCIA), se observa la respuesta del mismo tanto en el encendido como
  en el apagado de la fuente.
- Para poder visualizar en el osciloscopio ambas respuestas, se empleó puso
- el instrumento en 
+ Para poder visualizar en el osciloscopio ambas respuestas, se procedió,
+ para cada caso, de dos maneras diferences.
+ Una forma consistió en emplear el modo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Roll$
+\end_layout
+
+\end_inset
+
+ y la otra en el modo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Single$
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Por un lado, se puso el instrumento en 
 \begin_inset ERT
 status open
 
@@ -150,7 +178,7 @@ name "fig:Respuesta-del-circuito"
 
 \end_inset
 
-Respuesta del circuito al encendido de la fuente
+Respuesta del circuito al encendido de la fuente, en modo Roll.
 \end_layout
 
 \end_inset
@@ -213,7 +241,48 @@ name "fig:Detalle-de-la"
 
 \end_inset
 
-Detalle de la respuesta del circuito al encendido de la fuente.
+Detalle de la respuesta del circuito al encendido de la fuente, en modo
+ Roll.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3cnew.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta del circuito al encendido de la fuente, en modo Single.
 \end_layout
 
 \end_inset
@@ -281,7 +350,7 @@ name "fig:Respuesta-del-circuito-1"
 
 \end_inset
 
-Respuesta del circuito al apagado de la fuente.
+Respuesta del circuito al apagado de la fuente, en modo Roll.
 \end_layout
 
 \end_inset
@@ -320,7 +389,47 @@ name "fig:Detalle-de-la-1"
 
 \end_inset
 
-Detalle de la respuesta del circuito al apagado de la fuente.
+Detalle de la respuesta del circuito al apagado de la fuente, en modo Roll.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3cnew1.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta del circuito al apagado de la fuente, en modo Single.
 \end_layout
 
 \end_inset
