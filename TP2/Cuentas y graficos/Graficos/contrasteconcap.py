@@ -24,7 +24,7 @@ Q = df['Q'].values
 Phi = df['Phi'].values
 R = df['R'].values
 
-graficode="Z"
+graficode="L"
 
 bottom = 10
 top = 10*10**6
@@ -68,7 +68,7 @@ elif graficode == "Phi":
 elif graficode == "L":
     meas_data=meas_data*1e-3
     plt.title('Respuesta en frecuencia de '+graficode, fontsize = font_size)
-    plt.ylabel('L' + '(mHy)', fontsize=font_size)
+    plt.ylabel('L' + '(Hy)', fontsize=font_size)
     plt.semilogx(f, Z.imag/w)
 elif graficode == "Z":
     Zmedida=R+1j*Freq*2*pi*L
