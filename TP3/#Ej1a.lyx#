@@ -150,7 +150,7 @@ $200KHz$
 
 \end_inset
 
-, se eligieron 3 configuraciones representativas: 
+, se eligieron cinco configuraciones representativas: 
 \begin_inset ERT
 status open
 
@@ -172,6 +172,28 @@ $50KHz$
 
 \end_inset
 
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100KHz$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$150KHz$
+\end_layout
+
+\end_inset
+
  y 
 \begin_inset ERT
 status open
@@ -188,6 +210,7 @@ $200KHz$
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -195,9 +218,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_eja1.png
-	display false
+	filename fotos BIEN/tp3_a4.png
 	scale 30
+	rotateOrigin center
 
 \end_inset
 
@@ -205,6 +228,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -238,10 +262,6 @@ $V_o$
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -249,6 +269,7 @@ $V_o$
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -256,16 +277,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_eja3.png
-	display false
+	filename fotos BIEN/tp3_a6.png
 	scale 30
+	rotateOrigin center
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -299,6 +317,61 @@ $V_o$
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a8.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100KHz$
+\end_layout
+
+\end_inset
+
+ - CH2: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Plain Layout
 
 \end_layout
@@ -310,6 +383,7 @@ $V_o$
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -317,16 +391,68 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Fotos/tp3_eja5.png
-	display false
+	filename fotos BIEN/tp3_a11.png
 	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$150KHz$
+\end_layout
+
+\end_inset
+
+ - CH2: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a13.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -360,13 +486,13 @@ $V_o$
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+(CREO QUE ESTO QUE SIGUE SE BORRA)
 \end_layout
 
 \begin_layout Standard
@@ -517,6 +643,10 @@ $0V$
  período, luego del pico inicial de tensión, ésta comienza a disminuir al
  tender a estabilizarse, hasta que comienza un nuevo ciclo de la cuadrada
  y el proceso se repite.
+\end_layout
+
+\begin_layout Standard
+(Y A CAMBIO SE PONE LO SIGUIENTE)
 \end_layout
 
 \end_body
