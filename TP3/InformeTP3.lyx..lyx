@@ -1,0 +1,3009 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\pagestyle{fancy}
+\lhead{Laboratorio de Electrónica 22.42}
+\chead{TPL3}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Variación en frecuencia de Vg
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3 circuito.PNG
+	display false
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Circuito-de-la"
+
+\end_inset
+
+Circuito de la fuente conmutada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para este primer caso, se utiliza una señal cuadrada oscilante entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, con un duty del 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+ constante.
+ Para mostrar los cambios que surgen en la señal de salida en un intervalo
+ de frecuencias de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+ a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$200KHz$
+\end_layout
+
+\end_inset
+
+, se eligieron cinco configuraciones representativas: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50KHz$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100KHz$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$150KHz$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$200KHz$
+\end_layout
+
+\end_inset
+
+, que se muestran a continuación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a4.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a6.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+ (izquierda) y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50KHz$
+\end_layout
+
+\end_inset
+
+ (derecha)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a8.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a11.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100KHz$
+\end_layout
+
+\end_inset
+
+ (izquierda) y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$150KHz$
+\end_layout
+
+\end_inset
+
+ (derecha)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_a13.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$200KHz$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el circuito propuesto, el transistor trabaja en modo de corte y saturación,
+ es decir, a modo de interruptor.
+ Durante el semiciclo que la señal cuadrada está en nivel alto 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(5V)$
+\end_layout
+
+\end_inset
+
+, el transistor satura, produciendo una tensión 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE} 
+\backslash
+approx 0V$
+\end_layout
+
+\end_inset
+
+ de modo tal que, al estar en paralelo al circuito de salida el diodo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1N4148$
+\end_layout
+
+\end_inset
+
+ no conduce, formándose en la salida un circuito 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$RC$
+\end_layout
+
+\end_inset
+
+ donde el capacitor se descarga a través de la resistencia durante el tiempo
+ que dura este estado, que es la mitad del período de la señal cuadrada.
+ En el semiciclo donde la señal cuadrada vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+, el transistor entra en corte (es decir, no conduce), lo que produciría
+ un cambio en la corriente del circuito.
+ Dado que sobre la bobina la corriente no puede cambiar abruptamente, ésta
+ genera la tensión necesaria para mantener la corriente constante, que (como
+ se verá luego en secciones posteriores) es negativa.
+ Es por esto que se observa en las mediciones que cuando el transistor entra
+ en corte, el capacitor continúa descargándose un cierto tiempo más hasta
+ que la diferencia de tensión en polarización directa sobre el diodo sea
+ de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.7V$
+\end_layout
+
+\end_inset
+
+, de modo que conduce y el capacitor comienza a cargarse nuevamente, hasta
+ que llega un nuevo semiciclo de la señal cuadrada donde vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+ y el transistor satura, repitiéndose el proceso nuevamente.
+\end_layout
+
+\begin_layout Standard
+En el peor caso, es decir a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+, la mitad del período equivale a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+mu s$
+\end_layout
+
+\end_inset
+
+.
+ Si se lo compara con el tiempo característico 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R 
+\backslash
+cdot C = 1000 
+\backslash
+mu s$
+\end_layout
+
+\end_inset
+
+, éste resulta mucho mayor, por ello el capacitor nunca llega a descargarse
+ a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+ durante el tiempo en que el diodo no conduce.
+ En las frecuencias más bajas, el capacitor alcanza a descargarse lo suficiente
+ como para que cuando el transistor entre en corte, la diferencia de tensión
+ en el diodo sea mayor a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.7V$
+\end_layout
+
+\end_inset
+
+ en directa, comenzando a conducir en ese momento, a diferencia de lo que
+ ocurre a mayores frecuencias, donde puede observarse que el capacitor requiere
+ descargarse más tiempo luego de que el transistor entró en corte hasta
+ que el diodo vuelva a conducir, llegando a su vez a cargarse a tensiones
+ mayores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Variación de ciclo de trabajo de Vg
+\end_layout
+
+\begin_layout Standard
+En este caso, ahora se utilizará una frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50KHz$
+\end_layout
+
+\end_inset
+
+ constante, variando el ciclo de trabajo entre el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+ y el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$80
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+.
+ Como casos representativos, se tomaron valores con intervalos de a cada
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+, entre los dos previamente mencionados.
+ Las respuestas del circuito se muestran a continuación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b15.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b17.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(Izquierda): CH1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+ (Derecha): CH1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$30
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b19.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b21.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(Izquierda): CH1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$40
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+ (Derecha): CH1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b23.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b25.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(Izquierda): CH1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$60
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+ (Derecha): CH1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$70
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_b27.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1: salida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada al 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$80
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De las mediciones obtenidas se tiene que, para dicha frecuencia, tanto el
+ pico máximo de la tensión de salida como la tensión pico a pico aumenta
+ a medida que se incrementa el porcentaje del duty cycle.
+ A mayor duty, el transistor está más tiempo en modo saturación, por lo
+ que el capacitor está mayor tiempo descargándose, resultando mayores los
+ picos de carga cuando el transistor vuelve a estar en corte.
+ Considerando que la energía en la bobina en todo el ciclo debe ser la misma,
+ se toma primero con el transistor en saturación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_L = L
+\backslash
+frac{di}{dt}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_i = L
+\backslash
+frac{
+\backslash
+Delta_i}{
+\backslash
+Delta_t} = L
+\backslash
+frac{
+\backslash
+Delta_i}{D 
+\backslash
+cdot T}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta_i = 
+\backslash
+frac{V_i D T}{L}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$T$
+\end_layout
+
+\end_inset
+
+ es el período de la cuadrada.
+ Cuando el transistor está en corte (sin considerar la caída en el diodo
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1N4148$
+\end_layout
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$V_i-V_o 
+\backslash
+approx -L
+\backslash
+frac{
+\backslash
+Delta_i}{(1-D)T}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta_i = -
+\backslash
+frac{(V_i-Vo)(1-D)T}{L}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$E_L = 
+\backslash
+frac{1}{2}L {
+\backslash
+Delta_i}^2$
+\end_layout
+
+\end_inset
+
+, siendo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+ constante, se igualan las 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta_i$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+frac{V_i D T}{L} = -
+\backslash
+frac{(V_i-Vo)(1-D)T}{L}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde despejando se obtiene que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+frac{V_o}{V_i} = 
+\backslash
+frac{1}{1-D}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se compara en la siguiente tabla los valores de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ obtenidos mediante la medición y con la aproximación resultante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Duty$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ Medido
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ Aproximado
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$20
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$6.68V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$6.25V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$30
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8.11V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$7.14V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$40
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$9.59V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8.33V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10.98V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$60
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$13.32V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$12.5V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$70
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$18.54V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$16.67V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$80
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$29.29V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$25V$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparación de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+ entre medido y aproximado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Encendido y apagado de la fuente
+\end_layout
+
+\begin_layout Standard
+Empleando una fuente, al excitar con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+ el circuito de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Circuito-de-la"
+
+\end_inset
+
+, se observa la respuesta del mismo tanto en el encendido como en el apagado
+ de la fuente.
+ Para poder visualizar en el osciloscopio ambas respuestas, se procedió,
+ para cada caso, de dos maneras diferences.
+ Una forma consistió en emplear el modo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Roll$
+\end_layout
+
+\end_inset
+
+ y la otra en el modo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Single$
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Por un lado, se pone el instrumento en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Roll$
+\end_layout
+
+\end_inset
+
+, y una vez encendida o apagada la fuente, se detiene para poder observar
+ el comportamiento luego del cambio del estado de la misma.
+ Esto se hace con la señal cuadrada ya conectada.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito"
+
+\end_inset
+
+ se puede ver la respuesta del circuito al encenderse la fuente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c30.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito"
+
+\end_inset
+
+Respuesta del circuito al encendido de la fuente, en modo Roll.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Detalle-de-la"
+
+\end_inset
+
+ se puede ver con mayor precisión la respuesta del circuito al encenderse
+ la fuente.
+ El aumento de la tensión está acompañado por la presencia de picos.
+ Si bien se ve que aumenta la tensión promedio, se observa una oscilación
+ debida a la señal cuadrada que hace que el transistor permita o no el paso
+ de corriente, según si se encuentra en la parte alta o baja de dicha señal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c31.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Detalle-de-la"
+
+\end_inset
+
+Detalle de la respuesta del circuito al encendido de la fuente, en modo
+ Roll.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito-1"
+
+\end_inset
+
+ se observa la respuesta del circuito al apagado de la fuente.
+ En este caso, se puede observar la misma oscilación explicada previamente
+ debido a la presencia de la señal cuadrada, con la diferencia de que la
+ tensión promedio de estos decrece en lugar de aumentar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c35.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_c37.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito-1"
+
+\end_inset
+
+Respuesta del circuito al apagado de la fuente, en modo Roll (izquierda),
+ y en detalle (a la derecha).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por otro lado, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito-2"
+
+\end_inset
+
+ se puede ver la respuesta del circuito al encendido y al apagado de la
+ fuente, pero empleando el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Single$
+\end_layout
+
+\end_inset
+
+ del osciloscopio.
+ A diferencia de las respuestas observadas empleando el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Roll$
+\end_layout
+
+\end_inset
+
+ del osciloscopio, con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Single$
+\end_layout
+
+\end_inset
+
+ no se observa el efecto oscilante provocado por la señal cuadrada y su
+ efecto sobre el transistor para que conmute.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3cnew.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3cnew1.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito-2"
+
+\end_inset
+
+Respuesta del circuito al encendido de la fuente (izquierda), y al apagado
+ (derecha), en modo Single.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ripple de la fuente
+\end_layout
+
+\begin_layout Standard
+Para poder observar el ripple de la fuente, se compara lo que ocurre con
+ el circuito mismo y al agregar un capacitor en paralelo a la salida.
+ En nuestro caso, dicho capacitor es de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.1 
+\backslash
+mu F$
+\end_layout
+
+\end_inset
+
+.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ripple-de-la-1"
+
+\end_inset
+
+, a la izquierda se puede ver el ripple de la fuente sin haber agregado
+ el capacitor, mientras que a la derecha se aprecia el efecto de agregar
+ el capacitor previamente mencionado, en paralelo a la salida.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3d6.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3d8.png
+	display false
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ripple-de-la-1"
+
+\end_inset
+
+Ripple de la fuente sin agregar el capacitor (izquierda), y con el capacitor
+ (derecha).
+ CH1 (amarillo): señal cuadrada de entrada - CH2 (verde): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+El valor pico a pico disminuye de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$188mV$
+\end_layout
+
+\end_inset
+
+ a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$168mV$
+\end_layout
+
+\end_inset
+
+ al agregar el capacitor en paralelo con la salida del circuito.
+ Si bien esto indica que con el capacitor la salida tiende más a una señal
+ continua, se puede decir que la diferencia que provoca la ausencia o presencia
+ del capacitor es prácticamente despreciable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tensión y Corriente sobre la Bobina
+\end_layout
+
+\begin_layout Standard
+Para la medición de la tensión en la bobina, se mide con cada canal entre
+ los terminales de la bobina, de manera tal de con la funcionalidad 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Math$
+\end_layout
+
+\end_inset
+
+ del osciloscopio hacer la resta, obteniendo la medición que se muestra
+ a continuación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3e_vb2.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tensión sobre la bobina.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Durante el tiempo que la señal cuadrada vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, el transistor satura, de manera tal que los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+ de la fuente caen en la bobina.
+ Cuando el transistor está en corte, la tensión en la bobina es de aproximadamen
+te 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-6V$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se incluyó en serie una resistencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+, para poder medir la corriente.
+ Tomando un intervalo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta_t=2 
+\backslash
+mu s$
+\end_layout
+
+\end_inset
+
+, se midió la diferencia de tensión en la resistencia en cuestión, obteniendo
+ un valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta_{VR} = 130mV$
+\end_layout
+
+\end_inset
+
+, por lo que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta_{iR} = 
+\backslash
+Delta_{iL} = 
+\backslash
+frac{
+\backslash
+Delta_{VR}}{R} = 
+\backslash
+frac{130mV}{10} = 13mA$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sabiendo que la tensión en la bobina para un intervalo de tiempo pequeño
+ es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$|V_L|=|L
+\backslash
+frac{
+\backslash
+Delta_i}{
+\backslash
+Delta_t}|$
+\end_layout
+
+\end_inset
+
+, se despeja el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$L = 
+\backslash
+frac{V_L 
+\backslash
+Delta_t}{
+\backslash
+Delta_i} = 0.923mH$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Que resulta muy aproximado al valor nominal de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1mH$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tensión en el Colector y en la Base del Transistor
+\end_layout
+
+\begin_layout Standard
+En estas sección, se procedió a medir la tensión en el colector del transistor
+ respecto de masa 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(V_{CE})$
+\end_layout
+
+\end_inset
+
+, y la tensión de base respecto de masa 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(V_{BE})$
+\end_layout
+
+\end_inset
+
+.
+ En la siguiente captura se muestran dichas mediciones tomadas al mismo
+ tiempo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3f_vc_vbe2.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{BE}$
+\end_layout
+
+\end_inset
+
+ - CH2 (verde): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando el transistor está al corte (que corresponde a cuando la señal cuadrada
+ de excitación de base está en la sección del ciclo donde vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+), la juntura base-emisor no se polariza, por lo que el transistor no conduce
+ y la tensión medida en el colector es prácticamente la tensión de salida,
+ más aproximadamente los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.7V$
+\end_layout
+
+\end_inset
+
+ que caen en el diodo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1N4148$
+\end_layout
+
+\end_inset
+
+, y naturalmente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{BE}=0V$
+\end_layout
+
+\end_inset
+
+.
+ Cuando en cambio la señal cuadrada de base está en la sección del ciclo
+ donde vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, la juntura se polariza y el transistor entra en saturación, llevando a
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+ cerca de los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+, mientras que en la base se mide 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{BE} 
+\backslash
+approx 0.7V$
+\end_layout
+
+\end_inset
+
+ al estar polarizada la juntura en directa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Medición de tensión Colector-Emisor en transistor
+\end_layout
+
+\begin_layout Standard
+Para esta medición, se excitó al transistor con la señal cuadrada de entre
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0V$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+, a la frecuencia sugerida del circuito 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$(50KHz)$
+\end_layout
+
+\end_inset
+
+, con un duty del 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+.
+ Posteriormente se midió la tensión entre colector y emisor del transistor
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+, es decir, entre colector y masa, primero de la forma común conectando
+ la masa al punto físico de donde se conecta el cable de la fuente, y luego
+ mediante el accesorio resorte para poder medir directamente sobre el transistor.
+ Los resultados obtenidos se muestran en los siguientes gráficos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3_gCONRuido.jpg
+	display false
+	scale 6
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3_gSINRuido.jpg
+	display false
+	scale 6
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+ medida de forma común (izquierda), y con el accesorio resorte (derecha).
+ CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En base a ambas mediciones, se observa una diferencia apreciable en cuanto
+ al ruido presente en ambos casos.
+ En la medición utilizando el accesorio de resorte, el colector se conecta
+ directamente a la punta del osciloscopio, sin un recorrido previo, al igual
+ que el emisor (masa) mediante el accesorio resorte al anillo de masa presente
+ en la punta, induciendo mucho menos ruido en la medición.
+ En cambio en el caso común donde la masa del osciloscopio se conecta al
+ punto físico de la fuente mediante un cable, el ruido inducido es notoriamente
+ mayor.
+\end_layout
+
+\begin_layout Standard
+Las imágenes fueron captadas con una cámara de celular, para poder apreciar
+ las diferencias de ruido.
+\end_layout
+
+\end_body
+\end_document

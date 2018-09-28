@@ -160,7 +160,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c30.png
 	display false
-	scale 30
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -216,7 +216,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c31.png
 	display false
-	scale 30
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -285,7 +285,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c35.png
 	display false
-	scale 30
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -425,7 +425,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3cnew.png
-	scale 30
+	display false
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -467,7 +468,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3cnew1.png
-	scale 30
+	display false
+	scale 25
 	rotateOrigin center
 
 \end_inset
