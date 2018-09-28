@@ -24,7 +24,7 @@ Q = df['Q'].values
 Phi = df['Phi'].values
 R = df['R'].values
 
-graficode="Phi"
+graficode="Z"
 
 bottom = 10
 top = 10*10**6

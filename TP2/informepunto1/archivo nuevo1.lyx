@@ -435,6 +435,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ZvsZmodel"
+
+\end_inset
+
 
 \end_layout
 
@@ -446,6 +452,21 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ZvsZmodel"
+
+\end_inset
+
+ se tuvo la precaución de no graficar más allá de 1MHz ya que a partir de
+ esa frecuencia los valores del modelo teórico y los de las mediciones se
+ apartan demasiado como para obtener un gráfico representativo de lo que
+ se está comparando, esto es debido a que en la frecuencia de resonancia
+ el módulo de la impedancia empieza a incrementar de forma abrupta.
 \end_layout
 
 \begin_layout Standard
@@ -475,12 +496,12 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
-\end_inset
-
+\begin_layout Standard
 
 \end_layout
 
