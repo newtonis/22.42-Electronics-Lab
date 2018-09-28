@@ -1371,7 +1371,21 @@ Resultados obtenidos
 \end_layout
 
 \begin_layout Standard
-En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+En los gráficos 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+ se muestra la respuesta al escalón medida y la teórica:
 \end_layout
 
 \begin_layout Standard
@@ -1391,6 +1405,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
 Respuesta al escalón medida y teórica
 \end_layout
 
@@ -1437,10 +1457,6 @@ Resultados obtenidos sin buffer
 \end_layout
 
 \begin_layout Standard
-En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1477,22 +1493,6 @@ Respuesta al escalón medida y teórica
 \end_layout
 
 \begin_layout Standard
-En el gráfico de la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Respuesta-al-escalón"
-
-\end_inset
-
- se observa que la respuesta al escalón medida no se comporta como la teórica.
- Esto se debe a que en la teórica se considera que la resistencia es cero,
- mientras que en la medición la resistencia no es realmente cero debido
- a que tanto los cables como los componentes del circuito tienen resistencia.
- Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
- el teórico muestra una oscilación perfecta mientras que
-\end_layout
-
-\begin_layout Standard
 Los valores característicos medidos fueron:
 \end_layout
 
@@ -1518,6 +1518,31 @@ Sobrepico:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En los gráficos de las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+, se observa que la respuesta al escalón medida no se comporta como la teórica.
+ Esto se debe a que en la teórica se considera que la resistencia es cero,
+ mientras que en la medición la resistencia no es realmente cero debido
+ a que tanto los instrumentos utilizados para medir como los componentes
+ del circuito en sí tienen resistencias.
+ Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
+ el teórico muestra una oscilación perfecta mientras que la respuesta del
+ medido es amortiguada a medida que aumenta el tiempo.
 \end_layout
 
 \begin_layout Subsection
