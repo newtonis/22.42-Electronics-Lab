@@ -180,6 +180,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Respuesta en frecuencia de R
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:R"
+
+\end_inset
+
 
 \end_layout
 
@@ -275,7 +282,7 @@ Para obtener los valores de los componentes del modelo nos fijamos en el
  que circula es muy baja comparada con la que circula por R y L).
  Todo esto con el propósito de que lo que mide el medidor de impedancia
  cumpla con Q= 
-\begin_inset Formula $\frac{\omega_{0}L}{R}$
+\begin_inset Formula $\frac{\omega L}{R}$
 \end_inset
 
 .
@@ -369,6 +376,94 @@ Comparación de la respuesta en frecuencia de la R medida y con el modelo
 
 \begin_layout Standard
 Por ende utilizamos un C=9.4pf y se procede a comparar con lo medido
+\end_layout
+
+\begin_layout Standard
+Se observa en el gráfico de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:R"
+
+\end_inset
+
+ que hay un valor en el que el circuito entra en resonancia, por ende, procedemo
+s a buscar en qué punto se produce la misma.
+\end_layout
+
+\begin_layout Standard
+Llamamos Z1 = R+j
+\begin_inset Formula $\omega$
+\end_inset
+
+L y Z2=
+\begin_inset Formula $\frac{1}{j\omega C}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Zeq=\frac{Z1Z2}{Z1+Z2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para poder saber en qué frecuencia entra en resonancia igualamos la parte
+ imaginaria de Zeq a 0:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Im(Zeq)=0\iff w=\sqrt{\frac{1}{LC}-\left(\frac{R}{L}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el laboratorio se informó que C estaba en el orden de los pf.
+ Por lo cual si hacemos un cálculo cuantitativo de 
+\begin_inset Formula $\frac{1}{LC}$
+\end_inset
+
+ con un C=10pf se llega a que este termino se encuentra en el orden de 1x10
+\begin_inset Formula $^{14}$
+\end_inset
+
+ (
+\begin_inset Formula $\frac{rad}{s}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+ con lo cual para llegar a ser comparable 
+\begin_inset Formula $\frac{R}{L}$
+\end_inset
+
+ debe encontrarse por arriba de 0.3x10
+\begin_inset Formula $^{6}$
+\end_inset
+
+ (
+\begin_inset Formula $\frac{rad}{s}$
+\end_inset
+
+) haciendo que R=1K
+\begin_inset Formula $\text{\Omega}$
+\end_inset
+
+ aproximadamente.
 \end_layout
 
 \end_body
