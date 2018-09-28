@@ -2,20 +2,20 @@ Circuit: * C:\Users\Marcelo\Documents\GitHub\InformesLabo\TP3\Simulacion\Circuit
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Thu Sep 27 23:06:11 2018
-Total elapsed time: 0.703 seconds.
+Date: Fri Sep 28 01:57:56 2018
+Total elapsed time: 1.186 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 561701
-traniter = 561695
-tranpoints = 205524
-accept = 180614
-rejected = 24910
-matrix size = 12
-fillins = 0
+totiter = 575471
+traniter = 575466
+tranpoints = 209314
+accept = 182790
+rejected = 26524
+matrix size = 11
+fillins = 1
 solver = Normal
-Matrix Compiler1: 606 bytes object code size  0.1/0.1/[0.1]
-Matrix Compiler2: 886 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler1: 574 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 827 bytes object code size  0.1/0.1/[0.1]
 

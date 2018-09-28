@@ -232,18 +232,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$10KHz$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
+CH1: salida 
 \begin_inset ERT
 status open
 
@@ -254,7 +243,18 @@ $V_o$
 
 \end_inset
 
- 
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -287,18 +287,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$50KHz$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
+CH1: salida 
 \begin_inset ERT
 status open
 
@@ -309,7 +298,18 @@ $V_o$
 
 \end_inset
 
- 
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50KHz$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -342,18 +342,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$100KHz$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
+CH1: salida 
 \begin_inset ERT
 status open
 
@@ -364,7 +353,18 @@ $V_o$
 
 \end_inset
 
- 
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100KHz$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -401,24 +401,24 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$150KHz$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
+CH1: salida 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
 $V_o$
+\end_layout
+
+\end_inset
+
+ - CH2: señal de excitación cuadrada a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$150KHz$
 \end_layout
 
 \end_inset
@@ -456,18 +456,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-CH1: señal de excitación cuadrada a 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$200KHz$
-\end_layout
-
-\end_inset
-
- - CH2: salida 
+CH1: salida 
 \begin_inset ERT
 status open
 
@@ -478,85 +467,28 @@ $V_o$
 
 \end_inset
 
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Se observa que a mayores frecuencias, los picos de tensión en la salida
- resultan menores, pero igualmente de valores elevados.
- En el caso de menor frecuencia los picos llegan a los 
+ - CH2: señal de excitación cuadrada a 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$90V$
+$200KHz$
 \end_layout
 
 \end_inset
 
-, mientras que a 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-$200Hz$
 \end_layout
 
 \end_inset
 
- se reducen hasta 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-$25V$
 \end_layout
 
 \end_inset
 
-.
- Al ser valores muy altos, se debió utilizar la punta del osciloscopio en
- 
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-$
-\backslash
-times 10$
-\end_layout
-
-\end_inset
-
-, para poder medir dichos valores dado que en configuración 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$
-\backslash
-times 1$
-\end_layout
-
-\end_inset
-
- no alcanzaba la escala máxima vertical.
- 
 \end_layout
 
 \begin_layout Standard
@@ -573,41 +505,43 @@ $(5V)$
 
 \end_inset
 
-, por lo que el transistor conduce, produciendo una tensión 
+, el transistor satura, produciendo una tensión 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$V_{CE}$
+$V_{CE} 
+\backslash
+approx 0V$
 \end_layout
 
 \end_inset
 
- pequeña, de modo tal que al estar en paralelo al circuito de salida el
- valor de 
+ de modo tal que, al estar en paralelo al circuito de salida el diodo 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$V_o$
+$1N4148$
 \end_layout
 
 \end_inset
 
- medido es prácticamente 
+ no conduce, formándose en la salida un circuito 
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-$0V$
+$RC$
 \end_layout
 
 \end_inset
 
-.
+ donde el capacitor se descarga a través de la resistencia durante el tiempo
+ que dura este estado, que es la mitad del período de la señal cuadrada.
  En el semiciclo donde la señal cuadrada vale 
 \begin_inset ERT
 status open
@@ -622,9 +556,80 @@ $0V$
 , el transistor entra en corte (es decir, no conduce), lo que produciría
  un cambio en la corriente del circuito.
  Dado que sobre la bobina la corriente no puede cambiar abruptamente, ésta
- genera la tensión necesaria para mantener la corriente constante, produciendo
- los picos de tensión en cuestión.
- Como el nivel de 
+ genera la tensión necesaria para mantener la corriente constante, que (como
+ se verá luego en secciones posteriores) es negativa.
+ Es por esto que se observa en las mediciones que cuando el transistor entra
+ en corte, el capacitor continúa descargándose un cierto tiempo más hasta
+ que la diferencia de tensión en polarización directa sobre el diodo sea
+ de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.7V$
+\end_layout
+
+\end_inset
+
+, de modo que conduce y el capacitor comienza a cargarse nuevamente, hasta
+ que llega un nuevo semiciclo de la señal cuadrada donde vale 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$5V$
+\end_layout
+
+\end_inset
+
+ y el transistor satura, repitiéndose el proceso nuevamente.
+\end_layout
+
+\begin_layout Standard
+En el peor caso, es decir a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+, la mitad del período equivale a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50
+\backslash
+mu s$
+\end_layout
+
+\end_inset
+
+.
+ Si se lo compara con el tiempo característico 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R 
+\backslash
+cdot C = 1000 
+\backslash
+mu s$
+\end_layout
+
+\end_inset
+
+, éste resulta mucho mayor, por ello el capacitor nunca llega a descargarse
+ a 
 \begin_inset ERT
 status open
 
@@ -635,10 +640,25 @@ $0V$
 
 \end_inset
 
- se mantiene constante un cierto tiempo, que en este caso es la mitad del
- período, luego del pico inicial de tensión, ésta comienza a disminuir al
- tender a estabilizarse, hasta que comienza un nuevo ciclo de la cuadrada
- y el proceso se repite.
+ durante el tiempo en que el diodo no conduce.
+ En las frecuencias más bajas, el capacitor alcanza a descargarse lo suficiente
+ como para que cuando el transistor entre en corte, la diferencia de tensión
+ en el diodo sea mayor a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.7V$
+\end_layout
+
+\end_inset
+
+ en directa, comenzando a conducir en ese momento, a diferencia de lo que
+ ocurre a mayores frecuencias, donde puede observarse que el capacitor requiere
+ descargarse más tiempo luego de que el transistor entró en corte hasta
+ que el diodo vuelva a conducir, llegando a su vez a cargarse a tensiones
+ mayores.
 \end_layout
 
 \end_body
