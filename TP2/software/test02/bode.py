@@ -39,12 +39,18 @@ class Bode:
         self.osc = osc
         self.gen = gen
 
-    def start(self, start_freq, end_freq, points , amp , delay_time , resistor):
-        self.points = np.logspace(np.log10(start_freq), np.log10(end_freq), points)
+    def start(self, start_freq, end_freq, points, amp, delay_time , resistor, mode="log"):
+        print("mode= ", mode)
+        if mode == "log":
+            self.points = np.logspace(np.log10(start_freq), np.log10(end_freq), points)
+        else:
+            self.points = np.linspace(start_freq, end_freq, points)
+
         self.current = 0
         self.amp = amp
         self.status = 1
         self.get_to_freq(self.points[self.current], self.amp)
+
         self.delay_time = delay_time
         self.res = resistor
 
@@ -53,7 +59,6 @@ class Bode:
         current = 0
         current_action = "Waiting to start"
         self.status = 0
-
 
     def update(self):
         if self.status:

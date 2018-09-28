@@ -62,6 +62,8 @@
         id: EndFreqMenu
     ResistorMenu:
         id: ResistorMenu
+
+
     StartButton:
         id: StartButton
 
@@ -114,12 +116,14 @@
     BoxLayout:
         orientation: 'horizontal'
         spacing: '30px'
+        height: '100px'
         SelectOsc:
             id: SelectOsc
         SelectGen:
             id: SelectGen
+
+
     BoxLayout:
-        size_hint_y: 0.3
         anchor_x: 'center'
         anchor_y: 'center'
         orientation: 'vertical'
@@ -129,9 +133,8 @@
             orientation: 'horizontal'
             AnchorLayout:
                 anchor_x: 'center'
-                anchor_y: 'center'
                 BoxLayout:
-                    spacing: '20px'
+                    spacing: '10px'
                     size_hint_x: 0.5
                     orientation: 'vertical'
                     Label:
@@ -140,10 +143,20 @@
                     TextInput:
                         id:Filename
                         size_hint_y: None
-                        height: 50
+                        height: '50px'
                         font_size: '30px'
                         text: root.filename
+
+                    LinearLog:
+                        id: LinearLog
+                        size_hint_y: None
+                        height: '50px'
+                        font_size: 40
+
+                        font_name:"BROADBAY.ttf"
+                        text:"Log"
     BoxLayout:
+
         ContinueMenu:
             size_hint_y: None
             height: 70

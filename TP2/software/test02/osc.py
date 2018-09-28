@@ -14,14 +14,12 @@ class Probe:
     scale_y = None
     channel = None
 
-    def __init__(self, channel , inst):
+    def __init__(self, channel, inst):
         self.channel = channel
         self.inst = inst
         self.scale_y = self.get_scale_y()
-        #print("initial scale y = " , self.scale_y)
 
     def set_scale_y(self, target):
-        #print("setting scale y =", target)
         self.scale_y = target
         target = target / 4
         self.inst.write(":CHAN" + str(self.channel) + ":SCAL " + str(target))
@@ -45,14 +43,11 @@ class Probe:
 
         current = self.get_amplitude()
         size = self.get_scale_y()
-        #print(current, size)
 
         if current == -1 or current > size * 2.0/4.0:
             self.set_scale_y(size * 1.1)
-            #print("too much")
         elif current < size * 1.0 / 4.0:
             self.set_scale_y(size * 0.9)
-            #print("too small")
         else:
             return 1
         return 0
@@ -65,14 +60,11 @@ class Oscilloscope:
     def __init__(self):
         pass
 
-    def connect(self, target = default_target):
+    def connect(self, target= default_target):
         self.inst = rm.open_resource(target)
 
         self.probes["1"] = Probe("1", self.inst)
         self.probes["2"] = Probe("2", self.inst)
-
-        #v = self.inst.query(":CHAN"+str(1)+":SCAL?")
-        #print(v)
 
     def set_scale_X(self, target):
         self.inst.write(":TIM:SCAL " + str(target / Y_SQUARES))
