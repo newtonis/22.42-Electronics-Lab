@@ -135,7 +135,7 @@
 % wpico = w0;
 % Habs= abs(1/(1+1i*wpico*C*R + ((1i*wpico)^2) * L * C));
 
-R=288;
+R=632.455532;
 C=10e-9;
 L=1000e-6;
 s = tf ('s');
@@ -145,19 +145,19 @@ alpha=R/(2*L);
 w0=1/((L*C)^(1/2));
 sita = alpha / w0;
 
-%wd = (w0^2 - alpha^2)^(1/2);
-%fd = wd/(2*pi)
+wd = (w0^2 - alpha^2)^(1/2);
+fd = wd/(2*pi)
 
 
-%ts = (log(1/(0.05*(1-sita^2)^(1/2))))/alpha
+ts = (log(1/(0.05*(1-sita^2)^(1/2))))/alpha
 
 Mp = exp(-pi*sita/((1-sita^2)^(1/2)))
 
-opt = stepDataOptions('InputOffset',-0.245,'StepAmplitude',0.490);
+opt = stepDataOptions('InputOffset',-0.5,'StepAmplitude',1);
 plot (second1, Volt1)
 hold on
 step(H,opt,'r')
-grid on 
+grid on
 
 
 

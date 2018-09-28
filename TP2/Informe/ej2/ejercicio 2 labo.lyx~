@@ -1042,7 +1042,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1105,6 +1105,64 @@ Resultados obtenidos sin buffer
 \end_layout
 
 \begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d1 sin buffer.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $42KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $32\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.12$
+\end_inset
+
 
 \end_layout
 
@@ -1252,6 +1310,175 @@ p_{2}=-j\,31\,623\,000
 Se corresponde a un circuito sin amortiguamiento.
 \end_layout
 
+\begin_layout Standard
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{s}\rightarrow\infty
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{d}\simeq50KHz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{p}=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d3.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $52KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $1ms$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.94$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos sin buffer
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d3 sin buffer.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $56KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $182\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.72$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Caso 
 \begin_inset Formula $d_{4}$
@@ -1319,6 +1546,100 @@ p_{1}=-\,31\,623\,000
 p_{2}=-\,31\,623\,000
 \end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso el circuito no oscila, por lo tanto no hay 
+\begin_inset Formula $f_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{s}=46\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{p}=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+Para la medición se buscó experimentalmente el valor de la resistencia para
+ que el circuito sea criticamente amortiguado, este valor fue de 
+\begin_inset Formula $600\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $35\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.01$
 \end_inset
 
 

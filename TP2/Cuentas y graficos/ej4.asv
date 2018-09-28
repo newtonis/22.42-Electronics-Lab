@@ -16,17 +16,10 @@ plot (second1, Volt1)
 hold on
 % opt = stepDataOptions('InputOffset',-0.25,'StepAmplitude', 0.5);
 % step(h1,opt,'r')
-
-%bode 
 [mag, pha, w] = bode(H);
 mag = squeeze (mag);
 pha = squeeze (pha);
 
-%phase
 semilogx ( w./(2*pi), pha);
-
-%mag
-semilogx( w./(2*pi), 20*log10(mag));
-
 
 grid on
