@@ -189,7 +189,19 @@ $V_{CE}$
 
 \end_inset
 
- medida de forma común
+ medida de forma común.
+ CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -238,7 +250,19 @@ $V_{CE}$
 
 \end_inset
 
- con el accesorio resorte
+ con el accesorio resorte.
+ CH1 (amarillo): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

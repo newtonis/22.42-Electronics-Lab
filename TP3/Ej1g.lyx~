@@ -189,7 +189,19 @@ $V_{CE}$
 
 \end_inset
 
- medida de forma común
+ medida de forma común.
+ CH1 (amarillo): tensión 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_{CE}$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -217,7 +229,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_gSINRuido.jpg
 	display false
-	scale 50
+	scale 10
 
 \end_inset
 
@@ -265,6 +277,11 @@ En base a ambas mediciones, se observa una diferencia apreciable en cuanto
  En cambio en el caso común donde la masa del osciloscopio se conecta al
  punto físico de la fuente mediante un cable, el ruido inducido es notoriamente
  mayor.
+\end_layout
+
+\begin_layout Standard
+Las imágenes fueron captadas con una cámara de celular, para poder apreciar
+ las diferencias de ruido.
 \end_layout
 
 \end_body
