@@ -129,8 +129,16 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3d6.png
 	display false
-	scale 30
+	scale 25
 	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fotos BIEN/tp3d8.png
+	display false
+	scale 25
 
 \end_inset
 
@@ -144,7 +152,20 @@ name "fig:Ripple-de-la-1"
 
 \end_inset
 
-Ripple de la fuente sin agregar el capacitor.
+Ripple de la fuente sin agregar el capacitor (izquierda), y con el capacitor
+ (derecha).
+ CH1 (amarillo): señal cuadrada de entrada - CH2 (verde): 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_o$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -162,42 +183,6 @@ Ripple de la fuente sin agregar el capacitor.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fotos BIEN/tp3d8.png
-	display false
-	scale 30
-	rotateOrigin center
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Ripple-de-la"
-
-\end_inset
-
-Ripple de la fuente al agregarle el capacitor.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
