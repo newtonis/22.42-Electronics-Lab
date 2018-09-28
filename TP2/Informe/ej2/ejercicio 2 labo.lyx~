@@ -87,7 +87,7 @@ Circuito RLC serie:
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -125,7 +125,11 @@ name "fig:RLC-serie"
 \end_layout
 
 \begin_layout Standard
-
+Para realizar las emdiciones se conectó un buffer entre el circuito y el
+ generador.
+ Un buffer es un amplificador de ganancia unitaria que tiene una impedancia
+ de entrada extremadamente alta y una impedancia de salida muy pequeña.
+ Su función es aislar la entrada de la salida, evitando el efecto de carga.
 \end_layout
 
 \begin_layout Subsection
@@ -469,9 +473,9 @@ Cálculo de la Respuesta al escalón
 \end_layout
 
 \begin_layout Standard
-Sabiendo que se está analizando un sistema LTI, se puede obtener la respuesta
- al escalón realizando la convolución entre la respuesta impulsiva y la
- función escalón 
+Como se está analizando un sistema LTI, se puede obtener la respuesta al
+ escalón realizando la convolución entre la respuesta impulsiva y la función
+ escalón 
 \begin_inset Formula $u(t)$
 \end_inset
 
@@ -590,7 +594,7 @@ Respuesta al escalón
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -671,6 +675,297 @@ Tanto las curvas como los valores medidos coinciden bastante con los teóricos.
  aproximadamente.
 \end_layout
 
+\begin_layout Subsubsection
+Diagrama de Bode
+\end_layout
+
+\begin_layout Standard
+A continuación se muestra el contraste del diagrama de bode medido con respecto
+ al teórico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode mag.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode pha.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Barrido
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename barrido 12k.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename barrido 17k.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename barrido 26k.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename barrido 49k.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Medición de 
+\begin_inset Formula $V_{o}$
+\end_inset
+
+ a distintas frecuencias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color red
+ANALIZAR EN DOMINIO DEL TIEMPO Y FRECUENCIA
+\color inherit
+ 
+\end_layout
+
 \begin_layout Subsection
 Caso 
 \begin_inset Formula $d_{1}$
@@ -709,12 +1004,120 @@ Y como
 
 \end_layout
 
+\begin_layout Standard
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{s}\simeq22\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{d}\simeq44.8KHz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d1.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $43KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $33\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos sin buffer
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Subsection
 Caso 
 \begin_inset Formula $d_{2}$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En este caso:
 \end_layout
 
 \begin_layout Standard
@@ -755,8 +1158,49 @@ p_{2}=-30\,000
 \end_layout
 
 \begin_layout Standard
-En este caso los polos son reales y distintos, por lo que el sistema es
- sobreamortiguado.
+En este caso los polos son reales y distintos entonces el sistema es sobreamorti
+guado y no oscila, es por ello que en este caso no hay frecuencia de oscilación
+ en el transitorio, tiempo de establecimiento ni hay sobrepico.
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica,
+ para la teórica se utilizó el valor de la resistencia utilizado para la
+ medición:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d2.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
