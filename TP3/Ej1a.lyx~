@@ -86,6 +86,46 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3 circuito.PNG
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito de la fuente conmutada.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Variación en frecuencia de Vg
 \end_layout
@@ -219,6 +259,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3_a4.png
+	display false
 	scale 30
 	rotateOrigin center
 
@@ -278,6 +319,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3_a6.png
+	display false
 	scale 30
 	rotateOrigin center
 
@@ -333,6 +375,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3_a8.png
+	display false
 	scale 30
 	rotateOrigin center
 
@@ -392,6 +435,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3_a11.png
+	display false
 	scale 30
 	rotateOrigin center
 
@@ -447,6 +491,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fotos BIEN/tp3_a13.png
+	display false
 	scale 30
 	rotateOrigin center
 
