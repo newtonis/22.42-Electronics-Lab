@@ -308,7 +308,7 @@ Diagrama de Bode: magnitud y fase
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -336,10 +336,6 @@ Respuesta al escalón
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Con respecto a la respuesta en frecuencia, ambas 
 \end_layout
 
 \begin_layout Subsection
@@ -769,23 +765,39 @@ En el caso del rechaza banda, se puede ver que en la frecuencia notch la
 \end_layout
 
 \begin_layout Standard
-En el caso de las respuestas al escalón
+En el caso de las respuestas al escalón, comparando ambas respuestas, se
+ puede notar que los picos de las curvas prácticas son menores que los de
+ las teóricas.
+ Esto es causa de que los componentes del RLC no son ideales, además de
+ las impedancias parásitas de los instrumentos que se utilizaron para medir.
+ 
 \end_layout
 
 \begin_layout Standard
-Comparando ambas respuestas, se puede notar al principio la teórica inicia
- desde más arriba que la práctica antes de comenzar a bajar.
- Esto es causa de que la señal cuadrada utilizada como entrada en la medición
- no es perfecta, el salto no es instantaneo, existe una diferencia de tiempo
- distinta de cero para que alcance el valor que corresponde.
- Por ello la respuesta práctica no alcanza la amplitud total de la señal,
- mientras que la teórica si debido a que en este caso el escalón es ideal.
- En el resto de la gráfica ambas respuestas son muy similares.
+Para el pasabanda, la respuesta tiende a un valor final nulo, dado que considera
+ndo el escalón con ancho de banda muy grande, las frecuencias más altas
+ están en el impulso inicial, por lo que la respuesta que se obtiene es
+ casi nula, y a medida que se transita hacia el valor final, algunas frecuencias
+ pasan amplificadas, hasta llegar efectivamente al valor final constante,
+ que se puede considerar como de frecuencia cero, por lo que al final resulta
+ atenuada.
+ Otra forma de verlo, es que en el instante inicial el capacitor actúa como
+ un cortocircuito y la bobina como un circuito abierto, y luego del transitorio
+ el capacitor pasa a ser un circuito abierto y la bobina un cable, y durante
+ el transitorio es cuando pasa corriente hacia la resistencia a la salida.
 \end_layout
 
 \begin_layout Standard
-este desvío resulta de la diferencia entre el valor nominal y el real de
- los componentes utilizados.
+Para el rechaza banda, en el valor final del escalón cuando se estabilza
+ el circuito la salida tiene a un valor constante, dado que es muy baja
+ frecuencia, por lo que el filtro la deja pasar, y durante el transitorio
+ se responde ante el ancho de banda alto del escalón, donde algunas frecuencias
+ se atenúan al pasar por la zona de notch, y otras se amplifican.
+\end_layout
+
+\begin_layout Standard
+En el pasa altos, la respuesta final tiende a cero, dado que la tensión
+ constante siendo frecuencia nula 
 \end_layout
 
 \end_body
