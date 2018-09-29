@@ -17,8 +17,10 @@ import cmath
 df = pandas.read_excel('Ejercicio1Capacitor.xlsx')
 Freq = df['Freq'].values
 font_size = 17;
-Freq = Freq*1000;
+
 C = df['C'].values
+
+Freq = Freq*1000;
 C= C*1e-9
 D = df['D'].values
 Phi = df['Phi'].values
@@ -26,7 +28,7 @@ G = df['G'].values
 G=G*1e-6
 
 
-graficode="Phi"
+graficode="C"
 
 # if(graficode != "Z"):
 #     meas_data = df[graficode].values
@@ -38,6 +40,7 @@ elif graficode == "D":
     meas_data = D
 elif graficode == "G":
     meas_data = G
+
 
 
 
@@ -55,13 +58,15 @@ w= 2*pi*f
 
 
 
-Rz=(500e3)
+Rz=8828
 Cz=10.4e-9
+w0=(4.950e6)*2*pi
+Lz=1/(( Cz )*w0**2)
 
 Z1 = (1/(1j*w*Cz))
 Z2 = Rz
-Z = (Z1*Z2)/(Z1+Z2)
-#Z=Z1+Z2
+Z = (Z1*Z2)/(Z1+Z2)+1j*w*Lz
+#Y = 1/Z;
 #para poner latex => r'$\Omega$'
 
 
@@ -86,27 +91,32 @@ elif graficode == "C":
     plt.ylabel('C' + '(f)', fontsize=font_size)
     Caux=[]
     for i in range(len(f)):
-        Caux.append(C);
+        Caux.append(C)
  #   plt.semilogx(f,Caux)
 elif graficode == "Z":
-    Rmedida = (1/G)
-    Xcmedido=1/(1j*Freq*2*pi*C)
-    Zmedida=(Rmedida*Xcmedido)/(Rmedida+Xcmedido)
+    Admmedida = G
+    Sucmedido=(1j*Freq*2*pi*C)
+    Ymedido = Admmedida+Sucmedido
+    Zmedido=1/(Ymedido)
 
-    absz = []
-    plt.title('Respuesta en frecuencia del modulo de ' + graficode, fontsize=font_size)
-    plt.ylabel('|Z|' + '(' + r'$\Omega$' + ')', fontsize=font_size)
+    absZmed = []
+    plt.title('Respuesta en frecuencia del modulo de Y', fontsize=font_size)
+    plt.ylabel('|Y|' + '(' + r'$\Omega$' + ')', fontsize=font_size)
+
+    for i in range(len(Zmedido)):
+        absZmed.append((abs(Zmedido[i])))
+
+    plt.semilogx(Freq, absZmed)
+
+    absZ = []
     for i in range(len(Z)):
-        absz.append((abs(Z[i])))
-    plt.semilogx(f, absz)
-    plt.semilogx(Freq, abs(Zmedida))
+        absZ.append((abs(Z[i])))
+
+    plt.semilogx(f, absZ)
 #    plt.loglog(f, absz)
 #    plt.loglog(Freq, abs(Zmedida))
-
-
 CSTR = []
 
-#CSTR.append('Modelo')
 
 plt.xlabel('Frecuencia(Hz)', fontsize = font_size)
 # plt.xlim(bottom, top)
@@ -115,9 +125,10 @@ plt.xlabel('Frecuencia(Hz)', fontsize = font_size)
 if(graficode != "Z"):
     #plt.loglog(Freq, meas_data)
     plt.semilogx(Freq,meas_data)
-#
-#CSTR.append('Práctica')
-#plt.legend(CSTR)
+
+CSTR.append('Práctica')
+CSTR.append('Modelo')
+plt.legend(CSTR)
 
 plt.grid(True, which="both")
 plt.show()

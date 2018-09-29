@@ -755,7 +755,31 @@ Para poder obtener los correspondientes valores de C y de R, se tiene que
 \end_layout
 
 \begin_layout Standard
-Se procede a contrastar el modelo teórico con las mediciones:
+En las mediciones salvo C, se pudo medir hasta 4250KHz ya que es lo máximo
+ que el analizador de impedancia podía mostrar.
+\end_layout
+
+\begin_layout Standard
+Con la curva de C se pudo estimar la frecuencia de resonancia del circuito.
+ Dada la frecuencia de resonancia del circuito se pudo estimar el valor
+ de L.
+\end_layout
+
+\begin_layout Standard
+Como R es muy grande se puede estimar que 
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{LC}}$
+\end_inset
+
+ y de esta forma, con f
+\begin_inset Formula $_{0}$
+\end_inset
+
+=4.950MHz se obtuvo el valor de L= 99.4nHy.
+\end_layout
+
+\begin_layout Standard
+Una vez obtenidos L,R,C se procede a contrastar el modelo teórico con las
+ mediciones:
 \end_layout
 
 \begin_layout Standard
@@ -767,8 +791,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename RespuestaenfrecZdeC.png
-	scale 61
+	filename Rta_frec_mod_Z.pdf
+	scale 60
 
 \end_inset
 
@@ -779,15 +803,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Comparación del módulo de Z obtenida en la práctica con el módulo de Z teórico
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -805,8 +825,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename RespuestaenfrecPhideC.png
-	scale 62
+	filename Rta_frec_phase_Z.pdf
+	scale 60
 
 \end_inset
 
@@ -817,15 +837,11 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+Comparación de la fase de Z obtenida en la práctica con la fase de Z teórico
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
