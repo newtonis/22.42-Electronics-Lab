@@ -94,7 +94,7 @@ Medición del inductor
 
 \begin_layout Standard
 Para el inductor se obtuvieron los siguientes gráficos según las correspondiente
-s mediciones:
+s mediciones con el modo de resistencia en serie del analizador:
 \end_layout
 
 \begin_layout Standard
@@ -557,7 +557,7 @@ Medición del Capacitor
 
 \begin_layout Standard
 Para el capacitor se obtuvieron los siguientes gráficos según las correspondient
-es mediciones:
+es mediciones con el modo de resistencia en paralelo del analizador:
 \end_layout
 
 \begin_layout Standard

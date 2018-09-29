@@ -94,7 +94,7 @@ Medición del inductor
 
 \begin_layout Standard
 Para el inductor se obtuvieron los siguientes gráficos según las correspondiente
-s mediciones:
+s mediciones con el modo de resistencia en serie del analizador:
 \end_layout
 
 \begin_layout Standard
@@ -557,7 +557,7 @@ Medición del Capacitor
 
 \begin_layout Standard
 Para el capacitor se obtuvieron los siguientes gráficos según las correspondient
-es mediciones:
+es mediciones con el modo de resistencia en serie del analizador:
 \end_layout
 
 \begin_layout Standard
@@ -878,8 +878,8 @@ En definitiva el porqué de los dos es el mismo y se trata de la frecuencia
  de resonancia del circuito, por todo esto este factor es algo con lo que
  se debe tener alta precaución a la hora del diseño de los circuitos analógicos,
  ya que el circuito diseñado puede dejar de comportarse como uno esperaría
- dado que posiblemente se haya contemplado un modelo incompleto para alta
- frecuencia.
+ dado que posiblemente se haya contemplado un modelo incompleto para altas
+ frecuencias.
 \end_layout
 
 \end_body
