@@ -697,7 +697,7 @@ Respuesta en frecuencia de la fase del capacitor medido
 \end_layout
 
 \begin_layout Standard
-El modelo con el cual contrastaremos las mediciones es:
+Se introduce el modelo de alta frecuencia del capacitor multicapa:
 \end_layout
 
 \begin_layout Standard
@@ -722,7 +722,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Modelo de comparación
+Modelo de alta frecuencia del capacitor multicapa
 \end_layout
 
 \end_inset
@@ -774,7 +774,15 @@ Como R es muy grande se puede estimar que
 \begin_inset Formula $_{0}$
 \end_inset
 
-=4.950MHz se obtuvo el valor de L= 99.4nHy.
+=4.950MHz (obtenida en el punto en el que C cambia de positivo a negativo
+ dado que el analizador no distingue que el capacitor ya no se comporta
+ como uno) se obtuvo el valor de L= 99.4nHy.
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que el capacitor medido es un multicapa de 10nf de valor nominal
+ y éstos tienen la característica de ser los que mejor respuesta en frecuencia
+ tienen.
 \end_layout
 
 \begin_layout Standard
@@ -848,6 +856,30 @@ Comparación de la fase de Z obtenida en la práctica con la fase de Z teórico
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection*
+Conclusión 
+\end_layout
+
+\begin_layout Standard
+En el punto 1 del presente trabajo práctico se pudo observar el comportamiento
+ de los componentes pasivos a alta frecuencia.
+ A pesar de que el capacitor multicapa es destacado como uno de los mejores
+ capacitores en cuanto a respuesta en frecuencia, a alta frecuencia el mismo
+ se comporta como un inductor y esa transición de comportamiento es abrupta.
+ A su vez, en el inductor ocurre el proceso inverso, es decir que a alta
+ frecuencia cambia su comportamiento al de un capacitor.
+ 
+\end_layout
+
+\begin_layout Standard
+En definitiva el porqué de los dos es el mismo y se trata de la frecuencia
+ de resonancia del circuito, por todo esto este factor es algo con lo que
+ se debe tener alta precaución a la hora del diseño de los circuitos analógicos,
+ ya que el circuito diseñado puede dejar de comportarse como uno esperaría
+ dado que posiblemente se haya contemplado un modelo incompleto para altas
+ frecuencias.
 \end_layout
 
 \end_body
