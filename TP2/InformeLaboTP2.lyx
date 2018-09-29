@@ -1,0 +1,4980 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\pagestyle{fancy}
+\lhead{Laboratorio de Electrónica 22.42}
+\chead{TPL2}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Medición de L y C con el Medidor vector de impedancias
+\end_layout
+
+\begin_layout Standard
+En esta sección, se pidió medir de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10Hz$
+\end_layout
+
+\end_inset
+
+ a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10MHz$
+\end_layout
+
+\end_inset
+
+ dos componentes pasivos: una inductancia de valor nominal 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1000
+\backslash
+mu H$
+\end_layout
+
+\end_inset
+
+ y un capacitor multicapa de valor nominal 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10nF$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Medición del inductor
+\end_layout
+
+\begin_layout Standard
+Para el inductor se obtuvieron los siguientes gráficos, según las correspondient
+es mediciones con el modo de resistencia en serie del analizador:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecL.png
+	lyxscale 30
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecQ.png
+	lyxscale 30
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecR.png
+	lyxscale 50
+	display false
+	scale 62
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ (parte real de la impedancia total)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:R"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecPhi.png
+	lyxscale 50
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de la fase del inductor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se introduce el siguiente modelo de alta frecuencia del inductor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/Modeloeq.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo de alta frecuencia del inductor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se sabe que a baja frecuencia (entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10Hz$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
+\end_inset
+
+ por ejemplo) según el modelo la parte capacitiva no debería tener influencia
+ alguna, así que lo que se midió con el medidor de impedancia es lo más
+ cercano al valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+, que se lo tomó dadas las mediciones como 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L=0.96mH$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se observa en el gráfico de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:R"
+
+\end_inset
+
+ que hay un valor en el que el circuito entra en resonancia, por ende, se
+ procede a buscar en qué punto se produce la misma.
+\end_layout
+
+\begin_layout Standard
+Llamando 
+\begin_inset Formula $Z_{1}=R+j\omega L$
+\end_inset
+
+ y 
+\begin_inset Formula $Z_{2}=\frac{1}{j\omega C}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Z_{eq}=\frac{Z_{1}Z_{2}}{Z_{1}+Z_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para poder saber en qué frecuencia entra en resonancia igualamos la parte
+ imaginaria de 
+\begin_inset Formula $Z_{eq}$
+\end_inset
+
+ a 0:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Im(Z_{eq})=0\iff\omega=\sqrt{\frac{1}{LC}-\left(\frac{R}{L}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el laboratorio se informó que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ estaba en el orden de los 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$pF$
+\end_layout
+
+\end_inset
+
+.
+ Por lo cual si se realiza un cálculo cuantitativo de 
+\begin_inset Formula $\frac{1}{LC}$
+\end_inset
+
+ con un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C=10pF$
+\end_layout
+
+\end_inset
+
+ se llega a que este termino se encuentra en el orden de 1x10
+\begin_inset Formula $^{14}$
+\end_inset
+
+ (
+\begin_inset Formula $\frac{rad}{s}$
+\end_inset
+
+)
+\begin_inset Formula $^{2}$
+\end_inset
+
+ con lo cual, para llegar a ser comparable, 
+\begin_inset Formula $\frac{R}{L}$
+\end_inset
+
+ debe encontrarse por arriba de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.3 
+\backslash
+times 10^7 
+\backslash
+left(
+\backslash
+frac{rad}{s}
+\backslash
+right)$
+\end_layout
+
+\end_inset
+
+ haciendo que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R=2868
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ aproximadamente.
+\end_layout
+
+\begin_layout Standard
+El inductor dado no puede tener tanta resistencia interna ya que a baja
+ frecuencia deberíamos haber medido algún valor cercano, pero la evidencia
+ experimental demuestra que en realidad la 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ se encuentra en el orden de los 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ por lo cual despreciamos el término 
+\begin_inset Formula $\frac{R}{L}$
+\end_inset
+
+ y nos queda que la frecuencia de resonancia 
+\begin_inset Formula $\omega_{0}\approx\sqrt{\frac{1}{LC}}$
+\end_inset
+
+, por lo cual 
+\begin_inset Formula $f_{0}=\frac{1}{2\pi}\frac{1}{\sqrt{LC}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En las mediciones la frecuencia de resonancia se daba a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_0=1686KHz$
+\end_layout
+
+\end_inset
+
+.
+ Teniendo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_0$
+\end_layout
+
+\end_inset
+
+, obtenemos un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C = 9.28pF$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Teniendo esto en consideración y que a bajas frecuencias el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ que se midió es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.894 
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ y por ende es el que debe ser introducido en el modelo (debido a que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ no influye), se procedió a contrastar las mediciones obtenidas con el modelo
+ propuesto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecuenciaZvsModelo.png
+	lyxscale 30
+	display false
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ZvsZmodel"
+
+\end_inset
+
+ Magnitud de Z
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecPhivsModelo.png
+	lyxscale 30
+	display false
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:FaseZvs"
+
+\end_inset
+
+Fase de Z
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ZvsZmodel"
+
+\end_inset
+
+ se tuvó la precaución de no graficar más allá de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1MHz$
+\end_layout
+
+\end_inset
+
+ ya que a partir de esa frecuencia los valores del modelo teórico y los
+ de las mediciones se apartan demasiado como para obtener un gráfico representat
+ivo de lo que se está comparando, esto es debido a que en la frecuencia
+ de resonancia el módulo de la impedancia empieza a incrementar de forma
+ abrupta según nuestro modelo, lo cuál no coincide con la realidad; sería
+ necesario un modelo más completo que considere los conectores del analizador
+ de impedancias para poder medir en dicho rango de frecuencias.
+\end_layout
+
+\begin_layout Standard
+Sin emargo, en general los resultados cayeron dentro de lo esperado tanto
+ para la magnitud como la fase de la impededancia equivalente, dentro de
+ los valores de frecuencia trabajados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Medición del capacitor
+\end_layout
+
+\begin_layout Standard
+Para el capacitor se obtuvieron los siguientes gráficos según las correspondient
+es mediciones con el modo de resistencia en paralelo del analizador:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecC.png
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de C (medido)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecD.png
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de D del capacitor medido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecG.png
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de G del capacitor medido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/RespuestaenfrecPhiCap.png
+	display false
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta en frecuencia de la fase del capacitor medido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se introduce el siguiente modelo de alta frecuencia del capacitor multicapa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/modeloeqCap.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo de alta frecuencia del capacitor multicapa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para poder obtener los correspondientes valores de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ y de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+, se tiene que tener en cuenta que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$G$
+\end_layout
+
+\end_inset
+
+ en este caso esta dado por 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{R}$
+\end_layout
+
+\end_inset
+
+, ya que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ es la unica impedancia real.
+ A medida que aumenta la frecuencia el capacitor reduce su reactancia capacitiva
+ así que el mejor valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ lo tenemos a la menor frecuencia que medimos.
+ Dicho esto el valor más chico de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$G$
+\end_layout
+
+\end_inset
+
+ es 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.02 
+\backslash
+mu S$
+\end_layout
+
+\end_inset
+
+, lo cual nos da un 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R=50M
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+.
+ Para obtener 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+, basta con ver en las mediciones el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ que se mantuvo casi constante a lo largo de ellas y el mismo resulta de
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10.4nF$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En las mediciones (salvo para el capacitor), se pudo tomar valores hasta
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$4.250KHz$
+\end_layout
+
+\end_inset
+
+, ya que es lo máximo que el analizador de impedancias podía mostrar.
+\end_layout
+
+\begin_layout Standard
+Con la curva de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ se pudo estimar la frecuencia de resonancia del circuito.
+ Con dicha frecuencia se pudo estimar el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ es muy grande, se puede estimar que 
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{LC}}$
+\end_inset
+
+ y de esta forma, con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_0=4.950MHz$
+\end_layout
+
+\end_inset
+
+ (obtenida en el punto en el que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ cambia de positivo a negativo dado que el analizador no distingue que el
+ capacitor ya no se comporta como uno) se obtuvo el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L= 99.4nH$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que el capacitor medido es un multicapa de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10nF$
+\end_layout
+
+\end_inset
+
+ de valor nominal y éstos tienen la característica de ser los que mejor
+ respuesta en frecuencia tienen.
+\end_layout
+
+\begin_layout Standard
+Una vez obtenidos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L$
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C$
+\end_layout
+
+\end_inset
+
+ se procede a contrastar el modelo teórico con las mediciones:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/Rta_frec_mod_Z.pdf
+	display false
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparación del módulo de Z obtenida en la práctica con el módulo de Z teórico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename informepunto1/Rta_frec_phase_Z.pdf
+	display false
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparación de la fase de Z obtenida en la práctica con la fase de Z teórico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Conclusión 
+\end_layout
+
+\begin_layout Standard
+Se pudo observar el comportamiento de los componentes pasivos a alta frecuencia.
+ A pesar de que el capacitor multicapa es destacado como uno de los mejores
+ capacitores en cuanto a respuesta en frecuencia, a alta frecuencia el mismo
+ se comporta como un inductor y esa transición de comportamiento es abrupta.
+ A su vez, en el inductor ocurre el proceso inverso, es decir que a alta
+ frecuencia cambia su comportamiento al de un capacitor.
+ 
+\end_layout
+
+\begin_layout Standard
+En definitiva el porqué de los dos es el mismo y se trata de la frecuencia
+ de resonancia del circuito, por todo esto este factor es algo con lo que
+ se debe tener alta precaución a la hora del diseño de los circuitos analógicos,
+ ya que el circuito diseñado puede dejar de comportarse como uno esperaría
+ dado que posiblemente se haya contemplado un modelo incompleto para altas
+ frecuencias.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Circuito RLC - Pasa Bajos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/rlc serie.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+RLC serie
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RLC-serie"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para realizar las mediciones se conectó un buffer entre el circuito y el
+ generador.
+ Un buffer es un amplificador de ganancia unitaria que tiene una impedancia
+ de entrada extremadamente alta y una impedancia de salida muy pequeña.
+ Su función es aislar la entrada de la salida, evitando el efecto de cargar
+ a la fuente.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Cálculo de R:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+De la tabla provista en la consigna se obtienen los valores de el capacitor
+ y de la bobina:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Componente
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Valor
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+10
+\begin_inset Formula $nF$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+1000
+\begin_inset Formula $\mu H$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Valores de L y C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Además del coeficiente de amortiguamiento, que es dato:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang english
+\begin_inset Formula $\xi=0.19$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Sabiendo que para un circuito RLC serie se cumple:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Frecuencia de resonancia: 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\omega_{0}=\frac{1}{\sqrt{LC}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Factor de Amortiguamiento:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\alpha=\frac{R}{2L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Coeficiente de Amortiguamiento:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\xi=\frac{\alpha}{\omega_{0}}=\frac{R}{2}\sqrt{\frac{C}{L}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Despejando para R y reemplazando los valores conocidos, se llega a:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+R=2\xi\sqrt{\frac{L}{C}}\simeq120\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Cálculo de la Función Transferencia
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+De la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RLC-serie"
+
+\end_inset
+
+ se puede plantear:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+V_{in}(s)=I\,(\,sL+R+\frac{1}{sC}\,)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+V_{out}=I\,\frac{1}{sC}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Realizando el cociente entre ambas ecuaciones se llega a la función transferenci
+a:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}s+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Por lo que los polos corresponden a:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p=-\alpha+j\,\omega_{d}=-60\,000+j\,310\,480
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p*=-\alpha-j\,\omega_{d}=-60\,000-j\,310\,480
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/PZMAP.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Polos del sistema 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Donde la frecuencia del transitorio es:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\omega_{d}=\sqrt{\omega_{0}^{2}-\alpha^{2}}=310\,480\,\frac{rad}{s}\,\,\Rightarrow\,\,f_{d}=\frac{w_{d}}{2\pi}\simeq49\,400\,Hz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Como los polos son complejos y conjugados, se puede decir que el sistema
+ es subamortiguado, lo cual tiene sentido ya que 
+\begin_inset Formula $\xi<1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Cálculo de la respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Como se está analizando un sistema LTI, se puede obtener la respuesta al
+ escalón realizando la convolución entre la respuesta impulsiva y la función
+ escalón 
+\begin_inset Formula $u(t)$
+\end_inset
+
+, o lo que es equivalente, utilizando la transformda de Laplace:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{Y(s)}{X(s)}\Rightarrow Y(s)=H(s)\,X(s)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Donde 
+\begin_inset Formula $X(s)$
+\end_inset
+
+ es la transformada de Laplace de la entrada al sistema, que en este caso
+ es la función escalón, y entonces 
+\begin_inset Formula $Y(s)$
+\end_inset
+
+ es la transformada de Laplace de la respuesta al escalón.
+ Por lo tanto:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+X(s)=\mathscr{L}\left\{ \,u(t)\,\right\} (s)=\frac{1}{s}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+Y(s)=\frac{1}{s}\,\frac{\omega_{0}^{2}}{s^{2}+2\alpha s+\omega_{0}^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\Rightarrow y(t)=\mathscr{L}^{-1}\{Y(s)\}(t)=\left[1-e^{-\alpha t}\left(\frac{\alpha}{\omega_{d}}\sin\omega_{d}t+\cos\omega_{d}t\right)\right]u(t)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+\lang english
+Características
+\bar default
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Sobrepico: valor ponderado entre el valor del pico máximo y el valor de
+ la salida en régimen permanente (aparece sobrepico porque 
+\begin_inset Formula $0<\xi<0.707$
+\end_inset
+
+).
+\begin_inset Formula 
+\begin{equation}
+M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e^{-\frac{\pi\alpha}{\omega_{d}}}=0.545
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Tiempo de establecimiento: valor de tiempo que el sistema necesita para
+ alcanzar una amplitud del 5% del valor del sobrepico inicial.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+t_{s}=\frac{\ln\left(\frac{1}{0.05\sqrt{1-\xi^{2}}}\right)}{\alpha}\simeq50\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Resultados obtenidos
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/STE.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón medida y calculada
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $50KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tiempo de establecimiento: 
+\begin_inset Formula $61\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Sobrepico: 
+\begin_inset Formula $0.53$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Tanto las curvas como los valores medidos coinciden bastante con los teóricos.
+ El valor que más difiere es el del tiempo de establecimiento, que puede
+ ser debido a la falta de precisión para encontrar el valor del 
+\begin_inset Formula $5\%$
+\end_inset
+
+ y a partir de eso hallar dicho tiempo.
+ Para el caso de la frecuencia de oscilación y el sobrepico, los errores
+ relativos furon de tan solo el 
+\begin_inset Formula $1\%$
+\end_inset
+
+ y el 
+\begin_inset Formula $3\%$
+\end_inset
+
+ aproximadamente.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Diagrama de Bode
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A continuación se muestra el contraste del diagrama de bode medido con respecto
+ al teórico.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/bode mag.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/bode pha.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Diagrama de bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Puede verse que el diagrama de bode medido coincide con el teórico.
+ Además, a partir de dicho diagrama se puede comprobar que el circuito es
+ un filtro pasa bajos.
+ Para altas frecuencias, la fase que introduce cada polo se aproxima a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$90^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+, por lo que en total la fase de los dos polos del sistema suma 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$180^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Barrido
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align left
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/barrido 12k.png
+	lyxscale 25
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/barrido 17k.png
+	lyxscale 25
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/barrido 26k.png
+	lyxscale 25
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align left
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/barrido 49k.png
+	lyxscale 25
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Medición-de-"
+
+\end_inset
+
+Medición de 
+\begin_inset Formula $V_{o}$
+\end_inset
+
+ a distintas frecuencias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Medición-de-"
+
+\end_inset
+
+ se puede ver que a bajas frecuencias el circuito tiene un comportamiento
+ parecido a la señal cuadrada con la que se lo alimenta.
+ A medida que aumenta la frecuencia, se va perdiendo la similitud con la
+ señal cuadrada y la mayor diferencia se observa en la respuesta a los flancos
+ de la misma.
+ Este comportamiento se debe a que, al aumentar la frecuencia, se le da
+ menos tiempo al circuito para que se establezca luego del transitorio,
+ por lo que a mayor frecuencia cada vez se observa menos.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Caso 1: R tal que MP sea 0.2
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Cálculo de R
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+M_{p}=e^{-\frac{\pi\xi}{\sqrt{1-\xi^{2}}}}=0.2\,\,\Longrightarrow\,\,\xi=0.456
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Y como 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\xi=\frac{R}{2}\sqrt{\frac{C}{L}}\,\,\Longrightarrow\,\,R=288\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+t_{s}\simeq22\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+f_{d}\simeq44.8KHz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/escalon d1.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $43KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tiempo de establecimiento: 
+\begin_inset Formula $33\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Sobrepico: 
+\begin_inset Formula $0.16$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados obtenidos sin buffer
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/escalon d1 sin buffer.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $42KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tiempo de establecimiento: 
+\begin_inset Formula $32\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Sobrepico: 
+\begin_inset Formula $0.12$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Caso 2: R sea 100 veces la anterior
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En este caso:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+R=100\cdot288\Omega=28.8K\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para este valor de resistencia, los polos de la función transferencia son:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p_{1}=-28\,797\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-30\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En este caso los polos son reales y distintos entonces el sistema es sobreamorti
+guado y no oscila, es por ello que en este caso no hay frecuencia de oscilación
+ en el transitorio, tiempo de establecimiento ni hay sobrepico.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica,
+ para la teórica se utilizó el valor de la resistencia utilizado para la
+ medición:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/escalon d2.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A partir de las curvas obtenidas, puede comprobarse que el circuito pasó
+ a trabajar en régimen sobreamortiguado, dado que al cambiar el valor de
+ la resistencia, los polos fueron desplazados hacia el eje real, convirtiendolos
+ en reales y distintos (y negativos).
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Caso 3: R nula
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+R=0\Omega\,\,\Rightarrow\,\,\alpha=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los polos serán:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p_{1}=j\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-j\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se corresponde a un circuito sin amortiguamiento.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+t_{s}\rightarrow\infty
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+f_{d}\simeq50KHz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+M_{p}=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En los gráficos 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+ se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/escalon d3.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $52KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tiempo de establecimiento: 
+\begin_inset Formula $1ms$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Sobrepico: 
+\begin_inset Formula $0.94$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados obtenidos sin buffer
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/escalon d3 sin buffer.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón"
+
+\end_inset
+
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $56KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tiempo de establecimiento: 
+\begin_inset Formula $182\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Sobrepico: 
+\begin_inset Formula $0.72$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En los gráficos de las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+, se observa que la respuesta al escalón medida no se comporta como la teórica.
+ Esto se debe a que en la teórica se considera que la resistencia es cero,
+ mientras que en la medición la resistencia no es realmente cero debido
+ a que tanto los instrumentos utilizados para medir como los componentes
+ del circuito en sí tienen resistencias.
+ Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
+ el teórico muestra una oscilación perfecta mientras que la respuesta del
+ medido es amortiguada a medida que aumenta el tiempo.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Caso 4: R para amortiguamiento crítico
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Cálculo de R
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para el caso criticamente amortiguado se debe cumplir:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\omega_{0}=\alpha\,\,\Rightarrow\frac{1}{\sqrt{LC}}=\frac{R}{2L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Despejando para R:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+R_{C}=2\sqrt{\frac{L}{C}}\simeq632.456\Omega
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los polos serán iguales y reales:
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p_{1}=-\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+p_{2}=-\,31\,623\,000
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En este caso el circuito no oscila, por lo tanto no hay 
+\begin_inset Formula $f_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+t_{s}=46\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+M_{p}=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para la medición se buscó experimentalmente el valor de la resistencia para
+ que el circuito sea criticamente amortiguado, este valor fue de 
+\begin_inset Formula $600\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Informe/ej2/escalon d4.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Tiempo de establecimiento: 
+\begin_inset Formula $35\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Sobrepico: 
+\begin_inset Formula $0.01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Circuitos de segundo orden - Otras configuraciones
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En este ejercicio se analizará el comportamiento de 3 circuitos de segundo
+ orden RLC diferentes, se estudiarán tanto su respuesta en frecuencia como
+ su respuesta al escalón, teorica y experimental.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+LCR - Pasa Banda
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Función transferencia 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ej4/LCR.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Circuito LCR
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{sCR}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La cual se corresponde con un filtro pasabandas.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Como se está analizando un sistema LTI, se puede obtener la respuesta al
+ escalón realizando la convolución entre la respuesta impulsiva y la función
+ escalón 
+\begin_inset Formula $u(t)$
+\end_inset
+
+, o lo que es equivalente, utilizando la transformda de Laplace:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{Y(s)}{X(s)}\Rightarrow Y(s)=H(s)\,X(s)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Donde 
+\begin_inset Formula $X(s)$
+\end_inset
+
+ es la transformada de Laplace de la entrada al sistema, que en este caso
+ es la función escalón, y entonces 
+\begin_inset Formula $Y(s)$
+\end_inset
+
+ es la transformada de Laplace de la respuesta al escalón.
+ Por lo tanto:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+X(s)=\mathscr{L}\left\{ \,u(t)\,\right\} (s)=\frac{1}{s}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+\Rightarrow y(t)=\mathscr{L}^{-1}\{Y(s)\}(t)=\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt{C}\,L}\right)\,\mathrm{e}^{-\frac{R\,t}{2\,L}}}{\sqrt{4\,L-C\,R^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados Obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/bode mag 4a.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/bode pha 4a.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Diagrama de Bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/escalon 4a.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+RLC - Notch
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Función transferencia 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ej4/RLC.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Circuito RLC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{s^{2}CL+1}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La cual se corresponde con un filtro notch.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Analogamente al caso anterior:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+y(t)=1-\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt{C}\,L}\right)\,\mathrm{e}^{-\frac{R\,t}{2\,L}}}{\sqrt{4\,L-C\,R^{2}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados Obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/bode mad 4b.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/bode pha 4b.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Diagrama de Bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/escalon 4b.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+RCL - Pasa Altos
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Función transferencia 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename ej4/RCL.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Circuito RCL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{s^{2}CL}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La cual se corresponde con un filtro pasa altos.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Análogamente a los casos anteriores:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{equation}
+y(t)=\mathrm{e}^{-\frac{R\,t}{2\,L}}\,\left(\cosh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)-\frac{\sqrt{C}\,R\,\sinh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)}{2\,\sqrt{\frac{C\,R^{2}}{4}-L}}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Resultados Obtenidos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/bode mag 4c.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/bode pha 4c.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Diagrama de Bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename ej4/escalon 4c.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Respuesta al escalón
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Tanto la respuesta al escalón como los diagramas de bode medidos coinciden
+ bastante con los teóricos, esto se debe a que en este el circuito era sencillo
+ y no había muchos factores que influyan mucho.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el caso del rechaza banda, se puede ver que en la frecuencia notch la
+ atenuación en mucho menor en el medido que en la del teórico, esto se debe
+ a la dificultad de medir la señal cuando la misma se atenúa por debajo
+ del nivel del ruido.
+ En el diagrama de fase teórico se observa un salto instantaneo de la fase
+ en la frecuencia de corte, que en el práctico, a pesar de tener una pendiente
+ alta, no se observa.
+ Esto se debe a las no idealidades de los componentes, además de que es
+ dificil de medir ya que la señal está muy atenuada.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el caso de las respuestas al escalón, comparando ambas respuestas, se
+ puede notar que los picos de las curvas prácticas son menores que los de
+ las teóricas.
+ Esto es causa de que los componentes del RLC no son ideales, además de
+ las impedancias parásitas de los instrumentos que se utilizaron para medir.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para el pasabanda, la respuesta tiende a un valor final nulo, dado que considera
+ndo el escalón con ancho de banda muy grande, las frecuencias más altas
+ están en el impulso inicial, por lo que la respuesta que se obtiene es
+ casi nula, y a medida que se transita hacia el valor final, algunas frecuencias
+ pasan amplificadas, hasta llegar efectivamente al valor final constante,
+ que se puede considerar como de frecuencia cero, por lo que al final resulta
+ atenuada.
+ Otra forma de verlo, es que en el instante inicial el capacitor actúa como
+ un cortocircuito y la bobina como un circuito abierto, y luego del transitorio
+ el capacitor pasa a ser un circuito abierto y la bobina un cable, y durante
+ el transitorio es cuando pasa corriente hacia la resistencia a la salida.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para el rechaza banda, en el valor final del escalón cuando se estabilza
+ el circuito la salida tiene a un valor constante, dado que es muy baja
+ frecuencia, por lo que el filtro la deja pasar, y durante el transitorio
+ se responde ante el ancho de banda alto del escalón, donde algunas frecuencias
+ se atenúan al pasar por la zona de notch, y otras se amplifican.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el pasa altos, la respuesta final tiende a cero, dado que la tensión
+ constante siendo frecuencia nula es atenuada, mientras que las altas que
+ aparecen durante el impulso del escalón si pasan.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Medición de Q en forma empírica
+\end_layout
+
+\begin_layout Subsection
+Pasa Bajos
+\end_layout
+
+\begin_layout Standard
+Retomando la transferencia para el caso del pasa bajos, nos queda en forma
+ genérica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$H(S) = 
+\backslash
+frac{1}{ 
+\backslash
+left(
+\backslash
+frac{S}{
+\backslash
+omega_0}
+\backslash
+right)^2 + 
+\backslash
+frac{S}{
+\backslash
+omega_0 Q} + 1}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde, si se reemplaza por 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S = j
+\backslash
+omega_0$
+\end_layout
+
+\end_inset
+
+, queda:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$H(j
+\backslash
+omega_0) = -jQ 
+\backslash
+Rightarrow |H(j
+\backslash
+omega_0)| = Q$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que para obtener el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+ en forma empírica, se midió:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f_0 = 49KHz 
+\backslash
+hspace{2cm} |H(j
+\backslash
+omega_0)|[dB] = 7.8$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces se tiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$|H(j
+\backslash
+omega_0)| = 10^{
+\backslash
+frac{|H(j
+\backslash
+omega_0)|[dB]}{20}} = Q = 2.45$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siendo el teórico 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q = 
+\backslash
+frac{1}{2 
+\backslash
+xi} = 2.63$
+\end_layout
+
+\end_inset
+
+, resultando bastante acertado.
+\end_layout
+
+\begin_layout Subsection
+Pasa Altos
+\end_layout
+
+\begin_layout Standard
+Retomando la transferencia para el caso pasa altos, en forma genérica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$H(S) = 
+\backslash
+frac{ 
+\backslash
+frac{S^2}{
+\backslash
+omega_0 Q} }{ 
+\backslash
+left(
+\backslash
+frac{S}{
+\backslash
+omega_0}
+\backslash
+right)^2 + 
+\backslash
+frac{S}{
+\backslash
+omega_0 Q} + 1}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde, si se reemplaza por 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$S = j
+\backslash
+omega_0$
+\end_layout
+
+\end_inset
+
+, queda:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$H(j
+\backslash
+omega_0) = jQ 
+\backslash
+Rightarrow |H(j
+\backslash
+omega_0)| = Q$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que para obtener el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+ en forma empírica, se midió al igual que antes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f_0 = 53KHz 
+\backslash
+hspace{2cm} |H(S)|[dB] = 7.9$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces se tiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$|H(j
+\backslash
+omega_0)| = 10^{
+\backslash
+frac{|H(j
+\backslash
+omega_0)|[dB]}{20}} = Q = 2.48$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siendo el teórico 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q = 
+\backslash
+frac{1}{2 
+\backslash
+xi} = 2.63$
+\end_layout
+
+\end_inset
+
+, resultando bastante acertado como con el pasabajos.
+\end_layout
+
+\begin_layout Subsection
+Pasa Banda
+\end_layout
+
+\begin_layout Standard
+Para obtener el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+ en forma empírica, se midió la frecuencia central de mayor ganancia 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_0$
+\end_layout
+
+\end_inset
+
+, y las frecuencias donde ésta cae 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-3dB$
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f_0 = 51KHz 
+\backslash
+hspace{2cm} |H(S)|[dB] = -0.6$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f_1 = 41.8KHz 
+\backslash
+hspace{2cm} f_2 = 63.1KHz$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tanto 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_1$
+\end_layout
+
+\end_inset
+
+ como 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_2$
+\end_layout
+
+\end_inset
+
+ fueron medidas a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-3.6dB$
+\end_layout
+
+\end_inset
+
+, dado que se consideraron a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-3dB$
+\end_layout
+
+\end_inset
+
+ respecto de la ganancia máxima.
+ Luego, se puede obtener el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+ mediante:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Q = 
+\backslash
+frac{
+\backslash
+omega_0}{
+\backslash
+Delta_{
+\backslash
+omega}} = 2.39$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rechaza Banda
+\end_layout
+
+\begin_layout Standard
+Para obtener el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+ en forma empírica, se midió:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f_0 
+\backslash
+approx 50.35KHz$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$f_1 = 49.3KHz 
+\backslash
+hspace{2cm} f_2 = 51.9KHz$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cuando la fase entre las señales de entrada y salida es de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$-45^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$45^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+ respectivamente.
+ Aplicando la misma ecuación que con el pasa banda, se obtiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$Q = 
+\backslash
+frac{
+\backslash
+omega_0}{
+\backslash
+Delta_{
+\backslash
+omega}} = 19.4$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Obteniendo un error muy apreciable respecto del teórico, dado que el circuito
+ práctico no se comporta como ideal, alterando el comportamiento de notch
+ generando que la atenuación en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+omega_0$
+\end_layout
+
+\end_inset
+
+ no sea infinita sino que toma un valor que puede ser mensurado.
+\end_layout
+
+\begin_layout Subsection
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Dado que en forma teórica, el valor del factor de selectividad es el mismo
+ para cualquiera de las cuatro configuraciones (pasa altos, pasa bajos,
+ pasabanda y rechaza banda), no todas son adecuadas para medir dicho factor
+ empíricamente, sino que la que que menor error produjo fue la configuración
+ pasa altos, aunque se obtiene un resultado acertado también con el pasabanda.
+\end_layout
+
+\end_body
+\end_document
