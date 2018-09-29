@@ -86,24 +86,31 @@ Circuitos de segundo orden
 \begin_layout Standard
 En este ejercicio se analizará el comportamiento de 3 circuitos de segundo
  orden RLC diferentes, se estudiarán tanto su respuesta en frecuencia como
- su respuesta al escalón, teorica y experimentalmente.
+ su respuesta al escalón, teorica y experimental.
 \end_layout
 
 \begin_layout Subsection
-Función transferencia 
+LCR
 \end_layout
 
 \begin_layout Subsubsection
-LCR
+Función transferencia 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename LCR.png
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -139,96 +146,12 @@ H(s)=\frac{sCR}{s^{2}LC+sRC+1}
 
 \end_layout
 
-\begin_layout Subsubsection
-RLC
-\end_layout
-
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito RLC
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Realizando el divisor de tensión, se obtiene la función transferencia:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-H(s)=\frac{s^{2}CL+1}{s^{2}LC+sRC+1}
-\end{equation}
-
-\end_inset
-
-
+La cual se corresponde con un filtro pasabandas.
 \end_layout
 
 \begin_layout Subsubsection
-RCL
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Circuito RCL
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Realizando el divisor de tensión, se obtiene la función transferencia:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-H(s)=\frac{s^{2}CL}{s^{2}LC+sRC+1}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
 Respuesta al escalón
-\end_layout
-
-\begin_layout Subsubsection
-LCR
 \end_layout
 
 \begin_layout Standard
@@ -288,15 +211,195 @@ X(s)=\mathscr{L}\left\{ \,u(t)\,\right\} (s)=\frac{1}{s}
 
 \end_layout
 
+\begin_layout Subsubsection
+Resultados Obtenidos
+\end_layout
+
 \begin_layout Standard
-\begin_inset Formula $\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt{C}\,L}\right)\,\mathrm{e}^{-\frac{R\,t}{2\,L}}}{\sqrt{4\,L-C\,R^{2}}}$
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode mag 4a.png
+	scale 25
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsubsection
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode pha 4a.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon 4a.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 RLC
+\end_layout
+
+\begin_layout Subsubsection
+Función transferencia 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename RLC.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito RLC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{s^{2}CL+1}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La cual se corresponde con un filtro notch.
+\end_layout
+
+\begin_layout Subsubsection
+Respuesta al escalón
 \end_layout
 
 \begin_layout Standard
@@ -315,7 +418,187 @@ y(t)=1-\frac{2\,\sqrt{C}\,R\,\sin\!\left(\frac{t\,\sqrt{4\,L-C\,R^{2}}}{2\,\sqrt
 \end_layout
 
 \begin_layout Subsubsection
+Resultados Obtenidos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode mad 4b.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode pha 4b.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon 4b.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 RCL
+\end_layout
+
+\begin_layout Subsubsection
+Función transferencia 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename RCL.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito RCL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Realizando el divisor de tensión, se obtiene la función transferencia:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H(s)=\frac{s^{2}CL}{s^{2}LC+sRC+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La cual se corresponde con un filtro pasa altos.
+\end_layout
+
+\begin_layout Subsubsection
+Respuesta al escalón
 \end_layout
 
 \begin_layout Standard
@@ -333,27 +616,189 @@ y(t)=\mathrm{e}^{-\frac{R\,t}{2\,L}}\,\left(\cosh\!\left(\frac{t\,\sqrt{\frac{C\
 
 \end_layout
 
+\begin_layout Subsubsection
+Resultados Obtenidos
+\end_layout
+
 \begin_layout Standard
-\begin_inset Formula $\mathrm{e}^{-\frac{R\,t}{2\,L}}\,\left(\cosh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)-\frac{\sqrt{C}\,R\,\sinh\!\left(\frac{t\,\sqrt{\frac{C\,R^{2}}{4}-L}}{\sqrt{C}\,L}\right)}{2\,\sqrt{\frac{C\,R^{2}}{4}-L}}\right)$
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode mag 4c.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename bode pha 4c.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Bode: magnitud y fase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon 4c.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Subsection
-Resultados obtenidos
+Conclusiones
 \end_layout
 
-\begin_layout Subsubsection
-LCR
+\begin_layout Standard
+Tanto la respuesta al escalón como los diagramas de bode medidos coinciden
+ bastante con los teóricos, esto se debe a que en este el circuito era sencillo
+ y no había muchos factores que influyan mucho.
 \end_layout
 
-\begin_layout Subsubsection
-RLC
+\begin_layout Standard
+En el caso del rechaza banda, se puede ver que en la frecuencia notch la
+ atenuación en mucho menor en el medido que en la del teórico, esto se debe
+ a la dificultad de medir la señal cuando la misma se atenúa por debajo
+ del nivel del ruido.
+ En el diagrama de fase teórico se observa un salto instantaneo de la fase
+ en la frecuencia de corte, que en el práctico, a pesar de tener una pendiente
+ alta, no se observa.
+ Esto se debe a las no idealidades de los componentes, además de que es
+ dificil de medir ya que la señal está muy atenuada.
 \end_layout
 
-\begin_layout Subsubsection
-RCL
+\begin_layout Standard
+En el caso de las respuestas al escalón, comparando ambas respuestas, se
+ puede notar que los picos de las curvas prácticas son menores que los de
+ las teóricas.
+ Esto es causa de que los componentes del RLC no son ideales, además de
+ las impedancias parásitas de los instrumentos que se utilizaron para medir.
+ 
+\end_layout
+
+\begin_layout Standard
+Para el pasabanda, la respuesta tiende a un valor final nulo, dado que considera
+ndo el escalón con ancho de banda muy grande, las frecuencias más altas
+ están en el impulso inicial, por lo que la respuesta que se obtiene es
+ casi nula, y a medida que se transita hacia el valor final, algunas frecuencias
+ pasan amplificadas, hasta llegar efectivamente al valor final constante,
+ que se puede considerar como de frecuencia cero, por lo que al final resulta
+ atenuada.
+ Otra forma de verlo, es que en el instante inicial el capacitor actúa como
+ un cortocircuito y la bobina como un circuito abierto, y luego del transitorio
+ el capacitor pasa a ser un circuito abierto y la bobina un cable, y durante
+ el transitorio es cuando pasa corriente hacia la resistencia a la salida.
+\end_layout
+
+\begin_layout Standard
+Para el rechaza banda, en el valor final del escalón cuando se estabilza
+ el circuito la salida tiene a un valor constante, dado que es muy baja
+ frecuencia, por lo que el filtro la deja pasar, y durante el transitorio
+ se responde ante el ancho de banda alto del escalón, donde algunas frecuencias
+ se atenúan al pasar por la zona de notch, y otras se amplifican.
+\end_layout
+
+\begin_layout Standard
+En el pasa altos, la respuesta final tiende a cero, dado que la tensión
+ constante siendo frecuencia nula es atenuada, mientras que las altas que
+ aparecen durante el impulso del escalón si pasan.
 \end_layout
 
 \end_body

@@ -160,7 +160,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c30.png
 	display false
-	scale 30
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -200,7 +200,7 @@ reference "fig:Detalle-de-la"
  la fuente.
  El aumento de la tensión está acompañado por la presencia de picos.
  Si bien se ve que aumenta la tensión promedio, se observa una oscilación
- debido a la señal cuadrada que hace que el transistor permita o no el paso
+ debida a la señal cuadrada que hace que el transistor permita o no el paso
  de corriente, según si se encuentra en la parte alta o baja de dicha señal.
 \end_layout
 
@@ -216,7 +216,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c31.png
 	display false
-	scale 45
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -253,51 +253,7 @@ Detalle de la respuesta del circuito al encendido de la fuente, en modo
 \end_layout
 
 \begin_layout Standard
-Por otro lado, 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fotos BIEN/tp3cnew.png
-	scale 30
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Respuesta del circuito al encendido de la fuente, en modo Single.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Por otra parte, en la figura 
+En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Respuesta-del-circuito-1"
@@ -329,7 +285,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c35.png
 	display false
-	scale 45
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -372,6 +328,7 @@ status open
 \begin_inset Graphics
 	filename fotos BIEN/tp3_c37.png
 	display false
+	scale 30
 	rotateOrigin center
 
 \end_inset
@@ -404,6 +361,60 @@ Detalle de la respuesta del circuito al apagado de la fuente, en modo Roll.
 \end_layout
 
 \begin_layout Standard
+Por otro lado, en las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito-2"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-del-circuito-3"
+
+\end_inset
+
+ se puede ver la respuesta del circuito al encendido y al apagado de la
+ fuente, pero empleando el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Single$
+\end_layout
+
+\end_inset
+
+ del osciloscopio.
+ A diferencia de las respuestas observadas empleando el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Roll$
+\end_layout
+
+\end_inset
+
+ del osciloscopio, con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Single$
+\end_layout
+
+\end_inset
+
+ no se observa el efecto oscilante provocado por la señal cuadrada y su
+ efecto sobre el transistor para que conmute.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -413,8 +424,9 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename fotos BIEN/tp3cnew1.png
-	scale 30
+	filename fotos BIEN/tp3cnew.png
+	display false
+	scale 25
 	rotateOrigin center
 
 \end_inset
@@ -426,6 +438,55 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito-2"
+
+\end_inset
+
+Respuesta del circuito al encendido de la fuente, en modo Single.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fotos BIEN/tp3cnew1.png
+	display false
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-del-circuito-3"
+
+\end_inset
+
 Respuesta del circuito al apagado de la fuente, en modo Single.
 \end_layout
 

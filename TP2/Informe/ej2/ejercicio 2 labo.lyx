@@ -55,8 +55,8 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
+\leftmargin 2.25cm
+\topmargin 2.25cm
 \rightmargin 2cm
 \bottommargin 2cm
 \headheight 2cm
@@ -125,7 +125,7 @@ name "fig:RLC-serie"
 \end_layout
 
 \begin_layout Standard
-Para realizar las emdiciones se conectó un buffer entre el circuito y el
+Para realizar las mediciones se conectó un buffer entre el circuito y el
  generador.
  Un buffer es un amplificador de ganancia unitaria que tiene una impedancia
  de entrada extremadamente alta y una impedancia de salida muy pequeña.
@@ -251,7 +251,7 @@ Valores de L y C
 \end_layout
 
 \begin_layout Standard
-Además del coeficiente de amortiguamiento:
+Además del coeficiente de amortiguamiento, que es dato:
 \end_layout
 
 \begin_layout Standard
@@ -371,7 +371,7 @@ a:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}+1}
+H(s)=\frac{V_{out}}{V_{in}}=\frac{1}{s^{2}LC+sRC+1}=\frac{1}{10^{-11}s^{2}+1.2\,10^{-6}s+1}
 \end{equation}
 
 \end_inset
@@ -567,8 +567,8 @@ M_{p}=\frac{y_{max}-y_{rp}}{y_{rp}}=e^{-\frac{\pi\alpha}{\omega_{d}}}=0.545
 
 \begin_layout Enumerate
 Tiempo de establecimiento: valor de tiempo que el sistema necesita para
- alcanzar un error del 5% del valor de la salida en régimen permanente.
- 
+ alcanzar una amplitud del 5% del valor del sobrepico inicial.
+ (VEEEEEEEEEEEEEEER!!!!!!!!!!!!)
 \end_layout
 
 \begin_layout Standard
@@ -688,7 +688,7 @@ A continuación se muestra el contraste del diagrama de bode medido con respecto
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Box Frameless
@@ -748,7 +748,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -780,6 +780,39 @@ Diagrama de bode: magnitud y fase
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Puede verse que el diagrama de bode medido coincide con el teórico.
+ Además, a partir de dicho diagrama se puede decir que el circuito es un
+ filtro pasa bajos.
+ Para altas frecuencias, la fase que introduce cada polo se aproxima a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$90^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+, por lo que en total la fase de los dos polos del sistema suma 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$180^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -941,6 +974,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Medición-de-"
+
+\end_inset
+
 Medición de 
 \begin_inset Formula $V_{o}$
 \end_inset
@@ -959,11 +998,21 @@ Medición de
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Medición-de-"
 
-\color red
-ANALIZAR EN DOMINIO DEL TIEMPO Y FRECUENCIA
-\color inherit
- 
+\end_inset
+
+ se puede ver que a bajas frecuencias el circuito tiene un comportamiento
+ parecido a la señal cuadrada con la que se lo alimenta.
+ A medida que aumenta la frecuencia, se va perdiendo la similitud con la
+ señal cuadrada y la mayor diferencia se observa en la respuesta a los flancos
+ de la misma.
+ Este comportamiento se debe a que, al aumentar la frecuencia, se le da
+ menos tiempo al circuito para que se establezca luego del transitorio,
+ por lo que a mayor frecuencia cada vez se observa menos.
 \end_layout
 
 \begin_layout Subsection
@@ -1042,7 +1091,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1112,7 +1161,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1235,7 +1284,7 @@ En el siguiente gráfico se muestra la respuesta al escalón medida y la teóric
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1259,6 +1308,13 @@ Respuesta al escalón medida y teórica
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+A partir de las curvas obtenidas, puede comprobarse que el circuito pasó
+ a trabajar en régimen sobreamortiguado, dado que al cambiar el valor de
+ la resistencia, los polos fueron desplazados hacia el eje real, convirtiendolos
+ en reales y distintos (y negativos).
 \end_layout
 
 \begin_layout Subsection
@@ -1310,6 +1366,222 @@ p_{2}=-j\,31\,623\,000
 Se corresponde a un circuito sin amortiguamiento.
 \end_layout
 
+\begin_layout Standard
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{s}\rightarrow\infty
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{d}\simeq50KHz
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{p}=1
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+En los gráficos 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+ se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d3.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $52KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $1ms$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.94$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos sin buffer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d3 sin buffer.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Respuesta-al-escalón"
+
+\end_inset
+
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Frecuencia de oscilación del transitorio: 
+\begin_inset Formula $56KHz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $182\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.72$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En los gráficos de las figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón-1"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Respuesta-al-escalón"
+
+\end_inset
+
+, se observa que la respuesta al escalón medida no se comporta como la teórica.
+ Esto se debe a que en la teórica se considera que la resistencia es cero,
+ mientras que en la medición la resistencia no es realmente cero debido
+ a que tanto los instrumentos utilizados para medir como los componentes
+ del circuito en sí tienen resistencias.
+ Ambas respuestas oscilan al tratarse de un circuito subamortiguado, pero
+ el teórico muestra una oscilación perfecta mientras que la respuesta del
+ medido es amortiguada a medida que aumenta el tiempo.
+\end_layout
+
 \begin_layout Subsection
 Caso 
 \begin_inset Formula $d_{4}$
@@ -1344,7 +1616,7 @@ Despejando para R:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-R_{C}=2\sqrt{\frac{L}{C}}=632.455532\Omega
+R_{C}=2\sqrt{\frac{L}{C}}\simeq632.456\Omega
 \end{equation}
 
 \end_inset
@@ -1377,6 +1649,107 @@ p_{1}=-\,31\,623\,000
 p_{2}=-\,31\,623\,000
 \end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso el circuito no oscila, por lo tanto no hay 
+\begin_inset Formula $f_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Además, utilizando las mismas formulas que en la sección anterior:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{s}=46\mu s
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{p}=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Resultados obtenidos
+\end_layout
+
+\begin_layout Standard
+Para la medición se buscó experimentalmente el valor de la resistencia para
+ que el circuito sea criticamente amortiguado, este valor fue de 
+\begin_inset Formula $600\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico se muestra la respuesta al escalón medida y la teórica:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename escalon d4.png
+	scale 25
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Respuesta al escalón medida y teórica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los valores característicos medidos fueron:
+\end_layout
+
+\begin_layout Itemize
+Tiempo de establecimiento: 
+\begin_inset Formula $35\mu s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sobrepico: 
+\begin_inset Formula $0.01$
 \end_inset
 
 
