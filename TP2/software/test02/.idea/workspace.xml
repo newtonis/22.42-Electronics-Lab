@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32561893-8c61-4f71-a661-910ba718375d" name="Default Changelist" comment="" />
+    <list default="true" id="32561893-8c61-4f71-a661-910ba718375d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/test02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test02.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,21 +82,23 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-600390637">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auxiliar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
-              <folding>
-                <element signature="e#32#101#0" />
-                <element signature="e#216#344#0" />
-                <element signature="e#379#435#0" />
-                <element signature="e#467#665#0" />
-                <element signature="e#696#937#0" />
-              </folding>
+            <state relative-caret-position="612">
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -102,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="68">
               <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -114,25 +118,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="2210">
               <caret line="137" column="31" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="31" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <element signature="e#39#593#0" />
-                <element signature="e#1079#1482#0" />
-                <element signature="e#1523#1905#0" />
-                <element signature="e#1947#2335#0" />
-                <element signature="e#2379#2771#0" />
-                <element signature="e#2814#3241#0" />
-                <element signature="e#3687#3713#0" />
-                <element signature="e#3753#3806#0" />
-                <element signature="e#3846#4179#0" />
-                <element signature="e#3991#4036#0" />
-                <element signature="e#4077#4099#0" />
-                <element signature="e#4138#4179#0" />
-                <element signature="e#4409#4576#0" />
-                <element signature="e#4614#4821#0" />
-                <element signature="e#4857#5064#0" />
               </folding>
             </state>
           </provider>
@@ -214,6 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,12 +215,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/ariel/informesLabo/TP2/software/test02/test.kv" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../autobode" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -298,7 +287,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.10800843" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.10800843" />
       <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -350,39 +339,28 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test2.py" />
-    <entry file="file://$PROJECT_DIR$/manual.lyx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.kv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="150" column="37" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/manual.lyx" />
+    <entry file="file://$PROJECT_DIR$/test.kv" />
     <entry file="file://$PROJECT_DIR$/venv/graphics.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/auxiliar.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/osc.py">
+    <entry file="file://$PROJECT_DIR$/osc.py" />
+    <entry file="file://$PROJECT_DIR$/gen.py" />
+    <entry file="file://$PROJECT_DIR$/main.py" />
+    <entry file="file://$PROJECT_DIR$/bode.py" />
+    <entry file="file://$PROJECT_DIR$/auxiliar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="82" column="18" lean-forward="true" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="612">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="68">
           <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -392,56 +370,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="2210">
           <caret line="137" column="31" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="31" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <element signature="e#39#593#0" />
-            <element signature="e#1079#1482#0" />
-            <element signature="e#1523#1905#0" />
-            <element signature="e#1947#2335#0" />
-            <element signature="e#2379#2771#0" />
-            <element signature="e#2814#3241#0" />
-            <element signature="e#3687#3713#0" />
-            <element signature="e#3753#3806#0" />
-            <element signature="e#3846#4179#0" />
-            <element signature="e#3991#4036#0" />
-            <element signature="e#4077#4099#0" />
-            <element signature="e#4138#4179#0" />
-            <element signature="e#4409#4576#0" />
-            <element signature="e#4614#4821#0" />
-            <element signature="e#4857#5064#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#147#158#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="58" column="19" lean-forward="true" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auxiliar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#32#101#0" />
-            <element signature="e#216#344#0" />
-            <element signature="e#379#435#0" />
-            <element signature="e#467#665#0" />
-            <element signature="e#696#937#0" />
           </folding>
         </state>
       </provider>

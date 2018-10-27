@@ -1,7 +1,7 @@
 import visa
 import time
+from config import *
 
-rm = visa.ResourceManager()
 default_target = 'USB0::0x0957::0x1725::MY49110442::INSTR'
 SQUARES = 4
 THRESHOLD = 3
