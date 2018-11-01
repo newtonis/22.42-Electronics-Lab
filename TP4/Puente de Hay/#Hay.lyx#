@@ -127,17 +127,56 @@ por un lado y respecto
 \end_inset
 
  por otro.
- Siendo 
-\begin_inset Formula $\Delta V{}_{d}$
+ 
+\end_layout
+
+\begin_layout Standard
+Siendo 
+\begin_inset Formula $\Delta Vd_{1}$
 \end_inset
 
- la sensibilidad
+ la sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+,
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siendo 
+\begin_inset Formula $\Delta Vd_{3}$
+\end_inset
+
+ la sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vd+\Delta Vd_{3}=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
 \]
 
 \end_inset
@@ -185,7 +224,7 @@ Se prueban varios valores para
 \begin_inset Formula $R_{1}$
 \end_inset
 
- en el gráfico (PONER REFERENCIA) y la sensibilidad de 
+ en el gráfico y la sensibilidad de 
 \begin_inset Formula $V_{d}$
 \end_inset
 
@@ -194,6 +233,103 @@ Se prueban varios valores para
 \end_inset
 
  en el gráfico (PONER REFERENCIA).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graficos/Sensibilidad_Vd_Z1.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sensibilidad-de-"
+
+\end_inset
+
+Sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graficos/Sensibilidad_Vd_Z3.png
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sensibilidad-de--1"
+
+\end_inset
+
+Sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -904,7 +1040,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,01 (7)
 \end_layout
 
 \end_inset
@@ -922,7 +1058,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15,0
 \end_layout
 
 \end_inset
