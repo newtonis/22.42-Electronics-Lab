@@ -81,56 +81,258 @@ Puente de Hay (L)
 \end_layout
 
 \begin_layout Standard
-!!!!!!!!!!!!!!! foto del puente
+En esta sección se implementa un puente de Hay para la medición de inductancias
+ cuyos parámetros se encuentran en los siguientes rangos:
 \end_layout
 
 \begin_layout Standard
-y 8,1mH, con un un Q entre 
-\begin_inset Formula $0,25Q_{N}$
-\end_inset
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
- y 
-\begin_inset Formula $Q_{N}$
-\end_inset
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
 
-.
- Para eso, se toman como variables de ajuste a 
-\begin_inset Formula $R_{1}$
-\end_inset
-
-y a 
-\begin_inset Formula $R_{3}$
-\end_inset
-
-; dejando 
-\begin_inset Formula $C_{3}$
-\end_inset
-
- y 
-\begin_inset Formula $R_{4}$
-\end_inset
-
- fijas.
+\begin_layout Plain Layout
+Inductancia
 \end_layout
 
-\begin_layout Subsection*
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[1.9mH - 8.1mH]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+12.5
+\end_layout
+
+\end_inset
+
+ - 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+50
+\end_layout
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Intervalo de valores medibles por el puente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $V_{d}$
+Para el diseño, se toman como variables de ajuste a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
 \end_inset
 
+ y a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+, dejando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_4$
+\end_layout
+
+\end_inset
+
+ fijos.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La expresión de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ en función de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_g$
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+Vd=\frac{Z_{3}Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se busca ahora analizar las variaciones de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+
+\lang spanish
  frente a cambios en las variables de ajuste.
- Para eso, se analiza dicha sensibilidad respecto de 
-\begin_inset Formula $R_{1}$
+ Para eso, se analiza la sensibilidad de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
 \end_inset
 
-por un lado y respecto 
-\begin_inset Formula $R_{3}$
+ respecto de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
 \end_inset
 
- por otro.
+ por un lado y respecto 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+ por otro (que son las variables).
  
 \end_layout
 
@@ -140,20 +342,49 @@ Siendo
 \end_inset
 
  la sensibilidad de 
-\begin_inset Formula $V_{d}$
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
 \end_inset
 
+
+\lang spanish
  respecto de 
-\begin_inset Formula $R_{1}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
 \end_inset
 
-,
+:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
 Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}Z_{1}}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg+\frac{Z_{4}\Delta Z_{1}Vg}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}
 \]
 
 \end_inset
@@ -746,7 +977,7 @@ phi$
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+L Mínima
 \end_layout
 
 \end_inset
@@ -892,7 +1123,7 @@ phi$
 \begin_inset Text
 
 \begin_layout Plain Layout
-L media
+L Media
 \end_layout
 
 \end_inset
@@ -1038,7 +1269,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+L Máxima
 \end_layout
 
 \end_inset
@@ -1184,7 +1415,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-L fuera de rango
+L Fuera de rango
 \end_layout
 
 \end_inset
