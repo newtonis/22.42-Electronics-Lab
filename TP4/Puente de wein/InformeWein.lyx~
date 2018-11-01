@@ -1,0 +1,1421 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Puente de Wein
+\end_layout
+
+\begin_layout Standard
+Se pidió diseñar un puente de wein que dado el número de grupo (6 en nuestro
+ caso) pueda medir entre un rango de frecuencias determinado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagen.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Circuito del Puente de Wein
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El rango pedido es de 5K a 50KHz.
+\end_layout
+
+\begin_layout Standard
+Si llamamos 
+\begin_inset Formula $Vd=V^{+}-V^{-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Vd}{Vg}=-\frac{R_{4}(C_{1}R_{1}s+C_{3}R_{3}s+C_{1}C_{3}R_{1}R_{3}s^{2}+1)-C_{1}R_{2}R_{3}s}{(R_{2}+R_{4})(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=-\frac{R_{4}}{R_{2}+R_{4}}\frac{C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1}{(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si llamamos 
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{C_{1}C_{3}R_{1}R_{3}}}$
+\end_inset
+
+ y k = 
+\begin_inset Formula $\frac{R_{4}}{R_{2}+R_{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1\right]}{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si realizaramos el diagrama de bode asintótico veríamos que el único punto
+ de interés es 
+\end_layout
+
+\begin_layout Standard
+s= j
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s=j\omega_{0})=-k\frac{\left[C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}}\right]}{\left[C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s=j\omega_{0})=0\iff\frac{R_{1}}{R_{3}}+\frac{C_{3}}{C_{1}}=\frac{R_{2}}{R_{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ergo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|H(s=j\omega_{0})|_{dB}\rightarrow-\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y se determina que es un filtro notch rechaza banda.
+\end_layout
+
+\begin_layout Standard
+La frecuencia para la cual Vd se anula es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{0}=\frac{1}{2\pi\sqrt{C_{1}C_{3}R_{1}R_{3}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En general se utiliza R
+\begin_inset Formula $_{1}$
+\end_inset
+
+=R
+\begin_inset Formula $_{3}$
+\end_inset
+
+=R y C
+\begin_inset Formula $_{1}$
+\end_inset
+
+=C
+\begin_inset Formula $_{3}$
+\end_inset
+
+=C y queda :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{0}=\frac{1}{2\pi CR}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para el diseño hacemos 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+C
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+=C
+\begin_inset Formula $_{1}=C_{3}$
+\end_inset
+
+
+\begin_inset Formula $=3.3nf$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Nos deja con 
+\begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
+\end_inset
+
+ y por ende tomamos un valor de 
+\begin_inset Formula $R_{1}=10K\Omega$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{2}=20K\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para cubrir el rango de medición R debe variar entre 964
+\begin_inset Formula $\Omega$
+\end_inset
+
+y 9640
+\begin_inset Formula $\Omega$
+\end_inset
+
+ por lo cual se colocan presets de 10K
+\begin_inset Formula $\Omega$
+\end_inset
+
+ para R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ y R
+\begin_inset Formula $_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Análisis de sensibilidades
+\end_layout
+
+\begin_layout Subsubsection*
+Variación de R3
+\end_layout
+
+\begin_layout Standard
+Si Vd es nuestra variable de interés, entonces debemos calcular la sensibilidad
+ de esa variable respecto del cambio de otra.
+ 
+\end_layout
+
+\begin_layout Standard
+Para ello la cuenta a realizar es la siguiente:
+\end_layout
+
+\begin_layout Standard
+Como se sabe, en el equilibrio 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y ya que sabemos que 
+\begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
+\end_inset
+
+ entonces el factor cabeza de puente A = 
+\begin_inset Formula $\frac{Z_{4}}{Z_{2}}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En un entorno cercano al equilibrio Vd = 0 y 
+\begin_inset Formula $\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}$
+\end_inset
+
+, luego:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta Vd}{Vg}=\frac{A}{(1+A)^{2}}\frac{\Delta Z_{3}}{Z_{3}}=\frac{2}{9}\frac{\Delta Z_{3}}{Z_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si llamamos 
+\begin_inset Formula $\delta_{Z3}=\frac{\Delta Z_{3}}{Z_{3}}$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{2}{9}Vg\delta_{Z3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo cual como la sensibilidad es proporcional a Vg en todo el rango de
+ medición sería recomendable tomar Vg lo más chica posible para las mediciones.
+\end_layout
+
+\begin_layout Standard
+Para el ajuste de cada variable, se puede ver a Z
+\begin_inset Formula $_{3}$
+\end_inset
+
+=R
+\begin_inset Formula $_{3}$
+\end_inset
+
++j
+\begin_inset Formula $X_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que si variamos R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ y tomamos modulo nos queda que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\delta_{R3}|=\frac{1}{\sqrt{1+(\frac{X_{3}}{R_{3}})^{2}}}\frac{\Delta R_{3}}{R_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se puede ver que si X
+\begin_inset Formula $_{3}$
+\end_inset
+
+ es un capacitor mientras la frecuencia sea baja, Vd va a ser menos sensible
+ a los cambios de R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ y se puede ver también que si aumenta la frecuencia entonces los cambios
+ con respecto a R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ empiezan a pesar mucho más.
+\end_layout
+
+\begin_layout Subsubsection*
+Variación de R1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el equilibrio: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{-Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{-\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula 
+\[
+\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces si A =
+\begin_inset Formula $\frac{Z_{2}}{Z_{4}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=-\frac{2}{9}\frac{\Delta Z_{1}}{Z_{1}}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y si 
+\begin_inset Formula $\delta_{Z1}=\frac{\Delta Z_{1}}{Z_{1}}$
+\end_inset
+
+ entonces al variar R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ análogamente se obtiene que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\delta_{R1}|=\frac{1}{\sqrt{1+(\frac{X_{1}}{R_{1}})^{2}}}\frac{\Delta R_{1}}{R_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se concluye que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\delta_{R1}|=|\delta_{R3}|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ESTOESTAMAL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para ver cómo influye esto en nuestro rango de medición se armó una tabla
+ con distintos valores:
+\end_layout
+
+\begin_layout Section*
+Mediciones
+\end_layout
+
+\begin_layout Standard
+Para las mediciones se utilizó el amplificador de instrumentación ya que
+ este nos brinda la posibilidad de quitar el ruido que tienen en común las
+ señales V
+\begin_inset Formula $^{+}$
+\end_inset
+
+y V
+\begin_inset Formula $^{-}$
+\end_inset
+
+.
+ Además el mismo amplifica la tensión Vd (lo cual nos da más precisión ya
+ que queremos medir cuando se anula) y por último medimos esa tensión diferencia
+l de salida en el osciloscopio.
+\end_layout
+
+\begin_layout Standard
+Fijamos C = 
+\begin_inset Formula $3.3nf$
+\end_inset
+
+ y tanto R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ como R
+\begin_inset Formula $_{3}$
+\end_inset
+
+se varían de forma tal que se mantenga la igualdad entre ellas\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frecuencia Medida (Hz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R1(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R3(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Frecuencia calculada (Hz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Error (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4620 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9650 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9640 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5000.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.61
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9280
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4830
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4830
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9985.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3220
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3220
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14977.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.53
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18800
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2410
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2410
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20011.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23600
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1920 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1920
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+29918,96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4,41
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+33500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1373
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1374
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+35113,78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4,60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+38400
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1203
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1203
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+40090,42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+4,22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+43300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1072
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+1075
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+44926,70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+3,62
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+964
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+965
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+50003,92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de valores medidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se mostró antes la transferencia 
+\begin_inset Formula $\frac{Vd}{V_{g}}$
+\end_inset
+
+ resulta en un notch rechaza banda en una sola frecuencia, por lo cual no
+ es necesario desarrollar un método mejor de medición.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
