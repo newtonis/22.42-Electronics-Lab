@@ -75,7 +75,8 @@ Puente de Hay
 \end_layout
 
 \begin_layout Standard
-!!!!!!!!!!!!!!! foto del puente
+!!!!!!!!!!!!!!! foto del puente ACAAAAAAAAAAAAAAAAAA DE ARIIIIII!!!!!!!!!!!!!!!!
+!!!!!!!!!!
 \end_layout
 
 \begin_layout Standard
@@ -205,7 +206,7 @@ Entonces
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd_{1}=-\frac{Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg=-\frac{\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(Z_{2}+Z_{4})}Vg
+\Delta Vd_{1}=-\frac{Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg=-\frac{\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
 \]
 
 \end_inset
@@ -214,7 +215,42 @@ Entonces
 \end_layout
 
 \begin_layout Standard
-Siendo 
+Llamando 
+\begin_inset Formula $A=\frac{Z_{2}}{Z_{4}}$
+\end_inset
+
+ y dado que en el equilibrio del puente 
+\begin_inset Formula $Z_{3}Z_{2}=Z_{4}Z_{1}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd_{1}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{1}}{Z_{1}}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tomamos 
+\begin_inset Formula $\frac{\Delta Z_{1}}{Z_{1}}=\frac{\Delta R{}_{1}}{R_{1}}=1\%$
+\end_inset
+
+ debido a las 25 vueltas del preset empleado para variar 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Analogamente, siendo 
 \begin_inset Formula $\Delta Vd_{3}$
 \end_inset
 
@@ -232,7 +268,7 @@ Siendo
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Vd+\Delta Vd_{3}=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\Delta Vd_{3}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{3}}{Z_{3}}Vg
 \]
 
 \end_inset
