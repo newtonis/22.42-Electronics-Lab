@@ -26,8 +26,8 @@ R1 = [r1_min, r1_max, 1]
 R3 = [r3_min, r3_max, 1]
 
 print("Rango: ")
-print("R1 = [",R1[0],",",R1[1],"]")
-print("R3 = [",R3[0],",",R3[1],"]")
+print("R1 = [", R1[0], ",", R1[1], "]")
+print("R3 = [", R3[0], ",", R3[1], "]")
 
 s = [0, 5]
 
@@ -53,7 +53,6 @@ def calcular_delta_vd_z3_r1r3(r1, r3):
     l = c3 * r1 * r4
     rx = r1 * r4 / r3
 
-
     z1 = r1
     z2 = (rx * 1j * w * l) / (rx + 1j * w * l)
     z3 = 1 / (1j * w * c3) + r3
@@ -71,6 +70,11 @@ r3 = np.arange(R3[0], R3[1], R1[2])
 
 r1, r3 = np.meshgrid(r1, r3)
 delta_vd = calcular_delta_vd_z1_r1r3(r1, r3)
+
+ax.set_title('Sensibilidad de Vd con respecto a Z_1')
+ax.set_xlabel('R1')
+ax.set_ylabel('R3')
+ax.set_zlabel('$S_{Vd}^{Z_1}$')
 
 surf = ax.plot_surface(r1, r3, delta_vd, cmap=cm.coolwarm,
                        linewidth=0, antialiased=False)
@@ -102,6 +106,11 @@ ax.zaxis.set_major_locator(LinearLocator(10))
 ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
 
 fig.colorbar(surf, shrink=0.5, aspect=5)
+
+ax.set_title('Sensibilidad de Vd con respecto a Z_3')
+ax.set_xlabel('R1')
+ax.set_ylabel('R3')
+ax.set_zlabel('$S_{Vd}^{Z_3}$')
 
 plt.show()
 
