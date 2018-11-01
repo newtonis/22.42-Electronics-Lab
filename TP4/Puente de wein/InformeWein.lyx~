@@ -124,15 +124,114 @@ El rango pedido es de 5K a 50KHz.
 \end_layout
 
 \begin_layout Standard
-Se midieron las siguientes frecuencias.
+Si llamamos 
+\begin_inset Formula $Vd=V^{+}-V^{-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Vd}{Vg}=-\frac{R_{4}(C_{1}R_{1}s+C_{3}R_{3}s+C_{1}C_{3}R_{1}R_{3}s^{2}+1)-C_{1}R_{2}R_{3}s}{(R_{2}+R_{4})(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=-\frac{R_{4}}{R_{2}+R_{4}}\frac{C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1}{(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Si llamamos 
-\begin_inset Formula $V_{D}=V^{+}-V^{-}$
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{C_{1}C_{3}R_{1}R_{3}}}$
 \end_inset
 
-, la frecuencia para la cual Vd se anula es 
+ y k = 
+\begin_inset Formula $\frac{R_{4}}{R_{2}+R_{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1\right]}{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si realizaramos el diagrama de bode asintótico veríamos que el único punto
+ de interés es 
+\end_layout
+
+\begin_layout Standard
+s= j
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s=j\omega_{0})=-k\frac{\left[C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}}\right]}{\left[C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H(s=j\omega_{0})=0\iff\frac{R_{1}}{R_{3}}+\frac{C_{3}}{C_{1}}=\frac{R_{2}}{R_{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ergo
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|H(s=j\omega_{0})|_{dB}\rightarrow-\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y se determina que es un filtro notch rechaza banda.
+\end_layout
+
+\begin_layout Standard
+La frecuencia para la cual Vd se anula es:
 \end_layout
 
 \begin_layout Standard
@@ -147,6 +246,396 @@ f_{0}=\frac{1}{2\pi\sqrt{C_{1}C_{3}R_{1}R_{3}}}
 \end_layout
 
 \begin_layout Standard
+En general se utiliza R
+\begin_inset Formula $_{1}$
+\end_inset
+
+=R
+\begin_inset Formula $_{3}$
+\end_inset
+
+=R y C
+\begin_inset Formula $_{1}$
+\end_inset
+
+=C
+\begin_inset Formula $_{3}$
+\end_inset
+
+=C y queda :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{0}=\frac{1}{2\pi CR}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para el diseño hacemos 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+C
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+=C
+\begin_inset Formula $_{1}=C_{3}$
+\end_inset
+
+
+\begin_inset Formula $=3.3nf$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Nos deja con 
+\begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
+\end_inset
+
+ y por ende tomamos un valor de 
+\begin_inset Formula $R_{1}=10K\Omega$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{2}=20K\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para cubrir el rango de medición R debe variar entre 964
+\begin_inset Formula $\Omega$
+\end_inset
+
+y 9640
+\begin_inset Formula $\Omega$
+\end_inset
+
+ por lo cual se colocan presets de 10K
+\begin_inset Formula $\Omega$
+\end_inset
+
+ para R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ y R
+\begin_inset Formula $_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Análisis de sensibilidades
+\end_layout
+
+\begin_layout Subsubsection*
+Variación de R3
+\end_layout
+
+\begin_layout Standard
+Si Vd es nuestra variable de interés, entonces debemos calcular la sensibilidad
+ de esa variable respecto del cambio de otra.
+ 
+\end_layout
+
+\begin_layout Standard
+Para ello la cuenta a realizar es la siguiente:
+\end_layout
+
+\begin_layout Standard
+Como se sabe, en el equilibrio 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y ya que sabemos que 
+\begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
+\end_inset
+
+ entonces el factor cabeza de puente A = 
+\begin_inset Formula $\frac{Z_{4}}{Z_{2}}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En un entorno cercano al equilibrio Vd = 0 y 
+\begin_inset Formula $\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}$
+\end_inset
+
+, luego:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta Vd}{Vg}=\frac{A}{(1+A)^{2}}\frac{\Delta Z_{3}}{Z_{3}}=\frac{2}{9}\frac{\Delta Z_{3}}{Z_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si llamamos 
+\begin_inset Formula $\delta_{Z3}=\frac{\Delta Z_{3}}{Z_{3}}$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{2}{9}Vg\delta_{Z3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo cual como la sensibilidad es proporcional a Vg en todo el rango de
+ medición sería recomendable tomar Vg lo más chica posible para las mediciones.
+\end_layout
+
+\begin_layout Standard
+Para el ajuste de cada variable, se puede ver a Z
+\begin_inset Formula $_{3}$
+\end_inset
+
+=R
+\begin_inset Formula $_{3}$
+\end_inset
+
++j
+\begin_inset Formula $X_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo que si variamos R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ y tomamos modulo nos queda que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\delta_{R3}|=\frac{1}{\sqrt{1+(\frac{X_{3}}{R_{3}})^{2}}}\frac{\Delta R_{3}}{R_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se puede ver que si X
+\begin_inset Formula $_{3}$
+\end_inset
+
+ es un capacitor mientras la frecuencia sea baja, Vd va a ser menos sensible
+ a los cambios de R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ y se puede ver también que si aumenta la frecuencia entonces los cambios
+ con respecto a R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ empiezan a pesar mucho más.
+\end_layout
+
+\begin_layout Subsubsection*
+Variación de R1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el equilibrio: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{-Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{-\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como 
+\begin_inset Formula 
+\[
+\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Entonces si A =
+\begin_inset Formula $\frac{Z_{2}}{Z_{4}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd=-\frac{2}{9}\frac{\Delta Z_{1}}{Z_{1}}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y si 
+\begin_inset Formula $\delta_{Z1}=\frac{\Delta Z_{1}}{Z_{1}}$
+\end_inset
+
+ entonces al variar R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ análogamente se obtiene que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\delta_{R1}|=\frac{1}{\sqrt{1+(\frac{X_{1}}{R_{1}})^{2}}}\frac{\Delta R_{1}}{R_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+y se concluye que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|\delta_{R1}|=|\delta_{R3}|
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+ESTOESTAMAL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para ver cómo influye esto en nuestro rango de medición se armó una tabla
+ con distintos valores:
+\end_layout
+
+\begin_layout Section*
+Mediciones
+\end_layout
+
+\begin_layout Standard
 Para las mediciones se utilizó el amplificador de instrumentación ya que
  este nos brinda la posibilidad de quitar el ruido que tienen en común las
  señales V
@@ -157,14 +646,26 @@ y V
 \begin_inset Formula $^{-}$
 \end_inset
 
-, lo cual nos da más precisión y medimos la salida en el osciloscopio.
+.
+ Además el mismo amplifica la tensión Vd (lo cual nos da más precisión ya
+ que queremos medir cuando se anula) y por último medimos esa tensión diferencia
+l de salida en el osciloscopio.
 \end_layout
 
 \begin_layout Standard
-Para las cuentas en la siguiente tabla asumimos que 
-\begin_inset Formula $\sqrt{C_{1}C_{3}}=C=3.3nf$
+Fijamos C = 
+\begin_inset Formula $3.3nf$
 \end_inset
 
+ y tanto R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ como R
+\begin_inset Formula $_{3}$
+\end_inset
+
+se varían de forma tal que se mantenga la igualdad entre ellas\SpecialChar endofsentence
 
 \end_layout
 
@@ -899,6 +1400,20 @@ Tabla de valores medidos
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+Como se mostró antes la transferencia 
+\begin_inset Formula $\frac{Vd}{V_{g}}$
+\end_inset
+
+ resulta en un notch rechaza banda en una sola frecuencia, por lo cual no
+ es necesario desarrollar un método mejor de medición.
+ 
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
