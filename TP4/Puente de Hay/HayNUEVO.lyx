@@ -238,7 +238,7 @@ Llamando
 \end_layout
 
 \begin_layout Standard
-Dado que 
+Tomamos 
 \begin_inset Formula $\frac{\Delta Z_{1}}{Z_{1}}=\frac{\Delta R{}_{1}}{R_{1}}=1\%$
 \end_inset
 
@@ -246,11 +246,11 @@ Dado que
 \begin_inset Formula $R_{1}$
 \end_inset
 
-,
+.
 \end_layout
 
 \begin_layout Standard
-Siendo 
+Analogamente, siendo 
 \begin_inset Formula $\Delta Vd_{3}$
 \end_inset
 
@@ -268,12 +268,20 @@ Siendo
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Vd+\Delta Vd_{3}=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\Delta Vd_{3}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{3}}{Z_{3}}Vg
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En este caso, 
+\begin_inset Formula $ $
+\end_inset
+
+ SEGUIR ACAAAAAAAAAAAA
 \end_layout
 
 \begin_layout Standard
@@ -339,6 +347,55 @@ reference "fig:Sensibilidad-de--1"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename graficos/Sensibilidad_Vd_Z1.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
