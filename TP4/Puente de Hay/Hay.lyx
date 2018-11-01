@@ -71,65 +71,42 @@
 \begin_body
 
 \begin_layout Section*
-Métodos de medición de equilibrio de puentes
-\end_layout
-
-\begin_layout Subsection*
-Osciloscopio
+Puente de Hay
 \end_layout
 
 \begin_layout Standard
-Para buscar que 
-\begin_inset Formula $V_{d}=0$
+!!!!!!!!!!!!!!! foto del puente
+\end_layout
+
+\begin_layout Standard
+Se diseñó un puente que midiera, en el equilibrio, inductancias entre 1,9mH
+ y 8,1mH, con un un Q entre 
+\begin_inset Formula $0,25Q_{N}$
 \end_inset
 
-, se hace la diferencia 
-\begin_inset Formula $V_{a}-V_{b}$
+ y 
+\begin_inset Formula $Q_{N}$
 \end_inset
 
- usando Math en el osciloscopio.
- Se busca que esta diferencia sea cero para que el puente este en equilibrio.
- El inconveniente con este método es que cuando la diferencia entre las
- tensiones es muy chica, se encuentra debajo del piso de ruido, por lo que
- no se puede distinguir correctamente cuándo la diferencia es realmente
- cero.
-\end_layout
+.
+ Para eso, se tomaron como variables de ajuste a 
+\begin_inset Formula $R_{1}$
+\end_inset
 
-\begin_layout Subsection*
-Multímetro de precisión
-\end_layout
+y a 
+\begin_inset Formula $R_{3}$
+\end_inset
 
-\begin_layout Standard
-El generador tiene armonicos y no se llega al 0, sino que a un minimo.
-\end_layout
+; dejando 
+\begin_inset Formula $C_{3}$
+\end_inset
 
-\begin_layout Standard
-!!!!!!!!!!!!! COMPLETAR
-\end_layout
+ y 
+\begin_inset Formula $R_{4}$
+\end_inset
 
-\begin_layout Subsection*
-Amplificador de instrumentación
-\end_layout
-
-\begin_layout Standard
-El amplificador de instrumentación tiene la ventaja de eliminar el modo
- común de la entrada.
- El modo común se corresponde con el ruido que hay en ambas entradas y el
- CMRR del amplificador determina en cuánto este se atenúa, cuanto mas grande,
- mejores resultados se obtienen.
-\end_layout
-
-\begin_layout Standard
-Permite disminuir el ruido presente en los valores medidos de tensión.
-\end_layout
-
-\begin_layout Standard
-!!!!!!!!!!!COMPLETAR
-\end_layout
-
-\begin_layout Standard
-Lo mejor para medir el equilibrio de un puente es emplear el multímetro
- de banco, conectando también un amplificador de instrumentación.
+ fijas.
+ 
 \end_layout
 
 \end_body
