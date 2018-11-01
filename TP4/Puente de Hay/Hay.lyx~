@@ -106,6 +106,29 @@ y a
 \end_inset
 
  fijas.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Análisis de Sensibilidades
+\end_layout
+
+\begin_layout Standard
+Es necesario ver cómo y cuánto varía la tensión 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ frente a cambios en las variables de ajuste.
+ Para eso, se analiza dicha sensibilidad respecto de cada una de las variables
+ de ajuste 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+por un lado y respecto 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ por otr.
 \end_layout
 
 \end_body

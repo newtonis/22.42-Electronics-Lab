@@ -106,7 +106,75 @@ y a
 \end_inset
 
  fijas.
- 
+\end_layout
+
+\begin_layout Subsection*
+Análisis de Sensibilidades
+\end_layout
+
+\begin_layout Standard
+Es necesario ver cómo y cuánto varía la tensión 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ frente a cambios en las variables de ajuste.
+ Para eso, se analiza dicha sensibilidad respecto de 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+por un lado y respecto 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ por otro.
+ Se prueban varios valores para 
+\begin_inset Formula $C_{3}$
+\end_inset
+
+ y para 
+\begin_inset Formula $R_{4}$
+\end_inset
+
+ de manera tal que la variación de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ sea similar tanto al variar 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ como 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+; y que dicha variación tenga un comportamiento homogéneo para todo el rango
+ de cada una de las variables de ajuste.
+ Así es como se terminan eligiendo 
+\begin_inset Formula $C_{3}=3,9nF$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{4}=270\Omega$
+\end_inset
+
+ fijas.
+ A continuación se pueden ver los gráficos de la sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ en el gráfico (PONER REFERENCIA) y la sensibilidad de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+ respecto de 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ en el gráfico (PONER REFERENCIA).
 \end_layout
 
 \end_body

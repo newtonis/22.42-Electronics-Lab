@@ -250,19 +250,19 @@ En general se utiliza R
 \begin_inset Formula $_{1}$
 \end_inset
 
-=R
+= R
 \begin_inset Formula $_{3}$
 \end_inset
 
-=R y C
+= R y C
 \begin_inset Formula $_{1}$
 \end_inset
 
-=C
+= C
 \begin_inset Formula $_{3}$
 \end_inset
 
-=C y queda :
+= C y queda :
 \end_layout
 
 \begin_layout Standard
@@ -301,7 +301,7 @@ C
 \uwave default
 \noun default
 \color inherit
-=C
+ = C
 \begin_inset Formula $_{1}=C_{3}$
 \end_inset
 
