@@ -149,7 +149,7 @@ Siendo
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg
 \]
 
 \end_inset
@@ -961,7 +961,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15,0
 \end_layout
 
 \end_inset
