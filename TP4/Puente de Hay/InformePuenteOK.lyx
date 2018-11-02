@@ -7,7 +7,7 @@
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -26,10 +26,12 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -53,11 +55,15 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -71,50 +77,201 @@
 \begin_body
 
 \begin_layout Section*
-Puente de Hay
+Puente de Hay (L)
 \end_layout
 
 \begin_layout Standard
-!!!!!!!!!!!!!!! foto del puente ACAAAAAAAAAAAAAAAAAA DE ARIIIIII!!!!!!!!!!!!!!!!
-!!!!!!!!!!
+En esta sección se implementa un puente de Hay para la medición de inductancias
+ cuyos parámetros se encuentran en los siguientes rangos:
 \end_layout
 
 \begin_layout Standard
-Se diseña un puente que mide, en el equilibrio, inductancias entre 1,9mH
- y 8,1mH, con un un Q entre 
-\begin_inset Formula $0,25Q_{N}$
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inductancia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[1.9mH - 8.1mH]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+12.5
+\end_layout
+
+\end_inset
+
+ - 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+50
+\end_layout
+
+\end_inset
+
+]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Intervalo de valores medibles por el puente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para el diseño, se toman como variables de ajuste a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+ y a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+, dejando 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
 \end_inset
 
  y 
-\begin_inset Formula $Q_{N}$
-\end_inset
+\begin_inset ERT
+status open
 
-.
- Para eso, se toman como variables de ajuste a 
-\begin_inset Formula $R_{1}$
-\end_inset
+\begin_layout Plain Layout
 
-y a 
-\begin_inset Formula $R_{3}$
-\end_inset
-
-; dejando 
-\begin_inset Formula $C_{3}$
-\end_inset
-
- y 
-\begin_inset Formula $R_{4}$
-\end_inset
-
- fijas.
+$R_4$
 \end_layout
 
-\begin_layout Subsection*
-Análisis de Sensibilidades
+\end_inset
+
+ fijos.
 \end_layout
 
 \begin_layout Standard
-Dado 
+
+\lang english
+La expresión de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ en función de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_g$
+\end_layout
+
+\end_inset
+
+:
 \begin_inset Formula 
 \[
 Vd=\frac{Z_{3}Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
@@ -126,20 +283,57 @@ Vd=\frac{Z_{3}Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
 \end_layout
 
 \begin_layout Standard
-Es necesario ver cómo y cuánto varía la tensión 
-\begin_inset Formula $V_{d}$
+
+\lang english
+Se busca ahora analizar las variaciones de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
 \end_inset
 
+
+\lang spanish
  frente a cambios en las variables de ajuste.
- Para eso, se analiza dicha sensibilidad respecto de 
-\begin_inset Formula $R_{1}$
+ Para eso, se analiza la sensibilidad de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ respecto de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
 \end_inset
 
  por un lado y respecto 
-\begin_inset Formula $R_{3}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
 \end_inset
 
- por otro.
+ por otro (que son las variables).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -148,22 +342,38 @@ Siendo
 \end_inset
 
  la sensibilidad de 
-\begin_inset Formula $V_{d}$
+\lang english
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
 \end_inset
 
+
+\lang spanish
  respecto de 
-\begin_inset Formula $R_{1}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
 \end_inset
 
-,
+:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
 Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg
-<<<<<<< HEAD
-=======
 \]
 
 \end_inset
@@ -172,92 +382,11 @@ Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+(Z_{1}+\Delt
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}Z_{1}}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg-\frac{Z_{4}\Delta Z_{1}}{(Z_{3}+(Z_{1}+\Delta Z_{1}))(Z_{2}+Z_{4})}Vg
-\]
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
-Considerando 
-\begin_inset Formula $\Delta Z_{1}<<Z_{1}$
-\end_inset
-
-, 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Vd+\Delta Vd_{1}=\frac{Z_{3}Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg-\frac{Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Entonces
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-<<<<<<< HEAD
-\Delta Vd_{1}=-\frac{Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg=-\frac{\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
-=======
-\Delta Vd_{1}=-\frac{Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg=-\frac{\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(Z_{2}+Z_{4})}Vg
->>>>>>> 83910fa44e697025ad66ada1f3a9d2cb46ab6b8e
->>>>>>> 57ddd922aa5f18eaf748c68f004dc5c174d58708
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Llamando 
-\begin_inset Formula $A=\frac{Z_{2}}{Z_{4}}$
-\end_inset
-
- y dado que en el equilibrio del puente 
-\begin_inset Formula $Z_{3}Z_{2}=Z_{4}Z_{1}$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\Delta Vd_{1}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{1}}{Z_{1}}Vg
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Tomamos 
-\begin_inset Formula $\frac{\Delta Z_{1}}{Z_{1}}=\frac{\Delta R{}_{1}}{R_{1}}=1\%$
-\end_inset
-
- debido a las 25 vueltas del preset empleado para variar 
-\begin_inset Formula $R_{1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Analogamente, siendo 
+Siendo 
 \begin_inset Formula $\Delta Vd_{3}$
 \end_inset
 
@@ -275,16 +404,12 @@ Analogamente, siendo
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd_{3}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{3}}{Z_{3}}Vg
+Vd+\Delta Vd_{3}=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
 \]
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-En este caso, 
 \end_layout
 
 \begin_layout Standard
@@ -296,7 +421,7 @@ Se prueban varios valores para
 \begin_inset Formula $R_{4}$
 \end_inset
 
- de manera tal que la variación de 
+
 \begin_inset Formula $V_{d}$
 \end_inset
 
@@ -308,9 +433,7 @@ Se prueban varios valores para
 \begin_inset Formula $R_{3}$
 \end_inset
 
-; y que dicha variación tenga un comportamiento homogéneo para todo el rango
  de cada una de las variables de ajuste.
- Así es como se terminan eligiendo 
 \begin_inset Formula $C_{3}=3,9nF$
 \end_inset
 
@@ -319,7 +442,6 @@ Se prueban varios valores para
 \end_inset
 
  fijas.
- A continuación se pueden ver los gráficos de la sensibilidad de 
 \begin_inset Formula $V_{d}$
 \end_inset
 
@@ -327,58 +449,7 @@ Se prueban varios valores para
 \begin_inset Formula $R_{1}$
 \end_inset
 
- en el gráfico 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sensibilidad-de-"
 
-\end_inset
-
- y la sensibilidad de 
-\begin_inset Formula $V_{d}$
-\end_inset
-
- respecto de 
-\begin_inset Formula $R_{3}$
-\end_inset
-
- en el gráfico 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Sensibilidad-de--1"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename graficos/Sensibilidad_Vd_Z3.png
-	scale 60
-	rotateOrigin center
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Sensibilidad-de--1"
-
-\end_inset
-
-Sensibilidad de 
 \begin_inset Formula $V_{d}$
 \end_inset
 
@@ -387,22 +458,10 @@ Sensibilidad de
 \end_inset
 
 .
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
 wide false
 sideways false
 status open
@@ -416,9 +475,9 @@ status open
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -442,7 +501,17 @@ Valor Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
-f=1kHz
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f=1KHz$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -487,7 +556,17 @@ f=1kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-f=10kHz
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f=10KHz$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -528,11 +607,21 @@ f=10kHz
 
 \end_inset
 </cell>
-<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-f=100kHz
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f=100KHz$
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -588,31 +677,14 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $L_{p}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset Formula $La$
-\end_inset
 
- 
+$L_P(mH)$
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $Q_{p}$
 \end_inset
 
 
@@ -624,7 +696,14 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $Q_{a}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_A(mH)$
+\end_layout
+
 \end_inset
 
 
@@ -636,7 +715,14 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\varphi$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_P$
+\end_layout
+
 \end_inset
 
 
@@ -648,31 +734,14 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $L_{p}$
-\end_inset
-
- (mH)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset Formula $L_{a}$
-\end_inset
 
- 
+$Q_A$
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $Q_{p}$
 \end_inset
 
 
@@ -684,7 +753,16 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $Q_{a}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+phi$
+\end_layout
+
 \end_inset
 
 
@@ -696,7 +774,14 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\varphi$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_P(mH)$
+\end_layout
+
 \end_inset
 
 
@@ -708,31 +793,14 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $L_{p}$
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset Formula $La$
-\end_inset
 
- 
+$L_A(mH)$
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $Q_{p}$
 \end_inset
 
 
@@ -744,7 +812,130 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $Q_{a}$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_P$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_A$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+phi$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_P(mH)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_A(mH)$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_P$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_A$
+\end_layout
+
 \end_inset
 
 
@@ -756,7 +947,16 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\varphi$
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+phi$
+\end_layout
+
 \end_inset
 
 
@@ -770,7 +970,43 @@ f=100kHz
 \begin_inset Text
 
 \begin_layout Plain Layout
-L mínima
+L Mínima
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30,23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,1
 \end_layout
 
 \end_inset
@@ -785,42 +1021,6 @@ L mínima
 \end_inset
 </cell>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -833,7 +1033,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2,09
 \end_layout
 
 \end_inset
@@ -851,7 +1051,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+15,2
 \end_layout
 
 \end_inset
@@ -869,7 +1069,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+5,57
 \end_layout
 
 \end_inset
@@ -878,7 +1078,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2,30
 \end_layout
 
 \end_inset
@@ -887,7 +1087,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1,52
 \end_layout
 
 \end_inset
@@ -896,7 +1096,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+39,4
 \end_layout
 
 \end_inset
@@ -916,7 +1116,7 @@ L mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-L media
+L Media
 \end_layout
 
 \end_inset
@@ -925,7 +1125,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,06
 \end_layout
 
 \end_inset
@@ -934,7 +1134,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,27
 \end_layout
 
 \end_inset
@@ -943,16 +1143,16 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+30,23
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2,7
 \end_layout
 
 \end_inset
@@ -979,7 +1179,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,51
 \end_layout
 
 \end_inset
@@ -997,7 +1197,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+17,0
 \end_layout
 
 \end_inset
@@ -1015,7 +1215,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,12
 \end_layout
 
 \end_inset
@@ -1024,7 +1224,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,85
 \end_layout
 
 \end_inset
@@ -1033,7 +1233,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1,52
 \end_layout
 
 \end_inset
@@ -1042,7 +1242,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+78,2
 \end_layout
 
 \end_inset
@@ -1062,7 +1262,7 @@ L media
 \begin_inset Text
 
 \begin_layout Plain Layout
-L máxima
+L Máxima
 \end_layout
 
 \end_inset
@@ -1071,7 +1271,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+6,77
 \end_layout
 
 \end_inset
@@ -1080,7 +1280,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,05
 \end_layout
 
 \end_inset
@@ -1089,7 +1289,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+30,23
 \end_layout
 
 \end_inset
@@ -1098,7 +1298,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,6
 \end_layout
 
 \end_inset
@@ -1125,7 +1325,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+8,40
 \end_layout
 
 \end_inset
@@ -1143,7 +1343,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+11,1
 \end_layout
 
 \end_inset
@@ -1161,7 +1361,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+13,36
 \end_layout
 
 \end_inset
@@ -1170,7 +1370,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+7,92
 \end_layout
 
 \end_inset
@@ -1179,7 +1379,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1,52
 \end_layout
 
 \end_inset
@@ -1188,7 +1388,7 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+66,5
 \end_layout
 
 \end_inset
@@ -1208,7 +1408,43 @@ L máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-L fuera de rango
+L Fuera de rango
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,97
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30,23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,3
 \end_layout
 
 \end_inset
@@ -1226,7 +1462,34 @@ L fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+1.86 (1)
+\end_layout
 
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+54,2
 \end_layout
 
 \end_inset
@@ -1244,7 +1507,7 @@ L fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+4,81
 \end_layout
 
 \end_inset
@@ -1253,7 +1516,7 @@ L fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,95
 \end_layout
 
 \end_inset
@@ -1262,7 +1525,7 @@ L fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+0,78
 \end_layout
 
 \end_inset
@@ -1271,70 +1534,7 @@ L fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+84,1
 \end_layout
 
 \end_inset
@@ -1357,12 +1557,10 @@ L fuera de rango
 \end_layout
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Valores medidos de bobinas empleando el puente y empleando el analizador
- de impedancias.
+Valores medidos con el puente (P) y con el analizador de impedancias (A)
 \end_layout
 
 \end_inset

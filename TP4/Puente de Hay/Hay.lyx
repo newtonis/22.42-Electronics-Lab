@@ -1,4 +1,4 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
+﻿#LyX 2.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 508
 \begin_document
 \begin_header
@@ -75,7 +75,8 @@ Puente de Hay
 \end_layout
 
 \begin_layout Standard
-!!!!!!!!!!!!!!! foto del puente
+!!!!!!!!!!!!!!! foto del puente ACAAAAAAAAAAAAAAAAAA DE ARIIIIII!!!!!!!!!!!!!!!!
+!!!!!!!!!!
 \end_layout
 
 \begin_layout Standard
@@ -214,7 +215,42 @@ Entonces
 \end_layout
 
 \begin_layout Standard
-Siendo 
+Llamando 
+\begin_inset Formula $A=\frac{Z_{2}}{Z_{4}}$
+\end_inset
+
+ y dado que en el equilibrio del puente 
+\begin_inset Formula $Z_{3}Z_{2}=Z_{4}Z_{1}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Vd_{1}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{1}}{Z_{1}}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tomamos 
+\begin_inset Formula $\frac{\Delta Z_{1}}{Z_{1}}=\frac{\Delta R{}_{1}}{R_{1}}=1\%$
+\end_inset
+
+ debido a las 25 vueltas del preset empleado para variar 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Analogamente, siendo 
 \begin_inset Formula $\Delta Vd_{3}$
 \end_inset
 
@@ -232,12 +268,20 @@ Siendo
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Vd+\Delta Vd_{3}=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\Delta Vd_{3}=-\frac{A}{(A+1)^{2}}\frac{\Delta Z_{3}}{Z_{3}}Vg
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+En este caso, 
+\begin_inset Formula $\frac{\Delta Z_{1}}{Z_{1}}=\frac{\Delta R{}_{1}}{R_{1}}=1\%$
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -355,13 +399,8 @@ Sensibilidad de
 
 \begin_layout Standard
 \begin_inset Float table
-<<<<<<< HEAD
-=======
-placement H
->>>>>>> 83910fa44e697025ad66ada1f3a9d2cb46ab6b8e
-wide false
-sideways false
-status open
+
+
 
 \begin_layout Plain Layout
 \align center
@@ -1313,19 +1352,7 @@ L fuera de rango
 \end_layout
 
 \begin_layout Plain Layout
-<<<<<<< HEAD
-\begin_inset Caption Standard
 
-\begin_layout Plain Layout
-
-=======
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Valores medidos de bobinas empleando el puente y empleando el analizador
- de impedancias.
->>>>>>> 83910fa44e697025ad66ada1f3a9d2cb46ab6b8e
 \end_layout
 
 \end_inset
