@@ -634,7 +634,7 @@ En el equilibrio:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{4}}{Z_{2}}+1)}Vg
 \]
 
 \end_inset
