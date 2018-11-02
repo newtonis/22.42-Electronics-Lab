@@ -88,7 +88,14 @@ status open
 
 \begin_layout Plain Layout
 \align center
-#DIBUJO DEL CIRCUITO#
+\begin_inset Graphics
+	filename graficos/puente_ari.png
+	display false
+	scale 60
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1266,7 +1273,9 @@ status open
 
 $
 \backslash
-varphi$
+varphi(^
+\backslash
+circ)$
 \end_layout
 
 \end_inset
@@ -1325,7 +1334,9 @@ status open
 
 $
 \backslash
-varphi$
+varphi(^
+\backslash
+circ)$
 \end_layout
 
 \end_inset
@@ -1384,7 +1395,9 @@ status open
 
 $
 \backslash
-varphi$
+varphi(^
+\backslash
+circ)$
 \end_layout
 
 \end_inset
@@ -1427,6 +1440,18 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$88.1^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1436,7 +1461,7 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-2,37 (2)
+2,37
 \end_layout
 
 \end_inset
@@ -1454,6 +1479,18 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$86.2^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1481,6 +1518,18 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$56.7^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1519,6 +1568,18 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$88.1^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1528,7 +1589,7 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
-5,01 (4)
+5,01
 \end_layout
 
 \end_inset
@@ -1546,6 +1607,18 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$86.4^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1573,6 +1646,18 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$56.7^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1611,6 +1696,18 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$88.1^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1620,7 +1717,7 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
-8,01 (7)
+8,01
 \end_layout
 
 \end_inset
@@ -1638,6 +1735,18 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$86.2^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1665,6 +1774,18 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$56.7^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1703,6 +1824,18 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$88.1^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1712,7 +1845,7 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
-1.86 (1)
+1.86
 \end_layout
 
 \end_inset
@@ -1730,6 +1863,18 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$71.6^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1757,6 +1902,18 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$37.9^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1989,7 +2146,9 @@ status open
 
 $
 \backslash
-varphi$
+varphi(^
+\backslash
+circ)$
 \end_layout
 
 \end_inset
@@ -2048,7 +2207,9 @@ status open
 
 $
 \backslash
-varphi$
+varphi(^
+\backslash
+circ)$
 \end_layout
 
 \end_inset
@@ -2107,7 +2268,9 @@ status open
 
 $
 \backslash
-varphi$
+varphi(^
+\backslash
+circ)$
 \end_layout
 
 \end_inset
@@ -2150,6 +2313,18 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$64.5^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2177,6 +2352,18 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$86.2^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2195,7 +2382,7 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
-39,4
+69,4
 \end_layout
 
 \end_inset
@@ -2204,6 +2391,18 @@ L Mínima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$88.5^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2242,6 +2441,18 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$69.8^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2269,6 +2480,18 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$86.6^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2296,6 +2519,18 @@ L Media
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$89.3^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2334,6 +2569,18 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$77.7^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2361,6 +2608,18 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$84.9^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2388,6 +2647,18 @@ L Máxima
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$89.1^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2426,6 +2697,18 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$81^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2453,6 +2736,18 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$88.9^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2480,6 +2775,18 @@ L Fuera de rango
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$89.3^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2546,7 +2853,7 @@ status open
 
 \end_inset
 
- veces, resulta que en el puente 
+ en veces, resulta que en el puente 
 \begin_inset ERT
 status open
 
@@ -2554,14 +2861,696 @@ status open
 
 $
 \backslash
-Delta V_d 
+Delta V_d = 
 \backslash
-approx = 0.23mV$
+frac{V_d}{150} 
+\backslash
+approx 0.23mV$
 \end_layout
 
 \end_inset
 
 .
+ Desplazándonos en un entorno a dicho valor, se puede considerar que el
+ error producido en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ es aproximadamente proporcional (lineal) respecto a la variación en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+De los gráficos de sensibilidades se toman los peores casos, es decir los
+ máximos de cada uno, resultando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+frac{
+\backslash
+Delta V_d}{V_g}(R_1) = 2.15 
+\backslash
+hspace{2cm} 
+\backslash
+frac{
+\backslash
+Delta V_d}{V_g}(R_3) = 1.98$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despejando de las expresiones de sensibilidades (con máximo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+ y mínima 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta R_1 = 
+\backslash
+frac{A}{(1+A)^2} R_1 
+\backslash
+frac{
+\backslash
+Delta V_d}{V_g} = 172
+\backslash
+Omega$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta R_3 = 
+\backslash
+frac{A}{(1+A)^2} R_3 
+\backslash
+frac{
+\backslash
+Delta V_d}{V_g} = 6.4
+\backslash
+Omega$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por lo tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$
+\backslash
+Delta L_x = C_3R_4 
+\backslash
+Delta R_1 = 0.18mH 
+\backslash
+hspace{2cm} 
+\backslash
+Delta Q_x 
+\backslash
+approx 
+\backslash
+frac{
+\backslash
+Delta R_3}{2 
+\backslash
+pi f C_3 (R_3)^2} = 0.24$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Manual de usuario
+\end_layout
+
+\begin_layout Standard
+El circuito propuesto permite medir inductancias de alto 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+, comprendidas entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1.9mH$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$8.1mH$
+\end_layout
+
+\end_inset
+
+, y el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q$
+\end_layout
+
+\end_inset
+
+ comprendido entre 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$12.5$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$50$
+\end_layout
+
+\end_inset
+
+, tomando como variables de ajuste a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+.
+ Los rangos de dichas variables de ajuste son:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$R_1 
+\backslash
+epsilon [1.9K
+\backslash
+Omega - 8.1K
+\backslash
+Omega] 
+\backslash
+hspace{2cm} R_3 
+\backslash
+epsilon [82
+\backslash
+Omega - 326
+\backslash
+Omega]$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para efectuar las mediciones, se conecta la bobina a medir y se excita al
+ circuito con una señal senoidal de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100mVpp$
+\end_layout
+
+\end_inset
+
+, midiendo la tensión 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+.
+ Se ajusta primeramente el valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+ con el preset de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10K
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+ hasta hallar el mínimo valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+, realizando luego un ajuste más fino con el preset de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$500
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+.
+ Posteriormente, se ajusta 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+ con el preset de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1K
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+, hasta hallar el mínimo de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ correspondiente, realizando luego un ajuste fino con el preset de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100
+\backslash
+Omega$
+\end_layout
+
+\end_inset
+
+.
+ Finalmente, con el mínimo valor de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ posible establecido, se desconecta el circuito de la señal de entrada y
+ se miden los valores resultantes de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+, de manera tal que para obtener 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_x$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_x$
+\end_layout
+
+\end_inset
+
+ se emplean las ecuaciones:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$L_x = C_3R_1R_4 
+\backslash
+hspace{2cm} Q_x = 
+\backslash
+frac{1}{2
+\backslash
+pi f C_3 R_3}$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para el proceso de ajuste de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ mínima, se aclara que para un conjunto dado 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_x;Q_x$
+\end_layout
+
+\end_inset
+
+, la combinación de valores de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_3$
+\end_layout
+
+\end_inset
+
+ que minimizan 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ es única.
+\end_layout
+
+\begin_layout Subsection
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+En base a los resultados obtenidos, se observó que el diseño propuesto cumple
+ su propósito adecuadamente para la frecuencia de trabajo considerada de
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+ y los rangos de diseño.
+ En el caso a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$10KHz$
+\end_layout
+
+\end_inset
+
+, en los valores mínimo, medio y máximo los resultados respecto a los obtenidos
+ con el analizador de impedancias son bastante similares, con un error relativo
+ máximo del 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$14
+\backslash
+%$
+\end_layout
+
+\end_inset
+
+.
+ En el caso de una inductancia fuera de rango, el error cometido es considerable
+mente mayor.
+ 
+\end_layout
+
+\begin_layout Standard
+Para una frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1KHz$
+\end_layout
+
+\end_inset
+
+, se comete error tanto en el valor de la inductancia como en el valor de
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_x$
+\end_layout
+
+\end_inset
+
+, principalmente en el de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_x$
+\end_layout
+
+\end_inset
+
+ debido a que para dicha frecuencia éste se encuentra bastante fuera del
+ rango de diseño por debajo del mínimo, tomando de referencia el valor indicado
+ por el analizador de impedancias.
+ Por el otro lado, a una frecuencia de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$100KHz$
+\end_layout
+
+\end_inset
+
+, se comete también error en ambos valores, siendo mayor en el 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$Q_x$
+\end_layout
+
+\end_inset
+
+ dado que también está fuera del rango de diseño pero en este caso por encima
+ del máximo, tomando de referencia el valor indicado por el analizador de
+ impedancias.
 \end_layout
 
 \end_body
