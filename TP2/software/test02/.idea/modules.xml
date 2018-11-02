@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/InformesTC/TP4/proyecto_oficial/.idea/proyecto_oficial.iml" filepath="$USER_HOME$/InformesTC/TP4/proyecto_oficial/.idea/proyecto_oficial.iml" />
+      <module fileurl="file://$USER_HOME$/InformesTC/TP4/test01_juevesSep4/.idea/test01_juevesSep4.iml" filepath="$USER_HOME$/InformesTC/TP4/test01_juevesSep4/.idea/test01_juevesSep4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/test02.iml" filepath="$PROJECT_DIR$/.idea/test02.iml" />
+    </modules>
+  </component>
+</project>
