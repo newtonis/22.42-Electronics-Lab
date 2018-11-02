@@ -95,7 +95,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagen.png
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -163,9 +163,6 @@ Si llamamos
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1\right]}{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1\right]}
@@ -177,8 +174,8 @@ H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}
 \end_layout
 
 \begin_layout Standard
-Si realizaramos el diagrama de bode asintótico veríamos que el único punto
- de interés es 
+Si realizaramos el diagrama de bode asintótico veríamos que el punto de
+ interés es 
 \end_layout
 
 \begin_layout Standard
@@ -519,7 +516,7 @@ Por lo que si variamos R
 \end_layout
 
 \begin_layout Standard
-y se puede ver que si X
+Se puede ver que si X
 \begin_inset Formula $_{1}$
 \end_inset
 
@@ -537,24 +534,55 @@ y se puede ver que si X
 \end_layout
 
 \begin_layout Standard
-En nuestro caso donde vale menos el cociente 
-\begin_inset Formula $\frac{X_{1}}{R_{1}}$
+Si tenemos en cuenta 
+\begin_inset Formula $\frac{\Delta R_{1}}{R_{1}}=0.01$
 \end_inset
 
- es cuando R
+ entonces 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/joa-m/InformesLabo/TP4/graficos/sensR1.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/joa-m/InformesLabo/TP4/graficos/sensR1x2.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensibilidad de Vd con respecto a R
 \begin_inset Formula $_{1}$
 \end_inset
 
- vale 960
-\begin_inset Formula $\Omega$
+
+\end_layout
+
 \end_inset
 
- y X
-\begin_inset Formula $_{1}$
+
+\end_layout
+
 \end_inset
 
- toma el valor máximo a la frecuencia mínima en el rango de medición que
- es de 5KHz.
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -602,7 +630,7 @@ En el equilibrio:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{4}}{Z_{2}}+1)}Vg
 \]
 
 \end_inset
@@ -667,7 +695,7 @@ Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}-\frac{(R_{3}+\Delta R_{3})jX_{3}}{R_{3}+\Delta R_{3}+jX_{3}}
+\Delta Z_{3}=\frac{(R_{3}+\Delta R_{3})jX_{3}}{(R_{3}+\Delta R_{3})+jX_{3}}-\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \]
 
 \end_inset
@@ -686,7 +714,7 @@ Asumimos que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Z_{3}=\frac{R_{3}jX_{3}-(R_{3}+\Delta R_{3})jX_{3}}{R_{3}+jX_{3}}=\frac{-\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
+\Delta Z_{3}=\frac{R_{3}jX_{3}+\Delta R_{3}jX_{3}-R_{3}jX_{3}}{R_{3}+jX_{3}}=\frac{\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
 \]
 
 \end_inset
@@ -697,7 +725,7 @@ Asumimos que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=-\frac{\Delta R_{3}}{R_{3}}
+\delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=\frac{\Delta R_{3}}{R_{3}}
 \]
 
 \end_inset
