@@ -163,9 +163,6 @@ Si llamamos
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
 H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1\right]}{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1\right]}
@@ -177,8 +174,8 @@ H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}
 \end_layout
 
 \begin_layout Standard
-Si realizaramos el diagrama de bode asintótico veríamos que el único punto
- de interés es 
+Si realizaramos el diagrama de bode asintótico veríamos que el punto de
+ interés es 
 \end_layout
 
 \begin_layout Standard
@@ -633,7 +630,7 @@ En el equilibrio:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{4}}{Z_{2}}+1)}Vg
 \]
 
 \end_inset
