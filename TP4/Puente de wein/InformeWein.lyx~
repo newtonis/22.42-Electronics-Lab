@@ -95,7 +95,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagen.png
-	scale 60
 
 \end_inset
 
@@ -310,6 +309,7 @@ C
 \end_inset
 
  .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -352,12 +352,23 @@ y 9640
 .
 \end_layout
 
+\begin_layout Standard
+Estos valores son de este orden ya que si se diera el caso en el que necesitaram
+os medir con puntas sobre los terminales, las resistencias R no sean comparables
+ con la resistencia de la punta, ni el capacitor de la punta sea comparable
+ con el capacitor C.
+\end_layout
+
 \begin_layout Subsection*
 Análisis de sensibilidades
 \end_layout
 
 \begin_layout Subsubsection*
-Variación de R3
+Variación de R
+\begin_inset Formula $_{1}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -390,7 +401,7 @@ Y ya que sabemos que
 \begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
 \end_inset
 
- entonces el factor cabeza de puente A = 
+ entonces definimos la cabeza de puente A = 
 \begin_inset Formula $\frac{Z_{4}}{Z_{2}}=$
 \end_inset
 
@@ -402,9 +413,14 @@ Y ya que sabemos que
 \end_layout
 
 \begin_layout Standard
+Asumiendo que 
+\begin_inset Formula $Z>>\Delta Z_{1}$
+\end_inset
+
+
 \begin_inset Formula 
 \[
-Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
 \]
 
 \end_inset
@@ -423,7 +439,18 @@ En un entorno cercano al equilibrio Vd = 0 y
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\Delta Vd}{Vg}=\frac{A}{(1+A)^{2}}\frac{\Delta Z_{3}}{Z_{3}}=\frac{2}{9}\frac{\Delta Z_{3}}{Z_{3}}
+\Delta Vd=\frac{-\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\Delta Vd}{Vg}=-\frac{A}{(1+A)^{2}}\frac{\Delta Z_{1}}{Z_{1}}=-\frac{2}{9}\frac{\Delta Z_{1}}{Z_{1}}
 \]
 
 \end_inset
@@ -433,7 +460,7 @@ En un entorno cercano al equilibrio Vd = 0 y
 
 \begin_layout Standard
 Si llamamos 
-\begin_inset Formula $\delta_{Z3}=\frac{\Delta Z_{3}}{Z_{3}}$
+\begin_inset Formula $\delta_{Z1}=\frac{\Delta Z_{1}}{Z_{1}}$
 \end_inset
 
  entonces
@@ -442,7 +469,7 @@ Si llamamos
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=\frac{2}{9}Vg\delta_{Z3}
+\Delta Vd=-\frac{2}{9}Vg\delta_{Z1}
 \]
 
 \end_inset
@@ -457,15 +484,15 @@ Por lo cual como la sensibilidad es proporcional a Vg en todo el rango de
 
 \begin_layout Standard
 Para el ajuste de cada variable, se puede ver a Z
-\begin_inset Formula $_{3}$
+\begin_inset Formula $_{1}$
 \end_inset
 
 =R
-\begin_inset Formula $_{3}$
+\begin_inset Formula $_{1}$
 \end_inset
 
 +j
-\begin_inset Formula $X_{3}$
+\begin_inset Formula $X_{1}$
 \end_inset
 
 
@@ -473,7 +500,7 @@ Para el ajuste de cada variable, se puede ver a Z
 
 \begin_layout Standard
 Por lo que si variamos R
-\begin_inset Formula $_{3}$
+\begin_inset Formula $_{1}$
 \end_inset
 
  y tomamos modulo nos queda que:
@@ -482,7 +509,7 @@ Por lo que si variamos R
 \begin_layout Standard
 \begin_inset Formula 
 \[
-|\delta_{R3}|=\frac{1}{\sqrt{1+(\frac{X_{3}}{R_{3}})^{2}}}\frac{\Delta R_{3}}{R_{3}}
+|\delta_{R1}|=\frac{1}{\sqrt{1+(\frac{X_{1}}{R_{1}})^{2}}}\frac{\Delta R_{1}}{R_{1}}
 \]
 
 \end_inset
@@ -492,30 +519,63 @@ Por lo que si variamos R
 
 \begin_layout Standard
 y se puede ver que si X
-\begin_inset Formula $_{3}$
+\begin_inset Formula $_{1}$
 \end_inset
 
  es un capacitor mientras la frecuencia sea baja, Vd va a ser menos sensible
  a los cambios de R
-\begin_inset Formula $_{3}$
+\begin_inset Formula $_{1}$
 \end_inset
 
  y se puede ver también que si aumenta la frecuencia entonces los cambios
  con respecto a R
-\begin_inset Formula $_{3}$
+\begin_inset Formula $_{1}$
 \end_inset
 
  empiezan a pesar mucho más.
 \end_layout
 
+\begin_layout Standard
+En nuestro caso donde vale menos el cociente 
+\begin_inset Formula $\frac{X_{1}}{R_{1}}$
+\end_inset
+
+ es cuando R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ vale 960
+\begin_inset Formula $\Omega$
+\end_inset
+
+ y X
+\begin_inset Formula $_{1}$
+\end_inset
+
+ toma el valor máximo a la frecuencia mínima en el rango de medición que
+ es de 5KHz.
+\end_layout
+
 \begin_layout Subsubsection*
-Variación de R1
+Variación de R
+\begin_inset Formula $_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asumiendo que 
+\begin_inset Formula $Z>>\Delta Z_{1}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
 \]
 
 \end_inset
@@ -530,7 +590,7 @@ En el equilibrio:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=\frac{-Z_{4}\Delta Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\Delta Vd=\frac{\Delta Z_{3}Z_{2}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
 \]
 
 \end_inset
@@ -541,7 +601,7 @@ En el equilibrio:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=\frac{-\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
 \]
 
 \end_inset
@@ -566,13 +626,13 @@ Entonces si A =
 \begin_inset Formula $\frac{Z_{2}}{Z_{4}}$
 \end_inset
 
- 
+ análogamente
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Vd=-\frac{2}{9}\frac{\Delta Z_{1}}{Z_{1}}Vg
+\Delta Vd=-\frac{2}{9}\frac{\Delta Z_{3}}{Z_{3}}Vg
 \]
 
 \end_inset
@@ -582,20 +642,20 @@ Entonces si A =
 
 \begin_layout Standard
 Y si 
-\begin_inset Formula $\delta_{Z1}=\frac{\Delta Z_{1}}{Z_{1}}$
+\begin_inset Formula $\delta_{Z3}=\frac{\Delta Z_{3}}{Z_{3}}$
 \end_inset
 
  entonces al variar R
-\begin_inset Formula $_{1}$
+\begin_inset Formula $_{3}$
 \end_inset
 
- análogamente se obtiene que 
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-|\delta_{R1}|=\frac{1}{\sqrt{1+(\frac{X_{1}}{R_{1}})^{2}}}\frac{\Delta R_{1}}{R_{1}}
+Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \]
 
 \end_inset
@@ -604,21 +664,9 @@ Y si
 \end_layout
 
 \begin_layout Standard
-y se concluye que 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \[
-|\delta_{R1}|=|\delta_{R3}|
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-ESTOESTAMAL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\Delta Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}-\frac{(R_{3}+\Delta R_{3})jX_{3}}{R_{3}+\Delta R_{3}+jX_{3}}
 \]
 
 \end_inset
@@ -627,8 +675,33 @@ ESTOESTAMAL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 \end_layout
 
 \begin_layout Standard
-Para ver cómo influye esto en nuestro rango de medición se armó una tabla
- con distintos valores:
+Asumimmos que 
+\begin_inset Formula $R_{3}>>\Delta R_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Delta Z_{3}=\frac{R_{3}jX_{3}-(R_{3}+\Delta R_{3})jX_{3}}{R_{3}+jX_{3}}=\frac{-\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=-\frac{\Delta R_{3}}{R_{3}}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -754,7 +827,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-9650 
+9654 
 \end_layout
 
 \end_inset
@@ -763,7 +836,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-9640 
+9648 
 \end_layout
 
 \end_inset
@@ -801,7 +874,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-4830
+4831
 \end_layout
 
 \end_inset
@@ -810,7 +883,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-4830
+4828
 \end_layout
 
 \end_inset
@@ -848,7 +921,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-3220
+3225
 \end_layout
 
 \end_inset
@@ -857,7 +930,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-3220
+3222
 \end_layout
 
 \end_inset
@@ -895,7 +968,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-2410
+2413
 \end_layout
 
 \end_inset
@@ -1144,7 +1217,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
-1203
+1201
 \end_layout
 
 \end_inset
@@ -1403,18 +1476,15 @@ Tabla de valores medidos
 
 \end_layout
 
-\begin_layout Standard
-Como se mostró antes la transferencia 
-\begin_inset Formula $\frac{Vd}{V_{g}}$
-\end_inset
-
- resulta en un notch rechaza banda en una sola frecuencia, por lo cual no
- es necesario desarrollar un método mejor de medición.
- 
+\begin_layout Section*
+Conclusiones
 \end_layout
 
 \begin_layout Standard
-
+Dada las mediciones y el análisis de sensibilidad se pudo observar que al
+ medir frecuencias en el rango de 5KHz - 50KHz el peor error fue de 7.61%,
+ lo cual en principio no resulta tan importante si se quiere realizar una
+ medición estimativa de una frecuencia.
 \end_layout
 
 \end_body
