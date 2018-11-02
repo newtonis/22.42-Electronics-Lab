@@ -95,7 +95,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagen.png
-	scale 60
 
 \end_inset
 
@@ -310,6 +309,7 @@ C
 \end_inset
 
  .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -350,6 +350,13 @@ y 9640
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Estos valores son de este orden ya que si se diera el caso en el que necesitaram
+os medir con puntas sobre los terminales, las resistencias R no sean comparables
+ con la resistencia de la punta, ni el capacitor de la punta sea comparable
+ con el capacitor C.
 \end_layout
 
 \begin_layout Subsection*
@@ -406,6 +413,11 @@ Y ya que sabemos que
 \end_layout
 
 \begin_layout Standard
+Asumiendo que 
+\begin_inset Formula $Z>>\Delta Z_{1}$
+\end_inset
+
+
 \begin_inset Formula 
 \[
 Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
@@ -523,9 +535,38 @@ y se puede ver que si X
  empiezan a pesar mucho más.
 \end_layout
 
+\begin_layout Standard
+En nuestro caso donde vale menos el cociente 
+\begin_inset Formula $\frac{X_{1}}{R_{1}}$
+\end_inset
+
+ es cuando R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ vale 960
+\begin_inset Formula $\Omega$
+\end_inset
+
+ y X
+\begin_inset Formula $_{1}$
+\end_inset
+
+ toma el valor máximo a la frecuencia mínima en el rango de medición que
+ es de 5KHz.
+\end_layout
+
 \begin_layout Subsubsection*
 Variación de R
 \begin_inset Formula $_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Asumiendo que 
+\begin_inset Formula $Z>>\Delta Z_{3}$
 \end_inset
 
 
@@ -663,11 +704,6 @@ Asumimmos que
 
 \end_layout
 
-\begin_layout Standard
-Para ver cómo influye esto en nuestro rango de medición se armó una tabla
- con distintos valores:
-\end_layout
-
 \begin_layout Section*
 Mediciones
 \end_layout
@@ -791,7 +827,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-9650 
+9654 
 \end_layout
 
 \end_inset
@@ -800,7 +836,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-9640 
+9648 
 \end_layout
 
 \end_inset
@@ -838,7 +874,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-4830
+4831
 \end_layout
 
 \end_inset
@@ -847,7 +883,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-4830
+4828
 \end_layout
 
 \end_inset
@@ -885,7 +921,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-3220
+3225
 \end_layout
 
 \end_inset
@@ -894,7 +930,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-3220
+3222
 \end_layout
 
 \end_inset
@@ -932,7 +968,7 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
-2410
+2413
 \end_layout
 
 \end_inset
@@ -1181,7 +1217,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
-1203
+1201
 \end_layout
 
 \end_inset
@@ -1440,18 +1476,15 @@ Tabla de valores medidos
 
 \end_layout
 
-\begin_layout Standard
-Como se mostró antes la transferencia 
-\begin_inset Formula $\frac{Vd}{V_{g}}$
-\end_inset
-
- resulta en un notch rechaza banda en una sola frecuencia, por lo cual no
- es necesario desarrollar un método mejor de medición.
- 
-\end_layout
-
 \begin_layout Section*
 Conclusiones
+\end_layout
+
+\begin_layout Standard
+Dada las mediciones y el análisis de sensibilidad se pudo observar que al
+ medir frecuencias en el rango de 5KHz - 50KHz el peor error fue de 7.61%,
+ lo cual en principio no resulta tan importante si se quiere realizar una
+ medición estimativa de una frecuencia.
 \end_layout
 
 \end_body
