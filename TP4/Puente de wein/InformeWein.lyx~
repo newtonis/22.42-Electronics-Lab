@@ -95,7 +95,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagen.png
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -519,7 +519,7 @@ Por lo que si variamos R
 \end_layout
 
 \begin_layout Standard
-y se puede ver que si X
+Se puede ver que si X
 \begin_inset Formula $_{1}$
 \end_inset
 
@@ -537,24 +537,59 @@ y se puede ver que si X
 \end_layout
 
 \begin_layout Standard
-En nuestro caso donde vale menos el cociente 
-\begin_inset Formula $\frac{X_{1}}{R_{1}}$
+Si tenemos en cuenta 
+\begin_inset Formula $\frac{\Delta R_{1}}{R_{1}}=0.01$
 \end_inset
 
- es cuando R
+ entonces 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/joa-m/InformesLabo/TP4/graficos/sensR1.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename C:/Users/joa-m/InformesLabo/TP4/graficos/sensR1x2.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sensibilidad de Vd con respecto a R
 \begin_inset Formula $_{1}$
 \end_inset
 
- vale 960
-\begin_inset Formula $\Omega$
+
+\end_layout
+
 \end_inset
 
- y X
-\begin_inset Formula $_{1}$
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
- toma el valor máximo a la frecuencia mínima en el rango de medición que
- es de 5KHz.
+
 \end_layout
 
 \begin_layout Subsubsection*
