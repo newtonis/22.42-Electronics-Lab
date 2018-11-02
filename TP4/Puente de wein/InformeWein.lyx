@@ -583,10 +583,6 @@ Sensibilidad de Vd con respecto a R
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -702,7 +698,7 @@ Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}-\frac{(R_{3}+\Delta R_{3})jX_{3}}{R_{3}+\Delta R_{3}+jX_{3}}
+\Delta Z_{3}=\frac{(R_{3}+\Delta R_{3})jX_{3}}{(R_{3}+\Delta R_{3})+jX_{3}}-\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \]
 
 \end_inset
@@ -721,7 +717,7 @@ Asumimos que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Delta Z_{3}=\frac{R_{3}jX_{3}-(R_{3}+\Delta R_{3})jX_{3}}{R_{3}+jX_{3}}=\frac{-\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
+\Delta Z_{3}=\frac{R_{3}jX_{3}+\Delta R_{3}jX_{3}-R_{3}jX_{3}}{R_{3}+jX_{3}}=\frac{\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
 \]
 
 \end_inset
@@ -732,7 +728,7 @@ Asumimos que
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=-\frac{\Delta R_{3}}{R_{3}}
+\delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=\frac{\Delta R_{3}}{R_{3}}
 \]
 
 \end_inset

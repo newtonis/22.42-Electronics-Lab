@@ -22,7 +22,7 @@ def calcular_valor(r1 , f):
     # r3 = r1
     # r2 = 2 * r4
     # w0 = 1 / (r1 * c)
-    # num = (s/w0)**2 + 1
+    # num = (s/w0)**2 + 1e
     # den = (s/w0)**2 + 3 * r1 * c3 * s + 1
     #
     # k = r4 / (r2 + r4)
