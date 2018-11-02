@@ -1,0 +1,2051 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\pagestyle{fancy}
+\lhead{Laboratorio de Electrónica 22.42}
+\chead{TPL4}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.25cm
+\topmargin 2.25cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Métodos de medición de equilibrio de puentes
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para saber cuando el puente está balanceado es muy importante saber con
+ exactitud cuando la tensión 
+\begin_inset Formula $V_{d}=0$
+\end_inset
+
+.
+ El mayor problema es que, como la tensión diferencial a medir es de muy
+ baja amplitud, la condición de equilibrio teórica no es medible en la práctica,
+ sino que se busca el método de medición para el cual se alcance la menor
+ amplitud posible.
+ A continuación se compararán distintos métodos para mdir el equilibrio
+ de un puente:
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Osciloscopio
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El osciloscopio es un método visual para medir 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+, además se puede apreciar como varía en el dominio del tiempo y por lo
+ tanto se puede conocer también su fase respecto a la tensión de entrada.
+ Para encontrar 
+\begin_inset Formula $V_{d}=0$
+\end_inset
+
+, se hace uso de la función MATH del osciloscopio.
+ Se busca que la diferencia 
+\begin_inset Formula $V_{a}-V_{b}$
+\end_inset
+
+ sea lo mas chica posible, la desventaja es que el osciloscopio es un instrument
+o sensible al ruido, y cuando la señal pasa a estar por debajo del nivel
+ del ruido no se puede llegar a distinguir correctamente el verdadero mínimo
+ de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Multímetro de precisión
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La ventaja de utilizar este instrumento es que éstos ya cuentan con la posibilid
+ad de medir tensiones diferenciales sobre el circuito, lo que hace que la
+ medición sea mas precisa en comparación con el osciloscopio, además es
+ menos sensible al ruido.
+ En este caso no es posible ver los cambios de la fase de la señal
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Amplificador de instrumentación
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El amplificador de instrumentación tiene la característica de atenuar la
+ tensión en modo común y amplificar la tensión en modo diferencial.
+ Al conectarlo a la salida del puente, se obtiene al final una tensión que
+ va a tener mayor amplitud que la original, lo que la hace ser menos comparable
+ con el piso del ruido, y además, debido a su alto CMRR (Coeficiente de
+ rechazo de modo común)  el ruido, que es común a ambas entradas, va a disminuir
+ en gran medida.
+ Cuanto mayor sea el CMRR del amplificador, más precisión se tendrá para
+ medir el equilibrio del puente.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Teniendo en cuenta todas las posibilidades, se decidió utilizar el amplificador
+ de instrumentación junto con el osciloscopio.
+ De esta manera se evitan los problemas con el ruido y también se puede
+ visualizar tanto la fase como la magnitud de la señal en el tiempo y en
+ forma gráfica, lo que ayuda a ver si las mediciones tomadas son correctas.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Puente de Wien
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se pidió diseñar un puente de Wien que dado el número de grupo (6 en nuestro
+ caso) pueda medir entre un rango de frecuencias determinado.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename Puente de wein/Imagen.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Circuito del Puente de Wein
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El rango pedido es de 5K a 50KHz.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si llamamos 
+\begin_inset Formula $Vd=V^{+}-V^{-}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\frac{Vd}{Vg}=-\frac{R_{4}(C_{1}R_{1}s+C_{3}R_{3}s+C_{1}C_{3}R_{1}R_{3}s^{2}+1)-C_{1}R_{2}R_{3}s}{(R_{2}+R_{4})(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+H(s)=-\frac{R_{4}}{R_{2}+R_{4}}\frac{C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1}{(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si llamamos 
+\begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{C_{1}C_{3}R_{1}R_{3}}}$
+\end_inset
+
+ y k = 
+\begin_inset Formula $\frac{R_{4}}{R_{2}+R_{4}}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1\right]}{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si realizaramos el diagrama de bode asintótico veríamos que el punto de
+ interés es 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+s= j
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+H(s=j\omega_{0})=-k\frac{\left[C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}}\right]}{\left[C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3}\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+H(s=j\omega_{0})=0\iff\frac{R_{1}}{R_{3}}+\frac{C_{3}}{C_{1}}=\frac{R_{2}}{R_{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+ergo
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+|H(s=j\omega_{0})|_{dB}\rightarrow-\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Y se determina que es un filtro notch rechaza banda.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La frecuencia para la cual Vd se anula es:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+f_{0}=\frac{1}{2\pi\sqrt{C_{1}C_{3}R_{1}R_{3}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En general se utiliza R
+\begin_inset Formula $_{1}$
+\end_inset
+
+=R
+\begin_inset Formula $_{3}$
+\end_inset
+
+=R y C
+\begin_inset Formula $_{1}$
+\end_inset
+
+=C
+\begin_inset Formula $_{3}$
+\end_inset
+
+=C y queda :
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+f_{0}=\frac{1}{2\pi CR}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para el diseño hacemos 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+C
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+=C
+\begin_inset Formula $_{1}=C_{3}$
+\end_inset
+
+
+\begin_inset Formula $=3.3nf$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Nos deja con 
+\begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
+\end_inset
+
+ y por ende tomamos un valor de 
+\begin_inset Formula $R_{1}=10K\Omega$
+\end_inset
+
+ y 
+\begin_inset Formula $R_{2}=20K\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para cubrir el rango de medición R debe variar entre 964
+\begin_inset Formula $\Omega$
+\end_inset
+
+y 9640
+\begin_inset Formula $\Omega$
+\end_inset
+
+ por lo cual se colocan presets de 10K
+\begin_inset Formula $\Omega$
+\end_inset
+
+ para R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ y R
+\begin_inset Formula $_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Estos valores son de este orden ya que si se diera el caso en el que necesitaram
+os medir con puntas sobre los terminales, las resistencias R no sean comparables
+ con la resistencia de la punta, ni el capacitor de la punta sea comparable
+ con el capacitor C.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Análisis de sensibilidades
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Variación de R
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si Vd es nuestra variable de interés, entonces debemos calcular la sensibilidad
+ de esa variable respecto del cambio de otra.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para ello la cuenta a realizar es la siguiente:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Como se sabe, en el equilibrio 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Y ya que sabemos que 
+\begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
+\end_inset
+
+ entonces definimos la cabeza de puente A = 
+\begin_inset Formula $\frac{Z_{4}}{Z_{2}}=$
+\end_inset
+
+
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Asumiendo que 
+\begin_inset Formula $Z>>\Delta Z_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En un entorno cercano al equilibrio Vd = 0 y 
+\begin_inset Formula $\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}$
+\end_inset
+
+, luego:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{-\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\frac{\Delta Vd}{Vg}=-\frac{A}{(1+A)^{2}}\frac{\Delta Z_{1}}{Z_{1}}=-\frac{2}{9}\frac{\Delta Z_{1}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si llamamos 
+\begin_inset Formula $\delta_{Z1}=\frac{\Delta Z_{1}}{Z_{1}}$
+\end_inset
+
+ entonces
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Vd=-\frac{2}{9}Vg\delta_{Z1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Por lo cual como la sensibilidad es proporcional a Vg en todo el rango de
+ medición sería recomendable tomar Vg lo más chica posible para las mediciones.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para el ajuste de cada variable, se puede ver a Z
+\begin_inset Formula $_{1}$
+\end_inset
+
+=R
+\begin_inset Formula $_{1}$
+\end_inset
+
++j
+\begin_inset Formula $X_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Por lo que si variamos R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ y tomamos modulo nos queda que:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+|\delta_{R1}|=\frac{1}{\sqrt{1+(\frac{X_{1}}{R_{1}})^{2}}}\frac{\Delta R_{1}}{R_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se puede ver que si X
+\begin_inset Formula $_{1}$
+\end_inset
+
+ es un capacitor mientras la frecuencia sea baja, Vd va a ser menos sensible
+ a los cambios de R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ y se puede ver también que si aumenta la frecuencia entonces los cambios
+ con respecto a R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ empiezan a pesar mucho más.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si tenemos en cuenta 
+\begin_inset Formula $\frac{\Delta R_{1}}{R_{1}}=0.01$
+\end_inset
+
+ entonces 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename graficos/sensR1.png
+	display false
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename graficos/sensR1x2.png
+	display false
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Sensibilidad de Vd con respecto a R
+\begin_inset Formula $_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Variación de R
+\begin_inset Formula $_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Asumiendo que 
+\begin_inset Formula $Z>>\Delta Z_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el equilibrio: 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{\Delta Z_{3}Z_{2}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{4}}{Z_{2}}+1)}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Como 
+\begin_inset Formula 
+\[
+\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Entonces si A =
+\begin_inset Formula $\frac{Z_{2}}{Z_{4}}$
+\end_inset
+
+ análogamente
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Vd=-\frac{2}{9}\frac{\Delta Z_{3}}{Z_{3}}Vg
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Y si 
+\begin_inset Formula $\delta_{Z3}=\frac{\Delta Z_{3}}{Z_{3}}$
+\end_inset
+
+ entonces al variar R
+\begin_inset Formula $_{3}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Z_{3}=\frac{(R_{3}+\Delta R_{3})jX_{3}}{(R_{3}+\Delta R_{3})+jX_{3}}-\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Asumimos que 
+\begin_inset Formula $R_{3}>>\Delta R_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\Delta Z_{3}=\frac{R_{3}jX_{3}+\Delta R_{3}jX_{3}-R_{3}jX_{3}}{R_{3}+jX_{3}}=\frac{\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=\frac{\Delta R_{3}}{R_{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Mediciones
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para las mediciones se utilizó el amplificador de instrumentación ya que
+ este nos brinda la posibilidad de quitar el ruido que tienen en común las
+ señales V
+\begin_inset Formula $^{+}$
+\end_inset
+
+y V
+\begin_inset Formula $^{-}$
+\end_inset
+
+.
+ Además el mismo amplifica la tensión Vd (lo cual nos da más precisión ya
+ que queremos medir cuando se anula) y por último medimos esa tensión diferencia
+l de salida en el osciloscopio.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Fijamos C = 
+\begin_inset Formula $3.3nf$
+\end_inset
+
+ y tanto R
+\begin_inset Formula $_{1}$
+\end_inset
+
+ como R
+\begin_inset Formula $_{3}$
+\end_inset
+
+se varían de forma tal que se mantenga la igualdad entre ellas\SpecialChar endofsentence
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Frecuencia Medida (Hz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+R1(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+R3(
+\begin_inset Formula $\Omega$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Frecuencia calculada (Hz)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+Error (%)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+4620 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+9654 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+9648 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+5000.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+7.61
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+9280
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+4831
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+4828
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+9985.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+7.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+14000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+3225
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+3222
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+14977.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+6.53
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+18800
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+2413
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+2410
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+20011.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+6.06
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+23600
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+1920 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+1920
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+29918,96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+4,41
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+33500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+1373
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+1374
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+35113,78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+4,60
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+38400
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+1201
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+1203
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+40090,42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+4,22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+43300
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+1072
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+1075
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+44926,70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+3,62
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+48500
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+964
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+965
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+50003,92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang english
+3,01
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Tabla de valores medidos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se realizan los correspondientes gráficos de las curvas de nivel del módulo
+ de H(s):
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename graficos/curvas_de_nivel_joaco.png
+	display false
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Curvas de nivel del módulo de H(s)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset Graphics
+	filename graficos/grafico_joaco_2.png
+	display false
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Gráfico del módulo de H(s)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico-del-módulo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se puede observar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gráfico-del-módulo"
+
+\end_inset
+
+ que para cada R y f existe un único mínimo del módulo de H(s) en el rango
+ de medición.
+ Por lo cual no hace falta desarrollar un método adicional para medir en
+ este puente.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Dada las mediciones y el análisis de sensibilidad se pudo observar que al
+ medir frecuencias en el rango de 5KHz - 50KHz el peor error fue de 7.61%,
+ lo cual en principio no resulta tan importante si se quiere realizar una
+ medición estimativa de una frecuencia.
+ Por lo tanto, se considera que el puente diseñado cumple correctamente
+ con permitir la medición de frecuencias.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
