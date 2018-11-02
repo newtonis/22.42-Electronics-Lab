@@ -428,20 +428,6 @@ frac{-A}{(A+1)^2}$
 \begin_layout Standard
 
 \lang english
-Tomamos 
-\begin_inset Formula $\frac{\Delta Z_{1}}{Z_{1}}=\frac{\Delta R{}_{1}}{R_{1}}=1\%$
-\end_inset
-
- debido a las 25 vueltas del preset empleado para variar 
-\begin_inset Formula $R_{1}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
 Análogamente, siendo 
 \begin_inset Formula $\Delta Vd_{3}$
 \end_inset
@@ -454,7 +440,7 @@ Análogamente, siendo
 \begin_inset Formula $R_{3}$
 \end_inset
 
-,
+:
 \end_layout
 
 \begin_layout Standard
@@ -492,11 +478,7 @@ En este caso, en el equilibrio se tiene que:
 \begin_layout Standard
 
 \lang english
-Tomamos 
-\begin_inset Formula $\frac{\Delta R{}_{3}}{R_{3}}=1\%$
-\end_inset
-
-, y considerando que 
+Considerando que 
 \begin_inset Formula $\frac{1}{\omega C_{3}R_{3}}\gg1$
 \end_inset
 
@@ -1034,10 +1016,6 @@ right) = arctg(Q)$$
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
@@ -2548,9 +2526,7 @@ status open
 
 \begin_layout Plain Layout
 
-$
-\backslash
-Delta V_d 
+$V_d 
 \backslash
 approx 34mV$
 \end_layout
@@ -2570,7 +2546,46 @@ status open
 
 \end_inset
 
- veces,
+ veces, resulta que en el puente 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta V_d 
+\backslash
+approx = 0.23mV$
+\end_layout
+
+\end_inset
+
+.
+ Desplazándonos en un entorno a dicho valor, se puede considerar que el
+ error producido en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$V_d$
+\end_layout
+
+\end_inset
+
+ es aproximadamente proporcional (lineal) respecto a la variación en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$R_1$
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
