@@ -77,7 +77,7 @@
 \begin_body
 
 \begin_layout Section*
-Puente de Wein
+Puente de Wien
 \end_layout
 
 \begin_layout Standard
@@ -676,7 +676,7 @@ Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \end_layout
 
 \begin_layout Standard
-Asumimmos que 
+Asumimos que 
 \begin_inset Formula $R_{3}>>\Delta R_{3}$
 \end_inset
 
@@ -1479,7 +1479,7 @@ Tabla de valores medidos
 
 \begin_layout Standard
 Se realizan los correspondientes gráficos de las curvas de nivel del módulo
- de H(s)
+ de H(s):
 \end_layout
 
 \begin_layout Standard
