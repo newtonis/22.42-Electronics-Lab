@@ -95,6 +95,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Imagen.png
+	scale 80
 
 \end_inset
 
@@ -1474,6 +1475,108 @@ Tabla de valores medidos
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Se realizan los correspondientes gráficos de las curvas de nivel del módulo
+ de H(s):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/joa-m/InformesLabo/TP4/graficos/curvas_de_nivel_joaco.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Curvas de nivel del módulo de H(s)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/joa-m/InformesLabo/TP4/graficos/grafico_joaco_2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráfico del módulo de H(s)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gráfico-del-módulo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede observar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gráfico-del-módulo"
+
+\end_inset
+
+ que para cada R y f existe un único mínimo del módulo de H(s) en el rango
+ de medición.
+ Por lo cual no hace falta desarrollar un método adicional para medir en
+ este puente.
 \end_layout
 
 \begin_layout Section*
