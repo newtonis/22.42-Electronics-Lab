@@ -46,8 +46,8 @@ r1, fr = np.meshgrid(r1, fr)
 delta_vd = calcular_valor(r1, fr)
 
 # ax.set_title('Sensibilidad de Vd con respecto a Z_1')
-ax.set_xlabel('R')
-ax.set_ylabel('f')
+ax.set_xlabel('R(ohm)')
+ax.set_ylabel('f(hz)')
 # ax.set_zlabel('$S_{Vd}^{Z_1}$')
 
 surf = ax.plot_surface(r1, fr, delta_vd, cmap=cm.coolwarm,
