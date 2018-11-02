@@ -74,25 +74,49 @@
 Métodos de medición de equilibrio de puentes
 \end_layout
 
+\begin_layout Standard
+Para saber cuando el puente está balanceado es muy importante saber con
+ exactitud cuando la tensión 
+\begin_inset Formula $V_{d}=0$
+\end_inset
+
+.
+ El mayor problema es que, como la tensión diferencial a medir es de muy
+ baja amplitud, la condición de equilibrio teórica no es medible en la práctica,
+ sino que se busca el método de medición para el cual se alcance la menor
+ amplitud posible.
+ A continuación se compararán distintos métodos para mdir el equilibrio
+ de un puente:
+\end_layout
+
 \begin_layout Subsection*
 Osciloscopio
 \end_layout
 
 \begin_layout Standard
-Para buscar que 
+El osciloscopio es un método visual para medir 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+, además se puede apreciar como varía en el dominio del tiempo y por lo
+ tanto se puede conocer también su fase respecto a la tensión de entrada.
+ Para encontrar 
 \begin_inset Formula $V_{d}=0$
 \end_inset
 
-, se hace la diferencia 
+, se hace uso de la función MATH del osciloscopio.
+ Se busca que la diferencia 
 \begin_inset Formula $V_{a}-V_{b}$
 \end_inset
 
- usando Math en el osciloscopio.
- Se busca que esta diferencia sea cero para que el puente este en equilibrio.
- El inconveniente con este método es que cuando la diferencia entre las
- tensiones es muy chica, se encuentra debajo del piso de ruido, por lo que
- no se puede distinguir correctamente cuándo la diferencia es realmente
- cero.
+ sea lo mas chica posible, la desventaja es que el osciloscopio es un instrument
+o sensible al ruido, y cuando la señal pasa a estar por debajo del nivel
+ del ruido no se puede llegar a distinguir correctamente el verdadero mínimo
+ de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection*
@@ -100,11 +124,11 @@ Multímetro de precisión
 \end_layout
 
 \begin_layout Standard
-El generador tiene armonicos y no se llega al 0, sino que a un minimo.
-\end_layout
-
-\begin_layout Standard
-!!!!!!!!!!!!! COMPLETAR
+La ventaja de utilizar este instrumento es que éstos ya cuentan con la posibilid
+ad de medir tensiones diferenciales sobre el circuito, lo que hace que la
+ medición sea mas precisa en comparación con el osciloscopio, además es
+ menos sensible al ruido.
+ En este caso no es posible ver los cambios de la fase de la señal
 \end_layout
 
 \begin_layout Subsection*
@@ -112,27 +136,23 @@ Amplificador de instrumentación
 \end_layout
 
 \begin_layout Standard
-El amplificador de instrumentación tiene la ventaja de eliminar el modo
- común de la entrada.
- El modo común se corresponde con el ruido que hay en ambas entradas y el
- CMRR del amplificador determina en cuánto este se atenúa, cuanto mas grande,
- mejores resultados se obtienen.
- De esta manera, se puede distinguir con más precisión cuando el puente
- esta balanceado, es decir cuando la diferencia entre ambas tensiones de
- entrada es nula.
+El amplificador de instrumentación tiene la característica de atenuar la
+ tensión en modo común y amplificar la tensión en modo diferencial.
+ Al conectarlo a la salida del puente, se obtiene al final una tensión que
+ va a tener mayor amplitud que la original, lo que la hace ser menos comparable
+ con el piso del ruido, y además, debido a su alto CMRR (Coeficiente de
+ rechazo de modo común)  el ruido, que es común a ambas entradas, va a disminuir
+ en gran medida.
+ Cuanto mayor sea el CMRR del amplificador, más precisión se tendrá para
+ medir el equilibrio del puente.
 \end_layout
 
 \begin_layout Standard
-Permite disminuir el ruido presente en los valores medidos de tensión.
-\end_layout
-
-\begin_layout Standard
-!!!!!!!!!!!COMPLETAR
-\end_layout
-
-\begin_layout Standard
-Lo mejor para medir el equilibrio de un puente es emplear el multímetro
- de banco, conectando también un amplificador de instrumentación.
+Teniendo en cuenta todas las posibilidades, se decidió utilizar el amplificador
+ de instrumentación junto con el osciloscopio.
+ De esta manera se evitan los problemas con el ruido y también se puede
+ visualizar tanto la fase como la magnitud de la señal en el tiempo y en
+ forma gráfica, lo que ayuda a ver si las mediciones tomadas son correctas.
 \end_layout
 
 \end_body
