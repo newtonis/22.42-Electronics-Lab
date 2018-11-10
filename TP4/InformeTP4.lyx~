@@ -5,9 +5,19 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\pagestyle{fancy}
+\lhead{Laboratorio de Electrónica 22.42}
+\chead{TPL4}
+\rhead{ITBA}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -55,15 +65,15 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
+\leftmargin 2.25cm
+\topmargin 2.25cm
 \rightmargin 2cm
 \bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\quotes_language french
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -76,16 +86,168 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Métodos de medición de equilibrio de puentes
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para saber cuando el puente está balanceado es muy importante saber con
+ exactitud cuando la tensión 
+\begin_inset Formula $V_{d}=0$
+\end_inset
+
+.
+ El mayor problema es que, como la tensión diferencial a medir es de muy
+ baja amplitud, la condición de equilibrio teórica no es medible en la práctica,
+ sino que se busca el método de medición para el cual se alcance la menor
+ amplitud posible.
+ A continuación se compararán distintos métodos para mdir el equilibrio
+ de un puente:
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Osciloscopio
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El osciloscopio es un método visual para medir 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+, además se puede apreciar como varía en el dominio del tiempo y por lo
+ tanto se puede conocer también su fase respecto a la tensión de entrada.
+ Para encontrar 
+\begin_inset Formula $V_{d}=0$
+\end_inset
+
+, se hace uso de la función MATH del osciloscopio.
+ Se busca que la diferencia 
+\begin_inset Formula $V_{a}-V_{b}$
+\end_inset
+
+ sea lo mas chica posible, la desventaja es que el osciloscopio es un instrument
+o sensible al ruido, y cuando la señal pasa a estar por debajo del nivel
+ del ruido no se puede llegar a distinguir correctamente el verdadero mínimo
+ de 
+\begin_inset Formula $V_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Multímetro de precisión
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La ventaja de utilizar este instrumento es que éstos ya cuentan con la posibilid
+ad de medir tensiones diferenciales sobre el circuito, lo que hace que la
+ medición sea mas precisa en comparación con el osciloscopio, además es
+ menos sensible al ruido.
+ En este caso no es posible ver los cambios de la fase de la señal
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Amplificador de instrumentación
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El amplificador de instrumentación tiene la característica de atenuar la
+ tensión en modo común y amplificar la tensión en modo diferencial.
+ Al conectarlo a la salida del puente, se obtiene al final una tensión que
+ va a tener mayor amplitud que la original, lo que la hace ser menos comparable
+ con el piso del ruido, y además, debido a su alto CMRR (Coeficiente de
+ rechazo de modo común)  el ruido, que es común a ambas entradas, va a disminuir
+ en gran medida.
+ Cuanto mayor sea el CMRR del amplificador, más precisión se tendrá para
+ medir el equilibrio del puente.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Teniendo en cuenta todas las posibilidades, se decidió utilizar el amplificador
+ de instrumentación junto con el osciloscopio.
+ De esta manera se evitan los problemas con el ruido y también se puede
+ visualizar tanto la fase como la magnitud de la señal en el tiempo y en
+ forma gráfica, lo que ayuda a ver si las mediciones tomadas son correctas.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang english
 Puente de Wien
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Se pidió diseñar un puente de Wien que dado el número de grupo (6 en nuestro
  caso) pueda medir entre un rango de frecuencias determinado.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -93,8 +255,10 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\lang english
 \begin_inset Graphics
-	filename Imagen.png
+	filename Puente de wein/Imagen.png
 	scale 60
 
 \end_inset
@@ -103,9 +267,13 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang english
 Circuito del Puente de Wein
 \end_layout
 
@@ -120,10 +288,14 @@ Circuito del Puente de Wein
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 El rango pedido es de 5K a 50KHz.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Si llamamos 
 \begin_inset Formula $Vd=V^{+}-V^{-}$
 \end_inset
@@ -132,6 +304,8 @@ Si llamamos
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \frac{Vd}{Vg}=-\frac{R_{4}(C_{1}R_{1}s+C_{3}R_{3}s+C_{1}C_{3}R_{1}R_{3}s^{2}+1)-C_{1}R_{2}R_{3}s}{(R_{2}+R_{4})(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
@@ -143,6 +317,8 @@ Si llamamos
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 H(s)=-\frac{R_{4}}{R_{2}+R_{4}}\frac{C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}})s+1}{(C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3})s+1)}
@@ -154,6 +330,8 @@ H(s)=-\frac{R_{4}}{R_{2}+R_{4}}\frac{C_{1}C_{3}R_{1}R_{3}s^{2}+(C_{1}R_{1}+C_{3}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Si llamamos 
 \begin_inset Formula $\omega_{0}=\frac{1}{\sqrt{C_{1}C_{3}R_{1}R_{3}}}$
 \end_inset
@@ -174,11 +352,15 @@ H(s)=-k\frac{\left[(\frac{s}{\omega_{0}})^{2}+(C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Si realizaramos el diagrama de bode asintótico veríamos que el punto de
  interés es 
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 s= j
 \begin_inset Formula $\omega_{0}$
 \end_inset
@@ -187,6 +369,8 @@ s= j
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 H(s=j\omega_{0})=-k\frac{\left[C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4}}\right]}{\left[C_{1}R_{1}+C_{1}R_{3}+C_{3}R_{3}\right]}
@@ -198,6 +382,8 @@ H(s=j\omega_{0})=-k\frac{\left[C_{1}R_{1}+C_{3}R_{3}-\frac{C_{1}R_{2}R_{3}}{R_{4
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 H(s=j\omega_{0})=0\iff\frac{R_{1}}{R_{3}}+\frac{C_{3}}{C_{1}}=\frac{R_{2}}{R_{4}}
@@ -209,10 +395,14 @@ H(s=j\omega_{0})=0\iff\frac{R_{1}}{R_{3}}+\frac{C_{3}}{C_{1}}=\frac{R_{2}}{R_{4}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 ergo
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 |H(s=j\omega_{0})|_{dB}\rightarrow-\infty
@@ -224,14 +414,20 @@ ergo
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Y se determina que es un filtro notch rechaza banda.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 La frecuencia para la cual Vd se anula es:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 f_{0}=\frac{1}{2\pi\sqrt{C_{1}C_{3}R_{1}R_{3}}}
@@ -243,6 +439,8 @@ f_{0}=\frac{1}{2\pi\sqrt{C_{1}C_{3}R_{1}R_{3}}}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 En general se utiliza R
 \begin_inset Formula $_{1}$
 \end_inset
@@ -263,6 +461,8 @@ En general se utiliza R
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 f_{0}=\frac{1}{2\pi CR}
@@ -274,6 +474,8 @@ f_{0}=\frac{1}{2\pi CR}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Para el diseño hacemos 
 \family roman
 \series medium
@@ -311,6 +513,8 @@ C
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Nos deja con 
 \begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
 \end_inset
@@ -327,6 +531,8 @@ Nos deja con
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Para cubrir el rango de medición R debe variar entre 964
 \begin_inset Formula $\Omega$
 \end_inset
@@ -351,17 +557,23 @@ y 9640
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Estos valores son de este orden ya que si se diera el caso en el que necesitaram
 os medir con puntas sobre los terminales, las resistencias R no sean comparables
  con la resistencia de la punta, ni el capacitor de la punta sea comparable
  con el capacitor C.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
+
+\lang english
 Análisis de sensibilidades
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsubsection
+
+\lang english
 Variación de R
 \begin_inset Formula $_{1}$
 \end_inset
@@ -370,20 +582,28 @@ Variación de R
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Si Vd es nuestra variable de interés, entonces debemos calcular la sensibilidad
  de esa variable respecto del cambio de otra.
  
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Para ello la cuenta a realizar es la siguiente:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Como se sabe, en el equilibrio 
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}
@@ -395,6 +615,8 @@ Como se sabe, en el equilibrio
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Y ya que sabemos que 
 \begin_inset Formula $\frac{R_{2}}{R_{4}}=2$
 \end_inset
@@ -411,6 +633,8 @@ Y ya que sabemos que
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Asumiendo que 
 \begin_inset Formula $Z>>\Delta Z_{1}$
 \end_inset
@@ -427,6 +651,8 @@ Vd+\Delta Vd=\frac{Z_{3}Z_{2}-Z_{4}(Z_{1}+\Delta Z_{1})}{(Z_{3}+Z_{1})(Z_{2}+Z_{
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 En un entorno cercano al equilibrio Vd = 0 y 
 \begin_inset Formula $\frac{Z_{4}}{Z_{2}}=\frac{Z_{3}}{Z_{1}}$
 \end_inset
@@ -435,6 +661,8 @@ En un entorno cercano al equilibrio Vd = 0 y
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Vd=\frac{-\frac{\Delta Z_{1}}{Z_{1}}}{(\frac{Z_{3}}{Z_{1}}+1)(\frac{Z_{2}}{Z_{4}}+1)}Vg
@@ -446,6 +674,8 @@ En un entorno cercano al equilibrio Vd = 0 y
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \frac{\Delta Vd}{Vg}=-\frac{A}{(1+A)^{2}}\frac{\Delta Z_{1}}{Z_{1}}=-\frac{2}{9}\frac{\Delta Z_{1}}{Z_{1}}
@@ -457,6 +687,8 @@ En un entorno cercano al equilibrio Vd = 0 y
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Si llamamos 
 \begin_inset Formula $\delta_{Z1}=\frac{\Delta Z_{1}}{Z_{1}}$
 \end_inset
@@ -465,6 +697,8 @@ Si llamamos
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Vd=-\frac{2}{9}Vg\delta_{Z1}
@@ -476,11 +710,15 @@ Si llamamos
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Por lo cual como la sensibilidad es proporcional a Vg en todo el rango de
  medición sería recomendable tomar Vg lo más chica posible para las mediciones.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Para el ajuste de cada variable, se puede ver a Z
 \begin_inset Formula $_{1}$
 \end_inset
@@ -497,6 +735,8 @@ Para el ajuste de cada variable, se puede ver a Z
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Por lo que si variamos R
 \begin_inset Formula $_{1}$
 \end_inset
@@ -505,6 +745,8 @@ Por lo que si variamos R
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 |\delta_{R1}|=\frac{1}{\sqrt{1+(\frac{X_{1}}{R_{1}})^{2}}}\frac{\Delta R_{1}}{R_{1}}
@@ -516,6 +758,8 @@ Por lo que si variamos R
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Se puede ver que si X
 \begin_inset Formula $_{1}$
 \end_inset
@@ -534,6 +778,8 @@ Se puede ver que si X
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Si tenemos en cuenta 
 \begin_inset Formula $\frac{\Delta R_{1}}{R_{1}}=0.01$
 \end_inset
@@ -542,21 +788,28 @@ Si tenemos en cuenta
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
+
+\lang english
 \begin_inset Graphics
-	filename C:/Users/joa-m/InformesLabo/TP4/graficos/sensR1.png
+	filename graficos/sensR1.png
+	display false
 	scale 55
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename C:/Users/joa-m/InformesLabo/TP4/graficos/sensR1x2.png
+	filename graficos/sensR1x2.png
+	display false
 	scale 55
 
 \end_inset
@@ -565,9 +818,13 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang english
 Sensibilidad de Vd con respecto a R
 \begin_inset Formula $_{1}$
 \end_inset
@@ -585,7 +842,9 @@ Sensibilidad de Vd con respecto a R
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsubsection
+
+\lang english
 Variación de R
 \begin_inset Formula $_{3}$
 \end_inset
@@ -594,6 +853,8 @@ Variación de R
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Asumiendo que 
 \begin_inset Formula $Z>>\Delta Z_{3}$
 \end_inset
@@ -602,6 +863,8 @@ Asumiendo que
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
@@ -613,10 +876,14 @@ Vd+\Delta Vd=\frac{(Z_{3}+\Delta Z_{3})Z_{2}-Z_{4}Z_{1}}{(Z_{3}+Z_{1})(Z_{2}+Z_{
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 En el equilibrio: 
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Vd=\frac{\Delta Z_{3}Z_{2}}{(Z_{3}+Z_{1})(Z_{2}+Z_{4})}Vg
@@ -628,6 +895,8 @@ En el equilibrio:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Vd=\frac{\frac{\Delta Z_{3}}{Z_{3}}}{(\frac{Z_{1}}{Z_{3}}+1)(\frac{Z_{4}}{Z_{2}}+1)}Vg
@@ -639,6 +908,8 @@ En el equilibrio:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Como 
 \begin_inset Formula 
 \[
@@ -651,6 +922,8 @@ Como
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Entonces si A =
 \begin_inset Formula $\frac{Z_{2}}{Z_{4}}$
 \end_inset
@@ -659,6 +932,8 @@ Entonces si A =
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Vd=-\frac{2}{9}\frac{\Delta Z_{3}}{Z_{3}}Vg
@@ -670,6 +945,8 @@ Entonces si A =
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Y si 
 \begin_inset Formula $\delta_{Z3}=\frac{\Delta Z_{3}}{Z_{3}}$
 \end_inset
@@ -682,6 +959,8 @@ Y si
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
@@ -693,6 +972,8 @@ Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Z_{3}=\frac{(R_{3}+\Delta R_{3})jX_{3}}{(R_{3}+\Delta R_{3})+jX_{3}}-\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
@@ -704,6 +985,8 @@ Z_{3}=\frac{R_{3}jX_{3}}{R_{3}+jX_{3}}
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Asumimos que 
 \begin_inset Formula $R_{3}>>\Delta R_{3}$
 \end_inset
@@ -712,6 +995,8 @@ Asumimos que
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \Delta Z_{3}=\frac{R_{3}jX_{3}+\Delta R_{3}jX_{3}-R_{3}jX_{3}}{R_{3}+jX_{3}}=\frac{\Delta R_{3}jX_{3}}{R_{3}+jX_{3}}
@@ -723,6 +1008,8 @@ Asumimos que
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \[
 \delta_{R3}=\frac{\Delta Z_{3}}{Z_{3}}=\frac{\Delta R_{3}}{R_{3}}
@@ -733,11 +1020,15 @@ Asumimos que
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection
+
+\lang english
 Mediciones
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Para las mediciones se utilizó el amplificador de instrumentación ya que
  este nos brinda la posibilidad de quitar el ruido que tienen en común las
  señales V
@@ -755,6 +1046,8 @@ l de salida en el osciloscopio.
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Fijamos C = 
 \begin_inset Formula $3.3nf$
 \end_inset
@@ -772,6 +1065,8 @@ se varían de forma tal que se mantenga la igualdad entre ellas\SpecialChar endo
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -779,6 +1074,8 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\lang english
 \begin_inset Tabular
 <lyxtabular version="3" rows="10" columns="5">
 <features tabularvalignment="middle">
@@ -792,6 +1089,8 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 Frecuencia Medida (Hz)
 \end_layout
 
@@ -801,6 +1100,8 @@ Frecuencia Medida (Hz)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 R1(
 \begin_inset Formula $\Omega$
 \end_inset
@@ -814,6 +1115,8 @@ R1(
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 R3(
 \begin_inset Formula $\Omega$
 \end_inset
@@ -827,6 +1130,8 @@ R3(
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 Frecuencia calculada (Hz)
 \end_layout
 
@@ -836,6 +1141,8 @@ Frecuencia calculada (Hz)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 Error (%)
 \end_layout
 
@@ -847,6 +1154,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 4620 
 \end_layout
 
@@ -856,6 +1165,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 9654 
 \end_layout
 
@@ -865,6 +1176,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 9648 
 \end_layout
 
@@ -874,6 +1187,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 5000.39
 \end_layout
 
@@ -883,6 +1198,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 7.61
 \end_layout
 
@@ -894,6 +1211,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 9280
 \end_layout
 
@@ -903,6 +1222,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 4831
 \end_layout
 
@@ -912,6 +1233,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 4828
 \end_layout
 
@@ -921,6 +1244,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 9985.25
 \end_layout
 
@@ -930,6 +1255,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 7.06
 \end_layout
 
@@ -941,6 +1268,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 14000
 \end_layout
 
@@ -950,6 +1279,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 3225
 \end_layout
 
@@ -959,6 +1290,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 3222
 \end_layout
 
@@ -968,6 +1301,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 14977.88
 \end_layout
 
@@ -977,6 +1312,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 6.53
 \end_layout
 
@@ -988,6 +1325,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 18800
 \end_layout
 
@@ -997,6 +1336,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 2413
 \end_layout
 
@@ -1006,6 +1347,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 2410
 \end_layout
 
@@ -1015,6 +1358,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 20011.94
 \end_layout
 
@@ -1024,6 +1369,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 6.06
 \end_layout
 
@@ -1035,6 +1382,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 23600
 \end_layout
 
@@ -1044,6 +1393,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 1920 
 \end_layout
 
@@ -1053,6 +1404,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 1920
 \end_layout
 
@@ -1074,6 +1427,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 29918,96
 \end_layout
 
@@ -1095,6 +1449,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 4,41
 \end_layout
 
@@ -1118,6 +1473,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 33500
 \end_layout
 
@@ -1139,6 +1495,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 1373
 \end_layout
 
@@ -1160,6 +1517,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 1374
 \end_layout
 
@@ -1181,6 +1539,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 35113,78
 \end_layout
 
@@ -1202,6 +1561,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 4,60
 \end_layout
 
@@ -1225,6 +1585,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 38400
 \end_layout
 
@@ -1246,6 +1607,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 1201
 \end_layout
 
@@ -1267,6 +1629,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 1203
 \end_layout
 
@@ -1288,6 +1651,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 40090,42
 \end_layout
 
@@ -1309,6 +1673,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 4,22
 \end_layout
 
@@ -1332,6 +1697,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 43300
 \end_layout
 
@@ -1353,6 +1719,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 1072
 \end_layout
 
@@ -1374,6 +1741,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 1075
 \end_layout
 
@@ -1395,6 +1763,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 44926,70
 \end_layout
 
@@ -1416,6 +1785,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 3,62
 \end_layout
 
@@ -1427,6 +1797,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 48500
 \end_layout
 
@@ -1436,6 +1808,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 964
 \end_layout
 
@@ -1445,6 +1819,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 965
 \end_layout
 
@@ -1466,6 +1842,7 @@ Error (%)
 \uwave off
 \noun off
 \color none
+\lang english
 50003,92
 \end_layout
 
@@ -1475,6 +1852,8 @@ Error (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\lang english
 3,01
 \end_layout
 
@@ -1489,9 +1868,13 @@ Error (%)
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang english
 Tabla de valores medidos
 \end_layout
 
@@ -1506,11 +1889,15 @@ Tabla de valores medidos
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Se realizan los correspondientes gráficos de las curvas de nivel del módulo
  de H(s):
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -1518,8 +1905,11 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\lang english
 \begin_inset Graphics
-	filename C:/Users/joa-m/InformesLabo/TP4/graficos/curvas_de_nivel_joaco.png
+	filename graficos/curvas_de_nivel_joaco.png
+	display false
 	scale 80
 
 \end_inset
@@ -1528,9 +1918,13 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang english
 Curvas de nivel del módulo de H(s)
 \end_layout
 
@@ -1545,6 +1939,8 @@ Curvas de nivel del módulo de H(s)
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Float figure
 wide false
 sideways false
@@ -1552,8 +1948,11 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\lang english
 \begin_inset Graphics
-	filename C:/Users/joa-m/InformesLabo/TP4/graficos/grafico_joaco_2.png
+	filename graficos/grafico_joaco_2.png
+	display false
 	scale 80
 
 \end_inset
@@ -1562,9 +1961,13 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\lang english
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+
+\lang english
 Gráfico del módulo de H(s)
 \begin_inset CommandInset label
 LatexCommand label
@@ -1590,6 +1993,8 @@ name "fig:Gráfico-del-módulo"
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Se puede observar en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1603,17 +2008,43 @@ reference "fig:Gráfico-del-módulo"
  este puente.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection
+
+\lang english
 Conclusiones
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 Dada las mediciones y el análisis de sensibilidad se pudo observar que al
  medir frecuencias en el rango de 5KHz - 50KHz el peor error fue de 7.61%,
  lo cual en principio no resulta tan importante si se quiere realizar una
  medición estimativa de una frecuencia.
  Por lo tanto, se considera que el puente diseñado cumple correctamente
  con permitir la medición de frecuencias.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

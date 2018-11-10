@@ -81,7 +81,7 @@ Puente de Wien
 \end_layout
 
 \begin_layout Standard
-Se pidió diseñar un puente de Wien que dado el número de grupo (6 en nuestro
+Se pidió diseñar un puente de wein que dado el número de grupo (6 en nuestro
  caso) pueda medir entre un rango de frecuencias determinado.
 \end_layout
 
@@ -1612,8 +1612,6 @@ Dada las mediciones y el análisis de sensibilidad se pudo observar que al
  medir frecuencias en el rango de 5KHz - 50KHz el peor error fue de 7.61%,
  lo cual en principio no resulta tan importante si se quiere realizar una
  medición estimativa de una frecuencia.
- Por lo tanto, se considera que el puente diseñado cumple correctamente
- con permitir la medición de frecuencias.
 \end_layout
 
 \end_body
