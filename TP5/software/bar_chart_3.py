@@ -1,19 +1,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from math import sqrt, log10
+from numpy import pi
 
 def formula_cuadrada(n):
     if n % 2 == 0:
-        return 0
+        xn = 0
     else:
-        xn = 2 * (0.125 / 2) / (np.pi * n)
+        xn = 4*(0.125/2) / ((pi * n)**2)
 
-        power = 2*xn**2/50
-        return int(10*log10((power*1000.0))*10)/10
+    power = 2*xn**2/50
+    return int(10*log10((power*1000.0))*10)/10
 
 
-arr = [-11.4, -21.4, -26.6, -30.2, -33.3, -35, - 37, -44]
-calc_dbm = [formula_cuadrada(i) for i in range(1, len(arr)*2+1, 2)]
+arr = [-15.8, -35.6, -44.2, -50.2, -54.0, -57.6, -59.2, -62.8]
+calc_dbm = [formula_cuadrada(i) for i in [1,3,5,7,9,11,13,15]]
 print(arr)
 print(calc_dbm)
 
@@ -31,7 +32,7 @@ rects2 = ax.bar(ind + width/2, women_means, width, yerr=women_std,
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Potencia (dBm)')
-ax.set_title('Señal cuadrada DC 50%, potencia de cada armónico')
+ax.set_title('Señal Triangular Simetría 50%, potencia de cada armónico')
 ax.set_xticks(ind)
 ax.set_xticklabels(('1', '3', '5', '7', '9', '11', '13', '15'))
 ax.legend()

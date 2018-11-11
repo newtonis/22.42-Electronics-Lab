@@ -1,5 +1,5 @@
 from numpy import fft
-
+from numpy import log10, sqrt
 
 arr = []
 n = 1000
@@ -11,5 +11,7 @@ for i in range(n):
         arr.append(0)
         
 print("Fft funcion cuadrada: ")
-print(abs(fft.fft(arr, n)))
+xn = abs(fft.fft(arr, n))
+print(xn)
+print(10*log10(((((0.125/sqrt(2)*xn)**2)/50.0 * 1000))))
 
