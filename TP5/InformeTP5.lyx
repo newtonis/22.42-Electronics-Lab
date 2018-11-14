@@ -141,6 +141,27 @@ status open
 \end_inset
 
 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Deberíamos haber utilizado 1.5Mhz dado que somos el grupo 6, no obstante
+ se decidió no volver a medir con frecuencia distinta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -193,7 +214,7 @@ status open
 
 \begin_layout Plain Layout
 
-RBW=100Khz
+RBW=10Khz
 \end_layout
 
 \end_inset
@@ -956,36 +977,533 @@ También es importante aclarar que los armonicos que fueron demasiado tenues
  En particular, para las señales cuadradas, una buena forma de identificar
  su tiempo activo experimentalmente a partir de el espectro es mirar los
  armonicos faltantes.
- Si son los pares, el tiempo activo será de 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$%50$
-\end_layout
-
-\end_inset
-
-.
- Si son los multiplos de 3, el tiempo activo será 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-$33%$
-\end_layout
-
-\end_inset
-
-.
- probablemente exista una generalización de dicho patrón para identificar
+ Si son los pares, el tiempo activo será de 50%.
+ Si son los multiplos de 3, el tiempo activo será 33%.
+ Probablemente exista una generalización de dicho patrón para identificar
  otros tiempos activos de señales cuadradas a partir del espectro.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Analisis de señales AM
+\end_layout
 
+\begin_layout Standard
+Se procedió a medir en el analizador de espectros señales de AM generadas
+ utilizando dos osciloscopios, modulando uno con el otro.
+ Se decidió no utilizar señales de amplitud mayor a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$200mVpp$
+\end_layout
+
+\end_inset
+
+ debido a que por su escasa amplitud, y su parecido con el piso de ruido
+ del osciloscopio dichas señales fueron demasiado dificiles de medir.
+ Salvo indiciado lo contrario, la frecuencia de la señal modulada fue de
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$200 KHz$
+\end_layout
+
+\end_inset
+
+, y la frecuencia de la señal portadora 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$1.7Mhz$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Estructura de una señal AM
+\end_layout
+
+\begin_layout Standard
+Recordaremos la composición de una señal AM, para luego verificar que las
+ mediciones posteriores con dichas señales fueron razonables.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$$S_{am}(t) = Ap(1+m cos(2
+\backslash
+pi f_m t))cos(2
+\backslash
+pi f_pt) = 
+\backslash
+frac{1}{2}A_pS_p + 
+\backslash
+frac{1}{2}mA_pcos(2
+\backslash
+pi(f_p-f_m)t)+
+\backslash
+frac{1}{2}mA_pcos(2
+\backslash
+pi(f_p+f_m)t)$$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es decir una señal AM se la puede imaginar como un producto de dos senoidales
+ (uno con offset), o, como una señal compuesta por una suma de tres senoidales,
+ de tres frecuencias distintas, una central y dos escoltas.
+\end_layout
+
+\begin_layout Subsection
+Señal senoidal AM, m=0.5
+\end_layout
+
+\begin_layout Standard
+Se procedió a generar y medir una señal AM intentando aproximar el valor
+ de n a 0.5.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename am_n0.5.png
+	lyxscale 25
+	scale 28
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename am_n05espectro.png
+	lyxscale 27
+	scale 27
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal senoidal, m=0.5 y su espectro correspondiente (derecha a izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se observó que la frecuencia central del espectro se encontro en 1.79 Mhz,
+ lo cual no era de esperar ya que según las indicaciones del generador la
+ señal moduladora era de 1.7Mhz.
+ En las mediciones posteriores se procedió a realizar un ajuste para lograr
+ que la frecuencia del armonico central fuese de 1.7Mhz
+\end_layout
+
+\begin_layout Standard
+Observando los graficos podemos ver que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A_m
+\backslash
+approx 0.25V$
+\end_layout
+
+\end_inset
+
+ y que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A_p 
+\backslash
+approx 0.75V$
+\end_layout
+
+\end_inset
+
+ por lo tanto 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$n=
+\backslash
+frac{V_{max}-V_{min}}{V_{max}+V_{min}}
+\backslash
+approx 0.6$
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Debido a que el ajuste fue realizado mediante el giro una perilla y observando
+ la señal, es razonable que el valor de n no sea exactamente 0.5
+\end_layout
+
+\begin_layout Subsection
+Señal senoidal AM, m=1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename am_n=1.png
+	lyxscale 28
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename am_n=1espectro.png
+	lyxscale 25
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal senoidal, m=0.5 y su espectro correspondiente (derecha a izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso se ajusto la frecuencia para que el armonico central coincidiese
+ en 1.7Mhz.
+ Tambien es importante observar que la señal medida tiene cierto offset
+ debido a que, se dejó la perilla de offset del generador en un nivel distinto
+ de 0, y no se noto.
+ No obstante no se encontraron diferencias importantes, ya que en principio,
+ un nivel mayor de continua solo debería modificar la componente continua
+ de la señal que, la cual no fue medida.
+ 
+\end_layout
+
+\begin_layout Standard
+Además es importante observar que los resultados son razonables ya que los
+ picos de las frecuencias adyacentes se acercaron al valor del pico central.
+ Esto se debe a que al incrementarse N, la amplitud de los componentes adyacente
+s, dada por 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}mAp$
+\end_layout
+
+\end_inset
+
+ crece, mientras que 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{1}{2}A_P$
+\end_layout
+
+\end_inset
+
+, la amplitud del pico central se mantiene.
+ Si bien esta relación es de amplitudes, si las amplitudes se acercan entre
+ si, también es razonable pensar que las potencias también.
+\end_layout
+
+\begin_layout Subsection
+Señal triangular AM, m=1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename triangular.png
+	lyxscale 20
+	scale 23
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename triangular_espectro.png
+	lyxscale 25
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal triangular, m=0.5 y su espectro correspondiente (derecha a izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se observa la aparición de un numero considerable de armonicos nuevos en
+ la señal.
+ Esto se debe a que una señal triangular contiene infinitos armonicos, debido
+ al hecho de que no es una función suave.
+\end_layout
+
+\begin_layout Subsection
+Señal senodial AM, m=1, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_p=F_m$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por medir
+\end_layout
+
+\begin_layout Section
+Medicion de señales FM
+\end_layout
+
+\begin_layout Standard
+Se procedió, a medir con el analizador de espectros y dos generadores algunas
+ señales de FM.
+ En general se tuvieron las mismas consideraciones que al medir las señales
+ de AM.
+ Las señales medidas fueron con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_p=1.7Mhz$
+\end_layout
+
+\end_inset
+
+ y 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$F_m=100Khz$
+\end_layout
+
+\end_inset
+
+.
+ Al igual que en el caso anterior se intentó buscar amplitudes suficiemtemente
+ grandes como para poder observar las señales en el osciloscopio con una
+ buena nitidez.
+\end_layout
+
+\begin_layout Subsection
+Señal 2 - Modulación senoidal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename FM_2.png
+	lyxscale 28
+	scale 25
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename FM_2espectro.png
+	lyxscale 28
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal FM y su espectro (derecha a izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se observa como la señal esta compuesta por una gran cantidad de armonicos.
+ Se decidió no calcular el indice de modulación debido a su complejidad.
+ Al mismo tiempo, se nota como la señal incrementa su frecuencia instantanea
+ en una manera abrupta para luego mantenerla, de la misma forma que un senoidal
+ sube, y se mantiene en su pico por un tiempo considerable antes de volver
+ a bajar (es una función suave)
+\end_layout
+
+\begin_layout Subsection
+Señal 1 - Modulación triangular
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename FM_1.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename FM1_espectro.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal FM y su espectro (derecha a izquierda)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se observa, al igual que el caso anterior la composición de la señal por
+ muchos armonicos.
+ Tambien es importante observar como la frecuencia de la señal se incrementa
+ gradualmente, y no abrptamente como en el caso anterior con modulación
+ senoidal
 \end_layout
 
 \end_body
