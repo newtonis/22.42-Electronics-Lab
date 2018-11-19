@@ -88,6 +88,425 @@
 
 \begin_layout Standard
 
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+materia{Laboratorio de Electronica}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+trabajo{Analizador de espectros}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+titulo{Trabajo de Laboratorio nº 5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fecha{1 de noviembre de 2018} %Aca va la fecha.
+ Si lo dejan asi muestra la fecha de compilacion.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+grupo{6}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule{
+\backslash
+textwidth}{1.5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[0.5cm]{
+\backslash
+textwidth}{1.5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{minipage}[c]{
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=10cm]{LogoItba}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+large{Instituto Tecnol
+\backslash
+'ogico de Buenos Aires}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+small{
+\backslash
+lafecha}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{4.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newlength{
+\backslash
+titleWidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+settowidth{
+\backslash
+titleWidth}{
+\backslash
+Huge{
+\backslash
+lamateria}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Large{
+\backslash
+eltrabajo}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+normalsize{
+\backslash
+eltitulo}}
+\backslash
+
+\backslash
+[0.7cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[2mm]{
+\backslash
+titleWidth}{1pt}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+Huge{
+\backslash
+lamateria}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace*{1mm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[3mm]{
+\backslash
+titleWidth }{1pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{0.5cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Grupo 
+\backslash
+elgrupo
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vspace{4cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lcr}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{Nombre}&
+\backslash
+emph{Legajo}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ariel Nowik & 58309
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Joaquín Mestanza & 58288 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Marcelo Regueira & 58300
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Martina Máspero & 57120 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Malena Muller & 57057
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{minipage}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[-0.5cm]{
+\backslash
+textwidth}{1.5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule{
+\backslash
+textwidth}{1.5pt}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
