@@ -126,9 +126,9 @@ Cálculo de THD con diversos osciloscopios
 \end_layout
 
 \begin_layout Standard
-Se procedio a medir la distorsión armonica con tres generadores distintos
- disponibles en el laboratorio.
- La señal de entrada en todos los casos fueron 
+Se procedió a medir la distorsión armónica con tres generadores de señales
+ distintos disponibles en el laboratorio.
+ La señal de entrada en todos los casos fue de 
 \begin_inset ERT
 status open
 
@@ -189,12 +189,12 @@ Omega$
 
 \end_inset
 
- cada uno), la tensión que llego al analizador de espectros fue la aproximadamen
-te la mitad de la original, es decir 125mVpp.
+ cada uno), la tensión que llego al analizador de espectros fue aproximadamente
+ la mitad de la original, es decir 125mVpp.
 \end_layout
 
 \begin_layout Standard
-Se tomo como definición de THD la siguiente fórmula
+Se tomó como definición de THD la siguiente fórmula
 \end_layout
 
 \begin_layout Standard
@@ -218,7 +218,7 @@ Mediciones
 \end_layout
 
 \begin_layout Standard
-Se procedio a medir con 
+Se procedió a medir con 
 \begin_inset ERT
 status open
 
@@ -229,7 +229,7 @@ RBW=10Khz
 
 \end_inset
 
-, un span time de 
+ y un span time de 
 \begin_inset ERT
 status open
 
@@ -240,7 +240,7 @@ status open
 
 \end_inset
 
-, la intensidad de los armonicos de la señal de entrada.
+, la intensidad de los armónicos de la señal de entrada.
 \end_layout
 
 \begin_layout Standard
@@ -267,7 +267,7 @@ Generador
 \begin_inset Text
 
 \begin_layout Plain Layout
-1er armonico
+1er armónico
 \end_layout
 
 \end_inset
@@ -276,7 +276,7 @@ Generador
 \begin_inset Text
 
 \begin_layout Plain Layout
-2do armonico
+2do armónico
 \end_layout
 
 \end_inset
@@ -285,7 +285,7 @@ Generador
 \begin_inset Text
 
 \begin_layout Plain Layout
-3er armonico
+3er armçonico
 \end_layout
 
 \end_inset
@@ -485,11 +485,11 @@ Instek GFG 8019G
 \end_layout
 
 \begin_layout Standard
-En general se observo que en ambos casos la distorsión armonica dio en gran
- medida menor que lo esperado, por lo que se infiere que es probable que
- los fabricantes se cubren en gran medida con la cota que informan en sus
- hojas de datos, a pesar de que en los casos mas usuales como los que fueron
- medidos la distorsión armonica sea muy baja.
+En general se observó que en ambos casos la distorsión armónica dio en mucho
+ menor que lo esperado, por lo que se infiere que es probable que los fabricante
+s se cubren en gran medida con la cota que informan en sus hojas de datos,
+ a pesar de que en los casos mas usuales como los que fueron medidos la
+ distorsión armónica sea muy baja.
  
 \end_layout
 
@@ -498,8 +498,8 @@ Verificación de la magnitud obtenida para el primer armónico
 \end_layout
 
 \begin_layout Standard
-Se procedió a verificar numericamente que las potencias medidas en el primer
- armonico fuesen las correctas
+Se procedió a verificar numéricamente que las potencias medidas en el primer
+ armónico fuesen las correctas
 \end_layout
 
 \begin_layout Standard
@@ -536,36 +536,36 @@ Conclusiones
 \end_layout
 
 \begin_layout Standard
-En general la distorsión armonica con los generadores utilizados calculada
- fue muy baja.
- En particular, los dos generadores agilent dieron un THD diez veces menor
- al generador Inkstek, lo cual es una diferencia poco notable al observar
- la señal senoidal, pero perfectamente medible.
+En general la distorsión armónica calculada, con los generadores, fue muy
+ baja.
+ En particular, los dos generadores Agilent dieron un THD diez veces menor
+ al correspondiente al generador Inkstek, lo cual es una diferencia poco
+ notable al observar la señal senoidal, pero perfectamente medible.
 \end_layout
 
 \begin_layout Standard
 Es importante notar que debido a que solo se midió una cantidad finita de
- armonicos es probable que el THD real fuese un poco más grande que el calculado
-, pero, no demasiado más, ya que los armonicos mas grandes tienen una potencia
- mucho menor que los armonicos más pequeños.
+ armónicos es probable que el THD real fuese un poco más grande que el calculado
+, pero no demasiado más, ya que los armónicos mas grandes tienen una potencia
+ mucho menor que los más pequeños.
 \end_layout
 
 \begin_layout Subsection
-Resultados de los cálculos analiticos
+Resultados de los cálculos analíticos
 \end_layout
 
 \begin_layout Section
-Medición de señales cuadradas y triángulares
+Medición de señales cuadradas y triangulares
 \end_layout
 
 \begin_layout Standard
-Se calculó algebraicamente los coeficientes de la serie exponencial de fourier
+Se calculó algebraicamente los coeficientes de la serie exponencial de Fourier
  de las tres señales a analizar.
- Se mostrarán a continuación los resultados
+ Se mostrarán a continuación los resultados.
 \end_layout
 
 \begin_layout Subsubsection
-Cálculos analiticos, cuadrada, DC=50%
+Cálculos analíticos, cuadrada, DC=50%
 \end_layout
 
 \begin_layout Standard
@@ -613,7 +613,7 @@ $$|X_n| = 0
 \end_layout
 
 \begin_layout Subsubsection
-Cálculos analiticos, cuadrada, DC=30%
+Cálculos analíticos, cuadrada, DC=30%
 \end_layout
 
 \begin_layout Standard
@@ -683,7 +683,7 @@ pi}}
 \end_layout
 
 \begin_layout Subsubsection
-Cálculos analiticos, Triángular simetria = 50%
+Cálculos analíticos, triangular simetría = 50%
 \end_layout
 
 \begin_layout Standard
@@ -731,7 +731,7 @@ Cálculo de potencia a partir de los coeficientes de Fourier
 \end_layout
 
 \begin_layout Standard
-En todos los casos la potencia del armonico n estuvo dada por
+En todos los casos la potencia del armónico n estuvo dada por
 \end_layout
 
 \begin_layout Standard
@@ -768,7 +768,7 @@ $X_n$
 
 \end_inset
 
- se calcularon en amplitud (y por lo tanto es necesario dividir por raiz
+ se calcularon en amplitud (y por lo tanto es necesario dividir por raíz
  de 2), pero por el otro es necesario en aporte de 
 \begin_inset ERT
 status open
@@ -791,7 +791,7 @@ $X_{-n}=X_n$
 
 \end_inset
 
- para armar el armonico 
+ para armar el armónico 
 \begin_inset ERT
 status open
 
@@ -808,7 +808,7 @@ $n$
 \end_layout
 
 \begin_layout Subsubsection
-Comparación mediciones y Teoría
+Comparación, mediciones y Teoría
 \end_layout
 
 \begin_layout Standard
@@ -835,7 +835,7 @@ $f=1.7Mhz$
 \end_inset
 
 .
- En el caso de la señal triángular se debió disminuir la frecuencia a 
+ En el caso de la señal triangular se debió disminuir la frecuencia a 
 \begin_inset ERT
 status open
 
@@ -872,8 +872,7 @@ $RBW=100Khz$
 
 \end_inset
 
- para las cuadradas.
- (
+ para las cuadradas (
 \begin_inset ERT
 status open
 
@@ -884,7 +883,7 @@ $RBW=1Khz$
 
 \end_inset
 
- para la señal triángular)
+ para la señal triangular).
 \end_layout
 
 \begin_layout Standard
@@ -975,26 +974,26 @@ Comparación - Teoría y práctica señal triangular simetrica
 En general podemos observar que en los tres casos hubo correspondencia entre
  la teoría y la práctica.
  Los casos menos acertados fueron las señales cuadradas, en los cuales se
- noto que las mediciones de armonicos altos fueron más tenues de lo esperado.
+ notó que las mediciones de armónicos altos fueron más tenues de lo esperado.
  Esto probablemente se deba a que la frecuencia de dichas señales fue más
  alta que la de la triangular, por lo que es probable que la calidad de
  estas señales fuera menor que la de la señal triangular.
 \end_layout
 
 \begin_layout Standard
-También es importante aclarar que los armonicos que fueron demasiado tenues
+También es importante aclarar que los armónicos que fueron demasiado tenues
  fueron directamente excluidos del gráfico.
  En particular, para las señales cuadradas, una buena forma de identificar
- su tiempo activo experimentalmente a partir de el espectro es mirar los
- armonicos faltantes.
- Si son los pares, el tiempo activo será de 50%.
- Si son los multiplos de 3, el tiempo activo será 33%.
+ su tiempo activo experimentalmente a partir del espectro es mirar los armónicos
+ faltantes.
+ Si son los pares, el tiempo activo será del 50%.
+ Si son los múltiplos de 3, el tiempo activo será del 33%.
  Probablemente exista una generalización de dicho patrón para identificar
  otros tiempos activos de señales cuadradas a partir del espectro.
 \end_layout
 
 \begin_layout Section
-Analisis de señales AM
+Análisis de señales AM
 \end_layout
 
 \begin_layout Standard
@@ -1013,7 +1012,7 @@ $200mVpp$
 
  debido a que por su escasa amplitud, y su parecido con el piso de ruido
  del osciloscopio dichas señales fueron demasiado dificiles de medir.
- Salvo indiciado lo contrario, la frecuencia de la señal modulada fue de
+ Salvo indicado lo contrario, la frecuencia de la señal modulada fue de
  
 \begin_inset ERT
 status open
@@ -1077,9 +1076,9 @@ pi(f_p+f_m)t)$$
 \end_layout
 
 \begin_layout Standard
-Es decir una señal AM se la puede imaginar como un producto de dos senoidales
- (uno con offset), o, como una señal compuesta por una suma de tres senoidales,
- de tres frecuencias distintas, una central y dos escoltas.
+Es decir, a una señal AM se la puede imaginar como un producto de dos senoidales
+ (uno con offset), o como una señal compuesta por una suma de tres senoidales,
+ de tres frecuencias distintas: una central y dos escoltas.
 \end_layout
 
 \begin_layout Subsection
@@ -1135,11 +1134,11 @@ Señal senoidal, m=0.5 y su espectro correspondiente (derecha a izquierda)
 \end_layout
 
 \begin_layout Standard
-Se observó que la frecuencia central del espectro se encontro en 1.79 Mhz,
+Se observó que la frecuencia central del espectro se encontró en 1.79 Mhz,
  lo cual no era de esperar ya que según las indicaciones del generador la
  señal moduladora era de 1.7Mhz.
  En las mediciones posteriores se procedió a realizar un ajuste para lograr
- que la frecuencia del armonico central fuese de 1.7Mhz
+ que la frecuencia del armónico central fuese de 1.7Mhz
 \end_layout
 
 \begin_layout Standard
@@ -1189,8 +1188,8 @@ approx 0.6$
 \end_layout
 
 \begin_layout Standard
-Debido a que el ajuste fue realizado mediante el giro una perilla y observando
- la señal, es razonable que el valor de n no sea exactamente 0.5
+Debido a que el ajuste fue realizado mediante el giro de una perilla y observand
+o la señal, es razonable que el valor de n no sea exactamente 0.5
 \end_layout
 
 \begin_layout Subsection
@@ -1284,7 +1283,7 @@ frac{1}{2}A_P$
 
 , la amplitud del pico central se mantiene.
  Si bien esta relación es de amplitudes, si las amplitudes se acercan entre
- si, también es razonable pensar que las potencias también.
+ si, es razonable pensar que las potencias también lo hacen.
 \end_layout
 
 \begin_layout Subsection
@@ -1339,7 +1338,7 @@ Señal triangular, m=0.5 y su espectro correspondiente (derecha a izquierda)
 \end_layout
 
 \begin_layout Standard
-Se observa la aparición de un numero considerable de armonicos nuevos en
+Se observa la aparición de un número considerable de armonicos nuevos en
  la señal.
  Esto se debe a que una señal triangular contiene infinitos armonicos, debido
  al hecho de que no es una función suave.
@@ -1421,10 +1420,10 @@ $F_m=F_p$
 \begin_layout Standard
 Se observa que la señal vista en el osciloscopio no correspondió con las
  curvas esperadas de una señal AM con frecuencia modulada igual a la portadora.
- Esto se especula que tiene que ver con como se midió.
- No obstante , el espectro observado fue razonable, ya que se encontraron
- armonicos en 1.6Mhz y 3.2 Mhz, lo cual era de esperar ya que la frecuencia
- del armonico derecho es igual a 
+ Esto se especula que tiene que ver con cómo se midió.
+ No obstante, el espectro observado fue razonable ya que se encontraron
+ armónicos en 1.6Mhz y 3.2 Mhz, lo cual era de esperar ya que la frecuencia
+ del armónico derecho es igual a 
 \begin_inset ERT
 status open
 
@@ -1435,15 +1434,15 @@ $f_p+f_m=2f_m$
 
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Section
-Medicion de señales FM
+Medición de señales FM
 \end_layout
 
 \begin_layout Standard
-Se procedió, a medir con el analizador de espectros y dos generadores algunas
+Se procedió a medir con el analizador de espectros y dos generadores algunas
  señales de FM.
  En general se tuvieron las mismas consideraciones que al medir las señales
  de AM.
@@ -1523,12 +1522,12 @@ Señal FM y su espectro (derecha a izquierda)
 \end_layout
 
 \begin_layout Standard
-Se observa como la señal esta compuesta por una gran cantidad de armonicos.
+Se observa cómo la señal está compuesta por una gran cantidad de armónicos.
  Se decidió no calcular el indice de modulación debido a su complejidad.
- Al mismo tiempo, se nota como la señal incrementa su frecuencia instantanea
- en una manera abrupta para luego mantenerla, de la misma forma que un senoidal
+ Al mismo tiempo, se nota cómo la señal incrementa su frecuencia instantánea
+ de forma abrupta para luego mantenerla, de la misma manera que un senoidal
  sube, y se mantiene en su pico por un tiempo considerable antes de volver
- a bajar (es una función suave)
+ a bajar (es una función suave).
 \end_layout
 
 \begin_layout Subsection
@@ -1579,11 +1578,11 @@ Señal FM y su espectro (derecha a izquierda)
 \end_layout
 
 \begin_layout Standard
-Se observa, al igual que el caso anterior la composición de la señal por
- muchos armonicos.
- Tambien es importante observar como la frecuencia de la señal se incrementa
+Se observa, al igual que en el caso anterior la composición de la señal
+ por muchos armónicos.
+ También es importante observar cómo la frecuencia de la señal se incrementa
  gradualmente, y no abrptamente como en el caso anterior con modulación
- senoidal
+ senoidal.
 \end_layout
 
 \begin_layout Section
@@ -1594,7 +1593,7 @@ Espectro de radiofrecuencias en Argentina
 El Espectro Radioeléctrico es el conjunto de frecuencias que, conforme a
  la tecnología disponible, pueden ser empleadas para emitir ondas que permitan
  transportar información.
- La manera en cómo está atribuido el Espectro Radioeléctrico en nuestro
+ La manera en la cual está atribuido el Espectro Radioeléctrico en nuestro
  país se puede consultar en el "Cuadro de Atribución de Bandas de Frecuencias
  de la República Argentina", al que abreviadamente se lo conoce como CABFRA.
  El espectro electromagnético está compuesto por:
@@ -1764,8 +1763,8 @@ reference "fig:Señal-medida"
 
 , hay picos de potencia que se repiten cada cierto intervalo de frecuencia,
  que al conectar el parlante al analizador se lograron escuchar solo pitidos
- que puede ser debido a que la señal era digital y el analizador no las
- puede interpretar.
+ que pueden deberse a que la señal era digital y el analizador no las puede
+ interpretar.
 \end_layout
 
 \begin_layout Section
@@ -1938,7 +1937,7 @@ Banda III - UHF: de 512MHz a 806MHz que abarca del canal 21 al 69, excluyendo
 \lang english
 Cada canal, a su vez, tiene asignada una banda de frecuencias de 6MHz y,
  al igual que las estaciones de radio, se pueden dividir en categorías según
- el área del servicio (hasta dónde la potencia tiene un mínimo de 
+ el área del servicio (hasta donde la potencia tiene un mínimo de 
 \begin_inset Formula $50\frac{dB\,\mu V}{m}$
 \end_inset
 
@@ -2147,14 +2146,14 @@ Frecuencias de las portadoras del canal 13
 \begin_layout Standard
 
 \lang english
-La señal de video está modulada en AM y se separa a la del audio que está
+La señal de video está modulada en AM y se separa de la del audio que está
  modulada en FM.
  La frecuencia medida corresponde a la portadora de color, por lo que no
  se logró escuchar nada.
 \end_layout
 
 \begin_layout Section
-Analisis de señales sinc y tren de deltas con el analizador
+Analisis de señales sinc y tren de deltas con el analizador de espectros
 \end_layout
 
 \begin_layout Subsection
@@ -2260,12 +2259,12 @@ Señal sinc(t) y su espectro (f=5Mhz)
 \end_layout
 
 \begin_layout Standard
-Se noto que la señal fue de mucha menos calidad.
- Además el espectro no fue un rectangulo, sino que se vio unaa constante
+Se notó que la señal fue de mucha menos calidad.
+ Además el espectro no fue un rectángulo, sino que se vio una constante
  atenuación a frecuencias altas.
  Probablemente se deba a la baja calidad de la señal.
  También observando el periodo de la señal en el osciloscopio se puede notar
- que su periodo es de 5Mhz, que era lo esperado
+ que su periodo es de 5Mhz, que era lo esperado.
 \end_layout
 
 \begin_layout Subsection
@@ -2273,7 +2272,7 @@ Señal tren de deltas
 \end_layout
 
 \begin_layout Standard
-Se procedió a analizar la señal tren de deltas a distintas frecuencias
+Se procedió a analizar la señal tren de deltas a distintas frecuencias.
 \end_layout
 
 \begin_layout Standard
@@ -2372,7 +2371,7 @@ Señal tren de deltas y su espectro (f=10Mhz)
 \end_layout
 
 \begin_layout Standard
-Se observa que los armonicos se atenuan gradualmente, probablemente debido
+Se observa que los armonicos se atenúan gradualmente, probablemente debido
  a la baja calidad de la señal.
  La separación entre los picos equiespaciados en frecuencia es 10Mhz, lo
  cual es lo esperado.
@@ -2384,18 +2383,17 @@ Conclusión final
 
 \begin_layout Standard
 El analizador de espectros es un instrumento muy caro, pero al mismo tiempo
- muy util, con el cual se puede analizar de manera muy precisa armonicos
+ muy útil, con el cual se puede analizar de manera muy precisa armónicos
  de potencia pequeña de las distintas señales con las que los circuitos
- electronicos trabajan.
- Se pudo verificar esto mediante el analisis de señales tanto generadas
- por equipos generadores de señales, como también con señales trasmitidas
+ electrónicos trabajan.
+ Se pudo verificar esto mediante el análisis de señales tanto generadas
+ por equipos generadores de señales, como también mediante señales trasmitidas
  por aire.
- Si bien no todas las mediciones pudieron realizarse de la manera mas adecuada
- se pudo verificar que el dispositivo cumple su funcionalidad de manera
- adecuada.
- Es importante resaltar que tampoco es demasiado complicada la interfaz
- de usuario que el dispositivo ofrece, en solo un día se pudo a aprender
- a maniobrarlo.
+ Si bien no todas las mediciones pudieron realizarse de la manera mas adecuada,
+ se pudo verificar que el dispositivo cumple su funcionalidad correctamente.
+ Es importante resaltar que no es demasiado complicada la interfaz de usuario
+ que el dispositivo ofrece, ya que en solo un día se pudo a aprender a maniobrar
+lo.
 \end_layout
 
 \end_body
