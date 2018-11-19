@@ -1644,8 +1644,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename no es ni radio ni tv.jpeg
-	lyxscale 20
-	scale 30
 
 \end_inset
 
@@ -1731,7 +1729,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rango de frecuencias investigado
+Rango de frecuencias pa
 \end_layout
 
 \end_inset
@@ -1759,38 +1757,10 @@ reference "fig:Señal-medida"
 \end_layout
 
 \begin_layout Section
-Señales de radio
+Radio
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename espectro de radio fm.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias (en MHz) para radio FM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
+\begin_layout Paragraph
 
 \end_layout
 
@@ -1808,7 +1778,7 @@ Como se puede ver en la imágen, el espectro de radio FM en Argentina está
  Los radios del área estimada de servicio son los siguientes:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 \begin_inset Float figure
 wide false
 sideways false
@@ -1847,27 +1817,21 @@ Luego se sintonizó la radio "ASPEN: la radio de los clásicos" con frecuencia
  La medición obtenida fué:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Paragraph
 \begin_inset Float figure
-placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename mediciones_restantes/señalFMAspen.png
-	lyxscale 20
-	scale 30
+	filename mediciones_restantes/radio 102.3.jpeg
+	scale 50
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -1893,258 +1857,7 @@ La potencia de la portadora es aproximadamente de
 \end_layout
 
 \begin_layout Section
-
-\lang english
-Señales de televisión
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-En la Argentina hay tres bandas de radiodifusión para televisión:
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Banda I - VHF: de 54MHz a 88MHz que abarca del canal 2 al 6.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Banda II - VHF: de 174MHz a 216MHz que abarca del canal 7 al 13.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Banda III - UHF: de 512MHz a 806MHz que abarca del canal 21 al 69, excluyendo
- al canal 37 (de 608MHz a 614MHz) que corresponde a radioastronomía.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Cada canal, a su vez, tiene asignada una banda de frecuencias de 6MHz y,
- al igual que las estaciones de radio, se pueden dividir en categorías según
- el área del servicio (hasta dónde la potencia tiene un mínimo de 
-\begin_inset Formula $50\frac{dB\,\mu V}{m}$
-\end_inset
-
- para el caso de la Banda II):
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\lang english
-\begin_inset Graphics
-	filename categorias tv banda ii.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Categorías para los canales de la Banda II
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Luego se sintonizó la frecuencia de 211MHz, la cual corresponde al canal
- 13 (210MHz a 216MHz) perteneciente a la Banda II.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\lang english
-\begin_inset Graphics
-	filename mediciones_restantes/ej tv.jpeg
-	lyxscale 20
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Categorías para los canales de la Banda II
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Se encontró que las frecuencias de las portadoras son:
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-\begin_inset Float table
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-
-\lang english
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="3">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang english
-Portadora de Video
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang english
-Portadora de Color
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang english
-Portadora de Sonido
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang english
-211,25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang english
-214,83
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang english
-215,75
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Frecuencias de las portadoras del canal 13
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-La señal de video está modulada en AM y se separa a la del audio que está
- modulada en FM.
- La frecuencia medida corresponde a la portadora de color, por lo que no
- se logró escuchar nada.
-\end_layout
-
-\begin_layout Standard
-
+Televisión
 \end_layout
 
 \begin_layout Standard
