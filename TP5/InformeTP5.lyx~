@@ -224,7 +224,7 @@ status open
 
 \begin_layout Plain Layout
 
-RBW=10Khz
+RBW=30Khz
 \end_layout
 
 \end_inset
@@ -550,10 +550,6 @@ Es importante notar que debido a que solo se midió una cantidad finita de
  mucho menor que los más pequeños.
 \end_layout
 
-\begin_layout Subsection
-Resultados de los cálculos analíticos
-\end_layout
-
 \begin_layout Section
 Medición de señales cuadradas y triangulares
 \end_layout
@@ -818,7 +814,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$250mVpp$$
+$250mVpp$
 \end_layout
 
 \end_inset
@@ -2389,12 +2385,11 @@ El analizador de espectros es un instrumento muy caro, pero al mismo tiempo
  Se pudo verificar esto mediante el análisis de señales tanto generadas
  por equipos generadores de señales, como también mediante señales trasmitidas
  por aire.
- Si bien no todas las mediciones pudieron realizarse de la manera mas adecuada
- se pudo verificar que el dispositivo cumple su funcionalidad de manera
- adecuada.
- Es importante resaltar que tampoco es demasiado complicada la interfaz
- de usuario que el dispositivo ofrece, en solo un día se pudo a aprender
- a maniobrarlo.
+ Si bien no todas las mediciones pudieron realizarse de la manera mas adecuada,
+ se pudo verificar que el dispositivo cumple su funcionalidad correctamente.
+ Es importante resaltar que no es demasiado complicada la interfaz de usuario
+ que el dispositivo ofrece, ya que en solo un día se pudo a aprender a maniobrar
+lo.
 \end_layout
 
 \end_body

@@ -224,7 +224,7 @@ status open
 
 \begin_layout Plain Layout
 
-RBW=10Khz
+RBW=30Khz
 \end_layout
 
 \end_inset
@@ -550,10 +550,6 @@ Es importante notar que debido a que solo se midió una cantidad finita de
  mucho menor que los más pequeños.
 \end_layout
 
-\begin_layout Subsection
-Resultados de los cálculos analíticos
-\end_layout
-
 \begin_layout Section
 Medición de señales cuadradas y triangulares
 \end_layout
@@ -818,7 +814,7 @@ status open
 
 \begin_layout Plain Layout
 
-$$250mVpp$$
+$250mVpp$
 \end_layout
 
 \end_inset
@@ -878,7 +874,7 @@ status open
 
 \begin_layout Plain Layout
 
-$RBW=1Khz$
+$RBW=30Khz$
 \end_layout
 
 \end_inset
