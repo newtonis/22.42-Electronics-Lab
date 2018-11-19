@@ -540,12 +540,12 @@ Es importante notar que debido a que solo se midió una cantidad finita de
  mucho menor que los armonicos más pequeños.
 \end_layout
 
-\begin_layout Subsection
-Resultados de los cálculos analiticos
-\end_layout
-
 \begin_layout Section
 Medición de señales cuadradas y triángulares
+\end_layout
+
+\begin_layout Subsection
+Resultados de los cálculos analiticos
 \end_layout
 
 \begin_layout Standard
@@ -1319,10 +1319,6 @@ Señal triangular, m=0.5 y su espectro correspondiente (derecha a izquierda)
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1399,10 +1395,6 @@ $F_m=F_p$
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1411,7 +1403,8 @@ $F_m=F_p$
 \begin_layout Standard
 Se observa que la señal vista en el osciloscopio no correspondió con las
  curvas esperadas de una señal AM con frecuencia modulada igual a la portadora.
- Esto se especula que tiene que ver con como se midió.
+ Esto se especula que tiene que ver con como se midió (o a que se midio
+ mal).
  No obstante , el espectro observado fue razonable, ya que se encontraron
  armonicos en 1.6Mhz y 3.2 Mhz, lo cual era de esperar ya que la frecuencia
  del armonico derecho es igual a 
@@ -1581,463 +1574,15 @@ Espectro de radiofrecuencias en Argentina
 \end_layout
 
 \begin_layout Standard
-El Espectro Radioeléctrico es el conjunto de frecuencias que, conforme a
- la tecnología disponible, pueden ser empleadas para emitir ondas que permitan
- transportar información.
- La manera en cómo está atribuido el Espectro Radioeléctrico en nuestro
- país se puede consultar en el "Cuadro de Atribución de Bandas de Frecuencias
- de la República Argentina", al que abreviadamente se lo conoce como CABFRA.
- El espectro electromagnético está compuesto por:
+Se procedió a estudiar el espectro de frecuencias de la Argentina.
+ Los resultados fueron los siguientes:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename espectro electromagnetico.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Espectro electromagnético
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-El Espectro Radioeléctrico es un recurso natural, de carácter limitado,
- que constituye un bien de dominio público, sobre el cual el Estado ejerce
- su soberanía.
- Es asimismo, un medio intangible que puede utilizarse para la prestación
- de diversos servicios de comunicaciones.
-\end_layout
-
-\begin_layout Standard
-Se buscó sintonizar una frecuencia que no sea de una emisora de radio ni
- de televisión.
- La señal que se midió fué la siguiente:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename no es ni radio ni tv.jpeg
-	lyxscale 20
-	scale 30
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Señal medida
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Señal-medida"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Que según la información encontrada en el CABFRA brindado por el Ente Nacional
- de Comunicaciones (ENACOM) se encontró que en la frecuencia medida de 325MHz
- se tiene:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ej 5 para frecuencia 325mhz 2.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias (en MHz) para radioastronomía
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ej 5 para frecuencia 325mhz.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias investigado
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como se puede ver en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Señal-medida"
-
-\end_inset
-
-, hay picos de potencia que se repiten cada cierto intervalo de frecuencia,
- que al conectar el parlante al analizador se lograron escuchar solo pitidos
- que puede ser debido a que la señal era digital y el analizador no las
- puede interpretar.
-\end_layout
-
-\begin_layout Section
-Señales de radio
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename espectro de radio fm.png
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias (en MHz) para radio FM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como se puede ver en la imágen, el espectro de radio FM en Argentina está
- compuesto por 100 canales de 200KHz cada uno.
- Estos van desde el 201 con frecuencia de 88,1MHz hasta el 300 con frecuencia
- de 107,9MHz.
- Las estaciones se dividen en categorias de la A a la G según el área de
- servicio estimada considerando el límite en 
-\begin_inset Formula $48\frac{dB\mu V}{m}$
-\end_inset
-
-.
- Los radios del área estimada de servicio son los siguientes:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename radio categorias.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Categorías según los radios de servicio
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Luego se sintonizó la radio "ASPEN: la radio de los clásicos" con frecuencia
- de 102.3MHz, la cual se corresponde con el canal 272.
- Se conectaron los parlantes al analizador de espectros, se pudo escuchar
- la emisora pero el sonido era de baja calidad.
- La medición obtenida fué:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename mediciones_restantes/señalFMAspen.png
-	lyxscale 20
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Radio "ASPEN" a 102,3MHz
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La potencia de la portadora es aproximadamente de 
-\begin_inset Formula $-42dBm$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-
-\lang english
-Señales de televisión
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-En la Argentina hay tres bandas de radiodifusión para televisión:
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Banda I - VHF: de 54MHz a 88MHz que abarca del canal 2 al 6.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Banda II - VHF: de 174MHz a 216MHz que abarca del canal 7 al 13.
-\end_layout
-
-\begin_layout Itemize
-
-\lang english
-Banda III - UHF: de 512MHz a 806MHz que abarca del canal 21 al 69, excluyendo
- al canal 37 (de 608MHz a 614MHz) que corresponde a radioastronomía.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Cada canal, a su vez, tiene asignada una banda de frecuencias de 6MHz y,
- al igual que las estaciones de radio, se pueden dividir en categorías según
- el área del servicio (hasta dónde la potencia tiene un mínimo de 
-\begin_inset Formula $50\frac{dB\,\mu V}{m}$
-\end_inset
-
- para el caso de la Banda II):
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\lang english
-\begin_inset Graphics
-	filename categorias tv banda ii.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Categorías para los canales de la Banda II
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Luego se sintonizó la frecuencia de 211MHz, la cual corresponde al canal
- 13 (210MHz a 216MHz) perteneciente a la Banda II.
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\lang english
-\begin_inset Graphics
-	filename mediciones_restantes/ej tv.jpeg
-	lyxscale 20
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\lang english
-Categorías para los canales de la Banda II
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-Se encontró que las frecuencias de las portadoras son:
-\end_layout
-
-\begin_layout Standard
-
-\lang english
-\begin_inset Float table
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-
-\lang english
 \begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="3">
+<lyxtabular version="3" rows="11" columns="4">
 <features tabularvalignment="middle">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2046,9 +1591,7 @@ status collapsed
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
-Portadora de Video
+Nombre
 \end_layout
 
 \end_inset
@@ -2057,9 +1600,16 @@ Portadora de Video
 \begin_inset Text
 
 \begin_layout Plain Layout
+Frecuencias
+\end_layout
 
-\lang english
-Portadora de Color
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Longitud de onda
 \end_layout
 
 \end_inset
@@ -2069,8 +1619,348 @@ Portadora de Color
 
 \begin_layout Plain Layout
 
-\lang english
-Portadora de Sonido
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Extra baja frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-30 Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.0000-100.000 km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Super baja frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30-300 Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.000-10.000 km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ultra baja frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-3000Hz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100-1.000 km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muy baja frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-30Khz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10-100 km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Baja frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30-300Khz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-10 km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Media frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-3000Khz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100m - 1km
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alta frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-30Mhz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10-100m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Muy alta frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30-300Mhz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1-10m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ultra alta frecuencia
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+300-3000Mhz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1m-100mm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -2081,9 +1971,7 @@ Portadora de Sonido
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\lang english
-211,25
+Super alta frecuencia
 \end_layout
 
 \end_inset
@@ -2092,9 +1980,16 @@ Portadora de Sonido
 \begin_inset Text
 
 \begin_layout Plain Layout
+3-30Ghz
+\end_layout
 
-\lang english
-214,83
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10-1 mm
 \end_layout
 
 \end_inset
@@ -2104,8 +1999,6 @@ Portadora de Sonido
 
 \begin_layout Plain Layout
 
-\lang english
-215,75
 \end_layout
 
 \end_inset
@@ -2116,12 +2009,29 @@ Portadora de Sonido
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Espectro FM en argentina
+\end_layout
+
+\begin_layout Standard
+Se sintonizó la radio FM 102.3 y aunque, con sonido de baja calidad se pudó
+ escuchar la radio satisfactoriamente.
+ A continuación se muestran los resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
-Frecuencias de las portadoras del canal 13
+Espectro FM 102.3
 \end_layout
 
 \end_inset
@@ -2134,16 +2044,11 @@ Frecuencias de las portadoras del canal 13
 
 \end_layout
 
-\begin_layout Standard
-
-\lang english
-La señal de video está modulada en AM y se separa a la del audio que está
- modulada en FM.
- La frecuencia medida corresponde a la portadora de color, por lo que no
- se logró escuchar nada.
+\begin_layout Section
+Señales de television en argentina
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
 
 \end_layout
 
