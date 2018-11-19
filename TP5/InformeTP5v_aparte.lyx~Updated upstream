@@ -540,12 +540,12 @@ Es importante notar que debido a que solo se midió una cantidad finita de
  mucho menor que los armonicos más pequeños.
 \end_layout
 
-\begin_layout Subsection
-Resultados de los cálculos analiticos
-\end_layout
-
 \begin_layout Section
 Medición de señales cuadradas y triángulares
+\end_layout
+
+\begin_layout Subsection
+Resultados de los cálculos analiticos
 \end_layout
 
 \begin_layout Standard
@@ -1403,7 +1403,8 @@ $F_m=F_p$
 \begin_layout Standard
 Se observa que la señal vista en el osciloscopio no correspondió con las
  curvas esperadas de una señal AM con frecuencia modulada igual a la portadora.
- Esto se especula que tiene que ver con como se midió.
+ Esto se especula que tiene que ver con como se midió (o a que se midio
+ mal).
  No obstante , el espectro observado fue razonable, ya que se encontraron
  armonicos en 1.6Mhz y 3.2 Mhz, lo cual era de esperar ya que la frecuencia
  del armonico derecho es igual a 
@@ -1573,39 +1574,6 @@ Espectro de radiofrecuencias en Argentina
 \end_layout
 
 \begin_layout Standard
-<<<<<<< Updated upstream
-El Espectro Radioeléctrico es el conjunto de frecuencias que, conforme a
- la tecnología disponible, pueden ser empleadas para emitir ondas que permitan
- transportar información.
- La manera en cómo está atribuido el Espectro Radioeléctrico en nuestro
- país se puede consultar en el "Cuadro de Atribución de Bandas de Frecuencias
- de la República Argentina", al que abreviadamente se lo conoce como CABFRA.
- El espectro electromagnético está compuesto por:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename espectro electromagnetico.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Espectro electromagnético
-\end_layout
-
-\end_inset
-
-=======
 Se procedió a estudiar el espectro de frecuencias de la Argentina.
  Los resultados fueron los siguientes:
 \end_layout
@@ -1650,99 +1618,10 @@ Longitud de onda
 \begin_inset Text
 
 \begin_layout Plain Layout
->>>>>>> Stashed changes
 
 \end_layout
 
 \end_inset
-<<<<<<< Updated upstream
-
-
-\end_layout
-
-\begin_layout Standard
-El Espectro Radioeléctrico es un recurso natural, de carácter limitado,
- que constituye un bien de dominio público, sobre el cual el Estado ejerce
- su soberanía.
- Es asimismo, un medio intangible que puede utilizarse para la prestación
- de diversos servicios de comunicaciones.
-\end_layout
-
-\begin_layout Standard
-Se buscó sintonizar una frecuencia que no sea de una emisora de radio ni
- de televisión.
- La señal que se midió fué la siguiente:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename no es ni radio ni tv.jpeg
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Señal medida
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Señal-medida"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Que según la información encontrada en el CABFRA brindado por el Ente Nacional
- de Comunicaciones (ENACOM) se encontró que en la frecuencia medida de 325MHz
- se tiene:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ej 5 para frecuencia 325mhz 2.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias (en MHz) para radioastronomía
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-=======
 </cell>
 </row>
 <row>
@@ -1928,136 +1807,11 @@ Baja frecuencia
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
->>>>>>> Stashed changes
 \begin_layout Plain Layout
 
 \end_layout
 
 \end_inset
-<<<<<<< Updated upstream
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ej 5 para frecuencia 325mhz.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias pa
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como se puede ver en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Señal-medida"
-
-\end_inset
-
-, hay picos de potencia que se repiten cada cierto intervalo de frecuencia,
- que al conectar el parlante al analizador se lograron escuchar solo pitidos
- que puede ser debido a que la señal era digital y el analizador no las
- puede interpretar.
-\end_layout
-
-\begin_layout Section
-Radio
-\end_layout
-
-\begin_layout Paragraph
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename espectro de radio fm.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Rango de frecuencias (en MHz) para radio FM
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como se puede ver en la imágen, el espectro de radio FM en Argentina está
- compuesto por 100 canales de 200KHz cada uno.
- Estos van desde el 201 con frecuencia de 88,1MHz hasta el 300 con frecuencia
- de 107,9MHz.
- Las estaciones se dividen en categorias de la A a la G según el área de
- servicio estimada considerando el límite en 
-\begin_inset Formula $48\frac{dB\mu V}{m}$
-\end_inset
-
-.
- Los radios del área estimada de servicio son los siguientes:
-\end_layout
-
-\begin_layout Paragraph
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename radio categorias.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Categorías según los radios de servicio
-\end_layout
-
-\end_inset
-
-
-=======
 </cell>
 </row>
 <row>
@@ -2278,7 +2032,6 @@ status open
 
 \begin_layout Plain Layout
 Espectro FM 102.3
->>>>>>> Stashed changes
 \end_layout
 
 \end_inset
@@ -2286,62 +2039,11 @@ Espectro FM 102.3
 
 \end_layout
 
-<<<<<<< Updated upstream
-\begin_layout Standard
-Luego se sintonizó la radio "ASPEN: la radio de los clásicos" con frecuencia
- de 102.3MHz, la cual se corresponde con el canal 272.
- Se conectaron los parlantes al analizador de espectros, se pudo escuchar
- la emisora pero el sonido era de baja calidad.
- La medición obtenida fué:
-\end_layout
-
-\begin_layout Paragraph
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename mediciones_restantes/radio 102.3.jpeg
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Radio "ASPEN" a 102,3MHz
-=======
-\begin_layout Plain Layout
-
->>>>>>> Stashed changes
-\end_layout
-
 \end_inset
 
 
 \end_layout
 
-<<<<<<< Updated upstream
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La potencia de la portadora es aproximadamente de 
-\begin_inset Formula $-42dBm$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Televisión
-=======
 \begin_layout Section
 Señales de television en argentina
 \end_layout
@@ -2350,9 +2052,123 @@ Señales de television en argentina
 Analisis de señales sinc y tren de deltas con el analizador
 \end_layout
 
+\begin_layout Subsection
+Señal sinc(t)
+\end_layout
+
 \begin_layout Standard
 Se procedió a estudiar dichas señales: estos fueron los resultados
->>>>>>> Stashed changes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sinc_125khz.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename sinc_ftransform.jpeg
+	lyxscale 20
+	scale 17
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal sinc(t) y su espectro (f=125khz)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los resultados fueron los esperados
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\emph on
+\begin_inset Graphics
+	filename sinc_15M.png
+	lyxscale 20
+	scale 22
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fm_15M_espectro.png
+	lyxscale 20
+	scale 21
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal sinc(t) y su espectro (f=5Mhz) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se noto que la señal fue de mucha menos calidad.
+ Además el espectro no fue un rectangulo, sino que se vio unaa constante
+ atenuación a frecuencias altas.
+ Probablemente se deba a la baja calidad de la señal.
+ También observando el periodo de la señal en el osciloscopio se puede notar
+ que su periodo es de 5Mhz, que era lo esperado
+\end_layout
+
+\begin_layout Subsection
+Señal tren de deltas
+\end_layout
+
+\begin_layout Standard
+Se procedió a analizar la señal tren de deltas a distintas frecuencias
 \end_layout
 
 \begin_layout Standard
@@ -2362,20 +2178,75 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-<<<<<<< Updated upstream
 \align center
 \begin_inset Graphics
-	filename espectro de television.png
-	scale 50
+	filename tren_de_deltas_125khz.png
+	lyxscale 20
+	scale 22
 
 \end_inset
 
 
+\begin_inset Graphics
+	filename tren_de_deltas_125khz_espectro.png
+	lyxscale 18
+	scale 18
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Rango de frecuencias (en MHz) para televisión
-=======
+Señal tren de deltas y su espectro (f=125khz)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se observa que la separación de los deltas fue de 0.06Mhz, lo cual no sería
+ correcto con una señal de 0.125Mhz.
+ Probablemente se midió con una señal de frecuencia menor (la mitad).
+ Al no tener posibilidad de volver a realizar las mediciones se dejan los
+ resultados, pero observando los mismos, es muy probable que se haya utilizado
+ una frecuencia menor a 125khz.
+\end_layout
+
+\begin_layout Standard
+, 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename tren_de_deltas_10M.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tren_de_deltas10Mhz_espectro.png
+	lyxscale 25
+	scale 22
+
+\end_inset
+
 
 \end_layout
 
@@ -2383,8 +2254,7 @@ Rango de frecuencias (en MHz) para televisión
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Señal sinc(t) y su espectro
->>>>>>> Stashed changes
+Señal tren de deltas y su espectro (f=10Mhz)
 \end_layout
 
 \end_inset
@@ -2392,16 +2262,16 @@ Señal sinc(t) y su espectro
 
 \end_layout
 
-<<<<<<< Updated upstream
-=======
-\begin_layout Plain Layout
-
-\end_layout
-
->>>>>>> Stashed changes
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Se observa que los armonicos se atenuan gradualmente, probablemente debido
+ a la baja calidad de la señal.
+ La separación entre los picos equiespaciados en frecuencia es 10Mhz, lo
+ cual es lo esperado.
 \end_layout
 
 \end_body

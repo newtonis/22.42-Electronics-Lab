@@ -1319,10 +1319,6 @@ Señal triangular, m=0.5 y su espectro correspondiente (derecha a izquierda)
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1396,10 +1392,6 @@ $F_m=F_p$
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1888,6 +1880,94 @@ Televisión
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Espectro FM en argentina
+\end_layout
+
+\begin_layout Standard
+Se sintonizó la radio FM 102.3 y aunque, con sonido de baja calidad se pudó
+ escuchar la radio satisfactoriamente.
+ A continuación se muestran los resultados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Espectro FM 102.3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Señales de television en argentina
+\end_layout
+
+\begin_layout Section
+Analisis de señales sinc y tren de deltas con el analizador
+\end_layout
+
+\begin_layout Standard
+Se procedió a estudiar dichas señales: estos fueron los resultados
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename sinc_125khz.png
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename sinc_ftransform.jpeg
+	lyxscale 20
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Señal sinc(t) y su espectro (f=125khz)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
