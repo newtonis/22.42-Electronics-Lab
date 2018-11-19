@@ -856,7 +856,7 @@ status open
 
 \begin_layout Plain Layout
 
-$ST=0.5s$
+$ST=0.1s$
 \end_layout
 
 \end_inset
@@ -884,7 +884,7 @@ $RBW=1Khz$
 
 \end_inset
 
- para la señal triángular)
+= para la señal triángular)
 \end_layout
 
 \begin_layout Standard
